@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3187507146	Play_Test			\TEST\Play_Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1064006755	Test	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Windows\SFX\Main Title_10C4C929.wem		\Actor-Mixer Hierarchy\TEST\Test		26088528
+

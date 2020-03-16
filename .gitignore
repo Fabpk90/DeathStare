@@ -135,5 +135,10 @@ sysinfo.txt
 
 # Crashlytics generated file
 
+#WWise gitignore
+*.akd
+*.prof
+.cache
+IncrementalSoundBankData.xml
 
 # End of https://www.gitignore.io/api/rider,unity
