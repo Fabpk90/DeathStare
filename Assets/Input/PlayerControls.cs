@@ -57,6 +57,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""5d2c7b09-9678-4e6c-a782-b1aa1babf63c"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""GamePads"",
+                    ""action"": ""Stare"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""9d54e927-76f0-496c-b9ec-29620b8c4502"",
                     ""path"": ""<Gamepad>/buttonSouth"",
                     ""interactions"": """",

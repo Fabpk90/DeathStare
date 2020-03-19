@@ -56,15 +56,36 @@ public class TestMode : MonoBehaviour
         Debug.Log("Player " + obj.playerIndex + " joined !");
         
         players.Add(obj);
-        
+
+        if (players.Count == 4)
+            InitPlayersCamera();
+
     }
 
-    // Update is called once per frame
-    void Update()
+    //Creating this because the unity's system doesn't work
+    private void InitPlayersCamera()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _manager.JoinPlayer(5, 5, "GamePads", Gamepad.all[0]);
-        }
+        var playerCam = players[0].GetComponentInChildren<Camera>();
+
+        Rect camRect = playerCam.rect;
+        camRect.y = .5f;
+        camRect.width = 0.5f;
+        camRect.height = 0.5f;
+
+        playerCam.rect = camRect;
+
+        camRect.x = 0.5f;
+
+        players[1].GetComponentInChildren<Camera>().rect = camRect;
+
+        camRect.y = 0.0f;
+        
+        players[2].GetComponentInChildren<Camera>().rect = camRect;
+
+        camRect.x = camRect.y = 0.0f;
+        
+        players[3].GetComponentInChildren<Camera>().rect = camRect;
+
+
     }
 }
