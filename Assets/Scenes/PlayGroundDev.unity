@@ -524,6 +524,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 1634684255, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   players: []
+  playersColor:
+  - {r: 1, g: 0, b: 0, a: 0}
+  - {r: 0.17978883, g: 1, b: 0, a: 0}
+  - {r: 0, g: 0.9999995, b: 1, a: 0}
+  - {r: 1, g: 0, b: 0.9423084, a: 0}
   debugPlayers: 1
 --- !u!114 &2101164643
 MonoBehaviour:

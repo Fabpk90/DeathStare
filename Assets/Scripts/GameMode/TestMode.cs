@@ -7,6 +7,8 @@ using UnityEngine.InputSystem;
 public class TestMode : GameMode
 {
 
+    public Color[] playersColor;
+    
     [Tooltip("Permet de tester avec une manette")]
     public bool debugPlayers;
 
@@ -73,5 +75,11 @@ public class TestMode : GameMode
         camRect.x = camRect.y = 0.0f;
         
         players[3].GetComponentInChildren<Camera>().rect = camRect;
+
+        for (int i = 0; i < players.Count; i++)
+        {
+            players[i].GetComponent<MeshRenderer>().material.color = playersColor[i];
+        }
+        
     }
 }
