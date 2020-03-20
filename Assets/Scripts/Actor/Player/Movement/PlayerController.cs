@@ -15,18 +15,10 @@ public class PlayerController : MonoBehaviour
         _stare = GetComponent<Stare>();
         
         _input.currentActionMap["Stare"].started += OnStare;
-        
     }
 
     private void OnStare(InputAction.CallbackContext obj)
     {
         _stare.StareViolently(transform.position, transform.forward);
-    }
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

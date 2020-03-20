@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Actor.Hittable;
 using UnityEngine;
 
 public class Stare : MonoBehaviour
@@ -12,7 +13,10 @@ public class Stare : MonoBehaviour
 
       if (Physics.Raycast(r, out var hitInfo))
       {
-         print("hit !");
+         var hitable = hitInfo.collider.GetComponent<IHittable>();
+
+         hitable.TakeDamage((int)damagePerSecond);
+
          return true;
       }
       

@@ -4,62 +4,50 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(PlayerInputManager))]
-public class TestMode : MonoBehaviour
+public class TestMode : GameMode
 {
-    public static TestMode instance;
 
-    public PlayerInput playerPrefab;
-    
-    public List<PlayerInput> players;
-
+    [Tooltip("Permet de tester avec une manette")]
     public bool debugPlayers;
-    
-    private PlayerInputManager _manager;
-    // Start is called before the first frame update
-    void Start()
+
+
+    public override void Init()
     {
-        if (instance == null)
+        base.Init();
+        
+        if (!debugPlayers)
         {
-            instance = this;
-            
-            _manager = GetComponent<PlayerInputManager>();
+            print(Gamepad.all.Count);
 
-            _manager.playerPrefab = playerPrefab.gameObject;
-            
-            _manager.onPlayerJoined += OnPlayerJoined;
-
-            if (!debugPlayers)
+            //we add the 4 players, or less depending on connected gamepads
+            for (int i = 0; i < Gamepad.all.Count && i < 4; i++)
             {
-                print(Gamepad.all.Count);
-
-                //we add the 4 players, or less depending on connected gamepads
-                for (int i = 0; i < Gamepad.all.Count && i < 4; i++)
-                {
-                    _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[i]);
-                }
+                _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[i]);
             }
-            
-            for (int i = 0; i < 4; i++)
-            {
-                _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
-            }
-            
         }
-        else
+        
+        if(Gamepad.all.Count == 0)
+            print("Attention pas de manette connectée !");
+            
+        for (int i = 0; i < 4; i++)
         {
-            Destroy(gameObject);
+            _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
         }
     }
 
-    private void OnPlayerJoined(PlayerInput obj)
+    protected override void PlayerJoined(PlayerInput obj)
     {
+        base.PlayerJoined(obj);
+        
         Debug.Log("Player " + obj.playerIndex + " joined !");
+
+        //to see clearly in the inspector which player it is
+        obj.gameObject.name = "Player " + obj.playerIndex;
         
         players.Add(obj);
 
         if (players.Count == 4)
             InitPlayersCamera();
-
     }
 
     //Creating this because the unity's system doesn't work
@@ -85,7 +73,5 @@ public class TestMode : MonoBehaviour
         camRect.x = camRect.y = 0.0f;
         
         players[3].GetComponentInChildren<Camera>().rect = camRect;
-
-
     }
 }

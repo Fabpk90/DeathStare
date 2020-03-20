@@ -41,6 +41,14 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""7fae49c0-c992-4ef3-b073-5f7a41200ab2"",
+                    ""expectedControlType"": ""Stick"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -51,17 +59,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Stare"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""5d2c7b09-9678-4e6c-a782-b1aa1babf63c"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""GamePads"",
                     ""action"": ""Stare"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -87,6 +84,17 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9eb8e4c6-0f85-496b-8e92-a66f77a47498"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -110,6 +118,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Arena_Movement = m_Arena.FindAction("Movement", throwIfNotFound: true);
         m_Arena_Stare = m_Arena.FindAction("Stare", throwIfNotFound: true);
         m_Arena_Jump = m_Arena.FindAction("Jump", throwIfNotFound: true);
+        m_Arena_Look = m_Arena.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -162,6 +171,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Arena_Movement;
     private readonly InputAction m_Arena_Stare;
     private readonly InputAction m_Arena_Jump;
+    private readonly InputAction m_Arena_Look;
     public struct ArenaActions
     {
         private @PlayerControls m_Wrapper;
@@ -169,6 +179,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Arena_Movement;
         public InputAction @Stare => m_Wrapper.m_Arena_Stare;
         public InputAction @Jump => m_Wrapper.m_Arena_Jump;
+        public InputAction @Look => m_Wrapper.m_Arena_Look;
         public InputActionMap Get() { return m_Wrapper.m_Arena; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -187,6 +198,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Jump.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
                 @Jump.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
                 @Jump.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
+                @Look.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
             }
             m_Wrapper.m_ArenaActionsCallbackInterface = instance;
             if (instance != null)
@@ -200,6 +214,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Jump.started += instance.OnJump;
                 @Jump.performed += instance.OnJump;
                 @Jump.canceled += instance.OnJump;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
             }
         }
     }
@@ -218,5 +235,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnStare(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
 }
