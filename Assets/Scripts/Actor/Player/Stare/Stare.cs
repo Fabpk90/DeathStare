@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Actor.Hittable;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Stare : MonoBehaviour
 {
@@ -10,37 +11,38 @@ public class Stare : MonoBehaviour
 
    public bool StareViolently(Transform[] points, Vector3 origin, Camera cam)
    {
-      print("Shooting ! " + points.Length);
+      print("Shooting ! " + points.Length+ " " + transform.name);
       bool found = false;
       foreach (Transform point in points)
       {
-         Vector3 p = cam.WorldToScreenPoint(point.position);
+         //Vector3 p = cam.WorldToScreenPoint(point.position);
          
          //test if the point is visible for the camera
-         if (p.x >= 0 && p.x <= cam.pixelWidth
+         /*if (p.x >= 0 && p.x <= cam.pixelWidth
                       && p.y >= 0 && p.y <= cam.pixelHeight
-                      && p.z >= 0)
+                      && p.z > 0)*/
          {
-            print("in da frustrum");
-           
-            var direction = origin - point.position;
-            Debug.DrawRay(point.position, direction, Color.red, 2.0f);
-            if(Physics.Raycast(origin, direction, out var hitinfo))
+            float angle = Vector3.Angle(origin, point.position);
+            if ( angle <= cam.fieldOfView)
             {
-               var hitable = hitinfo.collider.GetComponent<IHittable>();
-
-               if (hitable != null)
+               var direction = origin - point.position;
+               Debug.DrawRay(point.position, direction, Color.red, 2.0f);
+               if(Physics.Raycast(origin, direction, out var hitinfo))
                {
-                  hitable.TakeDamage((int)damagePerSecond);
-                  found = true;
+                  var hitable = hitinfo.collider.GetComponent<IHittable>();
+
+                  if (hitable != null)
+                  {
+                     hitable.TakeDamage((int)damagePerSecond);
+                     found = true;
+                  }
                }
-               
             }
          }
-         else
+        /* else
          {
-            print("Not in the frustrum");
-         }
+            print("Not in the frustrum " + transform.name);
+         }*/
       }
       return found;
    }

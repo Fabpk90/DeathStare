@@ -8,7 +8,7 @@ public class TestMode : GameMode
 {
 
     public Color[] playersColor;
-    
+
     [Tooltip("Permet de tester avec une manette")]
     public bool debugPlayers;
 
@@ -19,7 +19,6 @@ public class TestMode : GameMode
         
         if (!debugPlayers)
         {
-            print(Gamepad.all.Count);
 
             //we add the 4 players, or less depending on connected gamepads
             for (int i = 0; i < Gamepad.all.Count && i < 4; i++)

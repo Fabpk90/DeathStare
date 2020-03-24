@@ -26,7 +26,8 @@ public class PlayerController : MonoBehaviour
 
         foreach (PlayerInput player in GameMode.instance.players)
         {
-            points.AddRange(player.GetComponent<PlayerHealth>().hittablePoints);
+            if(player != _input)
+                points.AddRange(player.GetComponent<PlayerHealth>().hittablePoints);
         }
         
         _stare.StareViolently( points.ToArray(),transform.position, _camera);
