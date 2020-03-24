@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" SchemaVersion="97" RootDocumentID="{231F0C16-FFD3-4584-864B-48DC9E04826E}">
+	<Events>
+		<WorkUnit Name="MUSIC EVENTS" ID="{3F549426-8D43-4D50-A1E2-B33D682C511B}" OwnerID="{231F0C16-FFD3-4584-864B-48DC9E04826E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
