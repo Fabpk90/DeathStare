@@ -38,6 +38,8 @@
 									</ReferenceList>
 									<ChildrenList>
 										<ActorMixer Name="MoveSet" ID="{AF3B7098-370A-426C-B4B3-BD7F80DABEC2}" ShortID="155348251">
+											<Comment>QUESTION : 
+Est-ce qu'on marche que pendant le stare ou peut-on aussi avoir différente vitesse de déplacement en temps normal ?</Comment>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -56,6 +58,28 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<ActorMixer Name="Takeoff" ID="{BFC1760B-5350-48F4-828D-A97EA6C8B415}" ShortID="758024805">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+														</ActorMixer>
+														<ActorMixer Name="Landing" ID="{47574078-1F0E-4BBD-9A00-702FE95F15B2}" ShortID="41974110">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+														</ActorMixer>
+													</ChildrenList>
 												</ActorMixer>
 												<ActorMixer Name="Run" ID="{0A28CD16-57AB-4F9A-AB8D-8E3600FAF824}" ShortID="848453877">
 													<ReferenceList>
@@ -66,18 +90,40 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 														</Reference>
 													</ReferenceList>
+													<ChildrenList>
+														<ActorMixer Name="Footsteps" ID="{264F2FAE-53A2-4EB0-87DF-A7467B77312E}" ShortID="794816863">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+														</ActorMixer>
+														<ActorMixer Name="Presence" ID="{D4A0CB59-81B8-4FB5-8CBC-FB1046146463}" ShortID="402566882">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+														</ActorMixer>
+													</ChildrenList>
 												</ActorMixer>
-												<ActorMixer Name="Hit" ID="{DB5B086D-0A59-473B-9847-8B8663360127}" ShortID="1021701025">
+												<ActorMixer Name="Stare" ID="{0D91F55C-E902-4736-B4CE-ED6EB3DB8B4E}" ShortID="1019987096">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+															<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 														</Reference>
 													</ReferenceList>
 												</ActorMixer>
-												<ActorMixer Name="Death" ID="{86527712-F902-4286-890C-EC255C1840D0}" ShortID="376052992">
+												<ActorMixer Name="Walk" ID="{F0F29EEA-1B30-4964-A78F-AFADCCED40B5}" ShortID="845566935">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -88,6 +134,26 @@
 													</ReferenceList>
 												</ActorMixer>
 											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Death" ID="{86527712-F902-4286-890C-EC255C1840D0}" ShortID="376052992">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+										<ActorMixer Name="Hit" ID="{DB5B086D-0A59-473B-9847-8B8663360127}" ShortID="1021701025">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
