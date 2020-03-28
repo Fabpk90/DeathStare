@@ -17,19 +17,17 @@ public class PlayerController : MonoBehaviour
         _stare = GetComponent<Stare>();
         _camera = GetComponentInChildren<Camera>();
         
-        _input.currentActionMap["Stare"].started += OnStare;
+        _input.currentActionMap["Stare"].started += OnStartStare;
+        _input.currentActionMap["Stare"].canceled += OnStopStare;
     }
 
-    private void OnStare(InputAction.CallbackContext obj)
+    private void OnStopStare(InputAction.CallbackContext obj)
     {
-        List<Transform> points = new List<Transform>();
+        _stare.StopStare();
+    }
 
-        foreach (PlayerInput player in GameMode.instance.players)
-        {
-            if(player != _input)
-                points.AddRange(player.GetComponent<PlayerHealth>().hittablePoints);
-        }
-        
-        _stare.StareViolently( points.ToArray(),transform.position, _camera);
+    private void OnStartStare(InputAction.CallbackContext obj)
+    {
+        print(_stare.StartStare());
     }
 }

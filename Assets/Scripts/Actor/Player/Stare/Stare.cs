@@ -1,69 +1,73 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using Actor.Hittable;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Stare : MonoBehaviour
 {
-   public float damagePerSecond;
+   public List<IHittable> targetToAttack;
+   public int damagePerSecond;
 
+   public bool isStaring;
 
-   public bool StareViolently(Transform[] points, Vector3 origin, Camera cam)
+   private void Awake()
    {
-      print("Shooting ! " + points.Length+ " " + transform.name);
-      bool found = false;
-      foreach (Transform point in points)
-      {
-         //Vector3 p = cam.WorldToScreenPoint(point.position);
-         
-         //test if the point is visible for the camera
-         /*if (p.x >= 0 && p.x <= cam.pixelWidth
-                      && p.y >= 0 && p.y <= cam.pixelHeight
-                      && p.z > 0)*/
-         {
-            float angle = Vector3.Angle(origin, point.position);
-            if ( angle <= cam.fieldOfView)
-            {
-               var direction = origin - point.position;
-               Debug.DrawRay(point.position, direction, Color.red, 2.0f);
-               if(Physics.Raycast(origin, direction, out var hitinfo))
-               {
-                  var hitable = hitinfo.collider.GetComponent<IHittable>();
-
-                  if (hitable != null)
-                  {
-                     hitable.TakeDamage((int)damagePerSecond);
-                     found = true;
-                  }
-               }
-            }
-         }
-        /* else
-         {
-            print("Not in the frustrum " + transform.name);
-         }*/
-      }
-      return found;
+      targetToAttack = new List<IHittable>(25);
    }
-   
-   public bool StareViolently(Vector3 origin, Vector3 direction)
+
+   public bool CheckForThingsInSight()
    {
-      Ray r = new Ray(origin, direction);
-
-      if (Physics.Raycast(r, out var hitInfo))
+      if (targetToAttack.Count > 0)
       {
-         var hitable = hitInfo.collider.GetComponent<IHittable>();
-
-         hitable?.TakeDamage((int)damagePerSecond);
-
-         print(hitInfo.collider.gameObject);
-
+         print(targetToAttack.Count);
+         foreach (IHittable hittable in targetToAttack)
+         {
+            hittable.TakeDamage(1);
+         }
          return true;
       }
-      
-      Debug.DrawRay(origin, direction, Color.red, 5.0f);
+      else
+      {
+         return false;
+      }
+   }
 
-      return false;
+   private void FixedUpdate()
+   {
+      if (isStaring)
+      {
+         CheckForThingsInSight();
+      }
+   }
+
+   private void OnTriggerEnter(Collider other)
+   {
+      IHittable hit = other.gameObject.GetComponent<IHittable>();
+
+      if (hit != null)
+      {
+         targetToAttack.Add(hit);
+      }
+   }
+
+   private void OnTriggerExit(Collider other)
+   {
+      IHittable hit = other.gameObject.GetComponent<IHittable>();
+
+      if (hit != null)
+      {
+         targetToAttack.Remove(hit);
+      }
+   }
+
+   public bool StartStare()
+   {
+      isStaring = true;
+      return CheckForThingsInSight();
+   }
+
+   public void StopStare()
+   {
+      isStaring = false;
    }
 }
