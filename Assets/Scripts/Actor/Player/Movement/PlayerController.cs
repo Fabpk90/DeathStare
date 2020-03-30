@@ -9,12 +9,11 @@ public class PlayerController : MonoBehaviour
     private PlayerInput _input;
 
     private Camera _camera;
-    private Stare _stare;
+    public Stare _stare;
     // Start is called before the first frame update
     void Start()
     {
         _input = GetComponent<PlayerInput>();
-        _stare = GetComponent<Stare>();
         _camera = GetComponentInChildren<Camera>();
         
         _input.currentActionMap["Stare"].started += OnStartStare;

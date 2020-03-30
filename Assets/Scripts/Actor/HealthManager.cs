@@ -8,6 +8,11 @@ namespace Actor
         public int maxHealth;
         private int health;
 
+        public Vector3 GetPosition()
+        {
+            return transform.position;
+        }
+
         public virtual bool TakeDamage(int amount)
         {
             print("I'm " + transform.name);

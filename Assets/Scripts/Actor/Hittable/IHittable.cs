@@ -1,7 +1,10 @@
-﻿namespace Actor.Hittable
+﻿using UnityEngine;
+
+namespace Actor.Hittable
 {
     public interface IHittable
     {
+        Vector3 GetPosition();
         /// <summary>
         /// Called when this takes a "hit"
         /// </summary>
