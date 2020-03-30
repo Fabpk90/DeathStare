@@ -46,7 +46,15 @@ public class Stare : MonoBehaviour
 
       if (hit != null)
       {
-         targetToAttack.Add(hit);
+         if (Physics.Raycast(transform.position, other.bounds.center - transform.position, out var hitInfo))
+         {
+            IHittable hit0 = hitInfo.transform.GetComponent<IHittable>();
+
+            if (hit0 == hit)
+            {
+               targetToAttack.Add(hit0);
+            }
+         }
       }
    }
 
