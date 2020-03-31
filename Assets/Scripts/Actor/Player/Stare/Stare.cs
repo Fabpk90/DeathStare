@@ -1,63 +1,59 @@
 ﻿using System;
 using System.Collections.Generic;
+using Actor;
 using Actor.Hittable;
 using UnityEngine;
 
 public class Stare : MonoBehaviour
 {
+   public static List<HittablePoint> HittablePoints = new List<HittablePoint>(200);
+   
    public List<IHittable> targetToAttack;
    public int damagePerSecond;
 
    public bool isStaring;
    private List<IHittable> hitsToRemove;
 
+   public Camera camera;
+   private HashSet<HealthManager> hittedDuringThisFrame;
+
    private void Awake()
    {
+      hittedDuringThisFrame = new HashSet<HealthManager>();
       hitsToRemove = new List<IHittable>(25);  
       targetToAttack = new List<IHittable>(25);
+      
+//      print(HittablePoints.Count);
    }
 
+   /// <summary>
+   /// Check if the actor is staring at something
+   /// </summary>
+   /// <returns> true if he/she is, false otherwise</returns>
    public bool CheckForThingsInSight()
    {
-      //TODO: make this thing per second
-      print(targetToAttack.Count);
-      if (targetToAttack.Count > 0)
-      {
-         bool found = false;
-         
-         foreach (IHittable hittable in targetToAttack)
-         {
-            Debug.DrawRay(transform.position, hittable.GetPosition() - transform.position, Color.red, 2.0f);
-            var position = transform.position;
-            
-            //we check if we still see the hit, also checking different prospective to make sure
-            if (Physics.Raycast(position, hittable.GetPosition() - transform.position)
-            || Physics.Raycast(position - new Vector3(0 , -0.25f, 0.0f), hittable.GetPosition() - position)
-            || Physics.Raycast(position - new Vector3(-0.25f , 0, 0.0f), hittable.GetPosition() - position)
-            || Physics.Raycast(position - new Vector3(0.25f , 0, 0.0f), hittable.GetPosition() - position))
-            {
-               //TODO: check if the player has been already hit
-               hittable.TakeDamage(damagePerSecond);
-               found = true;
-            }
-            else
-            {
-               //TODO: what ?
-               hitsToRemove.Add(hittable);
-               print("Remove hitcast + " + hittable);
-            }
-         }
+      hittedDuringThisFrame.Clear();
 
-         foreach (IHittable hittable in hitsToRemove)
-         {
-            targetToAttack.Remove(hittable);
-         }
-         
-         hitsToRemove.Clear();
-         return found;
-      }
+      bool found = false;
       
-      return false;
+      foreach (HittablePoint point in HittablePoints)
+      {
+         Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
+         //print(viewportPoint);
+
+         if (viewportPoint.z > 0 
+         && viewportPoint.x > 0 && viewportPoint.x < 1
+         && viewportPoint.y > 0 && viewportPoint.y < 1
+         && !hittedDuringThisFrame.Contains(point.HealthManager))
+         {
+            hittedDuringThisFrame.Add(point.HealthManager);
+            found = true;
+
+            point.TakeDamage(damagePerSecond);
+         }
+      }
+
+      return found;
    }
 
    private void FixedUpdate()
@@ -67,37 +63,7 @@ public class Stare : MonoBehaviour
          CheckForThingsInSight();
       }
    }
-
-   private void OnTriggerEnter(Collider other)
-   {
-      IHittable hit = other.gameObject.GetComponent<IHittable>();
-
-      if (hit != null)
-      {
-         //if we can really see the hit object
-         if (Physics.Raycast(transform.position, hit.GetPosition() - transform.position, out var hitInfo))
-         {
-            IHittable hit0 = hitInfo.transform.GetComponent<IHittable>();
-
-            if (hit0 == hit)
-            {
-               print("Adding " + hit0);
-               targetToAttack.Add(hit0);
-            }
-         }
-      }
-   }
-
-   private void OnTriggerExit(Collider other)
-   {
-      IHittable hit = other.gameObject.GetComponent<IHittable>();
-
-      if (hit != null)
-      {
-         print("Exiting " + hit);
-         targetToAttack.Remove(hit);
-      }
-   }
+   
 
    public bool StartStare()
    {

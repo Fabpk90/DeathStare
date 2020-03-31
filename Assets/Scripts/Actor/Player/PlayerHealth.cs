@@ -8,7 +8,7 @@ namespace Actor.Player
         public Transform[] hittablePoints;
         public override void Die()
         {
-            print("Argh " + name);
+//            print("Argh " + name);
             
             //Destroy(gameObject);
         }

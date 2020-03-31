@@ -15,7 +15,7 @@ namespace Actor
 
         public virtual bool TakeDamage(int amount)
         {
-            print("I'm " + transform.name);
+//            print("I'm " + transform.name);
             if (health - amount <= 0)
             {
                 Die();
