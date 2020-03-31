@@ -13,12 +13,13 @@ public class Stare : MonoBehaviour
 
    private void Awake()
    {
-      hitsToRemove = new List<IHittable>();  
+      hitsToRemove = new List<IHittable>(25);  
       targetToAttack = new List<IHittable>(25);
    }
 
    public bool CheckForThingsInSight()
    {
+      //TODO: make this thing per second
       print(targetToAttack.Count);
       if (targetToAttack.Count > 0)
       {
@@ -27,15 +28,23 @@ public class Stare : MonoBehaviour
          foreach (IHittable hittable in targetToAttack)
          {
             Debug.DrawRay(transform.position, hittable.GetPosition() - transform.position, Color.red, 2.0f);
-            if (Physics.Raycast(transform.position, hittable.GetPosition() - transform.position))
+            var position = transform.position;
+            
+            //we check if we still see the hit, also checking different prospective to make sure
+            if (Physics.Raycast(position, hittable.GetPosition() - transform.position)
+            || Physics.Raycast(position - new Vector3(0 , -0.25f, 0.0f), hittable.GetPosition() - position)
+            || Physics.Raycast(position - new Vector3(-0.25f , 0, 0.0f), hittable.GetPosition() - position)
+            || Physics.Raycast(position - new Vector3(0.25f , 0, 0.0f), hittable.GetPosition() - position))
             {
-               hittable.TakeDamage(1);
+               //TODO: check if the player has been already hit
+               hittable.TakeDamage(damagePerSecond);
                found = true;
             }
             else
             {
                //TODO: what ?
-               //hitsToRemove.Add(hittable);
+               hitsToRemove.Add(hittable);
+               print("Remove hitcast + " + hittable);
             }
          }
 
@@ -65,6 +74,7 @@ public class Stare : MonoBehaviour
 
       if (hit != null)
       {
+         //if we can really see the hit object
          if (Physics.Raycast(transform.position, hit.GetPosition() - transform.position, out var hitInfo))
          {
             IHittable hit0 = hitInfo.transform.GetComponent<IHittable>();
