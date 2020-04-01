@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Actor.Hittable;
 using UnityEngine;
 
@@ -7,6 +8,8 @@ namespace Actor
     {
         public int maxHealth;
         private int health;
+
+        public List<IHittable> points;
 
         public Vector3 GetPosition()
         {
@@ -27,6 +30,9 @@ namespace Actor
             return false;
         }
 
-        public abstract void Die();
+        public virtual void Die()
+        {
+            //TODO: remove the points from the pool
+        }
     }
 }

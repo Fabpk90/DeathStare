@@ -1,43 +1,46 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 
 namespace Actor
 {
 
     [Serializable]
-    public struct SMovementParams
+    public class MovementParams
     {
         public float maxSpeed;
         public float movementSpeed;
-        public float fallingSpeed;
+        public float gravity;
+
+        public float jumpHeight;
     }
     
-    [RequireComponent(typeof(Rigidbody), typeof(CapsuleCollider))]
+    [RequireComponent(typeof(CharacterController))]
     public abstract class ActorMovement : MonoBehaviour
     {
         public ActorMovementSettings settings;
         
         public bool isGrounded;
-
-        private CapsuleCollider _collider;
-        private Rigidbody _rigidbody;
+        private CharacterController _characterController;
 
         public Vector3 movement;
+
+        private Vector3 velocity;
+
+        public bool isJumping;
         
         public virtual void OnStart() {}
         public virtual void OnUpdate() {}
 
         private void Start()
         {
-            _rigidbody = GetComponent<Rigidbody>();
-            _collider = GetComponent<CapsuleCollider>();
-            
+            _characterController = GetComponent<CharacterController>();
+
             OnStart();
         }
 
         private void Update()
         {
-            CheckForGround();
             UpdateMovement();
 
             OnUpdate();
@@ -46,7 +49,29 @@ namespace Actor
         private void UpdateMovement()
         {
             //TODO: limit the velocity
-            _rigidbody.AddForce(movement * settings.MovementParams.movementSpeed);
+            var movementLocal = movement;
+            var transform1 = transform;
+            
+            movementLocal = transform1.right * movementLocal.x + transform1.forward * movement.z;
+            _characterController.Move(movementLocal * (settings.MovementParams.movementSpeed * Time.deltaTime));
+
+            isGrounded = Physics.CheckSphere(transform1.position + Vector3.down * _characterController.height,
+                _characterController.radius);
+
+            if (isGrounded)
+                velocity.y = -_characterController.height;
+            
+            if(isGrounded && isJumping)
+            {
+                print("yes");
+                velocity.y = Mathf.Sqrt(settings.MovementParams.jumpHeight * -2f * settings.MovementParams.gravity);
+                isJumping = false;
+            }
+            
+            velocity.y += settings.MovementParams.gravity * Time.deltaTime;
+            
+            print(velocity);
+            _characterController.Move(velocity * Time.deltaTime);
         }
 
         public void AddMovement(Vector3 v)
@@ -70,17 +95,9 @@ namespace Actor
             movement = Vector3.zero;
         }
 
-        private void CheckForGround()
+        private void OnDrawGizmos()
         {
-            if (Physics.SphereCast(transform.position - Vector3.down * _collider.radius / 2, 1, Vector3.down,
-                out var hitInfo))
-            {
-                isGrounded = true;
-                Vector3 rigidbodyVelocity = _rigidbody.velocity;
-                rigidbodyVelocity.y = 0;
-
-                _rigidbody.velocity = rigidbodyVelocity;
-            }
+            Gizmos.DrawSphere(transform.position + (Vector3.down * 1.6f ), 0.5f);
         }
     }
 }

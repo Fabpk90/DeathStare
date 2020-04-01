@@ -12,6 +12,7 @@ public class TestMode : GameMode
     [Tooltip("Permet de tester avec une manette")]
     public bool debugPlayers;
 
+    public Transform[] spawnPoints;
 
     public override void Init()
     {
@@ -46,6 +47,8 @@ public class TestMode : GameMode
         obj.gameObject.name = "Player " + obj.playerIndex;
         
         players.Add(obj);
+
+        obj.transform.position = spawnPoints[obj.playerIndex].position;
 
         if (players.Count == 4)
             InitPlayersCamera();

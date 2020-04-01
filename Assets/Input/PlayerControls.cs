@@ -44,9 +44,9 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": ""Look"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""7fae49c0-c992-4ef3-b073-5f7a41200ab2"",
-                    ""expectedControlType"": ""Stick"",
+                    ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
                 }

@@ -1,41 +1,48 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Actor;
 using Actor.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(PlayerMovement))]
+//TODO: make this more smart, abstract the calling away
+//keep only the controller part here
+
+
+[RequireComponent(typeof(PlayerMovement), typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour
 {
     private PlayerInput _input;
     private PlayerMovement _movement;
-
-    private Camera _camera;
+    
+    
+    public ActorCameraMovement cameraMovement;
     public Stare _stare;
     // Start is called before the first frame update
     void Start()
     {
         _movement = GetComponent<PlayerMovement>();
         _input = GetComponent<PlayerInput>();
-        _camera = GetComponentInChildren<Camera>();
-        
+
         _input.currentActionMap["Movement"].performed += OnMovement;
 
-        _input.currentActionMap["Look"].started += OnLookStarted;
-        _input.currentActionMap["Look"].canceled += OnLookStopped;
-        
+        _input.currentActionMap["Look"].performed += OnLook;
+
         _input.currentActionMap["Stare"].started += OnStartStare;
         _input.currentActionMap["Stare"].canceled += OnStopStare;
+        
+        
+        _input.currentActionMap["Jump"].started += OnJump;
     }
 
-    private void OnLookStopped(InputAction.CallbackContext obj)
+    private void OnJump(InputAction.CallbackContext obj)
     {
-        
+        _movement.isJumping = true;
     }
 
-    private void OnLookStarted(InputAction.CallbackContext obj)
+    private void OnLook(InputAction.CallbackContext obj)
     {
-        
+        cameraMovement.MoveCamera(obj.ReadValue<Vector2>());
     }
 
     private void OnMovement(InputAction.CallbackContext obj)
