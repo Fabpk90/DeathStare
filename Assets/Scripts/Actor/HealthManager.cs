@@ -6,8 +6,8 @@ namespace Actor
 {
     public abstract class HealthManager : MonoBehaviour, IHittable
     {
-        public int maxHealth;
-        private int health;
+        public float maxHealth;
+        private float health;
 
         public List<HittablePoint> points;
 
@@ -16,7 +16,7 @@ namespace Actor
             return transform.position;
         }
 
-        public virtual bool TakeDamage(int amount)
+        public virtual bool TakeDamage(float amount)
         {
 //            print("I'm " + transform.name);
             if (health - amount <= 0)

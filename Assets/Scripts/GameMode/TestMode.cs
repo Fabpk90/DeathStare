@@ -53,6 +53,7 @@ public class TestMode : GameMode
         
         ct.enabled = false;
         obj.transform.position = spawnPoints[obj.playerIndex].position;
+        obj.transform.rotation = spawnPoints[obj.playerIndex].rotation;
         ct.enabled = true;
 
         if (players.Count == 4)

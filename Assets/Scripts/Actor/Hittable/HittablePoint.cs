@@ -20,7 +20,7 @@ namespace Actor.Hittable
             return transform.position;
         }
 
-        public bool TakeDamage(int amount)
+        public bool TakeDamage(float amount)
         {
             return healthManager.TakeDamage(amount);
         }

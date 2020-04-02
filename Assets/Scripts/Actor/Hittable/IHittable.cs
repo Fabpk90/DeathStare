@@ -10,6 +10,6 @@ namespace Actor.Hittable
         /// </summary>
         /// <param name="amount"></param>
         /// <returns>true if this is dead, false otherwise</returns>
-        bool TakeDamage(int amount);
+        bool TakeDamage(float amount);
     }
 }
