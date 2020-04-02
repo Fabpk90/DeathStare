@@ -34,14 +34,33 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private float m_WalkSpeed;
         private float m_YRotation;
 
+        private bool isCrouching;
+        public float crouchingSpeed;
+        
+        private bool isRunning;
+        
+        private bool isStaring;
+        public float stareWalkingSpeed;
+        public float stareAerialSpeed;
+
+        public float aerialSpeed;
+
+        private float startingHeightCollider;
+        public float crouchingHeightCollider;
+
         // Use this for initialization
         private void Start()
         {
             m_CharacterController = GetComponent<CharacterController>();
 
+            startingHeightCollider = m_CharacterController.height;
+
             m_StepCycle = 0f;
             m_NextStep = m_StepCycle / 2f;
             m_Jumping = false;
+            isCrouching = false;
+            isRunning = false;
+            isStaring = false;
         }
         
         private void Update()
@@ -72,7 +91,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void FixedUpdate()
         {
-            float speed = m_WalkSpeed;
+            float speed = GetSpeedFromState();
             
             Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
 
@@ -106,9 +125,30 @@ namespace UnityStandardAssets.Characters.FirstPerson
             m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
             ProgressStepCycle(speed);
-            //UpdateCameraPosition(speed);
+        }
 
-            //m_MouseLook.UpdateCursorLock();
+        private float GetSpeedFromState()
+        {
+            if (isCrouching)
+                return crouchingSpeed;
+            if (isRunning)
+                return m_RunSpeed;
+            if (isStaring)
+            {
+                if (m_CharacterController.isGrounded)
+                    return stareWalkingSpeed;
+                
+                return stareAerialSpeed;
+            }
+            if (!m_CharacterController.isGrounded)
+                return aerialSpeed;
+
+            return m_WalkSpeed;
+        }
+
+        public bool GetIsStarePossible()
+        {
+            return true;
         }
 
         private void PlayJumpSound()
@@ -153,6 +193,33 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (m_CharacterController.isGrounded)
                 m_Jump = true;
         }
+
+        public void ToggleCrouch()
+        {
+            isCrouching = !isCrouching;
+
+            m_CharacterController.height = isCrouching ? crouchingHeightCollider : startingHeightCollider;
+        }
+
+        public void SetCrouch(bool isCrouching)
+        {
+            this.isCrouching = isCrouching;
+
+            if (!isCrouching)
+            {
+                m_CharacterController.height = startingHeightCollider;
+            }
+        }
+
+        public void SetRunning(bool isRunning)
+        {
+            this.isRunning = isRunning;
+
+            if (isRunning)
+            {
+                SetCrouch(false);
+            }
+        }
         
         private void OnControllerColliderHit(ControllerColliderHit hit)
         {
@@ -169,6 +236,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
 
             body.AddForceAtPosition(m_CharacterController.velocity * 0.1f, hit.point, ForceMode.Impulse);
+        }
+
+        public void SetStare(bool isStaring)
+        {
+            
         }
     }
 }

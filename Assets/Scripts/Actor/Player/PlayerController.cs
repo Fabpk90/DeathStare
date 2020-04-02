@@ -34,6 +34,26 @@ public class PlayerController : MonoBehaviour
         
         
         _input.currentActionMap["Jump"].started += OnJump;
+        
+        _input.currentActionMap["Crouch"].started += OnCrouch;
+
+        _input.currentActionMap["Run"].started += OnRunStart;
+        _input.currentActionMap["Run"].canceled += OnRunStop;
+    }
+
+    private void OnRunStop(InputAction.CallbackContext obj)
+    {
+        _controller.SetRunning(false);
+    }
+
+    private void OnRunStart(InputAction.CallbackContext obj)
+    {
+        _controller.SetRunning(true);
+    }
+
+    private void OnCrouch(InputAction.CallbackContext obj)
+    {
+        _controller.ToggleCrouch();
     }
 
     private void OnJump(InputAction.CallbackContext obj)
@@ -55,12 +75,12 @@ public class PlayerController : MonoBehaviour
     private void OnStopStare(InputAction.CallbackContext obj)
     {
         _stare.StopStare();
-       // _movement.RestoreMovementSpeed();
+        _controller.SetStare(false);
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
     {
         print(_stare.StartStare());
-       // _movement.SlowDownMovementSpeed(2f);
+        _controller.SetStare(true);
     }
 }
