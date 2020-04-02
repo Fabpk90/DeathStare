@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityStandardAssets.Characters.FirstPerson;
 
 [RequireComponent(typeof(PlayerInputManager))]
 public class TestMode : GameMode
@@ -48,7 +49,11 @@ public class TestMode : GameMode
         
         players.Add(obj);
 
+        var ct = obj.GetComponent<CharacterController>();
+        
+        ct.enabled = false;
         obj.transform.position = spawnPoints[obj.playerIndex].position;
+        ct.enabled = true;
 
         if (players.Count == 4)
             InitPlayersCamera();

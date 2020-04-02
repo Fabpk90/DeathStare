@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ActorMovementSettings
   m_EditorClassIdentifier: 
   MovementParams:
-    maxSpeed: 10
-    movementSpeed: 5
     gravity: -9.81
-    jumpHeight: 0
+    jumpHeight: 5
+    maxSpeed: 10
+    movementSpeed: 0.009765625

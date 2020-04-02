@@ -4,37 +4,42 @@ using UnityEngine;
 
 namespace Actor
 {
+    
+    //TODO: maybe only keep this params class
 
     [Serializable]
     public class MovementParams
     {
-        public float maxSpeed;
-        public float movementSpeed;
         public float gravity;
 
         public float jumpHeight;
+        public float maxSpeed;
+        public float movementSpeed;
     }
     
     [RequireComponent(typeof(CharacterController))]
     public abstract class ActorMovement : MonoBehaviour
     {
-        public ActorMovementSettings settings;
-        
-        public bool isGrounded;
         private CharacterController _characterController;
+        private MovementParams _movementParams;
+
+        public bool isGrounded;
+
+        public bool isJumping;
 
         public Vector3 movement;
+        public ActorMovementSettings settings;
 
         private Vector3 velocity;
 
-        public bool isJumping;
-        
         public virtual void OnStart() {}
         public virtual void OnUpdate() {}
 
         private void Start()
         {
             _characterController = GetComponent<CharacterController>();
+
+            _movementParams = settings.MovementParams;
 
             OnStart();
         }
@@ -53,25 +58,50 @@ namespace Actor
             var transform1 = transform;
             
             movementLocal = transform1.right * movementLocal.x + transform1.forward * movement.z;
-            _characterController.Move(movementLocal * (settings.MovementParams.movementSpeed * Time.deltaTime));
+            _characterController.Move(movementLocal * (_movementParams.movementSpeed * Time.deltaTime));
 
-            isGrounded = Physics.CheckSphere(transform1.position + Vector3.down * _characterController.height,
-                _characterController.radius);
+            //5 raycast ?
+            Debug.DrawLine(transform1.position + Vector3.down ,
+                transform1.position + Vector3.down  + (Vector3.down * 0.25f), Color.red, 2.0f);
+
+            if (Physics.SphereCast(transform1.position, _characterController.radius, Vector3.down, out var hitinfo))
+            {
+                print(hitinfo.transform.gameObject);
+                isGrounded = true;
+            }
+            else
+            {
+                isGrounded = false;
+            }
 
             if (isGrounded)
-                velocity.y = -_characterController.height;
+                velocity.y = -2f;
             
             if(isGrounded && isJumping)
             {
                 print("yes");
-                velocity.y = Mathf.Sqrt(settings.MovementParams.jumpHeight * -2f * settings.MovementParams.gravity);
+                velocity.y = Mathf.Sqrt(_movementParams.jumpHeight * -2f * _movementParams.gravity);
+                print(velocity);
+                isJumping = false;
+            }
+            else
+            {
                 isJumping = false;
             }
             
-            velocity.y += settings.MovementParams.gravity * Time.deltaTime;
+            velocity.y += _movementParams.gravity * Time.deltaTime;
             
-            print(velocity);
             _characterController.Move(velocity * Time.deltaTime);
+        }
+
+        public void SlowDownMovementSpeed(float amountDivision)
+        {
+            _movementParams.movementSpeed /= amountDivision;
+        }
+
+        public void RestoreMovementSpeed()
+        {
+            _movementParams.movementSpeed = settings.MovementParams.movementSpeed;
         }
 
         public void AddMovement(Vector3 v)
@@ -93,11 +123,6 @@ namespace Actor
         public void ResetMovement()
         {
             movement = Vector3.zero;
-        }
-
-        private void OnDrawGizmos()
-        {
-            Gizmos.DrawSphere(transform.position + (Vector3.down * 1.6f ), 0.5f);
         }
     }
 }

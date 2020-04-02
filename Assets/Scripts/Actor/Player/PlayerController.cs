@@ -1,27 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Actor;
 using Actor.Player;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityStandardAssets.Characters.FirstPerson;
 
 //TODO: make this more smart, abstract the calling away
 //keep only the controller part here
 
 
-[RequireComponent(typeof(PlayerMovement), typeof(PlayerInput))]
+[RequireComponent(typeof(PlayerInput))]
 public class PlayerController : MonoBehaviour
 {
     private PlayerInput _input;
-    private PlayerMovement _movement;
-    
+
+    public FirstPersonController _controller;
     
     public ActorCameraMovement cameraMovement;
     public Stare _stare;
     // Start is called before the first frame update
     void Start()
     {
-        _movement = GetComponent<PlayerMovement>();
         _input = GetComponent<PlayerInput>();
 
         _input.currentActionMap["Movement"].performed += OnMovement;
@@ -37,7 +38,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext obj)
     {
-        _movement.isJumping = true;
+        _controller.Jump();
     }
 
     private void OnLook(InputAction.CallbackContext obj)
@@ -48,16 +49,18 @@ public class PlayerController : MonoBehaviour
     private void OnMovement(InputAction.CallbackContext obj)
     {
         var v = obj.ReadValue<Vector2>();
-        _movement.SetMovement(new Vector3(v.x, 0, v.y));
+        _controller.m_Input = v;
     }
 
     private void OnStopStare(InputAction.CallbackContext obj)
     {
         _stare.StopStare();
+       // _movement.RestoreMovementSpeed();
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
     {
         print(_stare.StartStare());
+       // _movement.SlowDownMovementSpeed(2f);
     }
 }
