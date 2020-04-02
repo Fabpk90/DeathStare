@@ -9,7 +9,7 @@ namespace Actor
         public int maxHealth;
         private int health;
 
-        public List<IHittable> points;
+        public List<HittablePoint> points;
 
         public Vector3 GetPosition()
         {
@@ -33,6 +33,12 @@ namespace Actor
         public virtual void Die()
         {
             //TODO: remove the points from the pool
+
+            foreach (HittablePoint point in points)
+            {
+                Stare.HittablePoints.Remove(point);
+            }
+            
         }
     }
 }

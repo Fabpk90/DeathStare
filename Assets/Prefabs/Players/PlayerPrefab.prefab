@@ -287,6 +287,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
+  points:
+  - {fileID: 7439524370688604866}
+  - {fileID: 5713066731788541111}
+  - {fileID: 3321603992670702703}
+  - {fileID: 5090961460125910833}
+  - {fileID: 5606579654272250538}
 --- !u!143 &-3625789616987428581
 CharacterController:
   m_ObjectHideFlags: 0
@@ -431,6 +437,8 @@ MonoBehaviour:
   m_StickToGroundForce: 10
   m_WalkSpeed: 5
   crouchingSpeed: 2.5
+  stareWalkingSpeed: 0
+  stareAerialSpeed: 0
   aerialSpeed: 3
   crouchingHeightCollider: 1
 --- !u!1 &970883835665701283

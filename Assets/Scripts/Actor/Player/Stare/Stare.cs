@@ -38,18 +38,21 @@ public class Stare : MonoBehaviour
       
       foreach (HittablePoint point in HittablePoints)
       {
-         Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
-         //print(viewportPoint);
-
-         if (viewportPoint.z > 0 
-         && viewportPoint.x > 0 && viewportPoint.x < 1
-         && viewportPoint.y > 0 && viewportPoint.y < 1
-         && !hittedDuringThisFrame.Contains(point.HealthManager))
+         if (point)
          {
-            hittedDuringThisFrame.Add(point.HealthManager);
-            found = true;
+            Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
+            //print(viewportPoint);
 
-            point.TakeDamage(damagePerSecond);
+            if (viewportPoint.z > 0 
+                && viewportPoint.x > 0 && viewportPoint.x < 1
+                && viewportPoint.y > 0 && viewportPoint.y < 1
+                && !hittedDuringThisFrame.Contains(point.HealthManager))
+            {
+               hittedDuringThisFrame.Add(point.HealthManager);
+               found = true;
+
+               point.TakeDamage(damagePerSecond);
+            }
          }
       }
 
