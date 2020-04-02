@@ -17,6 +17,8 @@ public class Stare : MonoBehaviour
    public Camera camera;
    private HashSet<HealthManager> hittedDuringThisFrame;
 
+   public float stareForce;
+
    private void Awake()
    {
       hittedDuringThisFrame = new HashSet<HealthManager>();
@@ -46,9 +48,13 @@ public class Stare : MonoBehaviour
             if (viewportPoint.z > 0 
                 && viewportPoint.x > 0 && viewportPoint.x < 1
                 && viewportPoint.y > 0 && viewportPoint.y < 1
-                && !hittedDuringThisFrame.Contains(point.HealthManager))
+                && !hittedDuringThisFrame.Contains(point.healthManager))
             {
-               hittedDuringThisFrame.Add(point.HealthManager);
+               Vector3 repulsionForce = point.GetPosition() - transform.position;
+               
+               point.AddForce(repulsionForce.normalized * stareForce);
+                  
+               hittedDuringThisFrame.Add(point.healthManager);
                found = true;
 
                point.TakeDamage(damagePerSecond);

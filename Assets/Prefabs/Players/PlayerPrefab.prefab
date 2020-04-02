@@ -520,7 +520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 8953420333483804670}
+  healthManager: {fileID: 8953420333483804670}
+  rigidBody: {fileID: 6555969131717664451}
 --- !u!65 &6593423535324641107
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -580,6 +581,7 @@ MonoBehaviour:
   damagePerSecond: 1
   isStaring: 0
   camera: {fileID: 2000000}
+  stareForce: 10
 --- !u!1 &3479849005798977540
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,7 +626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 8953420333483804670}
+  healthManager: {fileID: 8953420333483804670}
+  rigidBody: {fileID: 6555969131717664451}
 --- !u!65 &2473553061777300904
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -782,7 +785,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 8953420333483804670}
+  healthManager: {fileID: 8953420333483804670}
+  rigidBody: {fileID: 6555969131717664451}
 --- !u!65 &2161847135168095681
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1068,7 +1072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 8953420333483804670}
+  healthManager: {fileID: 8953420333483804670}
+  rigidBody: {fileID: 6555969131717664451}
 --- !u!65 &7154739307525996522
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1126,7 +1131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 8953420333483804670}
+  healthManager: {fileID: 8953420333483804670}
+  rigidBody: {fileID: 6555969131717664451}
 --- !u!65 &6815066720651270189
 BoxCollider:
   m_ObjectHideFlags: 0
