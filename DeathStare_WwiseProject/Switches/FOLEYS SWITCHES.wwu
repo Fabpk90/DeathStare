@@ -6,6 +6,18 @@
 				<Property Name="Color" Type="int16" Value="8"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
+					<ChildrenList>
+						<Switch Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<Switch Name="Concrete" ID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>
+						<Switch Name="Dirt" ID="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"/>
+						<Switch Name="Grass" ID="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"/>
+						<Switch Name="Sand" ID="{C342220B-1EF3-461A-871B-EF5A4F624DBC}"/>
+						<Switch Name="Wood" ID="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
 		</WorkUnit>
 	</Switches>
 </WwiseDocument>

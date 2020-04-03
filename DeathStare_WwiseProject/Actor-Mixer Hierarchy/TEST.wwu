@@ -4,12 +4,19 @@
 		<WorkUnit Name="TEST" ID="{B37571C9-8CA0-46AC-BBB9-8F8F5E33C26D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="Test" ID="{74FC38F6-1FBF-4E80-B819-2E95C0691F53}" ShortID="29772152">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{361B21A6-EA2C-44EE-9193-0DF24710B9DE}"/>
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{31BD7A62-4318-401F-A2B4-D51A51F1AF02}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

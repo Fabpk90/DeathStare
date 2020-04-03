@@ -13,7 +13,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+							<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -47,7 +47,14 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" ShortID="245671161">
+												<BlendContainer Name="Voice_Character1_Punchline_Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" ShortID="245671161">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -67,7 +74,15 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="Like_Fish_Barrel" ID="{3E6F76F3-87A6-4C4C-9BE5-D6E2C7ED1FA0}" ShortID="202352982">
+																<Sound Name="EndOfLine" ID="{CA984E13-0C62-4055-AC0C-7EF753370810}" ShortID="798971262">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -77,19 +92,27 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="Like_Fish_Barrel" ID="{17BA66E1-3390-4E79-A56B-82762F2EC99C}">
-																			<Language>SFX</Language>
-																			<AudioFile>Voices\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</AudioFile>
+																		<AudioFileSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}">
+																			<Language>English(US)</Language>
+																			<AudioFile>Characters\Character 1\Punchlines\Kill\End_Of_Line.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="534609959"/>
+																				<MediaID ID="1036351180"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="Like_Fish_Barrel" ID="{17BA66E1-3390-4E79-A56B-82762F2EC99C}" Platform="Linked"/>
+																		<ActiveSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
-																<Sound Name="End_Of_Line" ID="{9A9BFB4A-C17D-4A8C-9A70-2279E5AA72D4}" ShortID="344540523">
+																<Sound Name="FishBarrel" ID="{4144198A-2ADA-43AF-99C9-33C34F6D6F39}" ShortID="633600436">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-3</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -99,16 +122,16 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="End_Of_Line" ID="{CD89CC33-97C7-4A1A-BA98-0520844C8EA2}">
-																			<Language>SFX</Language>
-																			<AudioFile>Voices\Character 1\Punchlines\Kill\End_Of_Line.wav</AudioFile>
+																		<AudioFileSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}">
+																			<Language>English(US)</Language>
+																			<AudioFile>Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="1009141087"/>
+																				<MediaID ID="207219399"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="End_Of_Line" ID="{CD89CC33-97C7-4A1A-BA98-0520844C8EA2}" Platform="Linked"/>
+																		<ActiveSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -127,7 +150,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Respawn" ID="{F8377A70-21E7-49C4-9F75-E8C2DB76B7D7}" ShortID="73354566">
+												<BlendContainer Name="Voice_Character1_Punchline_Kill" ID="{F8377A70-21E7-49C4-9F75-E8C2DB76B7D7}" ShortID="73354566">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -147,7 +170,15 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<Sound Name="Easy_Partner" ID="{2FF09701-AA70-4868-A928-AD1779D94FA8}" ShortID="840578830">
+																<Sound Name="Easy Partner" ID="{D53509A1-6F63-45D6-80A9-FF06B7B81E77}" ShortID="1051898413">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-9</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -157,16 +188,16 @@
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
-																		<AudioFileSource Name="Easy_Partner" ID="{74170618-5CCF-48E5-8E8F-458C4B958670}">
-																			<Language>SFX</Language>
-																			<AudioFile>Voices\Character 1\Punchlines\Respawn\Easy_Partner.wav</AudioFile>
+																		<AudioFileSource Name="Easy_Partner" ID="{C92EF052-9B98-4149-95CC-441F6E82683F}">
+																			<Language>English(US)</Language>
+																			<AudioFile>Characters\Character 1\Punchlines\Respawn\Easy_Partner.wav</AudioFile>
 																			<MediaIDList>
-																				<MediaID ID="772568732"/>
+																				<MediaID ID="67942260"/>
 																			</MediaIDList>
 																		</AudioFileSource>
 																	</ChildrenList>
 																	<ActiveSourceList>
-																		<ActiveSource Name="Easy_Partner" ID="{74170618-5CCF-48E5-8E8F-458C4B958670}" Platform="Linked"/>
+																		<ActiveSource Name="Easy_Partner" ID="{C92EF052-9B98-4149-95CC-441F6E82683F}" Platform="Linked"/>
 																	</ActiveSourceList>
 																</Sound>
 															</ChildrenList>
@@ -186,18 +217,30 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Stare" ID="{45AA9EB4-E733-461B-9BB9-7A237F9DAA9A}" ShortID="410598322">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+										<ActorMixer Name="Release" ID="{1142D5E3-0BBC-4553-A85A-50B56C9DA576}" ShortID="836016725">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Hit" ID="{DBD2D66F-E131-4730-B92C-B8E6DC9DFE91}" ShortID="249453275">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-										</Reference>
-									</ReferenceList>
-								</ActorMixer>
-								<ActorMixer Name="Death" ID="{904A4EA7-1A2B-4961-A6BF-FA653A676804}" ShortID="937058728">
+								<ActorMixer Name="Barks" ID="{155A0383-3D45-4A0D-AD2C-8DF46C1DFC8A}" ShortID="698819222">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -207,7 +250,27 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" ShortID="603225822">
+										<ActorMixer Name="Jump" ID="{6BF859BD-CC55-460E-991F-E112BBDFF073}" ShortID="637762203">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+										<ActorMixer Name="Hit" ID="{E81BC9E5-B497-4098-A1C5-A1E1AB3DAD53}" ShortID="1025619649">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+										<ActorMixer Name="Death" ID="{904A4EA7-1A2B-4961-A6BF-FA653A676804}" ShortID="937058728">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -217,7 +280,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Death" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}" ShortID="744767379">
+												<BlendContainer Name="Voice_Character1_Barks_Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" ShortID="603225822">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -227,7 +290,7 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Death" ID="{C3B24F92-C101-41B4-8244-621DD834C4AE}" ShortID="191975051">
+														<RandomSequenceContainer Name="Death" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}" ShortID="744767379">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -237,22 +300,52 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Death" ID="{48B6A2E9-4D5A-4B68-92BA-1F7FD66F60E5}">
-																	<Language>SFX</Language>
-																	<AudioFile>Voices\Character 1\Death\Death.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="1028390545"/>
-																	</MediaIDList>
-																</AudioFileSource>
+																<Sound Name="Damnation" ID="{386D81D2-49F4-451D-9B75-14DCBD23FC8C}" ShortID="536821987">
+																	<PropertyList>
+																		<Property Name="IsVoice" Type="bool" Value="True"/>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-5</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Death" ID="{F61EFC43-3C51-445B-A2BF-BE0029601769}">
+																			<PropertyList>
+																				<Property Name="FadeOutDuration" Type="Real64" Value="0.0225224362045288"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimEnd" Type="Real64" Value="0.819816677844849"/>
+																				<Property Name="VolumeOffset" Type="Real64">
+																					<ValueList>
+																						<Value>-7.7</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<Language>English(US)</Language>
+																			<AudioFile>Characters\Character 1\Barks\Death\Death.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="1002341506"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Death" ID="{F61EFC43-3C51-445B-A2BF-BE0029601769}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
 															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Death" ID="{48B6A2E9-4D5A-4B68-92BA-1F7FD66F60E5}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
+														</RandomSequenceContainer>
 													</ChildrenList>
-												</RandomSequenceContainer>
+												</BlendContainer>
 											</ChildrenList>
-										</BlendContainer>
+										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

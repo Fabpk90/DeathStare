@@ -6,6 +6,108 @@
 				<Property Name="Color" Type="int16" Value="19"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Stingers_DeathStare_Don" ID="{B2773D20-C386-405F-A817-9ACCE2238510}">
+					<ChildrenList>
+						<Action Name="" ID="{711E4A40-CF8A-404C-90AD-8F4E86E2C556}" ShortID="715048309">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stingers_DeathStare_Don" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stingers_DeathStare_Stanislas" ID="{73B1CBEF-2BD3-40F4-BC56-19943626F0D1}">
+					<ChildrenList>
+						<Action Name="" ID="{29E23434-9279-49F7-9751-75C516CF8597}" ShortID="543144536">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stingers_DeathStare_Stanislas" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_DeathStare_Don" ID="{3AB01BA8-F421-4B7D-979B-E975F090F551}">
+					<ChildrenList>
+						<Action Name="" ID="{095F9938-1B76-4C72-B7A7-BFE4E8BAA528}" ShortID="1002825819">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TRIGGER_DeathStare_Don" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_DeathStare_Marta" ID="{BD66A764-1385-4CF9-8829-50C3023D2FE3}">
+					<ChildrenList>
+						<Action Name="" ID="{F147F83D-44BE-42B8-86DA-935237641AAC}" ShortID="237526460">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TRIGGER_DeathStare_Marta" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_DeathStare_Medusa" ID="{57B7CF08-45A6-4A32-8B5B-F2FECF3A7596}">
+					<ChildrenList>
+						<Action Name="" ID="{FC17DE55-E766-4725-BA94-0B3A6F432B68}" ShortID="223257431">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TRIGGER_DeathStare_Medusa" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stingers_DeathStare_Medusa" ID="{AA91BCC6-8AFD-4583-BB66-7FF39D64E720}">
+					<ChildrenList>
+						<Action Name="" ID="{B2FE643E-AAF7-4278-87D3-19D476979A33}" ShortID="681163922">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stingers_DeathStare_Medusa" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Trigger_DeathStare_Stanislas" ID="{1A85F62D-B2AE-47A1-8271-62E8A5F501AD}">
+					<ChildrenList>
+						<Action Name="" ID="{9367B350-F3E6-460E-AC5D-43AC707E8269}" ShortID="231486775">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="35"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TRIGGER_DeathStare_Stanislas" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Stingers_DeathStare_Marta" ID="{3EF138A4-09A1-43DC-9AE6-7D6F12F02CAF}">
+					<ChildrenList>
+						<Action Name="" ID="{B801DBC9-A7FF-4CBA-996D-3FE85C647B8F}" ShortID="174012600">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stingers_DeathStare_Marta" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

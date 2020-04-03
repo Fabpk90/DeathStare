@@ -6,6 +6,100 @@
 				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Zones" ID="{4C0BA04B-36D8-45C9-9758-C6C38145D440}" ShortID="103403713">
+					<ChildrenList>
+						<Event Name="Play_Ambiance_Zone4_Sshots" ID="{98DB8859-DEDE-4440-88A6-ADC66C46F221}">
+							<ChildrenList>
+								<Action Name="" ID="{EEC73548-2105-42DB-9F42-EBADE60C35FB}" ShortID="280766509">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone4_Sshots" ID="{5EAF03FA-2396-422C-9060-B17E9F0D4842}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone1_Sshots" ID="{2B3D39C0-4B8B-4F86-BE72-25E69E5334FC}">
+							<ChildrenList>
+								<Action Name="" ID="{9DCC86BB-64F0-4FF8-BCBF-7073328D8391}" ShortID="476861276">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone1_Sshots" ID="{15115FFB-AFA6-46CB-A612-73795A277FBE}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone2_Sshots" ID="{49C68CE9-189B-448A-815E-97E7502AB489}">
+							<ChildrenList>
+								<Action Name="" ID="{CF9A65E7-D02B-478B-AEDD-7A08A2F4F7D1}" ShortID="1018115564">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone2_Sshots" ID="{1FCA87B2-3D8B-412D-8419-EF19F192ECB7}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone2_Bed" ID="{7EF98A22-02BB-4FB5-B501-694EC6C4E50E}">
+							<ChildrenList>
+								<Action Name="" ID="{228C86EF-551B-44E9-9A39-F8FAA6C5AE2D}" ShortID="108983823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone2_Bed" ID="{0118A524-3149-42D7-B32F-030E29F9DD13}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone1_Bed" ID="{34B71050-964B-432C-9E06-85C26A5A8EFF}">
+							<ChildrenList>
+								<Action Name="" ID="{2A3F4180-40B4-46CF-9ECA-1A479CED8A0D}" ShortID="587789754">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone1_Bed" ID="{6C6FF561-DA50-4C3D-8253-6CAEEC8C6B0B}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone3_Bed" ID="{792A2AFE-C380-4531-9A52-E5FA449C8029}">
+							<ChildrenList>
+								<Action Name="" ID="{7E096474-1E81-43AE-99D9-70070EC535C4}" ShortID="753009436">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone3_Bed" ID="{FBD526A0-17BC-4CFF-ADAF-959C4056D44F}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone3_Sshots" ID="{D6124B85-879C-4CDB-9213-E13317453FFF}">
+							<ChildrenList>
+								<Action Name="" ID="{92E1C9C4-1029-444C-B993-C7BCB1533DAF}" ShortID="908764668">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone3_Sshots" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ambiance_Zone4_Bed" ID="{9A03830C-D98C-4FF3-AA0B-3AA5C99036D2}">
+							<ChildrenList>
+								<Action Name="" ID="{B9B64A01-01F0-4C43-8558-E98CC3AF94B3}" ShortID="931796893">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ambiance_Zone4_Bed" ID="{A5798156-86BD-4C7F-ADB3-F028F97739E8}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

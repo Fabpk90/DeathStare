@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}" SchemaVersion="97" RootDocumentID="{29869366-B159-4700-8C89-509361ACAD23}">
 	<Switches>
-		<WorkUnit Name="GENERAL SWITCHES" ID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}" OwnerID="{29869366-B159-4700-8C89-509361ACAD23}" PersistMode="Nested"/>
+		<WorkUnit Name="GENERAL SWITCHES" ID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}" OwnerID="{29869366-B159-4700-8C89-509361ACAD23}" PersistMode="Nested">
+			<ChildrenList>
+				<SwitchGroup Name="Characters" ID="{9AC8C6B6-2D41-495A-8B3E-5985CB6CD18B}">
+					<ChildrenList>
+						<Switch Name="Stanislas" ID="{08B5937E-EBAE-4802-940E-7FDA37BB0E4B}"/>
+						<Switch Name="Marta" ID="{727C5C7E-7DD9-4A96-8FC7-EC89B91A7F1D}"/>
+						<Switch Name="Medusa" ID="{5FCA76E7-3AFC-4D62-B090-53DFA0756131}"/>
+						<Switch Name="Don" ID="{4883E272-AF15-4E21-A1CC-BAA51F0401D1}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

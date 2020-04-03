@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}" SchemaVersion="97">
+	<Triggers>
+		<WorkUnit Name="DS TRIGGERS" ID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Stingers" ID="{43B8BBDF-76EE-4EC1-8BDD-5936E30B5AE5}" ShortID="992646756">
+					<ChildrenList>
+						<Folder Name="DeathStare" ID="{10F0EFB6-8CA8-448C-B842-31F342BC97DC}" ShortID="500798269">
+							<ChildrenList>
+								<Trigger Name="TRIGGER_DeathStare_Stanislas" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}"/>
+								<Trigger Name="TRIGGER_DeathStare_Marta" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}"/>
+								<Trigger Name="TRIGGER_DeathStare_Medusa" ID="{1405F734-019A-4D46-90C7-880C257C12F0}"/>
+								<Trigger Name="TRIGGER_DeathStare_Don" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>
