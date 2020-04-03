@@ -15,7 +15,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
         [SerializeField] private FOVKick m_FovKick = new FOVKick();
         [SerializeField] private float m_GravityMultiplier;
         [SerializeField] private CurveControlledBob m_HeadBob = new CurveControlledBob();
-        public Vector2 m_Input;
+        private Vector2 m_Input;
         [SerializeField] private bool m_IsWalking;
         private bool m_Jump;
         [SerializeField] private LerpControlledBob m_JumpBob = new LerpControlledBob();
@@ -47,6 +47,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private float startingHeightCollider;
         public float crouchingHeightCollider;
+
+        public Animator animator;
+        private static readonly int Jumping = Animator.StringToHash("Jumping");
+        private static readonly int Crouching = Animator.StringToHash("Crouching");
+        private static readonly int Running = Animator.StringToHash("Running");
+        private static readonly int Walking = Animator.StringToHash("Walking");
+        private static readonly int Staring = Animator.StringToHash("Staring");
 
         // Use this for initialization
         private void Start()
@@ -127,6 +134,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
             ProgressStepCycle(speed);
         }
 
+        public void SetInputMovement(Vector2 input)
+        {
+            m_Input = input;
+
+            m_IsWalking = input != Vector2.zero;
+            animator.SetBool(Walking, m_IsWalking);
+        }
+
         private float GetSpeedFromState()
         {
             if (isCrouching)
@@ -191,19 +206,27 @@ namespace UnityStandardAssets.Characters.FirstPerson
         public void Jump()
         {
             if (m_CharacterController.isGrounded)
+            {
                 m_Jump = true;
+                animator.SetTrigger(Jumping);
+            }
+                
         }
 
         public void ToggleCrouch()
         {
             isCrouching = !isCrouching;
-
+            
+            animator.SetBool(Crouching, isCrouching);
+            
             m_CharacterController.height = isCrouching ? crouchingHeightCollider : startingHeightCollider;
         }
 
         public void SetCrouch(bool isCrouching)
         {
             this.isCrouching = isCrouching;
+            
+            animator.SetBool(Crouching, isCrouching);
 
             if (!isCrouching)
             {
@@ -213,11 +236,16 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void SetRunning(bool isRunning)
         {
-            this.isRunning = isRunning;
-
-            if (isRunning)
+            if (isRunning && m_CharacterController.isGrounded)
             {
                 SetCrouch(false);
+                animator.SetBool(Running, true);
+                this.isRunning = true;
+            }
+            else
+            {
+                this.isRunning = false;
+                animator.SetBool(Running, false);
             }
         }
         
@@ -240,7 +268,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         public void SetStare(bool isStaring)
         {
-            
+            animator.SetBool(Staring, isStaring);
         }
     }
 }

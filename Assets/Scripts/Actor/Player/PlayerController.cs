@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
     private void OnMovement(InputAction.CallbackContext obj)
     {
         var v = obj.ReadValue<Vector2>();
-        _controller.m_Input = v;
+        _controller.SetInputMovement(v);
     }
 
     private void OnStopStare(InputAction.CallbackContext obj)

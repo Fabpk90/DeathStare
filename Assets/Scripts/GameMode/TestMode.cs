@@ -86,7 +86,7 @@ public class TestMode : GameMode
 
         for (int i = 0; i < players.Count; i++)
         {
-            players[i].GetComponent<MeshRenderer>().material.color = playersColor[i];
+            //players[i].GetComponentInChildren<MeshRenderer>().material.color = playersColor[i];
         }
         
     }
