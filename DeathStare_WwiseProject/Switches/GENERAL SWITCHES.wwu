@@ -3,14 +3,18 @@
 	<Switches>
 		<WorkUnit Name="GENERAL SWITCHES" ID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}" OwnerID="{29869366-B159-4700-8C89-509361ACAD23}" PersistMode="Nested">
 			<ChildrenList>
-				<SwitchGroup Name="Characters" ID="{9AC8C6B6-2D41-495A-8B3E-5985CB6CD18B}">
+				<Folder Name="Character" ID="{7D278039-2C8D-41AD-A183-3BD8C46D4F60}" ShortID="1008098549">
 					<ChildrenList>
-						<Switch Name="Stanislas" ID="{08B5937E-EBAE-4802-940E-7FDA37BB0E4B}"/>
-						<Switch Name="Marta" ID="{727C5C7E-7DD9-4A96-8FC7-EC89B91A7F1D}"/>
-						<Switch Name="Medusa" ID="{5FCA76E7-3AFC-4D62-B090-53DFA0756131}"/>
-						<Switch Name="Don" ID="{4883E272-AF15-4E21-A1CC-BAA51F0401D1}"/>
+						<SwitchGroup Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+							<ChildrenList>
+								<Switch Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+								<Switch Name="Marta" ID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+								<Switch Name="Medusa" ID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+								<Switch Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+							</ChildrenList>
+						</SwitchGroup>
 					</ChildrenList>
-				</SwitchGroup>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

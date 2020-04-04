@@ -9,14 +9,12 @@
 			<ChildrenList>
 				<Folder Name="Stingers" ID="{7D99C15C-8DA0-4DC5-B701-4BD079E056E6}" ShortID="582551022">
 					<ChildrenList>
-						<MusicSwitchContainer Name="Stingers_DeathStare" ID="{1C06DDCA-3003-4956-8D13-3C7D4E75A4E4}" ShortID="986397994">
+						<MusicSegment Name="Stingers_DeathStare_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" ShortID="176623804">
 							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10000"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Tempo" Type="Real64" Value="124"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>5</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -27,1330 +25,2590 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="Stingers_DeathStare_Stanislas" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" ShortID="176623804">
+								<MusicTrack Name="Stingers_DeathStare_Stanislas" ID="{A274A749-0240-433D-BCCE-72759A60E42E}" ShortID="164365594">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="10000"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Stingers_DeathStare_Stanislas" ID="{A274A749-0240-433D-BCCE-72759A60E42E}" ShortID="164365594">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_000" ID="{C34D4D59-9DF1-4CBD-89B4-652EE787E58C}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_000.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="261850193"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_004" ID="{1E602AD2-EA2C-40E2-84F3-40A3074411DB}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="701999234"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_001" ID="{4C865D4E-21B7-45E9-A527-30905C4AD7DA}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1064606260"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_003" ID="{C6C9A243-9AA9-40AE-AA3E-99F2FA1EE7B9}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="992862984"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="182886624"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_01" ID="{3CBDC719-CDE6-4A20-B434-F4131B9BD621}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="701999234"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_002" ID="{748641A8-59B7-4A94-B283-4A101DE7BF7A}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="545061261"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Stanislas_006" ID="{3CFFAE2E-F851-471C-96CD-AAA3989CD371}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1041136182"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{7F10CABB-C317-4FD1-A689-15764D21DFD1}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{D9929686-024E-46D6-88A4-3ABA6B17FB14}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_000" ID="{0F97E480-E9B9-4D84-9026-1728B3BA15DD}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_000" ID="{C34D4D59-9DF1-4CBD-89B4-652EE787E58C}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{5B5EDB0F-E57A-4019-9DEE-AE87123A53AC}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_002" ID="{003C2040-30E3-41C9-B993-4D1E603D9645}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="34.9986875492169"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_002" ID="{748641A8-59B7-4A94-B283-4A101DE7BF7A}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{3C7ED5CB-CAE4-4102-A7E5-5177C994FC9F}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_003" ID="{7C1C642D-7382-4C55-8DB7-B1B9C9397CE9}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="45.4982938139819"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_003" ID="{C6C9A243-9AA9-40AE-AA3E-99F2FA1EE7B9}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{A3306DBC-3641-48B9-AB72-D5946EFD2876}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_004" ID="{97E6FB25-9023-4BED-B2C1-1C3B230A3600}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="3.31255205557324E-13"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="314.645492460699"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-3.31255205557324E-13"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_004" ID="{1E602AD2-EA2C-40E2-84F3-40A3074411DB}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{59F444CC-ED9F-4764-9ABB-8224BB76A7A8}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.31465</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{A5F4D8CC-8170-4DAC-AA95-10DB2667673E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.31465</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{54D6310B-ED2C-4158-BAE7-E4B4D3A0CE86}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.31465</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_01" ID="{89C99F3C-FBC8-46F5-AE55-FD957E5B2904}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="500"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-258.064516129032"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_01" ID="{3CBDC719-CDE6-4A20-B434-F4131B9BD621}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{D267B05C-14C9-4610-A944-3DE3A303DE90}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.5</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{A25D5D45-E154-4C12-B6FD-251A55053E32}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.5</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{AE4CA44F-1C95-4A1C-857E-F5ABC452D69E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.5</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{D8C3AB76-4E67-4EAD-9CB6-8F8129C28EAD}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{6CE6E125-8AB8-4396-9DB2-D2C443A61366}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="457.160089102196"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{D36AA25D-A336-48DC-B7EF-068FD3363CB3}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.45716</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{063BD2C8-34AA-4E38-98FD-FE2CAE807F23}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.45716</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{09396CE0-855B-461A-B43F-3A14D7D8063A}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.45716</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{3A181BC6-E9A8-41EE-B1D4-29A9017BCCFF}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="555.857271559327"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="734.721571771387"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-258.262629910332"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{31395C9D-19B5-4108-94E7-89BC9635AFA0}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.55586</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.73472</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{B01583C2-B79F-4260-B0AD-596EA97DC74B}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.55586</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.73472</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{59EE563E-0D3A-45BB-A5CC-239C06713CB3}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.55586</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.73472</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{8BC24B01-37CC-4057-8A1B-3E1E815A7D0D}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="457.160089102196"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="593.409707449865"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{F1D9BF81-503C-411C-893A-299306B9750A}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.457160089102196</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.59341</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{73483545-99EB-4E8F-931F-4A98B1A939F9}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.457160089102196</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.59341</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{E7611CA0-474C-4C34-B422-644A86FF44EB}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.457160089102196</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.59341</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{FA023D09-5C43-449A-BC4E-34DDEB8F51A7}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="593.409707449865"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="770.641293057988"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{8F1676A0-801B-4B4E-9C08-0730F3B42F58}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.593409707449865</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.77064</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{B8532850-45CA-4E58-8DAD-F574BC469487}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.593409707449865</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.77064</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{CF423384-524D-46F5-B09E-99FF7901FD6E}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.593409707449865</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.77064</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{A236A4F8-4FB0-4F09-BD9D-67EB568B0D74}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="770.641293057988"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{2DCB2463-60DE-4BA5-9A9C-B8093A59E302}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_001" ID="{F9AB90C4-AC47-4C97-9DC6-AA530BBADB25}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="233.247554813181"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-233.247554813181"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_001" ID="{4C865D4E-21B7-45E9-A527-30905C4AD7DA}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{9A61F2EA-2B89-4354-AA3A-C3F6130337B7}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.23325</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{196DEEE8-B0B3-4FA9-B161-0A9DC38B0BE0}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.23325</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{CCBE69D6-F3A6-4F70-90CA-BAF81A378240}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.23325</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.66666666666667</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{E24FB2E9-9B8B-49C0-B0AC-898C82D6CCDB}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Stanislas_006" ID="{2EE3CF1F-079B-487B-9CF3-A11586AD8794}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Stanislas_006" ID="{3CFFAE2E-F851-471C-96CD-AAA3989CD371}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_000" ID="{C34D4D59-9DF1-4CBD-89B4-652EE787E58C}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261850193"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_004" ID="{1E602AD2-EA2C-40E2-84F3-40A3074411DB}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701999234"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_001" ID="{4C865D4E-21B7-45E9-A527-30905C4AD7DA}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1064606260"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_003" ID="{C6C9A243-9AA9-40AE-AA3E-99F2FA1EE7B9}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="992862984"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="182886624"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_01" ID="{3CBDC719-CDE6-4A20-B434-F4131B9BD621}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701999234"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_002" ID="{748641A8-59B7-4A94-B283-4A101DE7BF7A}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="545061261"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_006" ID="{3CFFAE2E-F851-471C-96CD-AAA3989CD371}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1041136182"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{67F54F14-A8E7-4D00-9781-A154BFB567FD}">
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7F10CABB-C317-4FD1-A689-15764D21DFD1}">
 											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="-70"/>
-												<Property Name="PanY" Type="Real64" Value="70"/>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
 											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{72BA0CB8-7C6A-4C5D-9F76-3A731548B0C1}"/>
-										<MusicCue Name="Exit Cue" ID="{290F9CB3-A3E0-465C-B7C8-6A9752B1A444}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="967.741935483871"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Stingers_DeathStare_Marta" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" ShortID="701750979">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="10241.935483871"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Stingers_DeathStare_Marta" ID="{38F481DC-1114-46C9-945B-DA280BB24CA9}" ShortID="619199426">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_003" ID="{9FB994F3-6E52-49A8-90D8-13E807490123}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="880087353"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_005" ID="{A5E36B09-C708-4041-BE4D-6C27CF955A92}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="552167880"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_001" ID="{A33EE6B2-AC36-4D33-B469-002D19A81E4F}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="610886810"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_002" ID="{2063717A-30FD-4F52-BC4D-C64FF46611EB}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="515118085"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_000" ID="{2B792962-8943-4627-98E3-A46AC209B283}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_000.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="507203963"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Marta_004" ID="{D7ED7F23-2D04-4EB8-A1E8-76E46D665594}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="841085410"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{0785A730-04F8-4C46-A5B1-4F47161B002F}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{B5CB456D-8213-4F1E-9956-067D32AD9AAE}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_002" ID="{68EA7236-9523-4EEB-A4AE-3A5329B85126}">
-															<PropertyList>
-																<Property Name="BeginTrimOffset" Type="Real64" Value="14.8428600357856"/>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="-14.8428600357856"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_002" ID="{2063717A-30FD-4F52-BC4D-C64FF46611EB}"/>
-															<PropertyCurveList>
-																<PropertyCurve PropertyName="Highpass">
-																	<Curve Name="" ID="{3E80F15F-919F-4AD7-92C6-6FEA03DCAB2A}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.01484</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>10</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Lowpass">
-																	<Curve Name="" ID="{D011CE18-8E51-4252-886C-2AA0C1AEC28F}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="1"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.01484</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>10</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-																<PropertyCurve PropertyName="Volume">
-																	<Curve Name="" ID="{B0761471-5A5A-4BC4-9B28-17C42AEFEFFB}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0.01484</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>10</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</PropertyCurve>
-															</PropertyCurveList>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{0265BF0D-C3C9-42DA-AB7B-DFC4D52C70C6}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_003" ID="{F93847BD-EC1F-4EAB-8628-50935792F912}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_003" ID="{9FB994F3-6E52-49A8-90D8-13E807490123}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{1E7B10A7-E567-4229-BF5D-9C869A252725}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_004" ID="{57C8E3F9-E313-4429-B1D0-76618BF6A26D}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10237.8541666667"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_004" ID="{D7ED7F23-2D04-4EB8-A1E8-76E46D665594}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{72143D83-B9D1-4DCE-8ACB-83E3839ED11A}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_005" ID="{25B4A165-9963-45F3-B200-D67EF8E72A96}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="9762.14583333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_005" ID="{A5E36B09-C708-4041-BE4D-6C27CF955A92}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{5F56B898-E02D-4627-AF8B-A19969EDA489}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_000" ID="{E0B8A810-5A5A-470F-B543-2F46399450EC}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_000" ID="{2B792962-8943-4627-98E3-A46AC209B283}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{F1D52BA6-A92F-45D3-A0A9-76C5CD5F314D}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Marta_001" ID="{F2C8DCF9-5020-4E66-A30A-D39B0DB8C9BC}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="16.2205969928673"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Marta_001" ID="{A33EE6B2-AC36-4D33-B469-002D19A81E4F}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{F08B549A-CB48-44FC-AF35-F6F3D685A1A9}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="70"/>
-												<Property Name="PanY" Type="Real64" Value="70"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{66B33B4C-EE25-470C-8B56-E86984C3B792}"/>
-										<MusicCue Name="Exit Cue" ID="{8F7D546E-CED3-4E76-B86E-BAB730550B35}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="1000"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Stingers_DeathStare_Medusa" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" ShortID="557066478">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="10120.9677419355"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Stingers_DeathStare_Medusa" ID="{8B87F10C-40C0-4A4B-9FD4-34B4338EC21C}" ShortID="381301153">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_005" ID="{BC4D3185-FE17-4027-9BA4-D755B59A9807}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="266327702"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_007" ID="{F91743FD-C2FB-49E0-A69F-0C1730C28BA8}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_007.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="202254220"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_000" ID="{FA82CCDE-2FAD-4EAE-B080-4B413ABD8D32}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_000.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="242819915"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_002" ID="{5E7F61EA-2F95-4C85-9D0D-25D066AB955F}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="942806768"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_001" ID="{F7767720-7825-4DB9-8A0F-8B9EBB4AB86B}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="556592728"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_004" ID="{13541688-AB08-4C8E-80B1-C90E8DF0DE55}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="912087750"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_006" ID="{D20F134A-8626-4199-9707-7F503BF7AC03}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="590380662"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Medusa_003" ID="{6DCC6C60-7DB2-4D79-8F92-01ED39F4F43B}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="954973998"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{C19025C7-2048-4D81-A905-9822B1BD1144}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{CBB9CDF3-AD09-4A12-B967-F5FEA71ECF08}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_004" ID="{CC514E8E-C5A8-48FA-859A-FB6CA676645E}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_004" ID="{13541688-AB08-4C8E-80B1-C90E8DF0DE55}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{5C43D360-B543-4844-94FA-67069774EA6A}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_005" ID="{577F5AF6-3862-4B12-A81C-F09A98D786DB}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_005" ID="{BC4D3185-FE17-4027-9BA4-D755B59A9807}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{7B00667F-C695-4812-A124-292BA61832F7}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_006" ID="{55E3AFD9-C3AC-472F-88A1-35A8D370A999}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_006" ID="{D20F134A-8626-4199-9707-7F503BF7AC03}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{BF7C53B8-F653-4C6B-9670-F6141B2159BE}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_007" ID="{14FD14E0-97C3-4409-A2F9-79D7B63E2C55}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_007" ID="{F91743FD-C2FB-49E0-A69F-0C1730C28BA8}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{D19A58DD-E94B-4733-BE77-14B64226E8C2}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_000" ID="{DC81538C-9C94-4C8E-A20E-200969723BC7}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="50.0481231953802"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_000" ID="{FA82CCDE-2FAD-4EAE-B080-4B413ABD8D32}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{A2DE3873-1D77-4F6A-9629-4AFCAD3FE731}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_001" ID="{C47DE7DE-00BC-4C78-AEFA-F666B257E251}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="38.4985563041386"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_001" ID="{F7767720-7825-4DB9-8A0F-8B9EBB4AB86B}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{896F9D59-A9AB-415C-94E5-AE2062C0E641}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_002" ID="{385491B7-BB6C-4C3A-8211-9E6CDD33687F}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																<Property Name="PlayAt" Type="Real64" Value="69.2974013474494"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_002" ID="{5E7F61EA-2F95-4C85-9D0D-25D066AB955F}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{4F3DBFA5-374D-4E22-AE96-D1F4A3AE84EA}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Medusa_003" ID="{355EEDEF-E16B-41C4-92D9-9B18E3DC36E0}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Medusa_003" ID="{6DCC6C60-7DB2-4D79-8F92-01ED39F4F43B}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{1A486ED2-39D6-4FA3-9120-1CB182389201}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="-70"/>
-												<Property Name="PanY" Type="Real64" Value="70"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{3122A87C-3017-4783-8BF0-2ED01501B7FA}"/>
-										<MusicCue Name="Exit Cue" ID="{5C6CF9AE-5F53-4580-8EFF-823FBE5DF1DC}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="1000"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-								<MusicSegment Name="Stingers_DeathStare_Don" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" ShortID="1071264196">
-									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="13333.3333333333"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<MusicTrack Name="Stingers_DeathStare_Don" ID="{9D046742-CB76-478D-9227-8E7B374070D5}" ShortID="209264603">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Stingers_DeathStare_Don_005" ID="{4E174A98-CB64-42B4-9F8C-BB651EDE310E}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="186120177"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_004" ID="{7B4945B2-BD52-4C0F-9B75-CBEE4E3505B0}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="371187270"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_001" ID="{E2EC1127-7526-4677-91B4-D1D8703F3289}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="372446375"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_006" ID="{F93334D9-0336-46E9-A5A4-202C46AD48D2}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="616109991"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_000" ID="{53ED360B-2BA6-4258-952F-B920BFD08CB4}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_000.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="718592240"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_003" ID="{D1037CB7-AF74-4CB8-B926-50AAAA351C52}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="350732487"/>
-													</MediaIDList>
-												</AudioFileSource>
-												<AudioFileSource Name="Stingers_DeathStare_Don_002" ID="{8E22DEB7-63B8-428B-B6EB-07DE051DBB7E}">
-													<Language>SFX</Language>
-													<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="123246559"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{EB1A1442-C585-488F-8632-01E7C43C56DA}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<SequenceList>
-												<MusicTrackSequence Name="" ID="{E12A2AC4-A11E-4607-8749-628F0864FD98}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_004" ID="{63F46093-B1AD-4B43-B931-F6C21F8BA3D4}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_004" ID="{7B4945B2-BD52-4C0F-9B75-CBEE4E3505B0}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{A3CB6588-041E-4279-B712-63F11302638E}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_005" ID="{FEB20EFE-E68D-47AE-9300-53E99208843B}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_005" ID="{4E174A98-CB64-42B4-9F8C-BB651EDE310E}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{E1D2A250-24DA-4A6A-9E62-1668DCDAC9BF}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_006" ID="{C48F5A9D-E3B0-4218-88E5-FA671B3FD135}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_006" ID="{F93334D9-0336-46E9-A5A4-202C46AD48D2}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{1607FC9B-3A3B-4AED-8953-D6553B6B6F1C}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_000" ID="{EA477239-000A-4D82-80DD-1CF4E25D03ED}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_000" ID="{53ED360B-2BA6-4258-952F-B920BFD08CB4}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{21841AF8-8180-4A5B-BA37-5AFA7592278D}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_001" ID="{F1765B5D-A42E-4874-8BAE-DAC41A6AFF35}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_001" ID="{E2EC1127-7526-4677-91B4-D1D8703F3289}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{FC550139-0018-415A-AB2B-0FB2D95B4E41}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_002" ID="{EA2EABD4-CB8C-4642-AD02-836D4EAE03C2}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_002" ID="{8E22DEB7-63B8-428B-B6EB-07DE051DBB7E}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-												<MusicTrackSequence Name="" ID="{F3BB4F0F-DC72-411F-BBEB-4099B71223B0}">
-													<ClipList>
-														<MusicClip Name="Stingers_DeathStare_Don_003" ID="{7EE97102-AEAD-4EE0-95C1-875F762D9EA8}">
-															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
-																<Property Name="FadeInMode" Type="int16" Value="0"/>
-																<Property Name="FadeOutMode" Type="int16" Value="0"/>
-															</PropertyList>
-															<AudioSourceRef Name="Stingers_DeathStare_Don_003" ID="{D1037CB7-AF74-4CB8-B926-50AAAA351C52}"/>
-														</MusicClip>
-													</ClipList>
-												</MusicTrackSequence>
-											</SequenceList>
-										</MusicTrack>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{DCF7C715-F28D-47B8-B601-CFBD1F84822A}">
-											<PropertyList>
-												<Property Name="PanX" Type="Real64" Value="70"/>
-												<Property Name="PanY" Type="Real64" Value="70"/>
-											</PropertyList>
-										</Panner>
-									</PositioningInfo>
-									<CueList>
-										<MusicCue Name="Entry Cue" ID="{D36E08AB-6217-4605-A386-ABDE984F2ECA}"/>
-										<MusicCue Name="Exit Cue" ID="{ED44C266-A85C-4C2F-957F-B55EC65493BE}">
-											<PropertyList>
-												<Property Name="CueType" Type="int16" Value="1"/>
-												<Property Name="TimeMs" Type="Real64" Value="1000"/>
-											</PropertyList>
-										</MusicCue>
-									</CueList>
-								</MusicSegment>
-							</ChildrenList>
-							<TransitionList>
-								<MusicTransition Name="Root" ID="{E72EBCC1-9ED6-44E4-AA14-8F6A36F2C438}">
-									<PropertyList>
-										<Property Name="IsFolder" Type="bool" Value="True"/>
-									</PropertyList>
-									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{3DE53825-C2B0-4C15-BC59-F1556D5C8AFA}">
 											<TransitionInfo/>
 										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{D9929686-024E-46D6-88A4-3ABA6B17FB14}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_000" ID="{0F97E480-E9B9-4D84-9026-1728B3BA15DD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_000" ID="{C34D4D59-9DF1-4CBD-89B4-652EE787E58C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5B5EDB0F-E57A-4019-9DEE-AE87123A53AC}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_002" ID="{003C2040-30E3-41C9-B993-4D1E603D9645}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="34.9986875492169"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_002" ID="{748641A8-59B7-4A94-B283-4A101DE7BF7A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{3C7ED5CB-CAE4-4102-A7E5-5177C994FC9F}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_003" ID="{7C1C642D-7382-4C55-8DB7-B1B9C9397CE9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="45.4982938139819"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_003" ID="{C6C9A243-9AA9-40AE-AA3E-99F2FA1EE7B9}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A3306DBC-3641-48B9-AB72-D5946EFD2876}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_004" ID="{97E6FB25-9023-4BED-B2C1-1C3B230A3600}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="3.31255205557324E-13"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="314.645492460699"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-3.31255205557324E-13"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_004" ID="{1E602AD2-EA2C-40E2-84F3-40A3074411DB}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{59F444CC-ED9F-4764-9ABB-8224BB76A7A8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{A5F4D8CC-8170-4DAC-AA95-10DB2667673E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{54D6310B-ED2C-4158-BAE7-E4B4D3A0CE86}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_01" ID="{89C99F3C-FBC8-46F5-AE55-FD957E5B2904}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="500"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-258.064516129032"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_01" ID="{3CBDC719-CDE6-4A20-B434-F4131B9BD621}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{D267B05C-14C9-4610-A944-3DE3A303DE90}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{A25D5D45-E154-4C12-B6FD-251A55053E32}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{AE4CA44F-1C95-4A1C-857E-F5ABC452D69E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D8C3AB76-4E67-4EAD-9CB6-8F8129C28EAD}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{6CE6E125-8AB8-4396-9DB2-D2C443A61366}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="457.160089102196"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{D36AA25D-A336-48DC-B7EF-068FD3363CB3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{063BD2C8-34AA-4E38-98FD-FE2CAE807F23}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{09396CE0-855B-461A-B43F-3A14D7D8063A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{3A181BC6-E9A8-41EE-B1D4-29A9017BCCFF}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="555.857271559327"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="734.721571771387"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-258.262629910332"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{31395C9D-19B5-4108-94E7-89BC9635AFA0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{B01583C2-B79F-4260-B0AD-596EA97DC74B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{59EE563E-0D3A-45BB-A5CC-239C06713CB3}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{8BC24B01-37CC-4057-8A1B-3E1E815A7D0D}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="457.160089102196"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="593.409707449865"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{F1D9BF81-503C-411C-893A-299306B9750A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{73483545-99EB-4E8F-931F-4A98B1A939F9}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{E7611CA0-474C-4C34-B422-644A86FF44EB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{FA023D09-5C43-449A-BC4E-34DDEB8F51A7}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="593.409707449865"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="770.641293057988"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{8F1676A0-801B-4B4E-9C08-0730F3B42F58}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{B8532850-45CA-4E58-8DAD-F574BC469487}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{CF423384-524D-46F5-B09E-99FF7901FD6E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{A236A4F8-4FB0-4F09-BD9D-67EB568B0D74}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="770.641293057988"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{4802C1C9-E33E-4299-BA05-50B4C11B6A43}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{2DCB2463-60DE-4BA5-9A9C-B8093A59E302}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_001" ID="{F9AB90C4-AC47-4C97-9DC6-AA530BBADB25}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="233.247554813181"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-233.247554813181"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_001" ID="{4C865D4E-21B7-45E9-A527-30905C4AD7DA}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{9A61F2EA-2B89-4354-AA3A-C3F6130337B7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{196DEEE8-B0B3-4FA9-B161-0A9DC38B0BE0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{CCBE69D6-F3A6-4F70-90CA-BAF81A378240}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E24FB2E9-9B8B-49C0-B0AC-898C82D6CCDB}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_006" ID="{2EE3CF1F-079B-487B-9CF3-A11586AD8794}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_006" ID="{3CFFAE2E-F851-471C-96CD-AAA3989CD371}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{67F54F14-A8E7-4D00-9781-A154BFB567FD}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{72BA0CB8-7C6A-4C5D-9F76-3A731548B0C1}"/>
+								<MusicCue Name="Exit Cue" ID="{290F9CB3-A3E0-465C-B7C8-6A9752B1A444}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="967.741935483871"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" ShortID="701750979">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10241.935483871"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Marta" ID="{38F481DC-1114-46C9-945B-DA280BB24CA9}" ShortID="619199426">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_003" ID="{9FB994F3-6E52-49A8-90D8-13E807490123}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880087353"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_005" ID="{A5E36B09-C708-4041-BE4D-6C27CF955A92}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="552167880"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_001" ID="{A33EE6B2-AC36-4D33-B469-002D19A81E4F}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="610886810"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_002" ID="{2063717A-30FD-4F52-BC4D-C64FF46611EB}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="515118085"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_000" ID="{2B792962-8943-4627-98E3-A46AC209B283}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="507203963"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_004" ID="{D7ED7F23-2D04-4EB8-A1E8-76E46D665594}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="841085410"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<TransitionInfo/>
-								</MusicTransition>
-							</TransitionList>
-							<ArgumentList>
-								<ArgumentRef Name="Characters" ID="{9AC8C6B6-2D41-495A-8B3E-5985CB6CD18B}"/>
-							</ArgumentList>
-							<EntryList>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Stanislas" ID="{08B5937E-EBAE-4802-940E-7FDA37BB0E4B}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="Stingers_DeathStare_Stanislas" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-							</EntryList>
-						</MusicSwitchContainer>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{0785A730-04F8-4C46-A5B1-4F47161B002F}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{B5CB456D-8213-4F1E-9956-067D32AD9AAE}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_002" ID="{68EA7236-9523-4EEB-A4AE-3A5329B85126}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="14.8428600357856"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-14.8428600357856"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_002" ID="{2063717A-30FD-4F52-BC4D-C64FF46611EB}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{3E80F15F-919F-4AD7-92C6-6FEA03DCAB2A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{D011CE18-8E51-4252-886C-2AA0C1AEC28F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{B0761471-5A5A-4BC4-9B28-17C42AEFEFFB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{0265BF0D-C3C9-42DA-AB7B-DFC4D52C70C6}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_003" ID="{F93847BD-EC1F-4EAB-8628-50935792F912}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_003" ID="{9FB994F3-6E52-49A8-90D8-13E807490123}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1E7B10A7-E567-4229-BF5D-9C869A252725}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_004" ID="{57C8E3F9-E313-4429-B1D0-76618BF6A26D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10237.8541666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_004" ID="{D7ED7F23-2D04-4EB8-A1E8-76E46D665594}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{72143D83-B9D1-4DCE-8ACB-83E3839ED11A}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_005" ID="{25B4A165-9963-45F3-B200-D67EF8E72A96}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="9762.14583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_005" ID="{A5E36B09-C708-4041-BE4D-6C27CF955A92}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5F56B898-E02D-4627-AF8B-A19969EDA489}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_000" ID="{E0B8A810-5A5A-470F-B543-2F46399450EC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_000" ID="{2B792962-8943-4627-98E3-A46AC209B283}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F1D52BA6-A92F-45D3-A0A9-76C5CD5F314D}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_001" ID="{F2C8DCF9-5020-4E66-A30A-D39B0DB8C9BC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="16.2205969928673"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_001" ID="{A33EE6B2-AC36-4D33-B469-002D19A81E4F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{F08B549A-CB48-44FC-AF35-F6F3D685A1A9}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{66B33B4C-EE25-470C-8B56-E86984C3B792}"/>
+								<MusicCue Name="Exit Cue" ID="{8F7D546E-CED3-4E76-B86E-BAB730550B35}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" ShortID="557066478">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10120.9677419355"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Medusa" ID="{8B87F10C-40C0-4A4B-9FD4-34B4338EC21C}" ShortID="381301153">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_005" ID="{BC4D3185-FE17-4027-9BA4-D755B59A9807}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="266327702"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_007" ID="{F91743FD-C2FB-49E0-A69F-0C1730C28BA8}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="202254220"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_000" ID="{FA82CCDE-2FAD-4EAE-B080-4B413ABD8D32}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="242819915"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_002" ID="{5E7F61EA-2F95-4C85-9D0D-25D066AB955F}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="942806768"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_001" ID="{F7767720-7825-4DB9-8A0F-8B9EBB4AB86B}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="556592728"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_004" ID="{13541688-AB08-4C8E-80B1-C90E8DF0DE55}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912087750"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_006" ID="{D20F134A-8626-4199-9707-7F503BF7AC03}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="590380662"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_003" ID="{6DCC6C60-7DB2-4D79-8F92-01ED39F4F43B}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="954973998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{C19025C7-2048-4D81-A905-9822B1BD1144}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{CBB9CDF3-AD09-4A12-B967-F5FEA71ECF08}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_004" ID="{CC514E8E-C5A8-48FA-859A-FB6CA676645E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_004" ID="{13541688-AB08-4C8E-80B1-C90E8DF0DE55}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5C43D360-B543-4844-94FA-67069774EA6A}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_005" ID="{577F5AF6-3862-4B12-A81C-F09A98D786DB}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_005" ID="{BC4D3185-FE17-4027-9BA4-D755B59A9807}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{7B00667F-C695-4812-A124-292BA61832F7}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_006" ID="{55E3AFD9-C3AC-472F-88A1-35A8D370A999}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_006" ID="{D20F134A-8626-4199-9707-7F503BF7AC03}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{BF7C53B8-F653-4C6B-9670-F6141B2159BE}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_007" ID="{14FD14E0-97C3-4409-A2F9-79D7B63E2C55}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_007" ID="{F91743FD-C2FB-49E0-A69F-0C1730C28BA8}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D19A58DD-E94B-4733-BE77-14B64226E8C2}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_000" ID="{DC81538C-9C94-4C8E-A20E-200969723BC7}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="50.0481231953802"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_000" ID="{FA82CCDE-2FAD-4EAE-B080-4B413ABD8D32}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A2DE3873-1D77-4F6A-9629-4AFCAD3FE731}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_001" ID="{C47DE7DE-00BC-4C78-AEFA-F666B257E251}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="38.4985563041386"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_001" ID="{F7767720-7825-4DB9-8A0F-8B9EBB4AB86B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{896F9D59-A9AB-415C-94E5-AE2062C0E641}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_002" ID="{385491B7-BB6C-4C3A-8211-9E6CDD33687F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="69.2974013474494"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_002" ID="{5E7F61EA-2F95-4C85-9D0D-25D066AB955F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{4F3DBFA5-374D-4E22-AE96-D1F4A3AE84EA}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_003" ID="{355EEDEF-E16B-41C4-92D9-9B18E3DC36E0}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_003" ID="{6DCC6C60-7DB2-4D79-8F92-01ED39F4F43B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{1A486ED2-39D6-4FA3-9120-1CB182389201}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{3122A87C-3017-4783-8BF0-2ED01501B7FA}"/>
+								<MusicCue Name="Exit Cue" ID="{5C6CF9AE-5F53-4580-8EFF-823FBE5DF1DC}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" ShortID="1071264196">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="13333.3333333333"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Don" ID="{9D046742-CB76-478D-9227-8E7B374070D5}" ShortID="209264603">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Don_005" ID="{4E174A98-CB64-42B4-9F8C-BB651EDE310E}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="186120177"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_004" ID="{7B4945B2-BD52-4C0F-9B75-CBEE4E3505B0}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="371187270"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_001" ID="{E2EC1127-7526-4677-91B4-D1D8703F3289}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="372446375"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_006" ID="{F93334D9-0336-46E9-A5A4-202C46AD48D2}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="616109991"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_000" ID="{53ED360B-2BA6-4258-952F-B920BFD08CB4}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="718592240"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_003" ID="{D1037CB7-AF74-4CB8-B926-50AAAA351C52}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="350732487"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_002" ID="{8E22DEB7-63B8-428B-B6EB-07DE051DBB7E}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="123246559"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{EB1A1442-C585-488F-8632-01E7C43C56DA}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{E12A2AC4-A11E-4607-8749-628F0864FD98}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_004" ID="{63F46093-B1AD-4B43-B931-F6C21F8BA3D4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_004" ID="{7B4945B2-BD52-4C0F-9B75-CBEE4E3505B0}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{A3CB6588-041E-4279-B712-63F11302638E}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_005" ID="{FEB20EFE-E68D-47AE-9300-53E99208843B}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_005" ID="{4E174A98-CB64-42B4-9F8C-BB651EDE310E}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E1D2A250-24DA-4A6A-9E62-1668DCDAC9BF}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_006" ID="{C48F5A9D-E3B0-4218-88E5-FA671B3FD135}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_006" ID="{F93334D9-0336-46E9-A5A4-202C46AD48D2}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{1607FC9B-3A3B-4AED-8953-D6553B6B6F1C}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_000" ID="{EA477239-000A-4D82-80DD-1CF4E25D03ED}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_000" ID="{53ED360B-2BA6-4258-952F-B920BFD08CB4}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{21841AF8-8180-4A5B-BA37-5AFA7592278D}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_001" ID="{F1765B5D-A42E-4874-8BAE-DAC41A6AFF35}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_001" ID="{E2EC1127-7526-4677-91B4-D1D8703F3289}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FC550139-0018-415A-AB2B-0FB2D95B4E41}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_002" ID="{EA2EABD4-CB8C-4642-AD02-836D4EAE03C2}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_002" ID="{8E22DEB7-63B8-428B-B6EB-07DE051DBB7E}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F3BB4F0F-DC72-411F-BBEB-4099B71223B0}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_003" ID="{7EE97102-AEAD-4EE0-95C1-875F762D9EA8}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_003" ID="{D1037CB7-AF74-4CB8-B926-50AAAA351C52}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{DCF7C715-F28D-47B8-B601-CFBD1F84822A}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{D36E08AB-6217-4605-A386-ABDE984F2ECA}"/>
+								<MusicCue Name="Exit Cue" ID="{ED44C266-A85C-4C2F-957F-B55EC65493BE}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" ShortID="481976549">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10120.9677419355"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Medusa" ID="{903D0AAD-45B4-420B-A29A-3E881FF9B9FB}" ShortID="927479530">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_005" ID="{D990CE9E-7198-4D30-876E-9D909EDEE7F9}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="266327702"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_007" ID="{5BBF0D38-3965-4CC2-A5E9-C1E4B4BB7306}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="202254220"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_000" ID="{04EE75A1-2415-4439-B012-D91967C0270C}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="242819915"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_002" ID="{8C563BA8-2136-46E0-A039-DDFE2C97E516}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="942806768"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_001" ID="{1D2358B6-2895-4C6F-9F86-84B3062ED65F}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="556592728"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_004" ID="{8A9CE6E0-8DB9-411A-B0E4-AAFBF3CDDAEA}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="912087750"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_006" ID="{1A05F350-F131-4E86-B19D-16FC9BBD07A0}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="590380662"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Medusa_003" ID="{9E0596BA-C2CC-4D48-AF79-412891DA6BFA}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="954973998"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{5566E8CA-4198-4FB8-9FE3-12002A3FBA9A}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{7E4DCBC7-306E-41DE-900E-332807F9CD9E}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_004" ID="{A399A3A3-EE0E-4A07-B369-0BD52034544D}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_004" ID="{8A9CE6E0-8DB9-411A-B0E4-AAFBF3CDDAEA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{55AA9AD5-9D40-4A5D-9E12-1F9C9FDEFF01}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_005" ID="{DFBDB192-CD3E-49A8-AC15-5FA7346225DA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_005" ID="{D990CE9E-7198-4D30-876E-9D909EDEE7F9}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B4D02B65-C07E-47CD-9CC9-E456EF9BDAF8}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_006" ID="{A784E34A-33FF-41E5-96D9-54E900AF6DD4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_006" ID="{1A05F350-F131-4E86-B19D-16FC9BBD07A0}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B8499DE2-2FC7-4BC5-8ED3-1C02D9E67E3F}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_007" ID="{4DF0ABDE-9E1F-40E7-BE29-9D7C62B4556F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_007" ID="{5BBF0D38-3965-4CC2-A5E9-C1E4B4BB7306}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{B3095F5E-7555-4375-954A-E5EF5C12128F}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_000" ID="{329DE9BE-017A-4BE1-AE0F-71C2602AA707}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="50.0481231953802"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_000" ID="{04EE75A1-2415-4439-B012-D91967C0270C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{FACCA368-301D-48D3-8F5F-13F131E40431}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_001" ID="{E4FB72AC-9331-4CC8-88EF-FC296B8F7A47}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="38.4985563041386"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_001" ID="{1D2358B6-2895-4C6F-9F86-84B3062ED65F}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{110E5C11-E4AD-402A-92B4-14C19EDD78CE}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_002" ID="{3B6A6EC4-3B36-4D70-A66A-799347BD1D5F}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="69.2974013474494"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_002" ID="{8C563BA8-2136-46E0-A039-DDFE2C97E516}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{5C9C7212-8442-41F3-A6FB-4FEE887E4E25}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Medusa_003" ID="{9D62D6E5-2947-47B0-9181-7ACD125EB2BD}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Medusa_003" ID="{9E0596BA-C2CC-4D48-AF79-412891DA6BFA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{45255258-D6EC-4A5D-AF8B-2E6112CBC9A8}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{27E14FC4-8680-480B-819F-4AB15BABAA6D}"/>
+								<MusicCue Name="Exit Cue" ID="{77645364-0003-42B3-B324-91A3388E22A6}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" ShortID="63927043">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="13333.3333333333"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Don" ID="{E32766B1-9FAD-493C-90F6-BD1C7F92C7AA}" ShortID="375108957">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Don_005" ID="{3EE91F73-B906-4D3B-A31D-2AB5858F4DAE}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="186120177"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_004" ID="{00DB2DA7-4F21-4649-AAB2-0A8A31CDAAE7}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="371187270"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_001" ID="{056E3369-1698-4F1A-B461-0A839E65A597}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="372446375"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_006" ID="{86C4C93D-314D-48F6-ACFF-C7E3EB98549B}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="616109991"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_000" ID="{AB73C879-1F09-4737-94E8-822F0EC651AF}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="718592240"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_003" ID="{BA41A519-3154-4FE1-B675-C95A9DFCA65A}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="350732487"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Don_002" ID="{9028602F-87B5-4876-91EF-07BCD9FCFE92}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Don_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="123246559"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{32BC4335-7900-4F23-8B56-922116E82F5D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{59B914EF-671C-4814-9788-A7D06F280BB2}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_004" ID="{E72E8FF0-3AF4-4075-A72E-0C258DC35ED4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_004" ID="{00DB2DA7-4F21-4649-AAB2-0A8A31CDAAE7}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{74FAFFD2-81BE-4D5A-86B9-099F97538C3A}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_005" ID="{6CE9C837-1014-4D54-800B-9BB65CFA1DBE}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_005" ID="{3EE91F73-B906-4D3B-A31D-2AB5858F4DAE}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{351E4C33-668A-4C4E-B46D-129A5F5CD81D}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_006" ID="{211DB57F-E735-4CAA-9A40-4CFCEB8362F7}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="13333.3333333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_006" ID="{86C4C93D-314D-48F6-ACFF-C7E3EB98549B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{25894B22-8C9B-4D80-A7BD-4A00FCD13042}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_000" ID="{7785D7E4-6CCD-48EB-82DA-6A5B1EE92544}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_000" ID="{AB73C879-1F09-4737-94E8-822F0EC651AF}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C2061AEA-349D-4DF7-BFAF-A8DEA8FFBCFB}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_001" ID="{4C3364E9-CA36-403B-992C-E24FBB5C93DA}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_001" ID="{056E3369-1698-4F1A-B461-0A839E65A597}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9C176078-3874-4161-80F6-EF1A2982B296}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_002" ID="{0FF37887-A66D-4C69-9E77-B58249221236}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_002" ID="{9028602F-87B5-4876-91EF-07BCD9FCFE92}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{07A88FAC-6A55-4291-A2F7-DB5A843543BB}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Don_003" ID="{3DD48481-690F-4728-AA13-98A005A89070}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Don_003" ID="{BA41A519-3154-4FE1-B675-C95A9DFCA65A}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{3C958F90-7689-4A16-869E-956B28834107}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{CF4DCF03-C1A1-4D92-96D4-95E98D254D47}"/>
+								<MusicCue Name="Exit Cue" ID="{79A57E39-5E84-4DC5-8D15-4407A091B2B5}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" ShortID="215420276">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10000"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Stanislas" ID="{03DD663D-FFC6-46BA-A6D6-6EB0A709C0E5}" ShortID="385109454">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_000" ID="{6647E5EE-1841-4DFA-9AC8-BBD01E30EAA7}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261850193"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_004" ID="{BA72CA2C-20A8-46BE-8F92-26FA778D26A2}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701999234"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_001" ID="{0AF655FA-095B-49D8-9101-FD0286276E8C}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1064606260"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_003" ID="{1D9CEB7E-517B-4FA5-9F22-90185531DCDA}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="992862984"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="182886624"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_01" ID="{F3B037BA-1889-40C1-812E-F47468093251}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="701999234"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_002" ID="{F9ABF2F4-3D61-462A-8750-FB4ABD316A1C}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="545061261"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Stanislas_006" ID="{3AC8E9FC-52AB-4B11-A77D-34CDCE82F63E}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_006.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1041136182"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{B25BAEE8-794A-4D05-B09E-F8CB975C6DE0}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{203E757B-117E-4AC0-8407-D0D9690EA2E9}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_000" ID="{1E0C9DE0-D328-4126-B5B6-245C3F114508}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_000" ID="{6647E5EE-1841-4DFA-9AC8-BBD01E30EAA7}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{E575453D-E907-4FF3-80F1-A6A4ADF57546}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_002" ID="{29B4257C-8D08-4765-B9A4-3B5CCAF8D2E9}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="34.9986875492169"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_002" ID="{F9ABF2F4-3D61-462A-8750-FB4ABD316A1C}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{F99AC9DF-B22A-4351-81DD-7E4DF49C8FCC}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_003" ID="{FD5AC36C-784F-4CD5-9233-09CDB8A974DF}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="45.4982938139819"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_003" ID="{1D9CEB7E-517B-4FA5-9F22-90185531DCDA}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{539CC6B5-1772-4AE9-BA1D-F3F39EA51EF0}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_004" ID="{9BF31203-11E0-4655-8546-45E4A5C9FC08}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="3.31255205557324E-13"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="314.645492460699"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-3.31255205557324E-13"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_004" ID="{BA72CA2C-20A8-46BE-8F92-26FA778D26A2}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{C1F7499E-93B8-4553-A4BB-FBB44432F5EB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{449395C2-C426-49C7-ABC4-5EDD335CDF16}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{7CF2AAA0-AF79-40F9-BCAE-4DD4F5AB8D5F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.31465</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_01" ID="{68F0C3CA-DF22-47B0-80B1-A6E1C0A62AC9}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="500"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-258.064516129032"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_01" ID="{F3B037BA-1889-40C1-812E-F47468093251}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{4933D4B2-7EE7-40B5-9029-7650FD813786}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{5CE63BA5-6CAD-445D-9DDC-58A354F61807}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{8AC306BF-A356-48DD-9DA3-04F820671E1C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.5</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{C803EFC6-AF85-47C8-9E2D-F2F6BC90E09D}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{05AF0C5B-EB53-4323-9DB0-26FE3D74B677}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="457.160089102196"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{4DE26476-3EF1-471A-8A6B-DB11277606BB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{08BDBEAD-891E-4905-8707-A48DC418B855}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{E718F9AB-AF9E-4EE7-B78E-289FE6D2099E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.45716</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{6AF82074-072C-4DB1-B7B3-5268F728412F}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="555.857271559327"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="734.721571771387"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-258.262629910332"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{02485407-025D-4078-AF8D-56CA1B3BC62C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{4071CB68-7622-4873-93B4-CB0B39B72945}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{2D57CEC5-2D0C-4355-90D7-9487E301ACC8}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.55586</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.73472</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{D92ABEAA-7FD4-4F4E-843B-F385E0A15C16}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="457.160089102196"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="593.409707449865"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{530A1465-F493-47CB-B036-E5CB5D44887A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{049C7DC1-4ED1-4182-BDC4-6684EE633E6F}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{4FDD4BAA-48A9-4354-B42B-E5EB9DDCF071}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.457160089102196</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.59341</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{EB33FA07-9B95-4A78-A409-70D4BDFF4DE7}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="593.409707449865"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="770.641293057988"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{81A2F8DC-F760-4F72-94A1-5D259139C317}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{5FD62015-E8E6-456C-BD04-F42C90F3DACA}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{CDCF79D0-52DD-4CFB-906B-2191BBB86887}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.593409707449865</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.77064</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_005" ID="{8813C1E4-25A6-4F4F-AEB7-8C1313F8738F}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="770.641293057988"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="11.4290022275549"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_005" ID="{F954FC91-2626-4412-AAE1-4608C3E8E2D3}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{62260CC1-3CAD-4FF4-9B9D-24DC1C23926C}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_001" ID="{4D567BCE-867F-4189-A192-BB805C00F8C9}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="233.247554813181"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="6666.66666666667"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-233.247554813181"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_001" ID="{0AF655FA-095B-49D8-9101-FD0286276E8C}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{1B731BDB-DBEB-4480-ABE9-015D4375B398}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{82785E90-25B8-4636-AA52-868406097972}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{8A5DF16B-FDBB-4E4C-93DA-B6FDEF312239}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.23325</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>6.66666666666667</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{234C4F52-30C7-4316-9AE4-EAAE9C3F2D63}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Stanislas_006" ID="{5AA84DA5-A1CE-4B93-BE29-695D13E05554}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Stanislas_006" ID="{3AC8E9FC-52AB-4B11-A77D-34CDCE82F63E}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{2797BB70-8851-4276-949D-DBEB60991A22}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{9584DB68-ABCE-4D83-B890-BDFD1FDC3575}"/>
+								<MusicCue Name="Exit Cue" ID="{B305BCAC-0102-4FE4-89D1-F1976626D996}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="967.741935483871"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
+						<MusicSegment Name="Stingers_DeathStare_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" ShortID="606299594">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="10241.935483871"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="Tempo" Type="Real64" Value="124"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="Stingers_DeathStare_Marta" ID="{9FAB577F-C905-4837-A2A2-09B435A1AC13}" ShortID="954240301">
+									<PropertyList>
+										<Property Name="MusicTrackType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_003" ID="{14E91176-8C25-48B1-BB92-BFDC2A14FB5B}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="880087353"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_005" ID="{44B5AC74-069F-4A15-9354-BACDDEA10960}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="552167880"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_001" ID="{1A75C2AC-3ABF-47BE-951E-1B7E77D29FF8}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="610886810"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_002" ID="{07A730D3-99EA-4A06-9EAA-97D8B9774ADE}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="515118085"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_000" ID="{912FE5A8-65D6-4ACD-86E2-DE9BBADF3271}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_000.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="507203963"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="Stingers_DeathStare_Marta_004" ID="{16FFF140-7A9F-47EA-93AC-4C1C340D78DC}">
+											<Language>SFX</Language>
+											<AudioFile>Music\Stingers\DeathStare\Stingers_DeathStare_Marta_004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="841085410"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{FCDB5855-1291-4B03-8083-8C0C8B90C15D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<SequenceList>
+										<MusicTrackSequence Name="" ID="{862C5D40-CAEA-433E-8DDC-00CF217AD4E5}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_002" ID="{640D3D62-D5F7-4C7B-86A7-C5729BC8FE8B}">
+													<PropertyList>
+														<Property Name="BeginTrimOffset" Type="Real64" Value="14.8428600357856"/>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="-14.8428600357856"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_002" ID="{07A730D3-99EA-4A06-9EAA-97D8B9774ADE}"/>
+													<PropertyCurveList>
+														<PropertyCurve PropertyName="Highpass">
+															<Curve Name="" ID="{25E5724D-D04F-4C6F-9128-C6AFB8D1BC33}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Lowpass">
+															<Curve Name="" ID="{35548015-EF26-496E-8975-0588E9452D0B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+														<PropertyCurve PropertyName="Volume">
+															<Curve Name="" ID="{67C5CA6A-84D4-45D8-87D4-45C980B1C693}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0.01484</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</PropertyCurve>
+													</PropertyCurveList>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{D246422A-0716-4066-B27F-C52370B04C3A}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_003" ID="{A0ECD422-179C-47FE-9891-F5B2286F64D3}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_003" ID="{14E91176-8C25-48B1-BB92-BFDC2A14FB5B}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{9FEF191B-71BB-4E0C-89DF-120F88E194EB}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_004" ID="{EBA91378-AE4E-48A7-9C02-63F3170C849A}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10237.8541666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_004" ID="{16FFF140-7A9F-47EA-93AC-4C1C340D78DC}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{65DEE2B5-D1A3-4EFA-A4EC-990BA188AADD}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_005" ID="{C04A909B-3D62-4F22-9D8A-EE7B512A4DC4}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="9762.14583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_005" ID="{44B5AC74-069F-4A15-9354-BACDDEA10960}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{39A8CBF0-8447-487C-8855-A5B9BF89B217}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_000" ID="{39906D91-76BB-4483-A2E8-0C8A1CC472CC}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_000" ID="{912FE5A8-65D6-4ACD-86E2-DE9BBADF3271}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+										<MusicTrackSequence Name="" ID="{423DE733-7AF5-4854-84DB-19B86E1FDE0C}">
+											<ClipList>
+												<MusicClip Name="Stingers_DeathStare_Marta_001" ID="{87A74C76-926F-46B1-B4D9-A0480E642871}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="10000"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+														<Property Name="PlayAt" Type="Real64" Value="16.2205969928673"/>
+													</PropertyList>
+													<AudioSourceRef Name="Stingers_DeathStare_Marta_001" ID="{1A75C2AC-3ABF-47BE-951E-1B7E77D29FF8}"/>
+												</MusicClip>
+											</ClipList>
+										</MusicTrackSequence>
+									</SequenceList>
+								</MusicTrack>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{4336D6CA-C1F4-476B-B488-5244761A7AB1}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-70"/>
+										<Property Name="PanY" Type="Real64" Value="70"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<CueList>
+								<MusicCue Name="Entry Cue" ID="{A832855D-223F-469B-9753-2C89B0487B44}"/>
+								<MusicCue Name="Exit Cue" ID="{86ABC325-11BB-4BB8-B280-4ED954286F8E}">
+									<PropertyList>
+										<Property Name="CueType" Type="int16" Value="1"/>
+										<Property Name="TimeMs" Type="Real64" Value="1000"/>
+									</PropertyList>
+								</MusicCue>
+							</CueList>
+						</MusicSegment>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Jingles" ID="{C6E0F68C-C1A8-46F9-8CBB-309E52ED3D99}" ShortID="202754848"/>
@@ -1585,29 +2843,29 @@
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="TRIGGER_DeathStare_Stanislas" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
-									<SegmentRef Name="Stingers_DeathStare_Stanislas" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<TriggerRef Name="TRIGGER_DeathStare_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+									<SegmentRef Name="Stingers_DeathStare_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{90253D0A-1067-4E79-8626-EC7D6252EC8E}">
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="TRIGGER_DeathStare_Marta" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
-									<SegmentRef Name="Stingers_DeathStare_Marta" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<TriggerRef Name="TRIGGER_DeathStare_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+									<SegmentRef Name="Stingers_DeathStare_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{F4A88E55-7A9C-408E-8509-7BE88519F5B4}">
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="TRIGGER_DeathStare_Medusa" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
-									<SegmentRef Name="Stingers_DeathStare_Medusa" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<TriggerRef Name="TRIGGER_DeathStare_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+									<SegmentRef Name="Stingers_DeathStare_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</MusicStinger>
 								<MusicStinger Name="" ID="{0352AF84-5905-45B3-B96D-833FB7599595}">
 									<PropertyList>
 										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 									</PropertyList>
-									<TriggerRef Name="TRIGGER_DeathStare_Don" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}"/>
-									<SegmentRef Name="Stingers_DeathStare_Don" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<TriggerRef Name="TRIGGER_DeathStare_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+									<SegmentRef Name="Stingers_DeathStare_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</MusicStinger>
 							</StingerList>
 							<Playlist>
