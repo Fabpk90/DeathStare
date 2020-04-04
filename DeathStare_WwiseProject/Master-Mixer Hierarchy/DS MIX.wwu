@@ -43,6 +43,28 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Characters" ID="{67D39697-857B-4B05-BCE3-994EA06367BF}">
+											<ChildrenList>
+												<Bus Name="Death" ID="{C62BC68D-3DD9-4211-8CC6-2BC55C86EA8F}">
+													<PropertyList>
+														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+														<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+														<Property Name="MaxSoundPerInstance" Type="int16">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+														<Property Name="UseMaxSoundPerInstance" Type="bool">
+															<ValueList>
+																<Value>True</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+												</Bus>
+											</ChildrenList>
+										</Bus>
+									</ChildrenList>
 								</Bus>
 								<Bus Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}">
 									<PropertyList>

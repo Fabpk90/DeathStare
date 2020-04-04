@@ -1714,9 +1714,20 @@
 						<MusicSegment Name="Stingers_DeathStare_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" ShortID="215420276">
 							<PropertyList>
 								<Property Name="EndPosition" Type="Real64" Value="10000"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 								<Property Name="Tempo" Type="Real64" Value="124"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
