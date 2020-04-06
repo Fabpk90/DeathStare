@@ -6,6 +6,45 @@
 				<Property Name="Color" Type="int16" Value="13"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Character1" ID="{B9DA473E-C396-497F-AC8A-A88D1E01EA7E}" ShortID="427618579">
+					<ChildrenList>
+						<Event Name="Play_Voice_Character1_Barks_Death" ID="{267F3B97-FE29-482D-B8C9-6FBBB82692EA}">
+							<ChildrenList>
+								<Action Name="" ID="{4E61690C-D977-4D26-B18C-6CBDD338D020}" ShortID="810365144">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Character1_Barks_Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Voice_Character1_Punchline_Kill" ID="{64425204-3161-4A17-A8B8-DA70E37901C9}">
+							<ChildrenList>
+								<Action Name="" ID="{5788D883-29F7-480C-BE06-BBA522745F4D}" ShortID="156203904">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Character1_Punchline_Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Voice_Character1_Punchline_Respawn" ID="{16461EC5-6711-43DB-BF81-F159B20AE5C1}">
+							<ChildrenList>
+								<Action Name="" ID="{7EC042EA-C935-4112-81FA-919043E7E968}" ShortID="359478984">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Character1_Punchline_Kill" ID="{F8377A70-21E7-49C4-9F75-E8C2DB76B7D7}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
