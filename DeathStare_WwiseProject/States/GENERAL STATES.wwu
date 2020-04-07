@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" SchemaVersion="97" RootDocumentID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}">
 	<States>
-		<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested"/>
+		<WorkUnit Name="GENERAL STATES" ID="{E9BC82F3-5398-4402-A44A-6821A22982BB}" OwnerID="{952EDC8F-9ECC-4E86-9F83-CF4D32902132}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="STATE_General_LeadingPlayer" ID="{2CF6B970-C2C2-4BBA-8331-8E964E36911F}">
+					<ChildrenList>
+						<State Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
+						<State Name="Player1" ID="{B26B7091-5177-4855-A0DA-ACA5BB47EEDF}"/>
+						<State Name="Player2" ID="{21286537-503A-4670-813B-9B3AB57818EE}"/>
+						<State Name="Player3" ID="{9C16B733-2326-4595-BD0D-6E0F95DF83CE}"/>
+						<State Name="Player4" ID="{2DF922F5-6681-47D8-B21D-A431CB7E22BE}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

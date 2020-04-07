@@ -6,6 +6,66 @@
 				<Property Name="Color" Type="int16" Value="16"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Characters" ID="{DAD02353-5709-4960-8673-4686C59819C0}" ShortID="118932578">
+					<ChildrenList>
+						<Folder Name="Character1" ID="{27778238-7285-4BE5-BBE5-B05787A59719}" ShortID="623341011">
+							<ChildrenList>
+								<Event Name="Play_Effects_Character1_Damage" ID="{C24D4B9C-B531-46D1-80E3-310452E3D655}">
+									<ChildrenList>
+										<Action Name="" ID="{06ADA888-1A6E-4360-9339-7085494BB4A3}" ShortID="528434208">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Effects_Character1_Damage" ID="{4EF4294F-5A25-4018-9343-3CF1B40C3980}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Effects_Character1_ExitStaring" ID="{06AD24B4-EF50-4639-9291-2BB08C4C4E46}">
+									<ChildrenList>
+										<Action Name="" ID="{87F449FB-A126-44CC-99C8-10C9F9EB25D5}" ShortID="267478491">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Effects_Character1_ExitStaring" ID="{B969E565-2621-4099-B5AB-332F378A2FA9}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Effects_Character1_Duel" ID="{CDB58DC8-E626-4E9C-B8E1-1849F27E6751}">
+									<ChildrenList>
+										<Action Name="" ID="{56A500FB-5A98-4791-B5A6-85F8DAB148B9}" ShortID="669231192">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Effects_Character1_Duel" ID="{45804702-A1C8-473A-BAC0-C0ED7880E121}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Effects_Character1_Staring" ID="{D3888621-AACE-4EDE-9C23-9ED6042959D3}">
+									<ChildrenList>
+										<Action Name="" ID="{5F7F85A7-59D1-45AA-A884-B4FF1097EF4A}" ShortID="409324497">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Effects_Character1_Staring" ID="{1948C827-9A26-42FD-AD15-B091ED22D227}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
