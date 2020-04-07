@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "Movement",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "308afad3-8a88-45d4-a0a8-8ddc3bfdd179",
-                    "expectedControlType": "Stick",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 },
@@ -31,9 +31,25 @@
                 },
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "PassThrough",
                     "id": "7fae49c0-c992-4ef3-b073-5f7a41200ab2",
-                    "expectedControlType": "Stick",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Crouch",
+                    "type": "Button",
+                    "id": "a2a0ffdb-8a18-4321-a0a1-9c9902e811bc",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Run",
+                    "type": "Button",
+                    "id": "781930be-caa7-46a3-8a28-b846c96af124",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 }
@@ -52,17 +68,6 @@
                 },
                 {
                     "name": "",
-                    "id": "6be58ce8-defe-4076-af6e-120fff84f014",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "GamePads",
-                    "action": "Stare",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9d54e927-76f0-496c-b9ec-29620b8c4502",
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
@@ -74,23 +79,45 @@
                 },
                 {
                     "name": "",
-                    "id": "8057f03a-530b-45b5-9342-fa346feff857",
-                    "path": "<Gamepad>/leftStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "GamePads",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "9eb8e4c6-0f85-496b-8e92-a66f77a47498",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6fea31d-9511-4a87-8df9-be4d9df1c85b",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a54f5be7-90ca-496d-bc02-b524f05cc536",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Crouch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "031fc4f0-8fa0-4903-baab-d2bfbfa401ea",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
