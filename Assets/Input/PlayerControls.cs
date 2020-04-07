@@ -1,0 +1,303 @@
+// GENERATED AUTOMATICALLY FROM 'Assets/Input/PlayerControls.inputactions'
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Utilities;
+
+public class @PlayerControls : IInputActionCollection, IDisposable
+{
+    public InputActionAsset asset { get; }
+    public @PlayerControls()
+    {
+        asset = InputActionAsset.FromJson(@"{
+    ""name"": ""PlayerControls"",
+    ""maps"": [
+        {
+            ""name"": ""Arena"",
+            ""id"": ""29be948c-6828-45ce-843b-0737f5763288"",
+            ""actions"": [
+                {
+                    ""name"": ""Movement"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""308afad3-8a88-45d4-a0a8-8ddc3bfdd179"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Stare"",
+                    ""type"": ""Button"",
+                    ""id"": ""570984ef-e491-4c56-af42-20f309132a68"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""9ce4bcac-d10f-45d9-9e05-b8b1b9b6de02"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""7fae49c0-c992-4ef3-b073-5f7a41200ab2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Crouch"",
+                    ""type"": ""Button"",
+                    ""id"": ""a2a0ffdb-8a18-4321-a0a1-9c9902e811bc"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Run"",
+                    ""type"": ""Button"",
+                    ""id"": ""781930be-caa7-46a3-8a28-b846c96af124"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                }
+            ],
+            ""bindings"": [
+                {
+                    ""name"": """",
+                    ""id"": ""0df49039-2507-4f5b-85df-880d797738cc"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Stare"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9d54e927-76f0-496c-b9ec-29620b8c4502"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9eb8e4c6-0f85-496b-8e92-a66f77a47498"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a6fea31d-9511-4a87-8df9-be4d9df1c85b"",
+                    ""path"": ""<Gamepad>/leftStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Movement"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a54f5be7-90ca-496d-bc02-b524f05cc536"",
+                    ""path"": ""<Gamepad>/leftStickPress"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Crouch"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""031fc4f0-8fa0-4903-baab-d2bfbfa401ea"",
+                    ""path"": ""<Gamepad>/leftShoulder"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Run"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                }
+            ]
+        }
+    ],
+    ""controlSchemes"": [
+        {
+            ""name"": ""GamePads"",
+            ""bindingGroup"": ""GamePads"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                },
+                {
+                    ""devicePath"": ""<Mouse>"",
+                    ""isOptional"": true,
+                    ""isOR"": false
+                }
+            ]
+        }
+    ]
+}");
+        // Arena
+        m_Arena = asset.FindActionMap("Arena", throwIfNotFound: true);
+        m_Arena_Movement = m_Arena.FindAction("Movement", throwIfNotFound: true);
+        m_Arena_Stare = m_Arena.FindAction("Stare", throwIfNotFound: true);
+        m_Arena_Jump = m_Arena.FindAction("Jump", throwIfNotFound: true);
+        m_Arena_Look = m_Arena.FindAction("Look", throwIfNotFound: true);
+        m_Arena_Crouch = m_Arena.FindAction("Crouch", throwIfNotFound: true);
+        m_Arena_Run = m_Arena.FindAction("Run", throwIfNotFound: true);
+    }
+
+    public void Dispose()
+    {
+        UnityEngine.Object.Destroy(asset);
+    }
+
+    public InputBinding? bindingMask
+    {
+        get => asset.bindingMask;
+        set => asset.bindingMask = value;
+    }
+
+    public ReadOnlyArray<InputDevice>? devices
+    {
+        get => asset.devices;
+        set => asset.devices = value;
+    }
+
+    public ReadOnlyArray<InputControlScheme> controlSchemes => asset.controlSchemes;
+
+    public bool Contains(InputAction action)
+    {
+        return asset.Contains(action);
+    }
+
+    public IEnumerator<InputAction> GetEnumerator()
+    {
+        return asset.GetEnumerator();
+    }
+
+    IEnumerator IEnumerable.GetEnumerator()
+    {
+        return GetEnumerator();
+    }
+
+    public void Enable()
+    {
+        asset.Enable();
+    }
+
+    public void Disable()
+    {
+        asset.Disable();
+    }
+
+    // Arena
+    private readonly InputActionMap m_Arena;
+    private IArenaActions m_ArenaActionsCallbackInterface;
+    private readonly InputAction m_Arena_Movement;
+    private readonly InputAction m_Arena_Stare;
+    private readonly InputAction m_Arena_Jump;
+    private readonly InputAction m_Arena_Look;
+    private readonly InputAction m_Arena_Crouch;
+    private readonly InputAction m_Arena_Run;
+    public struct ArenaActions
+    {
+        private @PlayerControls m_Wrapper;
+        public ArenaActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Movement => m_Wrapper.m_Arena_Movement;
+        public InputAction @Stare => m_Wrapper.m_Arena_Stare;
+        public InputAction @Jump => m_Wrapper.m_Arena_Jump;
+        public InputAction @Look => m_Wrapper.m_Arena_Look;
+        public InputAction @Crouch => m_Wrapper.m_Arena_Crouch;
+        public InputAction @Run => m_Wrapper.m_Arena_Run;
+        public InputActionMap Get() { return m_Wrapper.m_Arena; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(ArenaActions set) { return set.Get(); }
+        public void SetCallbacks(IArenaActions instance)
+        {
+            if (m_Wrapper.m_ArenaActionsCallbackInterface != null)
+            {
+                @Movement.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnMovement;
+                @Movement.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnMovement;
+                @Movement.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnMovement;
+                @Stare.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnStare;
+                @Stare.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnStare;
+                @Stare.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnStare;
+                @Jump.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
+                @Jump.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
+                @Jump.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnJump;
+                @Look.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
+                @Look.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
+                @Look.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnLook;
+                @Crouch.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
+                @Crouch.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
+                @Crouch.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
+                @Run.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
+                @Run.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
+                @Run.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
+            }
+            m_Wrapper.m_ArenaActionsCallbackInterface = instance;
+            if (instance != null)
+            {
+                @Movement.started += instance.OnMovement;
+                @Movement.performed += instance.OnMovement;
+                @Movement.canceled += instance.OnMovement;
+                @Stare.started += instance.OnStare;
+                @Stare.performed += instance.OnStare;
+                @Stare.canceled += instance.OnStare;
+                @Jump.started += instance.OnJump;
+                @Jump.performed += instance.OnJump;
+                @Jump.canceled += instance.OnJump;
+                @Look.started += instance.OnLook;
+                @Look.performed += instance.OnLook;
+                @Look.canceled += instance.OnLook;
+                @Crouch.started += instance.OnCrouch;
+                @Crouch.performed += instance.OnCrouch;
+                @Crouch.canceled += instance.OnCrouch;
+                @Run.started += instance.OnRun;
+                @Run.performed += instance.OnRun;
+                @Run.canceled += instance.OnRun;
+            }
+        }
+    }
+    public ArenaActions @Arena => new ArenaActions(this);
+    private int m_GamePadsSchemeIndex = -1;
+    public InputControlScheme GamePadsScheme
+    {
+        get
+        {
+            if (m_GamePadsSchemeIndex == -1) m_GamePadsSchemeIndex = asset.FindControlSchemeIndex("GamePads");
+            return asset.controlSchemes[m_GamePadsSchemeIndex];
+        }
+    }
+    public interface IArenaActions
+    {
+        void OnMovement(InputAction.CallbackContext context);
+        void OnStare(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
+        void OnCrouch(InputAction.CallbackContext context);
+        void OnRun(InputAction.CallbackContext context);
+    }
+}

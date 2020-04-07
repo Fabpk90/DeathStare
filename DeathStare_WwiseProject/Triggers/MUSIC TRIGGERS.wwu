@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}" SchemaVersion="97" RootDocumentID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}">
+	<Triggers>
+		<WorkUnit Name="MUSIC TRIGGERS" ID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}" OwnerID="{57C4061D-A0D1-46FE-9C02-B2BAB8A72E26}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Stingers" ID="{43B8BBDF-76EE-4EC1-8BDD-5936E30B5AE5}" ShortID="992646756">
+					<ChildrenList>
+						<Folder Name="DeathStare" ID="{10F0EFB6-8CA8-448C-B842-31F342BC97DC}" ShortID="500798269">
+							<ChildrenList>
+								<Trigger Name="TRIGGER_DeathStare_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}"/>
+								<Trigger Name="TRIGGER_DeathStare_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}"/>
+								<Trigger Name="TRIGGER_DeathStare_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}"/>
+								<Trigger Name="TRIGGER_DeathStare_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}"/>
+								<Trigger Name="TRIGGER_DeathStare_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}"/>
+								<Trigger Name="TRIGGER_DeathStare_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}"/>
+								<Trigger Name="TRIGGER_DeathStare_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}"/>
+								<Trigger Name="TRIGGER_DeathStare_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}"/>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>
