@@ -19,9 +19,7 @@ public class FirstPersonController : MonoBehaviour
     private float _mYRotation;
 
     private float _startingHeightCollider;
-    
-    public float crouchingHeightCollider;
-    
+
     private CharacterController m_CharacterController;
     private CollisionFlags m_CollisionFlags;
 
@@ -216,7 +214,23 @@ public class FirstPersonController : MonoBehaviour
 
         _animator.SetBool(Crouching, _isCrouching);
 
-        m_CharacterController.height = _isCrouching ? crouchingHeightCollider : _startingHeightCollider;
+        if (_isCrouching)
+        {
+            m_CharacterController.height = settings.parameters.crouchingHeightCollider;
+            var v = _animator.transform.localPosition;
+            v.y /= 2;
+            _animator.transform.localPosition = v;
+            print(v);
+        }
+        else
+        {
+            m_CharacterController.height = _startingHeightCollider;
+            var v = _animator.transform.localPosition;
+            v.y *= 2;
+            _animator.transform.localPosition = v;
+        }
+        
+        
     }
 
     public void SetCrouch(bool isCrouching)

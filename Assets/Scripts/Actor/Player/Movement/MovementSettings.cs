@@ -15,6 +15,7 @@ namespace Actor.Player.Movement
         
         public float jumpSpeed;
         public float crouchingSpeed;
+        public float crouchingHeightCollider;
 
         public float aerialSpeed;
         public float stareAerialSpeed;

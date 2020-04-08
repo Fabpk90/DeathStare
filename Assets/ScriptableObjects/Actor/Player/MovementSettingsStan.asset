@@ -12,4 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fdab61dbc5042779648ad2b3a1024b2, type: 3}
   m_Name: MovementSettingsStan
   m_EditorClassIdentifier: 
-  aerialSpeed: 0
+  parameters:
+    gravityMultiplier: 2
+    runSpeed: 5
+    walkSpeed: 3
+    runstepLenghten: 0.725
+    jumpSpeed: 10
+    crouchingSpeed: 3
+    crouchingHeightCollider: 0
+    aerialSpeed: 3
+    stareAerialSpeed: 3
+    stareWalkingSpeed: 1.5
+    stepInterval: 2
+    stickToGroundForce: 5
