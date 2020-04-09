@@ -19,9 +19,11 @@ MonoBehaviour:
     runstepLenghten: 0.725
     jumpSpeed: 10
     crouchingSpeed: 3
-    crouchingHeightCollider: 0
+    crouchingHeightCollider: 1
     aerialSpeed: 3
     stareAerialSpeed: 3
     stareWalkingSpeed: 1.5
     stepInterval: 2
     stickToGroundForce: 5
+    jumpCooldown: 0
+    stareCooldown: 0

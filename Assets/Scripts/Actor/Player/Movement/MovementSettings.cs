@@ -23,7 +23,12 @@ namespace Actor.Player.Movement
         
         public float stepInterval;
         public float stickToGroundForce;
-        
+
+        [Header("Cooldowns")] 
+        public float jumpCooldown;
+
+        public float stareCooldown;
+
     }
     
     [CreateAssetMenu(menuName = "Actor/MovementSettings")]

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Actor.Player.Movement;
 using UnityEngine;
 using UnityStandardAssets.Utility;
@@ -39,8 +40,12 @@ public class FirstPersonController : MonoBehaviour
     private float m_StepCycle;
 
     public MovementSettings settings;
+    private MovementSettingsHelper _settingsData;
 
     private Animator _animator;
+
+    private CooldownTimer jumpCooldown;
+    private CooldownTimer stareCooldown;
 
     // Use this for initialization
     private void Start()
@@ -49,7 +54,7 @@ public class FirstPersonController : MonoBehaviour
         m_CharacterController = GetComponent<CharacterController>();
 
         _startingHeightCollider = m_CharacterController.height;
-
+        
         InitFromSO();
 
         m_StepCycle = 0f;
@@ -65,6 +70,13 @@ public class FirstPersonController : MonoBehaviour
     /// </summary>
     private void InitFromSO()
     {
+        _settingsData = settings.parameters;
+        
+        jumpCooldown = new CooldownTimer(_settingsData.jumpCooldown);
+        jumpCooldown.Start(_settingsData.jumpCooldown);
+        
+        stareCooldown = new CooldownTimer(_settingsData.stareCooldown);
+        stareCooldown.Start(_settingsData.stareCooldown);
     }
 
     private void Update()
@@ -83,6 +95,9 @@ public class FirstPersonController : MonoBehaviour
         }
 
         m_PreviouslyGrounded = m_CharacterController.isGrounded;
+        
+        jumpCooldown.Update(Time.deltaTime);
+        stareCooldown.Update(Time.deltaTime);
     }
 
 
@@ -110,11 +125,11 @@ public class FirstPersonController : MonoBehaviour
 
         if (m_CharacterController.isGrounded)
         {
-            m_MoveDir.y = -settings.parameters.stickToGroundForce;
+            m_MoveDir.y = -_settingsData.stickToGroundForce;
 
             if (m_Jump)
             {
-                m_MoveDir.y = settings.parameters.jumpSpeed;
+                m_MoveDir.y = _settingsData.jumpSpeed;
                 PlayJumpSound();
                 m_Jump = false;
                 m_Jumping = true;
@@ -122,7 +137,7 @@ public class FirstPersonController : MonoBehaviour
         }
         else
         {
-            m_MoveDir += Physics.gravity * (settings.parameters.gravityMultiplier * Time.fixedDeltaTime);
+            m_MoveDir += Physics.gravity * (_settingsData.gravityMultiplier * Time.fixedDeltaTime);
         }
 
         m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
@@ -141,21 +156,21 @@ public class FirstPersonController : MonoBehaviour
     private float GetSpeedFromState()
     {
         if (_isCrouching)
-            return settings.parameters.crouchingSpeed;
+            return _settingsData.crouchingSpeed;
         if (_isRunning)
-            return settings.parameters.runSpeed;
+            return _settingsData.runSpeed;
         if (_isStaring)
         {
             if (m_CharacterController.isGrounded)
-                return settings.parameters.stareWalkingSpeed;
+                return _settingsData.stareWalkingSpeed;
 
-            return settings.parameters.stareAerialSpeed;
+            return _settingsData.stareAerialSpeed;
         }
 
         if (!m_CharacterController.isGrounded)
-            return settings.parameters.aerialSpeed;
+            return _settingsData.aerialSpeed;
 
-        return settings.parameters.walkSpeed;
+        return _settingsData.walkSpeed;
     }
 
     public bool GetIsStarePossible()
@@ -174,7 +189,7 @@ public class FirstPersonController : MonoBehaviour
         if (m_CharacterController.velocity.sqrMagnitude > 0 && (m_Input.x != 0 || m_Input.y != 0))
         {
             m_StepCycle += (m_CharacterController.velocity.magnitude +
-                            (speed * (m_IsWalking ? 1f : settings.parameters.runstepLenghten))) *
+                            (speed * (m_IsWalking ? 1f : _settingsData.runstepLenghten))) *
                            Time.fixedDeltaTime;
         }
 
@@ -183,7 +198,7 @@ public class FirstPersonController : MonoBehaviour
             return;
         }
 
-        m_NextStep = m_StepCycle + settings.parameters.stepInterval;
+        m_NextStep = m_StepCycle + _settingsData.stepInterval;
 
         PlayFootStepAudio();
     }
@@ -208,6 +223,28 @@ public class FirstPersonController : MonoBehaviour
         }
     }
 
+    public bool canStare()
+    {
+        if (stareCooldown.IsCompleted && !_isRunning)
+        {
+            stareCooldown.Start();
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool canJump()
+    {
+        if (jumpCooldown.IsCompleted)
+        {
+            jumpCooldown.Start();
+            return true;
+        }
+
+        return false;
+    }
+
     public void ToggleCrouch()
     {
         _isCrouching = !_isCrouching;
@@ -216,7 +253,7 @@ public class FirstPersonController : MonoBehaviour
 
         if (_isCrouching)
         {
-            m_CharacterController.height = settings.parameters.crouchingHeightCollider;
+            m_CharacterController.height = _settingsData.crouchingHeightCollider;
             var v = _animator.transform.localPosition;
             v.y /= 2;
             _animator.transform.localPosition = v;
@@ -229,8 +266,6 @@ public class FirstPersonController : MonoBehaviour
             v.y *= 2;
             _animator.transform.localPosition = v;
         }
-        
-        
     }
 
     public void SetCrouch(bool isCrouching)
