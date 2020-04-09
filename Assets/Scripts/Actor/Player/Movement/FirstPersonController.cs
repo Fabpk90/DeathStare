@@ -73,9 +73,11 @@ public class FirstPersonController : MonoBehaviour
         _settingsData = settings.parameters;
         
         jumpCooldown = new CooldownTimer(_settingsData.jumpCooldown);
+        jumpCooldown.Start();
         jumpCooldown.Update(_settingsData.jumpCooldown);
         
         stareCooldown = new CooldownTimer(_settingsData.stareCooldown);
+        stareCooldown.Start();
         stareCooldown.Update(_settingsData.stareCooldown);
     }
 
@@ -331,6 +333,7 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetStare(bool isStaring)
     {
+        _isStaring = true;
         _animator.SetBool(Staring, isStaring);
     }
 }
