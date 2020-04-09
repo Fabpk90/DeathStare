@@ -73,10 +73,10 @@ public class FirstPersonController : MonoBehaviour
         _settingsData = settings.parameters;
         
         jumpCooldown = new CooldownTimer(_settingsData.jumpCooldown);
-        jumpCooldown.Start(_settingsData.jumpCooldown);
+        jumpCooldown.Update(_settingsData.jumpCooldown);
         
         stareCooldown = new CooldownTimer(_settingsData.stareCooldown);
-        stareCooldown.Start(_settingsData.stareCooldown);
+        stareCooldown.Update(_settingsData.stareCooldown);
     }
 
     private void Update()
@@ -173,11 +173,6 @@ public class FirstPersonController : MonoBehaviour
         return m_Input.y > 0 ? _settingsData.walkSpeedForward : _settingsData.walkSpeedBackwards;
     }
 
-    public bool GetIsStarePossible()
-    {
-        return true;
-    }
-
     private void PlayJumpSound()
     {
         //insert here the audio
@@ -218,7 +213,9 @@ public class FirstPersonController : MonoBehaviour
     {
         if (m_CharacterController.isGrounded)
         {
-            SetCrouch(false);
+            if(_isCrouching)
+                SetCrouch(false);
+            
             m_Jump = true;
             _animator.SetTrigger(Jumping);
         }
@@ -302,7 +299,8 @@ public class FirstPersonController : MonoBehaviour
     {
         if (isRunning && m_CharacterController.isGrounded)
         {
-            SetCrouch(false);
+            if(_isCrouching)
+                SetCrouch(false);
             
             _animator.SetBool(Running, true);
             _isRunning = true;
