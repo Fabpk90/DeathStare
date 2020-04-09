@@ -6,7 +6,8 @@ namespace Actor.Hittable
     [RequireComponent(typeof(Collider))]
     public class HittablePoint : MonoBehaviour, IHittable
     {
-        public HealthManager HealthManager;
+        public HealthManager healthManager;
+        public Rigidbody rigidBody;
 
         private void Awake()
         {
@@ -19,9 +20,14 @@ namespace Actor.Hittable
             return transform.position;
         }
 
-        public bool TakeDamage(int amount)
+        public bool TakeDamage(float amount)
         {
-            return HealthManager.TakeDamage(amount);
+            return healthManager.TakeDamage(amount);
+        }
+
+        public void AddForce(Vector3 force)
+        {
+            rigidBody.AddForce(force);
         }
     }
 }

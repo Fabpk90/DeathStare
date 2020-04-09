@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityStandardAssets.Characters.FirstPerson;
 
 [RequireComponent(typeof(PlayerInputManager))]
 public class TestMode : GameMode
@@ -12,6 +13,7 @@ public class TestMode : GameMode
     [Tooltip("Permet de tester avec une manette")]
     public bool debugPlayers;
 
+    public Transform[] spawnPoints;
 
     public override void Init()
     {
@@ -47,6 +49,13 @@ public class TestMode : GameMode
         
         players.Add(obj);
 
+        var ct = obj.GetComponent<CharacterController>();
+        
+        ct.enabled = false;
+        obj.transform.position = spawnPoints[obj.playerIndex].position;
+        obj.transform.rotation = spawnPoints[obj.playerIndex].rotation;
+        ct.enabled = true;
+
         if (players.Count == 4)
             InitPlayersCamera();
     }
@@ -77,7 +86,7 @@ public class TestMode : GameMode
 
         for (int i = 0; i < players.Count; i++)
         {
-            players[i].GetComponent<MeshRenderer>().material.color = playersColor[i];
+            //players[i].GetComponentInChildren<MeshRenderer>().material.color = playersColor[i];
         }
         
     }

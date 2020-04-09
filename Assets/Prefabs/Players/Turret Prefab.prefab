@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 3022443101766531161}
+  healthManager: {fileID: 3022443101766531161}
+  rigidBody: {fileID: 6174768962379848295}
 --- !u!65 &5454214446072437350
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -102,7 +103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 3022443101766531161}
+  healthManager: {fileID: 3022443101766531161}
+  rigidBody: {fileID: 6174768962379848295}
 --- !u!65 &802437557237393290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -160,7 +162,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 3022443101766531161}
+  healthManager: {fileID: 3022443101766531161}
+  rigidBody: {fileID: 6174768962379848295}
 --- !u!65 &3961921761281048653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -218,7 +221,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 3022443101766531161}
+  healthManager: {fileID: 3022443101766531161}
+  rigidBody: {fileID: 6174768962379848295}
 --- !u!65 &1022779333085350132
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -359,6 +363,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerSecond: 1
+  isStaring: 0
+  camera: {fileID: 0}
 --- !u!114 &3022443101766531161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,12 +378,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
-  hittablePoints:
-  - {fileID: 8290139571584556303}
-  - {fileID: 280691327162737748}
-  - {fileID: 9090594465741762985}
-  - {fileID: 7510355442981647535}
-  - {fileID: 5692395707937121506}
+  points:
+  - {fileID: 3643218963935069541}
+  - {fileID: 1943809339010310928}
+  - {fileID: 8910823334669218760}
+  - {fileID: 1375732993923102870}
+  - {fileID: 1765338324920438029}
 --- !u!1 &6397479903529641476
 GameObject:
   m_ObjectHideFlags: 0
@@ -457,7 +463,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7c0e2c243f4084bcf0749ac23cff34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HealthManager: {fileID: 3022443101766531161}
+  healthManager: {fileID: 3022443101766531161}
+  rigidBody: {fileID: 6174768962379848295}
 --- !u!65 &8638744939242496527
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{57C4061D-A0D1-46FE-9C02-B2BAB8A72E26}" SchemaVersion="97" RootDocumentID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}">
+	<Triggers>
+		<WorkUnit Name="SFX TRIGGERS" ID="{57C4061D-A0D1-46FE-9C02-B2BAB8A72E26}" OwnerID="{AC6052DF-E465-466D-B5A8-CF70A5022B18}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="MUSIC TRIGGERS" ID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>
