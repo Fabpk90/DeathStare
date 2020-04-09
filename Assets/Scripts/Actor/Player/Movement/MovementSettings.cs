@@ -7,28 +7,31 @@ namespace Actor.Player.Movement
     public class MovementSettingsHelper
     {
         public float gravityMultiplier;
-        
+        [Header("RUN")]
         public float runSpeedForward;
         public float runSpeedBackwards;
-        public float walkSpeedForward;
+		[Header("WALK")]
+		public float walkSpeedForward;
         public float walkSpeedBackwards;
         
         [Range(0f, 1f)] 
         public float runstepLenghten;
-        
-        public float jumpSpeed;
-        public float crouchingSpeedForward;
+
+		[Header("JUMP")]
+		public float jumpSpeed;
+		[Header("CROUCH")]
+		public float crouchingSpeedForward;
         public float crouchingSpeedBackwards;
         public float crouchingHeightCollider;
-
-        public float aerialSpeedForward;
+		[Header("AERIAL")]
+		public float aerialSpeedForward;
         public float aerialSpeedBackwards;
         public float stareAerialSpeedForward;
         public float stareAerialSpeedBackwards;
-        
-        public float stareWalkingSpeedForward;
+		[Header("STARE")]
+		public float stareWalkingSpeedForward;
         public float stareWalkingSpeedBackwards;
-        
+        [Space]
         public float stepInterval;
         public float stickToGroundForce;
 
