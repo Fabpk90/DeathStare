@@ -1,6 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0FF48D0C-CD67-4012-A6AB-7298C7ECC80D}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{0FF48D0C-CD67-4012-A6AB-7298C7ECC80D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0FF48D0C-CD67-4012-A6AB-7298C7ECC80D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Props_Bell_Character2_Lead" ID="{B86F7BF3-23FE-401D-8A37-61C4F4039997}" ShortID="476723103">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Props_Bell_Character2_Lead" ID="{93E999AF-5B15-40A9-9AC2-32EC0D29CCCC}">
+							<Language>SFX</Language>
+							<AudioFile>Foleys\Props\Bell\Props_Bell_Character2_Lead.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="829157616"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Props_Bell_Character2_Lead" ID="{93E999AF-5B15-40A9-9AC2-32EC0D29CCCC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Props_Bell_Character3_Lead" ID="{B47B9CFE-3C66-4A12-9F32-A65986C98BF9}" ShortID="145002128">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Props_Bell_Character3_Lead" ID="{090D6401-ED31-4E51-A46E-85B542E4921D}">
+							<Language>SFX</Language>
+							<AudioFile>Foleys\Props\Bell\Props_Bell_Character3_Lead.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="391498174"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Props_Bell_Character3_Lead" ID="{090D6401-ED31-4E51-A46E-85B542E4921D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Props_Bell_Character4_Lead" ID="{252A8EBF-65C8-40FB-A780-9578D3958055}" ShortID="649475116">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Props_Bell_Character4_Lead" ID="{B011A8C5-1292-4182-A179-9C23C95228CD}">
+							<Language>SFX</Language>
+							<AudioFile>Foleys\Props\Bell\Props_Bell_Character4_Lead.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="273028133"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Props_Bell_Character4_Lead" ID="{B011A8C5-1292-4182-A179-9C23C95228CD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Props_Bell_Character1_Lead" ID="{D5BCA7D8-D5E0-4D58-872C-7D16741FBF6C}" ShortID="187368321">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Props_Bell_Character1_Lead" ID="{5FC599D5-ADD1-4136-996D-77200094FB8C}">
+							<Language>SFX</Language>
+							<AudioFile>Foleys\Props\Bell\Props_Bell_Character1_Lead.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="653530305"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Props_Bell_Character1_Lead" ID="{5FC599D5-ADD1-4136-996D-77200094FB8C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
