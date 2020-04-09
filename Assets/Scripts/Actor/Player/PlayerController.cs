@@ -58,7 +58,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnJump(InputAction.CallbackContext obj)
     {
-        _controller.Jump();
+        if(_controller.canJump())
+            _controller.Jump();
     }
 
     private void OnLook(InputAction.CallbackContext obj)
@@ -80,7 +81,10 @@ public class PlayerController : MonoBehaviour
 
     private void OnStartStare(InputAction.CallbackContext obj)
     {
-        print(_stare.StartStare());
-        _controller.SetStare(true);
+        if (_controller.canStare())
+        {
+            print(_stare.StartStare());
+            _controller.SetStare(true);
+        }
     }
 }
