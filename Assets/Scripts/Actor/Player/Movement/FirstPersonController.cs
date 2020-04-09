@@ -156,21 +156,21 @@ public class FirstPersonController : MonoBehaviour
     private float GetSpeedFromState()
     {
         if (_isCrouching)
-            return _settingsData.crouchingSpeed;
+            return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
         if (_isRunning)
-            return _settingsData.runSpeed;
+            return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
         if (_isStaring)
         {
             if (m_CharacterController.isGrounded)
-                return _settingsData.stareWalkingSpeed;
+                return m_Input.y > 0 ?_settingsData.stareWalkingSpeedForward : _settingsData.stareWalkingSpeedBackwards;
 
-            return _settingsData.stareAerialSpeed;
+            return m_Input.y > 0 ? _settingsData.stareAerialSpeedForward : _settingsData.stareAerialSpeedBackwards;
         }
 
         if (!m_CharacterController.isGrounded)
-            return _settingsData.aerialSpeed;
+            return m_Input.y > 0 ? _settingsData.aerialSpeedForward : _settingsData.aerialSpeedBackwards;
 
-        return _settingsData.walkSpeed;
+        return m_Input.y > 0 ? _settingsData.walkSpeedForward : _settingsData.walkSpeedBackwards;
     }
 
     public bool GetIsStarePossible()

@@ -8,25 +8,32 @@ namespace Actor.Player.Movement
     {
         public float gravityMultiplier;
         
-        public float runSpeed;
-        public float walkSpeed;
+        public float runSpeedForward;
+        public float runSpeedBackwards;
+        public float walkSpeedForward;
+        public float walkSpeedBackwards;
+        
         [Range(0f, 1f)] 
         public float runstepLenghten;
         
         public float jumpSpeed;
-        public float crouchingSpeed;
+        public float crouchingSpeedForward;
+        public float crouchingSpeedBackwards;
         public float crouchingHeightCollider;
 
-        public float aerialSpeed;
-        public float stareAerialSpeed;
-        public float stareWalkingSpeed;
+        public float aerialSpeedForward;
+        public float aerialSpeedBackwards;
+        public float stareAerialSpeedForward;
+        public float stareAerialSpeedBackwards;
+        
+        public float stareWalkingSpeedForward;
+        public float stareWalkingSpeedBackwards;
         
         public float stepInterval;
         public float stickToGroundForce;
 
         [Header("Cooldowns")] 
         public float jumpCooldown;
-
         public float stareCooldown;
 
     }
