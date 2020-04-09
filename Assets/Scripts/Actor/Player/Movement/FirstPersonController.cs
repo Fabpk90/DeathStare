@@ -218,6 +218,7 @@ public class FirstPersonController : MonoBehaviour
     {
         if (m_CharacterController.isGrounded)
         {
+            SetCrouch(false);
             m_Jump = true;
             _animator.SetTrigger(Jumping);
         }
@@ -254,17 +255,20 @@ public class FirstPersonController : MonoBehaviour
         if (_isCrouching)
         {
             m_CharacterController.height = _settingsData.crouchingHeightCollider;
-            var v = _animator.transform.localPosition;
+            var transform1 = _animator.transform;
+            
+            var v = transform1.localPosition;
             v.y /= 2;
-            _animator.transform.localPosition = v;
-            print(v);
+            transform1.localPosition = v;
         }
         else
         {
             m_CharacterController.height = _startingHeightCollider;
-            var v = _animator.transform.localPosition;
+            var transform1 = _animator.transform;
+            
+            var v = transform1.localPosition;
             v.y *= 2;
-            _animator.transform.localPosition = v;
+            transform1.localPosition = v;
         }
     }
 
@@ -274,9 +278,23 @@ public class FirstPersonController : MonoBehaviour
 
         _animator.SetBool(Crouching, isCrouching);
 
-        if (!isCrouching)
+        if (_isCrouching)
+        {
+            m_CharacterController.height = _settingsData.crouchingHeightCollider;
+            var transform1 = _animator.transform;
+            
+            var v = transform1.localPosition;
+            v.y /= 2;
+            transform1.localPosition = v;
+        }
+        else
         {
             m_CharacterController.height = _startingHeightCollider;
+            var transform1 = _animator.transform;
+            
+            var v = transform1.localPosition;
+            v.y *= 2;
+            transform1.localPosition = v;
         }
     }
 
