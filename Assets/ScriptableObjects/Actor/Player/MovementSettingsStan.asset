@@ -15,12 +15,12 @@ MonoBehaviour:
   parameters:
     gravityMultiplier: 2
     runSpeedForward: 7
-    runSpeedBackwards: 5
-    walkSpeedForward: 4
-    walkSpeedBackwards: 3
-    runstepLenghten: 0.725
+    runSpeedBackwards: 0
+    walkSpeedForward: 0
+    walkSpeedBackwards: 2
+    runstepLenghten: 0.632
     jumpSpeed: 10
-    crouchingSpeedForward: 3
+    crouchingSpeedForward: 1
     crouchingSpeedBackwards: 2
     crouchingHeightCollider: 1
     aerialSpeedForward: 3
