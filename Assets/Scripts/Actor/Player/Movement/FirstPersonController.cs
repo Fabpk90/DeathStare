@@ -108,13 +108,12 @@ public class FirstPersonController : MonoBehaviour
         m_NextStep = m_StepCycle + .5f;
     }
 
-
     private void FixedUpdate()
     {
         float speed = GetSpeedFromState();
 
         Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
-
+        
         // get a normal for the surface that is being touched to move along it
         RaycastHit hitInfo;
         Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
@@ -333,7 +332,7 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetStare(bool isStaring)
     {
-        _isStaring = true;
+        _isStaring = isStaring;
         _animator.SetBool(Staring, isStaring);
     }
 }
