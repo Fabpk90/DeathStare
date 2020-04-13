@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fdab61dbc5042779648ad2b3a1024b2, type: 3}
+  m_Name: MovementSettingsStan
+  m_EditorClassIdentifier: 
+  parameters:
+    gravityMultiplier: 2
+    runSpeedForward: 7
+    runSpeedBackwards: 5
+    walkSpeedForward: 12
+    walkSpeedBackwards: 5
+    runstepLenghten: 0.725
+    jumpSpeed: 10
+    crouchingSpeedForward: 3
+    crouchingSpeedBackwards: 2
+    crouchingHeightCollider: 1
+    aerialSpeedForward: 3
+    aerialSpeedBackwards: 3
+    stareAerialSpeedForward: 1.5
+    stareAerialSpeedBackwards: 1.5
+    stareWalkingSpeedForward: 5
+    stareWalkingSpeedBackwards: 1
+    stepInterval: 2
+    stickToGroundForce: 5
+    jumpCooldown: 1
+    stareCooldown: 3

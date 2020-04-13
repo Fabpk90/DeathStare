@@ -276,6 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crouchingHeightCollider: 1
   m_FovKick:
     Camera: {fileID: 0}
     originalFov: 0
@@ -306,7 +307,6 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  m_GravityMultiplier: 2
   m_HeadBob:
     HorizontalBobRange: 0.1
     VerticalBobRange: 0.1
@@ -362,22 +362,10 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     VerticaltoHorizontalRatio: 2
-  m_IsWalking: 0
   m_JumpBob:
     BobDuration: 0.2
     BobAmount: 0.1
-  m_JumpSpeed: 10
-  m_RunSpeed: 10
-  m_RunstepLenghten: 0.7
-  m_StepInterval: 5
-  m_StickToGroundForce: 10
-  m_WalkSpeed: 5
-  crouchingSpeed: 2.5
-  stareWalkingSpeed: 0
-  stareAerialSpeed: 0
-  aerialSpeed: 3
-  crouchingHeightCollider: 1
-  animator: {fileID: 6913276672448685695}
+  settings: {fileID: 11400000, guid: 717663e16327e1f4690db5ae7b8bc925, type: 2}
 --- !u!114 &8016140257322171950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,12 +1160,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
---- !u!95 &6913276672448685695 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 2065981099872986947, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4853528394774987068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1912429295161469787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
