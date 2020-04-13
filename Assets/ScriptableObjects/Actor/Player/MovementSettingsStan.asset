@@ -14,22 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   parameters:
     gravityMultiplier: 2
-    runSpeedForward: 7
+    runSpeedForward: 8
     runSpeedBackwards: 5
-    walkSpeedForward: 12
-    walkSpeedBackwards: 5
+    walkSpeedForward: 4
+    walkSpeedBackwards: 2
     runstepLenghten: 0.725
     jumpSpeed: 10
-    crouchingSpeedForward: 3
+    crouchingSpeedForward: 1
     crouchingSpeedBackwards: 2
     crouchingHeightCollider: 1
     aerialSpeedForward: 3
     aerialSpeedBackwards: 3
-    stareAerialSpeedForward: 1.5
-    stareAerialSpeedBackwards: 1.5
-    stareWalkingSpeedForward: 5
-    stareWalkingSpeedBackwards: 1
+    stareAerialSpeedForward: 1
+    stareAerialSpeedBackwards: 1
+    stareWalkingSpeedForward: 1
+    stareWalkingSpeedBackwards: 0.5
     stepInterval: 2
     stickToGroundForce: 5
     jumpCooldown: 1
-    stareCooldown: 3
+    stareCooldown: 1

@@ -19,7 +19,8 @@ public class PlayerHeadBodyController : MonoBehaviour
 	//inspector variables
 	public Transform characterCamera;
 	public float bodyUpdateRotationSpeed = 500;
-	public Vector3 worldDirectionInput = Vector3.forward; //the direction of the character (world)
+	//public Vector3 worldDirectionInput = Vector3.forward; //the direction of the character (world)
+	public CharacterController controller;
 
 	private void Awake()
 	{
@@ -28,7 +29,9 @@ public class PlayerHeadBodyController : MonoBehaviour
 
 	private void Update()
 	{
-		if (!characterCamera) return;
+		if (!characterCamera || !controller) return;
+
+		Vector3 worldDirectionInput = controller.velocity.normalized;
 		//Projection of direction on the X,Z plane
 		Vector3 projectHeadDirection = Vector3.ProjectOnPlane(characterCamera.forward, Vector3.up).normalized;
 		Vector3 projectBodyDirection = Vector3.ProjectOnPlane(worldDirectionInput, Vector3.up).normalized;
@@ -64,11 +67,11 @@ public class PlayerHeadBodyController : MonoBehaviour
 	private void OnAnimatorIK(int layerIndex)
 	{
 		//apply the camera rotation with the weird world->local rotation conversion
-		Transform head = _animator.GetBoneTransform(HumanBodyBones.Head);
+		Transform head = _animator.GetBoneTransform(HumanBodyBones.Neck);
 		Quaternion prevRot = head.rotation;
 		head.rotation = characterCamera.rotation;
 		Quaternion local = head.localRotation;
 		head.rotation = prevRot;
-		_animator.SetBoneLocalRotation(HumanBodyBones.Head, local * Quaternion.Euler(0, 0, -90));//little rotation because of the orientation of the bones
+		_animator.SetBoneLocalRotation(HumanBodyBones.Neck, local );//little rotation because of the orientation of the bones
 	}
 }
