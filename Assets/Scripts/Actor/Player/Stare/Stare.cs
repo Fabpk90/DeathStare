@@ -1,69 +1,128 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
+using Actor;
 using Actor.Hittable;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Stare : MonoBehaviour
 {
-   public float damagePerSecond;
+   public static List<HittablePoint> HittablePoints = new List<HittablePoint>(200);
+   
+   public List<IHittable> targetToAttack;
+   public int damagePerSecond;
 
+   public bool isStaring;
+   private List<IHittable> hitsToRemove;
 
-   public bool StareViolently(Transform[] points, Vector3 origin, Camera cam)
+   public Camera camera;
+   private HashSet<HealthManager> hitDuringThisFrame;
+   [NonSerialized] public List<PlayerController> playersHitDuringThisFrame;
+
+   public float stareForce;
+
+   private PlayerController _controller;
+   
+   private void Awake()
    {
-      print("Shooting ! " + points.Length+ " " + transform.name);
-      bool found = false;
-      foreach (Transform point in points)
-      {
-         //Vector3 p = cam.WorldToScreenPoint(point.position);
-         
-         //test if the point is visible for the camera
-         /*if (p.x >= 0 && p.x <= cam.pixelWidth
-                      && p.y >= 0 && p.y <= cam.pixelHeight
-                      && p.z > 0)*/
-         {
-            float angle = Vector3.Angle(origin, point.position);
-            if ( angle <= cam.fieldOfView)
-            {
-               var direction = origin - point.position;
-               Debug.DrawRay(point.position, direction, Color.red, 2.0f);
-               if(Physics.Raycast(origin, direction, out var hitinfo))
-               {
-                  var hitable = hitinfo.collider.GetComponent<IHittable>();
+      _controller = GetComponentInParent<PlayerController>();
+      hitDuringThisFrame = new HashSet<HealthManager>();
+      hitsToRemove = new List<IHittable>(25);  
+      targetToAttack = new List<IHittable>(25);
+      playersHitDuringThisFrame = new List<PlayerController>(3);
+   }
 
-                  if (hitable != null)
-                  {
-                     hitable.TakeDamage((int)damagePerSecond);
-                     found = true;
-                  }
+   /// <summary>
+   /// Check if the actor is staring at something
+   /// </summary>
+   /// <returns> true if he/she is, false otherwise</returns>
+   public bool CheckForThingsInSight()
+   {
+      hitDuringThisFrame.Clear();
+      playersHitDuringThisFrame.Clear();
+
+      bool found = false;
+      
+      foreach (HittablePoint point in HittablePoints)
+      {
+         if (point)
+         {
+            Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
+
+            if (viewportPoint.z > 0 
+                && viewportPoint.x > 0 && viewportPoint.x < 1
+                && viewportPoint.y > 0 && viewportPoint.y < 1
+                && !hitDuringThisFrame.Contains(point.healthManager))
+            {
+               Vector3 repulsionForce = point.GetPosition() - transform.position;
+               
+               point.AddForce(repulsionForce.normalized * stareForce);
+                  
+               hitDuringThisFrame.Add(point.healthManager);
+
+               PlayerController p = point.healthManager.GetComponent<PlayerController>();
+
+               //we hit a player !
+               if (p)
+               {
+                  playersHitDuringThisFrame.Add(p);
                }
+               else
+               {
+                  point.TakeDamage(damagePerSecond * Time.deltaTime);
+               }
+               
+               found = true;
+
+               //TODO: check if it's not a player that is staring at us
+               //maybe have a list of player we are staring at
+               //to rapidly check if it's a duel
+               
+               
             }
          }
-        /* else
-         {
-            print("Not in the frustrum " + transform.name);
-         }*/
       }
+
       return found;
    }
-   
-   public bool StareViolently(Vector3 origin, Vector3 direction)
+
+   private void Update()
    {
-      Ray r = new Ray(origin, direction);
-
-      if (Physics.Raycast(r, out var hitInfo))
+      if (isStaring)
       {
-         var hitable = hitInfo.collider.GetComponent<IHittable>();
-
-         hitable?.TakeDamage((int)damagePerSecond);
-
-         print(hitInfo.collider.gameObject);
-
-         return true;
+         CheckForThingsInSight();
       }
-      
-      Debug.DrawRay(origin, direction, Color.red, 5.0f);
+   }
 
-      return false;
+   private void LateUpdate()
+   {
+      //TODO: check if the players we are staring at are staring back
+      foreach (PlayerController playerController in playersHitDuringThisFrame)
+      {
+         if (playerController)
+         {
+            if (!playerController._stare.playersHitDuringThisFrame.Contains(_controller))
+            {
+               //WE DESTROY DAT MF !
+               playerController.GetComponent<HealthManager>().TakeDamage(damagePerSecond * Time.deltaTime);
+            }
+            else
+            {
+               print("Duel with " +  playerController.GetComponent<HealthManager>().transform.gameObject);
+            }
+         }
+         
+      }
+   }
+
+
+   public bool StartStare()
+   {
+      isStaring = true;
+      return CheckForThingsInSight();
+   }
+
+   public void StopStare()
+   {
+      isStaring = false;
    }
 }

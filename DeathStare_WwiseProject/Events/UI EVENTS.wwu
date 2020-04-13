@@ -6,6 +6,10 @@
 				<Property Name="Color" Type="int16" Value="11"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="CharacterSelection" ID="{78D194D8-0ED9-4A59-B78D-857EA4BB2C35}" ShortID="301907475"/>
+				<Folder Name="MainMenu" ID="{1E595C7C-BE74-48AB-8651-654C23207105}" ShortID="30130930"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

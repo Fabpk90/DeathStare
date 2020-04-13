@@ -6,6 +6,9 @@
 				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Zones" ID="{4C0BA04B-36D8-45C9-9758-C6C38145D440}" ShortID="103403713"/>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

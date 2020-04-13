@@ -6,6 +6,13 @@
 				<Property Name="Color" Type="int16" Value="16"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Characters" ID="{DAD02353-5709-4960-8673-4686C59819C0}" ShortID="118932578">
+					<ChildrenList>
+						<Folder Name="Character1" ID="{27778238-7285-4BE5-BBE5-B05787A59719}" ShortID="623341011"/>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
