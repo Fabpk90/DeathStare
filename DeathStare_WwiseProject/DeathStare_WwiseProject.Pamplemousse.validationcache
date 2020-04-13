@@ -11,7 +11,7 @@
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\TEMPLATE SWITCHES.wwu" DateLow="1583933773" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\SFX SWITCHES.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\MUSIC SWITCHES.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\GENERAL SWITCHES.wwu" DateLow="1585996350" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\GENERAL SWITCHES.wwu" DateLow="1586425415" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\FOLEYS SWITCHES.wwu" DateLow="1585909356" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\EFFECTS SWITCHES.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Switches\DS SWITCHES.wwu" DateLow="1585237191" DateHigh="0"/>
@@ -30,7 +30,7 @@
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\States\AMBIANCES STATES.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\VOICE SNB.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\TEST.wwu" DateLow="1584354993" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\TEST.wwu" DateLow="1586445946" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\TEMPLATE SNB.wwu" DateLow="1583933880" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\SFX SNB.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\SoundBanks\MUSIC SNB.wwu" DateLow="1585237191" DateHigh="0"/>
@@ -47,7 +47,7 @@
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Master-Mixer Hierarchy\DS MIX.wwu" DateLow="1586004551" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Interactive Music Hierarchy\TEMPLATE MUSIC.wwu" DateLow="1583933969" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Interactive Music Hierarchy\MAIN.wwu" DateLow="1586005665" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Interactive Music Hierarchy\MAIN.wwu" DateLow="1586278131" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Interactive Music Hierarchy\DS MUSIC.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Game Parameters\VOICE RTPC.wwu" DateLow="1585237191" DateHigh="0"/>
@@ -61,22 +61,22 @@
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Game Parameters\DS RTPC.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Game Parameters\AMBIANCES RTPC.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\VOICE EVENTS.wwu" DateLow="1586005600" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\UI EVENTS.wwu" DateLow="1585927185" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\TEST.wwu" DateLow="1584354993" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\VOICE EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\UI EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\TEST.wwu" DateLow="1586445946" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\TEMPLATE EVENTS.wwu" DateLow="1583933708" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\SFX EVENTS.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\MUSIC EVENTS.wwu" DateLow="1586002275" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\FOLEYS EVENTS.wwu" DateLow="1585927011" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\EFFECTS EVENTS.wwu" DateLow="1585927537" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\MUSIC EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\FOLEYS EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\EFFECTS EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\DS EVENTS.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\Default Work Unit.wwu" DateLow="1586002275" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\AMBIANCES EVENTS.wwu" DateLow="1585927144" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Events\AMBIANCES EVENTS.wwu" DateLow="1586445946" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Effects\Factory Effects.wwu" DateLow="1585658562" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\DeathStare_WwiseProject.wproj" DateLow="1585237227" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\DeathStare_WwiseProject.Pamplemousse.wsettings" DateLow="1586005990" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\DeathStare_WwiseProject.wproj" DateLow="1586420799" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\DeathStare_WwiseProject.Pamplemousse.wsettings" DateLow="1586446838" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Conversion Settings\TEMPLATE CONVERSIONS.wwu" DateLow="1583934044" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Conversion Settings\DS CONVERSIONS.wwu" DateLow="1585237191" DateHigh="0"/>
@@ -90,9 +90,9 @@
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\TEST.wwu" DateLow="1585647423" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\TEMPLATE AUDIO.wwu" DateLow="1583933594" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\SFX.wwu" DateLow="1585237191" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\FOLEYS.wwu" DateLow="1586005198" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\FOLEYS.wwu" DateLow="1586446838" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\EFFECTS.wwu" DateLow="1586004233" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\DS AUDIO.wwu" DateLow="1585237191" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1585909651" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\AMBIANCES.wwu" DateLow="1586004233" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\Actor-Mixer Hierarchy\AMBIANCES.wwu" DateLow="1586445989" DateHigh="0"/>
 </ValidationCache>
