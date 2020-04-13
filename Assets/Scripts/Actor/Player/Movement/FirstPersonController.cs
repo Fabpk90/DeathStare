@@ -46,6 +46,7 @@ public class FirstPersonController : MonoBehaviour
 
     private CooldownTimer jumpCooldown;
     private CooldownTimer stareCooldown;
+    private static readonly int Velocity = Animator.StringToHash("Velocity");
 
     // Use this for initialization
     private void Start()
@@ -152,6 +153,7 @@ public class FirstPersonController : MonoBehaviour
 
         m_IsWalking = input != Vector2.zero;
         _animator.SetBool(Walking, m_IsWalking);
+        _animator.SetFloat(Velocity, m_Input.magnitude);
     }
 
     private float GetSpeedFromState()
