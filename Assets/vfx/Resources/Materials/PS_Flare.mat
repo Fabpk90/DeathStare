@@ -72,4 +72,4 @@ Material:
     - _DistortionSpeed: {r: -0.1, g: -0.1, b: 0, a: 0}
     - _MainTexSpeed: {r: 0, g: 0, b: 0, a: 0}
     - _Speed: {r: 0, g: 0, b: 0, a: 0}
-    - _TintColor: {r: 4.0052357, g: 4.0052357, b: 4.0052357, a: 1}
+    - _TintColor: {r: 4.7923956, g: 2.7060206, b: 0.42950702, a: 1}

@@ -8,8 +8,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PS_LightningSplashFloor
-  m_Shader: {fileID: 4800000, guid: a13ca4d650bb8004993930780bc9ee16, type: 3}
-  m_ShaderKeywords: _EMISSION
+  m_Shader: {fileID: 4800000, guid: b4648bd239770c14bade67fd4b0b0fd7, type: 3}
+  m_ShaderKeywords: USE_SOFT_PARTICLES _EMISSION
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
@@ -41,7 +41,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 941ec4028710a9c4296f6a02c23acd19, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 3.73, y: 2.47}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
@@ -84,17 +84,20 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _AlphaCutout: 0
+    - _AlphaCutout: 16.63
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
-    - _DissolveEdgeWidth: 0
+    - _DissolveEdgeWidth: 0.385
     - _DstBlend: 0
+    - _FresnelPower: 0.5
+    - _FresnelScale: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _InvFade: 3
+    - _InvFade: 6.55
     - _LinePower: 2.41
+    - _MaskClipValue: 0.5
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -103,15 +106,18 @@ Material:
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _TexPower: 2
+    - _TexPower: 17.66
+    - _TexSoftFactor: 0
     - _UVSec: 0
+    - _UseSoftParticles: 1
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
     - _Color: {r: 0, g: 2.3103452, b: 5, a: 1}
     - _DissolveColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _NoiseSpeed: {r: 0, g: 0, b: 0, a: 0}
+    - _MainTilingOffset: {r: 1, g: 1, b: 0, a: 0}
+    - _NoiseSpeed: {r: 4.5, g: 0, b: 0, a: 0}
     - _Speed: {r: 0, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 0, a: 0}
-    - _TintColor: {r: 1024, g: 1024, b: 1024, a: 1}
+    - _TintColor: {r: 0, g: 293.1451, b: 766.9961, a: 1}
