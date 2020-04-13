@@ -1363,7 +1363,7 @@ MonoBehaviour:
   useMainThreadManagerForRPCs: 1
   useInlineChat: 0
   getLocalNetworkConnections: 0
-  useTCP: 0
+  useTCP: 1
 --- !u!114 &2008293288
 MonoBehaviour:
   m_ObjectHideFlags: 0
