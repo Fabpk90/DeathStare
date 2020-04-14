@@ -103,7 +103,10 @@ public class Stare : MonoBehaviour
             if (!playerController._stare.playersHitDuringThisFrame.Contains(_controller))
             {
                //WE DESTROY DAT MF !
-               playerController.GetComponent<HealthManager>().TakeDamage(damagePerSecond * Time.deltaTime);
+               if (playerController.GetComponent<HealthManager>().TakeDamage(damagePerSecond * Time.deltaTime))
+               {
+                  //the mf is ded
+               }
             }
             else
             {

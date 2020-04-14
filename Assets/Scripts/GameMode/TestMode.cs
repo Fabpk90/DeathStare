@@ -18,7 +18,7 @@ public class TestMode : GameMode
     public Transform[] spawnPoints;
 
     private CooldownTimer _timer;
-    public TextMeshPro textTimerRound;
+    public TextMeshProUGUI textTimerRound;
     public float secondsInRound;
 
     public override void Init()
@@ -44,18 +44,20 @@ public class TestMode : GameMode
         
         _timer = new CooldownTimer(secondsInRound);
         _timer.TimerCompleteEvent += OnEndTimeOfRound;
+        
+        _timer.Start();
     }
 
     private void Update()
     {
         _timer.Update(Time.deltaTime);
         //TODO: optimize this
-        textTimerRound.text = (_timer.TimeRemaining / 60) + ":" + _timer.TimeRemaining % 60;
+        textTimerRound.text = ((int)_timer.TimeRemaining / 60) + ":" + (int)_timer.TimeRemaining % 60;
     }
 
     private void OnEndTimeOfRound()
     {
-        throw new System.NotImplementedException();
+        print("End of round !");
     }
 
     protected override void PlayerJoined(PlayerInput obj)
