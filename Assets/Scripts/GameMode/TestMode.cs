@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Actor.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -12,7 +13,7 @@ public class TestMode : GameMode
 
     public Color[] playersColor;
 
-    [Tooltip("Permet de tester avec une manette")]
+    [Tooltip("Permet de tester avec une seule manette")]
     public bool debugPlayers;
 
     public Transform[] spawnPoints;
@@ -21,9 +22,15 @@ public class TestMode : GameMode
     public TextMeshProUGUI textTimerRound;
     public float secondsInRound;
 
+    public float invulnerableTime;
+
+    public uint killsToWin;
+
     public override void Init()
     {
         base.Init();
+
+        instance = this;
         
         if (!debugPlayers)
         {
@@ -46,6 +53,21 @@ public class TestMode : GameMode
         _timer.TimerCompleteEvent += OnEndTimeOfRound;
         
         _timer.Start();
+        
+        OnKillEvent += OnKill;
+    }
+
+    private void OnKill(object sender, Tuple<int, int> e)
+    {
+        var player = players[e.Item2];
+        var ct = player.GetComponent<CharacterController>();
+        
+        ct.enabled = false;
+        player.transform.position = spawnPoints[player.playerIndex].position;
+        player.transform.rotation = spawnPoints[player.playerIndex].rotation;
+        ct.enabled = true;
+        
+        player.GetComponent<PlayerHealth>().ActivateInvicibility(invulnerableTime);
     }
 
     private void Update()
@@ -58,6 +80,16 @@ public class TestMode : GameMode
     private void OnEndTimeOfRound()
     {
         print("End of round !");
+    }
+
+    public override void Win(List<int> winners)
+    {
+        base.Win(winners);
+
+        foreach (int winner in winners)
+        {
+            print("Winner is: " + players[winner].transform);
+        }
     }
 
     protected override void PlayerJoined(PlayerInput obj)
