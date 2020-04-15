@@ -32,4 +32,9 @@ public class ScoreManager : MonoBehaviour
                 TestMode.instance.Win(new List<int>() {_controller.GetPlayerIndex()});
         }
     }
+
+    public uint GetScore()
+    {
+        return _score;
+    }
 }

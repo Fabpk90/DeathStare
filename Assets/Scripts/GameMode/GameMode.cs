@@ -16,6 +16,7 @@ public class GameMode : MonoBehaviour
 
     public delegate void OnKill(int playerIndexKiller, int playerIndexKilled);
     public event EventHandler<Tuple<int, int>> OnKillEvent;
+    public event EventHandler OnEndOfMatch;  
 
     private void Start()
     {
@@ -56,6 +57,6 @@ public class GameMode : MonoBehaviour
 
     public virtual void Win(List<int> winners)
     {
-        
+        OnEndOfMatch?.Invoke(this, null);
     }
 }
