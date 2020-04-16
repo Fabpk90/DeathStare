@@ -150,7 +150,17 @@ public class TestMode : GameMode
         ct.enabled = true;
 
         if (players.Count == 4)
-            InitPlayersCamera();
+        {
+            OnStartMatch();
+        }
+            
+    }
+
+    public override void OnStartMatch()
+    {
+        base.OnStartMatch();
+        
+        InitPlayersCamera();
     }
 
     //Creating this because the unity's system doesn't work

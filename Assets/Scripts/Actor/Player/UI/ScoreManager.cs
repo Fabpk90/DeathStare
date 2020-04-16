@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
     private void Start()
     {
         _controller = GetComponentInParent<PlayerController>();
-        GameMode.instance.OnKillEvent += OnKill;
+        GameMode.OnKillEvent += OnKill;
         scoreText.text = "Kills: " + _score;
     }
 
