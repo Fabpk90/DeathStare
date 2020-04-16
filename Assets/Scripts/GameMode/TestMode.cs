@@ -1,10 +1,33 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Actor.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
+
+public class FinalScoreHandler : IComparable<FinalScoreHandler>
+{
+    public uint score;
+    public PlayerInput player;
+
+
+    public FinalScoreHandler(uint score, PlayerInput player)
+    {
+        this.score = score;
+        this.player = player;
+    }
+    
+    public int CompareTo(FinalScoreHandler other)
+    {
+        if (score >= other.score)
+            return 1;
+
+        return -1;
+    }
+}
+
 
 [RequireComponent(typeof(PlayerInputManager))]
 public class TestMode : GameMode
@@ -12,18 +35,27 @@ public class TestMode : GameMode
 
     public Color[] playersColor;
 
-    [Tooltip("Permet de tester avec une manette")]
+    [Tooltip("Permet de tester avec une seule manette")]
     public bool debugPlayers;
 
     public Transform[] spawnPoints;
 
-    private CooldownTimer _timer;
+    private CooldownTimer _roundTimer;
     public TextMeshProUGUI textTimerRound;
     public float secondsInRound;
+
+    public float invulnerableTime;
+
+    public uint killsToWin;
+
+    public GameObject scoreUI;
+    public List<TextMeshProUGUI> scoreTexts;
 
     public override void Init()
     {
         base.Init();
+
+        instance = this;
         
         if (!debugPlayers)
         {
@@ -42,22 +74,61 @@ public class TestMode : GameMode
             _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
         }
         
-        _timer = new CooldownTimer(secondsInRound);
-        _timer.TimerCompleteEvent += OnEndTimeOfRound;
+        _roundTimer = new CooldownTimer(secondsInRound);
+        _roundTimer.TimerCompleteEvent += OnEndTimeOfRound;
         
-        _timer.Start();
+        _roundTimer.Start();
+        
+        OnKillEvent += OnKill;
+    }
+
+    private void OnKill(object sender, Tuple<int, int> e)
+    {
+        var player = players[e.Item2];
+        var ct = player.GetComponent<CharacterController>();
+        
+        ct.enabled = false;
+        player.transform.position = spawnPoints[player.playerIndex].position;
+        player.transform.rotation = spawnPoints[player.playerIndex].rotation;
+        ct.enabled = true;
+        
+        player.GetComponent<PlayerHealth>().ActivateInvicibility(invulnerableTime);
     }
 
     private void Update()
     {
-        _timer.Update(Time.deltaTime);
+        _roundTimer.Update(Time.deltaTime);
         //TODO: optimize this
-        textTimerRound.text = ((int)_timer.TimeRemaining / 60) + ":" + (int)_timer.TimeRemaining % 60;
+        textTimerRound.text = ((int)_roundTimer.TimeRemaining / 60) + ":" + (int)_roundTimer.TimeRemaining % 60;
     }
 
     private void OnEndTimeOfRound()
     {
         print("End of round !");
+    }
+
+    public override void Win(List<int> winners)
+    {
+        base.Win(winners);
+        
+        _roundTimer.Pause();
+
+        List<FinalScoreHandler> playerScores = new List<FinalScoreHandler>(4);
+
+        foreach (PlayerInput player in players)
+        {
+            playerScores.Add(new FinalScoreHandler(player.GetComponentInChildren<ScoreManager>().GetScore(), player));
+        }
+        
+        playerScores.Sort();
+        
+        scoreUI.SetActive(true);
+
+        for (int i = 0; i < 4; i++)
+        {
+            scoreTexts[i].text = i + ". Player " + playerScores[i].player.playerIndex + " wins with a score of " +
+                                 playerScores[i].score;
+        }
     }
 
     protected override void PlayerJoined(PlayerInput obj)

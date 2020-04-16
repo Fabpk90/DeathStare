@@ -71,6 +71,7 @@
 						<Value Platform="Mac"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="UseActionNameForEvent" Type="bool" Value="False"/>
 				<Property Name="VolumeThreshold" Type="Real64">
 					<ValueList>
 						<Value Platform="Windows">-96</Value>

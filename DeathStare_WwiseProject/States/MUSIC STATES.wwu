@@ -6,6 +6,61 @@
 				<Property Name="Color" Type="int16" Value="19"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="STATE_Music_FightState" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}">
+					<ChildrenList>
+						<State Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
+						<State Name="Start" ID="{7494CA80-3EBE-42E6-BCC5-FB522A0478FE}"/>
+						<State Name="Fighting" ID="{DF750D60-7A48-4547-9F0A-6F6090F6AB04}"/>
+						<State Name="Ending" ID="{9AD1D7AC-BC8A-4EF9-AA21-D6E37987DFEA}"/>
+						<State Name="End" ID="{F05254E7-56F5-4257-B9A4-1A24FD9F6B2F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<Folder Name="STATE_Music_DuelState" ID="{0DAEAAD2-8844-45D1-8043-073C47B47421}" ShortID="669928406">
+					<ChildrenList>
+						<StateGroup Name="STATE_Music_DuelState_Stan" ID="{5A01F929-0188-4E98-B121-1BF2BE114419}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{9FE1C308-5F79-48F5-91A1-E4A6C444F9FB}"/>
+								<State Name="True" ID="{F4A22C9E-09D3-476B-9FD5-E27313B1D811}"/>
+								<State Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="STATE_Music_DuelState_Marta" ID="{C4521B92-02F4-46A1-B83D-ECF0DC0BDC6D}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{5359D31B-3146-494B-B780-C7A110A3023B}"/>
+								<State Name="True" ID="{47BF6F5E-7D8D-4DFD-A55E-1296D86FE838}"/>
+								<State Name="False" ID="{D1EEC0E4-8154-42A3-AB7C-36161B38D050}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="STATE_Music_DuelState_Medusa" ID="{6CE87CCF-F743-4F8C-A5F2-31737B71A38B}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{3D20E4EA-9DAE-495A-B33A-DE138FC80716}"/>
+								<State Name="True" ID="{96973C1D-E0F4-4EF1-B08C-14612157D354}"/>
+								<State Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
+							</ChildrenList>
+						</StateGroup>
+						<StateGroup Name="STATE_Music_DuelState_Don" ID="{D607AC0F-0FE8-493B-8B05-62104F492305}">
+							<PropertyList>
+								<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ChildrenList>
+								<State Name="None" ID="{911D111C-F807-4E0D-8FE9-4D395DEF7F8A}"/>
+								<State Name="True" ID="{794FF1B5-C32A-45E8-9BEE-24AA6086B3B8}"/>
+								<State Name="False" ID="{2BDC6330-8AF5-4985-B55B-182370D705D7}"/>
+							</ChildrenList>
+						</StateGroup>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</States>
 </WwiseDocument>

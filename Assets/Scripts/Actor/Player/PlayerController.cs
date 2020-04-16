@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 {
     private PlayerInput _input;
 
-    public FirstPersonController _controller;
+    public FirstPersonController controller;
     
     public ActorCameraMovement cameraMovement;
     public Stare _stare;
@@ -41,25 +41,30 @@ public class PlayerController : MonoBehaviour
         _input.currentActionMap["Run"].canceled += OnRunStop;
     }
 
+    public int GetPlayerIndex()
+    {
+        return _input.playerIndex;
+    }
+
     private void OnRunStop(InputAction.CallbackContext obj)
     {
-        _controller.SetRunning(false);
+        controller.SetRunning(false);
     }
 
     private void OnRunStart(InputAction.CallbackContext obj)
     {
-        _controller.SetRunning(true);
+        controller.SetRunning(true);
     }
 
     private void OnCrouch(InputAction.CallbackContext obj)
     {
-        _controller.ToggleCrouch();
+        controller.ToggleCrouch();
     }
 
     private void OnJump(InputAction.CallbackContext obj)
     {
-        if(_controller.canJump())
-            _controller.Jump();
+        if(controller.canJump())
+            controller.Jump();
     }
 
     private void OnLook(InputAction.CallbackContext obj)
@@ -70,21 +75,21 @@ public class PlayerController : MonoBehaviour
     private void OnMovement(InputAction.CallbackContext obj)
     {
         var v = obj.ReadValue<Vector2>();
-        _controller.SetInputMovement(v);
+        controller.SetInputMovement(v);
     }
 
     private void OnStopStare(InputAction.CallbackContext obj)
     {
         _stare.StopStare();
-        _controller.SetStare(false);
+        controller.SetStare(false);
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
     {
-        if (_controller.canStare())
+        if (controller.canStare())
         {
-            print(_stare.StartStare());
-            _controller.SetStare(true);
+            _stare.StartStare();
+            controller.SetStare(true);
         }
     }
 }

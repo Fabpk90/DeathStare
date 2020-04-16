@@ -16,7 +16,7 @@ namespace Actor
             return transform.position;
         }
 
-        public virtual bool TakeDamage(float amount)
+        public virtual bool TakeDamage(int playerIndex, float amount)
         {
 //            print("I'm " + transform.name);
             if (health - amount <= 0)
@@ -38,7 +38,7 @@ namespace Actor
             {
                 Stare.HittablePoints.Remove(point);
             }
-            
+
         }
     }
 }

@@ -9,7 +9,72 @@
 			<ChildrenList>
 				<Folder Name="Characters" ID="{CA23D617-29E5-495E-9E1E-FF99B7AC9B25}" ShortID="71563017">
 					<ChildrenList>
-						<Folder Name="Character1" ID="{93550730-892F-48DC-9BEF-2D0F39CF8550}" ShortID="998254039"/>
+						<Event Name="FOLEYS_Char_Run_Footsteps" ID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}">
+							<ChildrenList>
+								<Action Name="" ID="{ED8E0A63-759A-4C7D-B0F2-ECC472492504}" ShortID="60558890">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Run_Footsteps" ID="{547E00D0-E7BC-4FC7-9074-6BD38BEB37F6}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOLEYS_Char_Run_Presence" ID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}">
+							<ChildrenList>
+								<Action Name="" ID="{45462E92-4B88-4177-8197-CDB8EE7F35D8}" ShortID="806201694">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Run_Presence" ID="{7B8FFAEA-C05E-4F9F-A46B-86D220BFCB8B}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOLEYS_Char_Jump_TakeOff" ID="{56C0CA43-E074-48E8-8F12-CC15134580EE}">
+							<ChildrenList>
+								<Action Name="" ID="{32295F72-775B-4D11-BED4-DAB61097A8D0}" ShortID="451787217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Jump_TakeOff" ID="{7FB04351-5F40-40A1-ADA3-A6661D63E4C3}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOLEYS_Char_Jump_Landing" ID="{D100B9B6-46EB-4C9E-B75A-053764083313}">
+							<ChildrenList>
+								<Action Name="" ID="{C17B1ED3-1968-4B8D-B226-11343973632E}" ShortID="142958255">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Jump_Landing" ID="{B1CBEF90-0A4D-4468-8E68-32E06DA7F944}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOLEYS_Char_Walk_Footsteps" ID="{333C3510-38C1-4331-8807-A15F5B07E949}">
+							<ChildrenList>
+								<Action Name="" ID="{38448963-0B92-4E60-983D-382432732DB8}" ShortID="588012854">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Walk_Footsteps" ID="{C047EAA0-6A9D-416C-9407-882D85EBBA82}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="FOLEYS_Char_Walk_Presence" ID="{51055477-9ACA-4121-9B67-5D9E95058BF9}">
+							<ChildrenList>
+								<Action Name="" ID="{E6E8318A-9B13-4071-A42B-5B72FB225443}" ShortID="719201217">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Walk_Presence" ID="{CDFF47C5-9112-42FB-884F-757D0579E805}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Props" ID="{B7519F26-400D-4FF4-9C1C-F086364CD841}" ShortID="941793860"/>
