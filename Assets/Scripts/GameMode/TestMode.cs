@@ -93,6 +93,7 @@ public class TestMode : GameMode
         ct.enabled = true;
         
         player.GetComponent<PlayerHealth>().ActivateInvicibility(invulnerableTime);
+        player.GetComponent<PlayerController>().Respawn();
     }
 
     private void Update()
