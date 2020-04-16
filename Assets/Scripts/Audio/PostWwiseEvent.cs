@@ -4,19 +4,24 @@ using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour
 {
-    void Start()
+    public string StartEvent;
+    public Listener listener;
+    public GameObject[] Listeners;
+
+    void Awake()
     {
+
+    }
+
+    private void Start()
+    {
+        //AkSoundEngine.PostEvent(StartEvent, this.gameObject);
         AudioManager.instance.AddListeners(this.gameObject, 0);
-        AkSoundEngine.PostEvent("Play_Main_Music", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Test", this.gameObject);
     }
 
-    public void Play_Foleys_Character1_Run_Footsteps()
+    private void PostStartEvent()
     {
-        AkSoundEngine.PostEvent("Play_Foleys_Character1_Run_Footsteps", this.gameObject);
-    }
 
-    public void Play_Foleys_Character1_Walk_Footsteps()
-    {
-        AkSoundEngine.PostEvent("Play_Foleys_Character1_Walk_Footsteps", this.gameObject);
     }
 }

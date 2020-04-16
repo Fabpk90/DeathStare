@@ -151,6 +151,10 @@ public class TestMode : GameMode
 
         if (players.Count == 4)
             InitPlayersCamera();
+
+        //Sound
+        AudioManager.instance.Listeners.SetValue(obj.camera.gameObject, obj.playerIndex);
+        //Sound
     }
 
     //Creating this because the unity's system doesn't work

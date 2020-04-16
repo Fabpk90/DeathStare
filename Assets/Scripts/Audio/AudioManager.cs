@@ -15,19 +15,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         else
             instance = this;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    } 
 
     public void AddListeners(GameObject in_emitter, int listener1)
     {
