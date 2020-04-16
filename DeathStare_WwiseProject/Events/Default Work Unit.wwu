@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0EDBCC7C-8B54-4EA5-A6A6-3EABA775CD02}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{0EDBCC7C-8B54-4EA5-A6A6-3EABA775CD02}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0EDBCC7C-8B54-4EA5-A6A6-3EABA775CD02}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Duel_Music" ID="{A43E41C7-6C80-4730-909C-8F0CE5254C4A}">
+					<ChildrenList>
+						<Action Name="" ID="{C2D95012-9C49-4E78-A45A-D241264E170D}" ShortID="647474358">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Duel Music" ID="{DCF4FCCB-D126-432C-92B4-2505FAF08D63}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A81AC8C3-5E6F-4598-92EE-5AB7223BA54C}" ShortID="372542218">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight Music" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
