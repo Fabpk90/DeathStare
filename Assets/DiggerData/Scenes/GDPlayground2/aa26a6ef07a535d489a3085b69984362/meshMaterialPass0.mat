@@ -52,7 +52,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Splat2:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Splat3:
@@ -66,7 +66,7 @@ Material:
     - _Metallic3: 0
     - _Smoothness0: 0
     - _Smoothness1: 0
-    - _Smoothness2: 0.5
+    - _Smoothness2: 0
     - _Smoothness3: 0.5
     - _normalScale0: 1
     - _normalScale1: 1
@@ -84,8 +84,8 @@ Material:
     - _tiles0y: 0.5
     - _tiles1x: 0.5
     - _tiles1y: 0.5
-    - _tiles2x: 0.03
-    - _tiles2y: 0.03
+    - _tiles2x: 0.5
+    - _tiles2y: 0.5
     - _tiles3x: 0.03
     - _tiles3y: 0.03
     m_Colors:
