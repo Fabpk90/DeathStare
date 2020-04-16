@@ -10,6 +10,8 @@ namespace Actor.Player
 
         public bool canTakeDamage = true;
 
+        public event EventHandler<float> OnTakingDamage; 
+
         public void ActivateInvicibility(float time)
         {
             canTakeDamage = false;
@@ -26,6 +28,13 @@ namespace Actor.Player
             {
                 canTakeDamage = true;
             };
+            
+            _controller.OnRespawn += OnRespawn;
+        }
+
+        private void OnRespawn(object sender, EventArgs e)
+        {
+            health = maxHealth;
         }
 
         private void Update()
@@ -42,6 +51,9 @@ namespace Actor.Player
         public override bool TakeDamage(int playerIndex, float amount)
         {
             if (!canTakeDamage) return false;
+            
+            OnTakingDamage?.Invoke(this, amount);
+            
             if (!base.TakeDamage(playerIndex, amount)) return false;
             
             GameMode.instance.PlayerKilled(playerIndex, _controller.GetPlayerIndex());

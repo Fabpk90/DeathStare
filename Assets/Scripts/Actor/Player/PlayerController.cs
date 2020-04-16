@@ -20,6 +20,9 @@ public class PlayerController : MonoBehaviour
     
     public ActorCameraMovement cameraMovement;
     public Stare _stare;
+
+    public event EventHandler OnRespawn;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +47,11 @@ public class PlayerController : MonoBehaviour
     public int GetPlayerIndex()
     {
         return _input.playerIndex;
+    }
+
+    public void Respawn()
+    {
+        OnRespawn?.Invoke(this, null);
     }
 
     private void OnRunStop(InputAction.CallbackContext obj)
