@@ -148,13 +148,25 @@ public class TestMode : GameMode
         obj.transform.position = spawnPoints[obj.playerIndex].position;
         obj.transform.rotation = spawnPoints[obj.playerIndex].rotation;
         ct.enabled = true;
-
-        if (players.Count == 4)
-            InitPlayersCamera();
-
+        
         //Sound
         AudioManager.instance.Listeners.SetValue(obj.camera.gameObject, obj.playerIndex);
         //Sound
+
+        if (players.Count == 4)
+        {
+            OnStartMatch();
+        }
+            
+    }
+
+    public override void OnStartMatch()
+    {
+        base.OnStartMatch();
+        
+        InitPlayersCamera();
+        
+        
     }
 
     //Creating this because the unity's system doesn't work
