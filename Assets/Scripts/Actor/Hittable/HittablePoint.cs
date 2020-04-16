@@ -20,9 +20,9 @@ namespace Actor.Hittable
             return transform.position;
         }
 
-        public bool TakeDamage(float amount)
+        public bool TakeDamage(int playerIndex, float amount)
         {
-            return healthManager.TakeDamage(amount);
+            return healthManager.TakeDamage(playerIndex, amount);
         }
 
         public void AddForce(Vector3 force)

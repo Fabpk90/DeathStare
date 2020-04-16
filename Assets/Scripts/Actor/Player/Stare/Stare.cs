@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Actor;
 using Actor.Hittable;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class Stare : MonoBehaviour
@@ -12,11 +13,12 @@ public class Stare : MonoBehaviour
    public int damagePerSecond;
 
    public bool isStaring;
-   private List<IHittable> hitsToRemove;
+   private List<IHittable> _hitsToRemove;
 
    public Camera camera;
-   private HashSet<HealthManager> hitDuringThisFrame;
-   [NonSerialized] public List<PlayerController> playersHitDuringThisFrame;
+   private HashSet<HealthManager> _hitDuringThisFrame;
+   public List<PlayerController> playersHitDuringThisFrame;
+   private List<PlayerController> _playerKilledDuringFrame;
 
    public float stareForce;
 
@@ -25,10 +27,11 @@ public class Stare : MonoBehaviour
    private void Awake()
    {
       _controller = GetComponentInParent<PlayerController>();
-      hitDuringThisFrame = new HashSet<HealthManager>();
-      hitsToRemove = new List<IHittable>(25);  
+      _hitDuringThisFrame = new HashSet<HealthManager>();
+      _hitsToRemove = new List<IHittable>(25);  
       targetToAttack = new List<IHittable>(25);
       playersHitDuringThisFrame = new List<PlayerController>(3);
+      _playerKilledDuringFrame = new List<PlayerController>(3);
    }
 
    /// <summary>
@@ -37,7 +40,7 @@ public class Stare : MonoBehaviour
    /// <returns> true if he/she is, false otherwise</returns>
    public bool CheckForThingsInSight()
    {
-      hitDuringThisFrame.Clear();
+      _hitDuringThisFrame.Clear();
       playersHitDuringThisFrame.Clear();
 
       bool found = false;
@@ -51,33 +54,38 @@ public class Stare : MonoBehaviour
             if (viewportPoint.z > 0 
                 && viewportPoint.x > 0 && viewportPoint.x < 1
                 && viewportPoint.y > 0 && viewportPoint.y < 1
-                && !hitDuringThisFrame.Contains(point.healthManager))
+                && !_hitDuringThisFrame.Contains(point.healthManager))
             {
-               Vector3 repulsionForce = point.GetPosition() - transform.position;
-               
-               point.AddForce(repulsionForce.normalized * stareForce);
-                  
-               hitDuringThisFrame.Add(point.healthManager);
-
-               PlayerController p = point.healthManager.GetComponent<PlayerController>();
-
-               //we hit a player !
-               if (p)
+               RaycastHit hitInfo;
+               if(Physics.Raycast(transform.position, (point.GetPosition() - transform.position).normalized, out hitInfo))
                {
-                  playersHitDuringThisFrame.Add(p);
-               }
-               else
-               {
-                  point.TakeDamage(damagePerSecond * Time.deltaTime);
-               }
-               
-               found = true;
+                  IHittable hit = hitInfo.transform.GetComponent<IHittable>();
 
-               //TODO: check if it's not a player that is staring at us
-               //maybe have a list of player we are staring at
-               //to rapidly check if it's a duel
+                  if (hit != null)
+                  {
+                     Vector3 repulsionForce = hit.GetPosition() - transform.position;
+            
+                     point.AddForce(repulsionForce.normalized * stareForce);
                
-               
+                     _hitDuringThisFrame.Add(point.healthManager);
+                     found = true;
+                     
+                     PlayerController p = point.healthManager.GetComponent<PlayerController>();
+
+                     if (p)
+                     {
+                        //we hit a player !
+                        if (p != _controller)
+                        {
+                           playersHitDuringThisFrame.Add(p);
+                        }
+                        else
+                        {
+                           point.TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime);
+                        }
+                     }
+                  }
+               }
             }
          }
       }
@@ -95,23 +103,35 @@ public class Stare : MonoBehaviour
 
    private void LateUpdate()
    {
-      //TODO: check if the players we are staring at are staring back
+      if(!isStaring) return;
+      
       foreach (PlayerController playerController in playersHitDuringThisFrame)
       {
          if (playerController)
          {
+            //is he/she staring at us ?
             if (!playerController._stare.playersHitDuringThisFrame.Contains(_controller))
             {
                //WE DESTROY DAT MF !
-               playerController.GetComponent<HealthManager>().TakeDamage(damagePerSecond * Time.deltaTime);
+               if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
+               {
+                  //the mf is ded
+                  _playerKilledDuringFrame.Add(playerController);
+               }
             }
-            else
+            else // it's staring back at us !
             {
                print("Duel with " +  playerController.GetComponent<HealthManager>().transform.gameObject);
             }
          }
-         
       }
+
+      foreach (PlayerController controller in _playerKilledDuringFrame)
+      {
+         playersHitDuringThisFrame.Remove(controller);
+      }
+      
+      _playerKilledDuringFrame.Clear();
    }
 
 
