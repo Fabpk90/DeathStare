@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -15,13 +17,16 @@ public class TestMode : GameMode
 
     public Transform[] spawnPoints;
 
+    private CooldownTimer _timer;
+    public TextMeshProUGUI textTimerRound;
+    public float secondsInRound;
+
     public override void Init()
     {
         base.Init();
         
         if (!debugPlayers)
         {
-
             //we add the 4 players, or less depending on connected gamepads
             for (int i = 0; i < Gamepad.all.Count && i < 4; i++)
             {
@@ -36,6 +41,23 @@ public class TestMode : GameMode
         {
             _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
         }
+        
+        _timer = new CooldownTimer(secondsInRound);
+        _timer.TimerCompleteEvent += OnEndTimeOfRound;
+        
+        _timer.Start();
+    }
+
+    private void Update()
+    {
+        _timer.Update(Time.deltaTime);
+        //TODO: optimize this
+        textTimerRound.text = ((int)_timer.TimeRemaining / 60) + ":" + (int)_timer.TimeRemaining % 60;
+    }
+
+    private void OnEndTimeOfRound()
+    {
+        print("End of round !");
     }
 
     protected override void PlayerJoined(PlayerInput obj)
