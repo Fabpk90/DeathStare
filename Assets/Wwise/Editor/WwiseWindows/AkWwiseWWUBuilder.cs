@@ -103,7 +103,7 @@ public class AkWwiseWWUBuilder
 		}
 		catch (System.Exception e)
 		{
-			UnityEngine.Debug.LogError(e.ToString());
+			//UnityEngine.Debug.LogError(e.ToString());
 			UnityEditor.EditorUtility.ClearProgressBar();
 			return true;
 		}
