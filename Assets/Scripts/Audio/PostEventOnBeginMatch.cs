@@ -16,5 +16,10 @@ namespace Audio
         {
             AkSoundEngine.PostEvent(eventName, gameObject);
         }
+
+        private void OnDisable()
+        {
+            GameMode.OnStartOfMatch -= OnMatchStart;
+        }
     }
 }

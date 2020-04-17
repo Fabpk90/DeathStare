@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Actor;
 using Actor.Player;
+using Actor.Player.Stare;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -20,6 +21,7 @@ public class PlayerController : MonoBehaviour
     
     public ActorCameraMovement cameraMovement;
     public Stare _stare;
+    private StareVignetteManager _vignetteManager;
 
     public event EventHandler OnRespawn;
     
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _input = GetComponent<PlayerInput>();
+        _vignetteManager = GetComponentInChildren<StareVignetteManager>();
 
         _input.currentActionMap["Movement"].performed += OnMovement;
 
@@ -89,6 +92,7 @@ public class PlayerController : MonoBehaviour
     private void OnStopStare(InputAction.CallbackContext obj)
     {
         _stare.StopStare();
+        _vignetteManager.StopVignetting();
         controller.SetStare(false);
     }
 

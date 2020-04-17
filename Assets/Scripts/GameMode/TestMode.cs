@@ -182,11 +182,11 @@ public class TestMode : GameMode
 
         camRect.y = 0.0f;
         
-        players[2].GetComponentInChildren<Camera>().rect = camRect;
+        players[3].GetComponentInChildren<Camera>().rect = camRect;
 
         camRect.x = camRect.y = 0.0f;
         
-        players[3].GetComponentInChildren<Camera>().rect = camRect;
+        players[2].GetComponentInChildren<Camera>().rect = camRect;
 
         for (int i = 0; i < players.Count; i++)
         {

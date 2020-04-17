@@ -23,6 +23,10 @@ public class Stare : MonoBehaviour
    public float stareForce;
 
    private PlayerController _controller;
+
+   public event EventHandler OnStareStart;
+   public event EventHandler<int> OnStareTouch;
+   public event EventHandler OnStareStop;
    
    private void Awake()
    {
@@ -70,6 +74,7 @@ public class Stare : MonoBehaviour
                      _hitDuringThisFrame.Add(point.healthManager);
                      found = true;
                      
+                     
                      PlayerController p = point.healthManager.GetComponent<PlayerController>();
 
                      if (p)
@@ -83,6 +88,10 @@ public class Stare : MonoBehaviour
                         {
                            point.TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime);
                         }
+                     }
+                     else
+                     {
+                        hit.TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime);
                      }
                   }
                }
@@ -138,11 +147,15 @@ public class Stare : MonoBehaviour
    public bool StartStare()
    {
       isStaring = true;
+      
+      OnStareStart?.Invoke(this, null);
+      
       return CheckForThingsInSight();
    }
 
    public void StopStare()
    {
       isStaring = false;
+      OnStareStop?.Invoke(this, null);
    }
 }

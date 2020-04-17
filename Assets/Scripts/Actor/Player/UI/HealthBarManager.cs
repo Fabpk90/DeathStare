@@ -11,11 +11,23 @@ namespace Actor.Player.UI
         
         private PlayerHealth _health;
 
+        private void OnEnable()
+        {
+            _health.OnTakingDamage += OnTakingDamage;
+            gameObject.GetComponentInParent<PlayerController>().OnRespawn += OnRespawn;
+        }
+
+        private void OnDisable()
+        {
+            _health.OnTakingDamage -= OnTakingDamage;
+            gameObject.GetComponentInParent<PlayerController>().OnRespawn -= OnRespawn;
+        }
+
         private void Start()
         {
            _health = gameObject.GetComponentInParent<PlayerHealth>();
-           gameObject.GetComponentInParent<PlayerController>().OnRespawn += OnRespawn;
-           _health.OnTakingDamage += OnTakingDamage;
+           
+          
 
            slider.value = _health.health / _health.maxHealth;
         }
