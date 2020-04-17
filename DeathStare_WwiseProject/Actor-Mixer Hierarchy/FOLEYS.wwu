@@ -68,7 +68,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Run_Footsteps" ID="{547E00D0-E7BC-4FC7-9074-6BD38BEB37F6}" ShortID="367444121">
+												<BlendContainer Name="FOLEYS_Char_Run_Footsteps" ID="{547E00D0-E7BC-4FC7-9074-6BD38BEB37F6}" ShortID="367444121">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -2622,6 +2622,44 @@
 																				<ItemRef Name="Dirt" ID="{37B000EE-B652-4D42-BBDF-846D81D337FE}"/>
 																			</GroupingBehavior>
 																		</GroupingBehaviorList>
+																		<GroupingList>
+																			<Grouping>
+																				<SwitchRef Name="Sand" ID="{C342220B-1EF3-461A-871B-EF5A4F624DBC}"/>
+																				<ItemList>
+																					<ItemRef Name="Sand" ID="{234DE3A7-F574-4E75-92A4-5014A959A9F7}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="Wood" ID="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"/>
+																				<ItemList>
+																					<ItemRef Name="Wood" ID="{E9BDA645-A975-4D0E-9F71-FB4B09C326A8}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="Grass" ID="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"/>
+																				<ItemList>
+																					<ItemRef Name="Grass" ID="{89114CCF-28F2-4B62-BBD8-F5C8026D5D1F}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+																				<ItemList>
+																					<ItemRef Name="Cobble" ID="{7088CEEB-CF03-49CC-8697-B43869B21B92}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="Dirt" ID="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"/>
+																				<ItemList>
+																					<ItemRef Name="Dirt" ID="{37B000EE-B652-4D42-BBDF-846D81D337FE}"/>
+																				</ItemList>
+																			</Grouping>
+																			<Grouping>
+																				<SwitchRef Name="Concrete" ID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>
+																				<ItemList>
+																					<ItemRef Name="Concrete" ID="{BDBBC31E-00C0-4E4E-A84E-34CDB820DD06}"/>
+																				</ItemList>
+																			</Grouping>
+																		</GroupingList>
 																	</GroupingInfo>
 																</SwitchContainer>
 																<SwitchContainer Name="Run_Footsteps_Marta" ID="{2EDFA982-1869-4254-BB73-716416DB0720}" ShortID="435894930">
@@ -3544,7 +3582,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Run_Presence" ID="{7B8FFAEA-C05E-4F9F-A46B-86D220BFCB8B}" ShortID="572257168">
+												<BlendContainer Name="FOLEYS_Char_Run_Presence" ID="{7B8FFAEA-C05E-4F9F-A46B-86D220BFCB8B}" ShortID="572257168">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -3704,7 +3742,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="Foleys_Character1_Death" ID="{B8AA436D-4678-45CE-ABB3-8C890BAC1FCA}" ShortID="900691371">
+										<BlendContainer Name="FOLEYS_Character1_Death" ID="{B8AA436D-4678-45CE-ABB3-8C890BAC1FCA}" ShortID="900691371">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -6042,7 +6080,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Walk_Footsteps" ID="{C047EAA0-6A9D-416C-9407-882D85EBBA82}" ShortID="708935935">
+												<BlendContainer Name="FOLEYS_Char_Walk_Footsteps" ID="{C047EAA0-6A9D-416C-9407-882D85EBBA82}" ShortID="708935935">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -9559,7 +9597,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Walk_Presence" ID="{CDFF47C5-9112-42FB-884F-757D0579E805}" ShortID="926620358">
+												<BlendContainer Name="FOLEYS_Char_Walk_Presence" ID="{CDFF47C5-9112-42FB-884F-757D0579E805}" ShortID="926620358">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -9699,7 +9737,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Jump_TakeOff" ID="{7FB04351-5F40-40A1-ADA3-A6661D63E4C3}" ShortID="953563463">
+												<BlendContainer Name="FOLEYS_Char_Jump_TakeOff" ID="{7FB04351-5F40-40A1-ADA3-A6661D63E4C3}" ShortID="953563463">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -12841,7 +12879,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Foleys_Character1_Jump_Landing" ID="{B1CBEF90-0A4D-4468-8E68-32E06DA7F944}" ShortID="191142688">
+												<BlendContainer Name="FOLEYS_Char_Jump_Landing" ID="{B1CBEF90-0A4D-4468-8E68-32E06DA7F944}" ShortID="191142688">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
