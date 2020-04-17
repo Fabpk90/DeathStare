@@ -8,8 +8,7 @@ public class DeathTrigger : MonoBehaviour
 	{
 		PlayerHealth hp = other.transform.root.GetComponent<PlayerHealth>();
 		if (!hp) return;
-		Debug.Log("kill " + hp.name);
-		//hp.Die(); no effect
-		hp.TakeDamage(other.transform.root.GetComponent<PlayerController>().GetPlayerIndex(), 99999);
+		Debug.Log(hp.name + " Falls");
+		hp.TakeDamage(-1, 99999);
 	}
 }
