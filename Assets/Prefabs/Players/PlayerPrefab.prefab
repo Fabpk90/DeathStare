@@ -747,6 +747,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 5029317275261529568}
+  health: {fileID: 8953420333483804670}
+  controller: {fileID: 8016140257322171950}
 --- !u!114 &1452936683
 MonoBehaviour:
   m_ObjectHideFlags: 0

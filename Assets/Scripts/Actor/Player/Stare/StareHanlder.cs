@@ -5,7 +5,7 @@ using Actor.Hittable;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class Stare : MonoBehaviour
+public class StareHandler : MonoBehaviour
 {
    public static List<HittablePoint> HittablePoints = new List<HittablePoint>(200);
    
@@ -119,7 +119,7 @@ public class Stare : MonoBehaviour
          if (playerController)
          {
             //is he/she staring at us ?
-            if (!playerController._stare.playersHitDuringThisFrame.Contains(_controller))
+            if (!playerController.stareHandler.playersHitDuringThisFrame.Contains(_controller))
             {
                //WE DESTROY DAT MF !
                if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))

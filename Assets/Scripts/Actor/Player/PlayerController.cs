@@ -20,8 +20,7 @@ public class PlayerController : MonoBehaviour
     public FirstPersonController controller;
     
     public ActorCameraMovement cameraMovement;
-    public Stare _stare;
-    private StareVignetteManager _vignetteManager;
+    public StareHandler stareHandler;
 
     public event EventHandler OnRespawn;
     
@@ -29,7 +28,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _input = GetComponent<PlayerInput>();
-        _vignetteManager = GetComponentInChildren<StareVignetteManager>();
 
         _input.currentActionMap["Movement"].performed += OnMovement;
 
@@ -91,8 +89,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnStopStare(InputAction.CallbackContext obj)
     {
-        _stare.StopStare();
-        _vignetteManager.StopVignetting();
+        stareHandler.StopStare();
         controller.SetStare(false);
     }
 
@@ -100,7 +97,7 @@ public class PlayerController : MonoBehaviour
     {
         if (controller.canStare())
         {
-            _stare.StartStare();
+            stareHandler.StartStare();
             controller.SetStare(true);
         }
     }
