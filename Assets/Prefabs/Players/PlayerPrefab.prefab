@@ -633,6 +633,7 @@ MonoBehaviour:
   player: {fileID: 8016140257322171950}
   leftFoot: {fileID: 3516518313192198300}
   rightFoot: {fileID: 5046942744904166362}
+  wwiseListener: {fileID: 2074932669744444564}
 --- !u!114 &5743003642258224631
 MonoBehaviour:
   m_ObjectHideFlags: 0

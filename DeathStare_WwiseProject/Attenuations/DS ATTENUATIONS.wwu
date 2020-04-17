@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="DS_Default" ID="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}" ShortID="35895583">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="60"/>
+						<Property Name="RadiusMax" Type="Real64" Value="80"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -21,19 +21,19 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1.69279</XPos>
+											<XPos>1.50469</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>17.77429</XPos>
-											<YPos>-11.68964</YPos>
+											<XPos>10.40751</XPos>
+											<YPos>-11.5092</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>60</XPos>
+											<XPos>80</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

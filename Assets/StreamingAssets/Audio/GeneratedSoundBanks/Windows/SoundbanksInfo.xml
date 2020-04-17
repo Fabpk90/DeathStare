@@ -16,7 +16,7 @@
 			<ShortName>SFX_SNB</ShortName>
 			<Path>SFX_SNB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" DurationType="OneShot" DurationMin="0.265012" DurationMax="0.871966">
+				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.265012" DurationMax="0.871966">
 					<IncludedMemoryFiles>
 						<File Id="31245357" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002.wav</ShortName>
@@ -230,7 +230,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="567349118" Name="FOLEYS_Char_Jump_TakeOff" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_TakeOff" GUID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" DurationType="OneShot" DurationMin="0.188677" DurationMax="0.444565">
+				<Event Id="567349118" Name="FOLEYS_Char_Jump_TakeOff" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_TakeOff" GUID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.188677" DurationMax="0.444565">
 					<IncludedMemoryFiles>
 						<File Id="5715417" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001.wav</ShortName>
@@ -460,7 +460,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
 					<IncludedMemoryFiles>
 						<File Id="63644349" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
@@ -718,10 +718,10 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2315528594" Name="FOLEYS_Char_Run_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Presence" GUID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+				<Event Id="2315528594" Name="FOLEYS_Char_Run_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Presence" GUID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<SwitchContainers/>
 				</Event>
-				<Event Id="2350611728" Name="FOLEYS_Char_Walk_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps" GUID="{333C3510-38C1-4331-8807-A15F5B07E949}" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+				<Event Id="2350611728" Name="FOLEYS_Char_Walk_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps" GUID="{333C3510-38C1-4331-8807-A15F5B07E949}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
 					<IncludedMemoryFiles>
 						<File Id="63644349" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
@@ -983,7 +983,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="3135077181" Name="SWITCHES_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
