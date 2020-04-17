@@ -1945,60 +1945,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1256460619110096596, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: m_listeners.initialListenerList.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256460619110096596, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256460619110096596, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: m_listeners.useDefaultListeners
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1256460619110096596, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: m_listeners.initialListenerList.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4366013409911678070, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9020119
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3603487
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.6497679
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6094221645850747458, guid: 14e49804e1dbd37489f6bed03057c29c,
         type: 3}
@@ -2025,36 +2000,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.data[2]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.data[3]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
-        type: 3}
-      propertyPath: Listeners.Array.data[4]
-      value: 
-      objectReference: {fileID: 2078232732}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e49804e1dbd37489f6bed03057c29c, type: 3}
 --- !u!1 &1787541594
@@ -2347,6 +2292,7 @@ GameObject:
   - component: {fileID: 2070028089}
   - component: {fileID: 2070028088}
   - component: {fileID: 2070028087}
+  - component: {fileID: 2070028093}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -2428,27 +2374,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2078232732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 896981138271726879, guid: 14e49804e1dbd37489f6bed03057c29c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1775923779}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2078232733
+--- !u!114 &2070028093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2078232732}
+  m_GameObject: {fileID: 2070028086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d392c9c5627d6da4fa83d5be1f49a4d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 83327bf85a7691f41ba8df7aeb088b44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VolumesOffset:
-  - 0
-  - 0
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &2117924069
 GameObject:
   m_ObjectHideFlags: 0

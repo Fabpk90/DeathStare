@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 12410568}
   - component: {fileID: 1535741584}
   - component: {fileID: 2513252499995458673}
+  - component: {fileID: 2074932669744444564}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -140,6 +141,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: fe0f03977ea85bd45994262e06dc473a, type: 2}
   camParent: {fileID: 100006}
+--- !u!114 &2074932669744444564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d392c9c5627d6da4fa83d5be1f49a4d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VolumesOffset:
+  - 0
+  - 0
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +246,7 @@ MonoBehaviour:
   - {fileID: 3321603992670702703}
   - {fileID: 5090961460125910833}
   - {fileID: 5606579654272250538}
+  canTakeDamage: 1
 --- !u!143 &-3625789616987428581
 CharacterController:
   m_ObjectHideFlags: 0
@@ -586,6 +603,51 @@ MonoBehaviour:
   characterCamera: {fileID: 400000}
   bodyUpdateRotationSpeed: 500
   controller: {fileID: -3625789616987428581}
+--- !u!114 &1483885940178567835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229372953350150472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Surfaces
+  startingSwitchName: Cobble
+  switchGameObject: {fileID: 5046942744904166362}
+--- !u!114 &4379214644093090247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229372953350150472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8773c123fd2548458f1fb08b7a1157b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8016140257322171950}
+  leftFoot: {fileID: 3516518313192198300}
+  rightFoot: {fileID: 5046942744904166362}
+--- !u!114 &5743003642258224631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229372953350150472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Surfaces
+  startingSwitchName: Cobble
+  switchGameObject: {fileID: 3516518313192198300}
 --- !u!1 &3479849005798977540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,15 +1292,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
---- !u!4 &1912429295161469787 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+--- !u!1 &3516518313192198300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8328876010266153376, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5046942744904166362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 383199541453302502, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
     type: 3}
   m_PrefabInstance: {fileID: 4853528394774987068}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &3229372953350150472 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8037302230046824564, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1912429295161469787 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
     type: 3}
   m_PrefabInstance: {fileID: 4853528394774987068}
   m_PrefabAsset: {fileID: 0}

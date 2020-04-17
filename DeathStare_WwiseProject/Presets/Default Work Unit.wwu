@@ -55,7 +55,7 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
-								<Attenuation Name="DS_Default (Custom)" ID="{2566972E-2E76-477A-A9C4-0A323A97A4F1}" ShortID="1060562908">
+								<Attenuation Name="DS_Default (Custom)" ID="{2566972E-2E76-477A-A9C4-0A323A97A4F1}">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">

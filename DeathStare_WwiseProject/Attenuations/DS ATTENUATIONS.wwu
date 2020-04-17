@@ -4,6 +4,9 @@
 		<WorkUnit Name="DS ATTENUATIONS" ID="{D21EA8B5-DEC8-468A-BF2A-859B116D5F87}" PersistMode="Standalone">
 			<ChildrenList>
 				<Attenuation Name="DS_Default" ID="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}" ShortID="35895583">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="60"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -18,19 +21,19 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1.88087</XPos>
+											<XPos>1.69279</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>30.40751</XPos>
-											<YPos>-11.1592</YPos>
+											<XPos>17.77429</XPos>
+											<YPos>-11.68964</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>60</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -102,7 +105,7 @@
 										</Point>
 										<Point>
 											<XPos>400</XPos>
-											<YPos>-0</YPos>
+											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

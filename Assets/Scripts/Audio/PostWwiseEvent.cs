@@ -4,24 +4,43 @@ using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour
 {
-    public string StartEvent;
-    public Listener listener;
-    public GameObject[] Listeners;
-
-    void Awake()
-    {
-
-    }
+    public int[] listeners;
+    private bool listenersInit = false;
+    public GameObject defaultGameObject;
 
     private void Start()
     {
-        //AkSoundEngine.PostEvent(StartEvent, this.gameObject);
-        AudioManager.instance.AddListeners(this.gameObject, 0);
-        AkSoundEngine.PostEvent("Play_Test", this.gameObject);
+        if (defaultGameObject == null)
+        {
+            defaultGameObject = this.gameObject;
+        }
     }
 
-    private void PostStartEvent()
+    private void PostEvent(string eventName)
     {
+        if (!listenersInit)
+        {
+            for (int i = 0; i < listeners.Length; i++)
+            {
+                AudioManager.instance.AddListeners(defaultGameObject, listeners[i]);
+            }
+        }
 
+        AkSoundEngine.PostEvent(eventName, this.gameObject);
+        Debug.Log("WWISE: Event " + eventName + " posted on " + this.gameObject.name);
+    }
+
+    private void PostEvent(string eventName, GameObject in_gameObject)
+    {
+        if (!listenersInit)
+        {
+            for (int i = 0; i < listeners.Length; i++)
+            {
+                AudioManager.instance.AddListeners(in_gameObject, listeners[i]);
+            }
+        }
+
+        AkSoundEngine.PostEvent(eventName, gameObject);
+        Debug.Log("WWISE: Event " + eventName + " posted on " + in_gameObject.name);
     }
 }

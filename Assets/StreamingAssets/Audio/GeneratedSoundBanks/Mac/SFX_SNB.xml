@@ -1,0 +1,1007 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="26215100" GUID="{FAAFC306-D6DE-4285-ABD4-C94B4CE7145B}" Language="SFX">
+			<ObjectPath>\SoundBanks\DS SNB\SFX SNB\SFX_SNB</ObjectPath>
+			<ShortName>SFX_SNB</ShortName>
+			<Path>SFX_SNB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" DurationType="OneShot" DurationMin="0.265012" DurationMax="0.871966">
+					<IncludedMemoryFiles>
+						<File Id="31245357" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002_10C4C929.wem</Path>
+						</File>
+						<File Id="226748808" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_002_10C4C929.wem</Path>
+						</File>
+						<File Id="255959665" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_001_10C4C929.wem</Path>
+						</File>
+						<File Id="305406559" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="406860864" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_002_10C4C929.wem</Path>
+						</File>
+						<File Id="459899386" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_001_C4EBBE69.wem</Path>
+						</File>
+						<File Id="505658381" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_001_10C4C929.wem</Path>
+						</File>
+						<File Id="698345088" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_002_10C4C929.wem</Path>
+						</File>
+						<File Id="700285031" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_001_10C4C929.wem</Path>
+						</File>
+						<File Id="781274263" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_001_10C4C929.wem</Path>
+						</File>
+						<File Id="893162646" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="993431990" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="781274263"/>
+										<File Id="993431990"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="31245357"/>
+										<File Id="700285031"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="226748808"/>
+										<File Id="255959665"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="505658381"/>
+										<File Id="698345088"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="893162646"/>
+										<File Id="305406559"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="406860864"/>
+										<File Id="459899386"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="781274263"/>
+										<File Id="993431990"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="31245357"/>
+										<File Id="700285031"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="226748808"/>
+										<File Id="255959665"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="505658381"/>
+										<File Id="698345088"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="893162646"/>
+										<File Id="305406559"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="406860864"/>
+										<File Id="459899386"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="781274263"/>
+										<File Id="993431990"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="31245357"/>
+										<File Id="700285031"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="226748808"/>
+										<File Id="255959665"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="505658381"/>
+										<File Id="698345088"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="893162646"/>
+										<File Id="305406559"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="406860864"/>
+										<File Id="459899386"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="781274263"/>
+										<File Id="993431990"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="31245357"/>
+										<File Id="700285031"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="226748808"/>
+										<File Id="255959665"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="505658381"/>
+										<File Id="698345088"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="893162646"/>
+										<File Id="305406559"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="406860864"/>
+										<File Id="459899386"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="567349118" Name="FOLEYS_Char_Jump_TakeOff" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_TakeOff" GUID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" DurationType="OneShot" DurationMin="0.188677" DurationMax="0.444565">
+					<IncludedMemoryFiles>
+						<File Id="5715417" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001_10C4C929.wem</Path>
+						</File>
+						<File Id="88503777" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_002_10C4C929.wem</Path>
+						</File>
+						<File Id="251852521" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_001_10C4C929.wem</Path>
+						</File>
+						<File Id="371042949" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="606579897" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_001_10C4C929.wem</Path>
+						</File>
+						<File Id="625683214" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="643940714" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_003_10C4C929.wem</Path>
+						</File>
+						<File Id="725719132" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_001_10C4C929.wem</Path>
+						</File>
+						<File Id="760396261" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_003_10C4C929.wem</Path>
+						</File>
+						<File Id="767399380" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_002_10C4C929.wem</Path>
+						</File>
+						<File Id="858051333" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_002_10C4C929.wem</Path>
+						</File>
+						<File Id="988968491" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_002_10C4C929.wem</Path>
+						</File>
+						<File Id="995244962" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_001_10C4C929.wem</Path>
+						</File>
+						<File Id="1064913877" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="371042949"/>
+										<File Id="760396261"/>
+										<File Id="625683214"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="251852521"/>
+										<File Id="1064913877"/>
+										<File Id="643940714"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="88503777"/>
+										<File Id="606579897"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="858051333"/>
+										<File Id="5715417"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="725719132"/>
+										<File Id="767399380"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="995244962"/>
+										<File Id="988968491"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="371042949"/>
+										<File Id="760396261"/>
+										<File Id="625683214"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="251852521"/>
+										<File Id="1064913877"/>
+										<File Id="643940714"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="88503777"/>
+										<File Id="606579897"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="858051333"/>
+										<File Id="5715417"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="725719132"/>
+										<File Id="767399380"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="995244962"/>
+										<File Id="988968491"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="371042949"/>
+										<File Id="760396261"/>
+										<File Id="625683214"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="251852521"/>
+										<File Id="1064913877"/>
+										<File Id="643940714"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="88503777"/>
+										<File Id="606579897"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="858051333"/>
+										<File Id="5715417"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="725719132"/>
+										<File Id="767399380"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="995244962"/>
+										<File Id="988968491"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="371042949"/>
+										<File Id="760396261"/>
+										<File Id="625683214"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="251852521"/>
+										<File Id="1064913877"/>
+										<File Id="643940714"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="88503777"/>
+										<File Id="606579897"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="858051333"/>
+										<File Id="5715417"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="725719132"/>
+										<File Id="767399380"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="995244962"/>
+										<File Id="988968491"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+					<IncludedMemoryFiles>
+						<File Id="63644349" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem</Path>
+						</File>
+						<File Id="99105961" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem</Path>
+						</File>
+						<File Id="121194433" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem</Path>
+						</File>
+						<File Id="165071834" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem</Path>
+						</File>
+						<File Id="192931564" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem</Path>
+						</File>
+						<File Id="213875360" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem</Path>
+						</File>
+						<File Id="294584460" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem</Path>
+						</File>
+						<File Id="418583048" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="436094280" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem</Path>
+						</File>
+						<File Id="594014003" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem</Path>
+						</File>
+						<File Id="665670132" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem</Path>
+						</File>
+						<File Id="698470715" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem</Path>
+						</File>
+						<File Id="745945899" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem</Path>
+						</File>
+						<File Id="854541873" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem</Path>
+						</File>
+						<File Id="895352448" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="907411644" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem</Path>
+						</File>
+						<File Id="910093027" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem</Path>
+						</File>
+						<File Id="965590172" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Children>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+							<Media>
+								<File Id="436094280"/>
+								<File Id="895352448"/>
+								<File Id="418583048"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+							<Media>
+								<File Id="910093027"/>
+								<File Id="294584460"/>
+								<File Id="99105961"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+							<Media>
+								<File Id="745945899"/>
+								<File Id="594014003"/>
+								<File Id="698470715"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+							<Media>
+								<File Id="121194433"/>
+								<File Id="907411644"/>
+								<File Id="165071834"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+							<Media>
+								<File Id="854541873"/>
+								<File Id="965590172"/>
+								<File Id="213875360"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+							<Media>
+								<File Id="665670132"/>
+								<File Id="192931564"/>
+								<File Id="63644349"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2315528594" Name="FOLEYS_Char_Run_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Presence" GUID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<SwitchContainers/>
+				</Event>
+				<Event Id="2350611728" Name="FOLEYS_Char_Walk_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps" GUID="{333C3510-38C1-4331-8807-A15F5B07E949}" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+					<IncludedMemoryFiles>
+						<File Id="63644349" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem</Path>
+						</File>
+						<File Id="99105961" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem</Path>
+						</File>
+						<File Id="121194433" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem</Path>
+						</File>
+						<File Id="165071834" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem</Path>
+						</File>
+						<File Id="192931564" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem</Path>
+						</File>
+						<File Id="213875360" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem</Path>
+						</File>
+						<File Id="294584460" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem</Path>
+						</File>
+						<File Id="418583048" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="436094280" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem</Path>
+						</File>
+						<File Id="594014003" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem</Path>
+						</File>
+						<File Id="665670132" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem</Path>
+						</File>
+						<File Id="698470715" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem</Path>
+						</File>
+						<File Id="745945899" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem</Path>
+						</File>
+						<File Id="854541873" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem</Path>
+						</File>
+						<File Id="895352448" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="907411644" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem</Path>
+						</File>
+						<File Id="910093027" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem</Path>
+						</File>
+						<File Id="965590172" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<SwitchGroups>
+				<SwitchGroup Id="3135077181" Name="SWITCHES_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+					<Switches>
+						<Switch Id="1986576095" Name="Stanislas" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Stanislas" GUID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+						<Switch Id="1358509506" Name="Marta" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Marta" GUID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Medusa" GUID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+						<Switch Id="546651172" Name="Don" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Don" GUID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3184247664" Name="SWITCHES_Surfaces" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces" GUID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
+					<Switches>
+						<Switch Id="3135525842" Name="Cobble" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Cobble" GUID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Concrete" GUID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Dirt" GUID="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Grass" GUID="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"/>
+						<Switch Id="803837735" Name="Sand" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Sand" GUID="{C342220B-1EF3-461A-871B-EF5A4F624DBC}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Wood" GUID="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

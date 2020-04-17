@@ -38,7 +38,7 @@
 				<SoundcasterSession Name="Stingers_1stTest" ID="{13E5C6DA-01E8-4182-896D-9A491AB3B500}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="STINGERS_DS_Stanislas_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<ObjectRef Name="STINGERS_DS_Stan_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>

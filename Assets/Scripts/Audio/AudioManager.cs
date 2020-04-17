@@ -6,6 +6,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
     public GameObject[] Listeners;
+    public string[] Soundbanks;
 
     private void Awake()
     {
@@ -15,6 +16,12 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         else
             instance = this;
+        
+        //SoundBanks Loading
+        for (int i=0; i<Soundbanks.Length; i++)
+        {
+            AkSoundEngine.LoadAndDecodeBank(Soundbanks[i], true, out uint bankID);
+        }
     } 
 
     public void AddListeners(GameObject in_emitter, int listener1)

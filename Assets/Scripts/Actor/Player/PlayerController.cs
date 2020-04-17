@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     
     public ActorCameraMovement cameraMovement;
     public Stare _stare;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,10 @@ public class PlayerController : MonoBehaviour
 
         _input.currentActionMap["Run"].started += OnRunStart;
         _input.currentActionMap["Run"].canceled += OnRunStop;
+
+        //SOUND
+        AudioManager.instance.AddListeners(gameObject, 4);
+        //SOUND
     }
 
     public int GetPlayerIndex()
@@ -90,6 +95,24 @@ public class PlayerController : MonoBehaviour
         {
             _stare.StartStare();
             controller.SetStare(true);
+            //SOUND
+            int playerIndex = GetPlayerIndex();
+            switch (playerIndex)
+            {
+                case (0):
+                    AkSoundEngine.PostEvent("STINGERS_DS_Stan_L", gameObject);
+                    break;
+                case (1):
+                    AkSoundEngine.PostEvent("STINGERS_DS_Marta_R", gameObject);
+                    break;
+                case (2):
+                    AkSoundEngine.PostEvent("STINGERS_DS_Medusa_L", gameObject);
+                    break;
+                case (3):
+                    AkSoundEngine.PostEvent("STINGERS_DS_Don_R", gameObject);
+                    break;
+            }
+            //SOUND
         }
     }
 }
