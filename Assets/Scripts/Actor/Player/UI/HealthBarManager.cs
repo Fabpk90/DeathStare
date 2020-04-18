@@ -6,18 +6,26 @@ namespace Actor.Player.UI
 {
     public class HealthBarManager : MonoBehaviour
     {
-
         public Slider slider;
         
-        private PlayerHealth _health;
+        public PlayerHealth health;
+        public PlayerController controller;
+
+        private void OnEnable()
+        {
+            health.OnTakingDamage += OnTakingDamage;
+            controller.OnRespawn += OnRespawn;
+        }
+
+        private void OnDisable()
+        {
+            health.OnTakingDamage -= OnTakingDamage;
+            controller.OnRespawn -= OnRespawn;
+        }
 
         private void Start()
         {
-           _health = gameObject.GetComponentInParent<PlayerHealth>();
-           gameObject.GetComponentInParent<PlayerController>().OnRespawn += OnRespawn;
-           _health.OnTakingDamage += OnTakingDamage;
-
-           slider.value = _health.health / _health.maxHealth;
+            slider.value = health.health / health.maxHealth;
         }
 
         private void OnRespawn(object sender, EventArgs e)
@@ -27,7 +35,7 @@ namespace Actor.Player.UI
 
         private void OnTakingDamage(object sender, float e)
         {
-            slider.value = _health.health / _health.maxHealth;
+            slider.value = health.health / health.maxHealth;
         }
     }
 }

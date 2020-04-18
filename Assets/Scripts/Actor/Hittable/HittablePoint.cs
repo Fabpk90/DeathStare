@@ -12,7 +12,7 @@ namespace Actor.Hittable
         private void Awake()
         {
             //TODO: find a cleaner way
-            Stare.HittablePoints.Add(this);
+            StareHandler.HittablePoints.Add(this);
         }
 
         public Vector3 GetPosition()

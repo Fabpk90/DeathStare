@@ -42,7 +42,7 @@ namespace Actor
 
             foreach (HittablePoint point in points)
             {
-                Stare.HittablePoints.Remove(point);
+                StareHandler.HittablePoints.Remove(point);
             }
 
         }
