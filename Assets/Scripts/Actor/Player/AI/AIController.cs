@@ -4,67 +4,167 @@ using UnityEngine.AI;
 using System.Collections.Generic;
 using Actor;
 
+[RequireComponent(typeof(FirstPersonController))]
 public class AIController : MonoBehaviour
 {
-	private FirstPersonController _controller;
 	public ActorCameraMovement cameraMovement;
-
-	private List<FirstPersonController> _others = new List<FirstPersonController>();
-
-	NavMeshPath currentPath;
-	private int cornerIndex = 0;
-
-	private bool coroutineIsRuning = false;
+	public float targetUpdateRate= 0.2f;
+	public float rotationInputSmooth = 10;
+	public float moveInputSmooth = 10;
+	public float uncertainty = 0.1f;
 
 
+	private FirstPersonController _controller;
+	private NavMeshAgent _agent;
+	private int _cornerIndex = 0;
+	private Transform _target;
+	private Vector3 _nextCorner;
+	private Vector3 _direction;
+	private Vector2 _moveInput;
+	private Vector2 _rotInput;
+	private float _lastTargetUpdate;
+
+	
+
+	#region Public Method
+
+	public void SetDestination(Vector3 v)
+	{
+		_target = null;
+		UpdateDestination(v);
+	}
+
+	public void SetTarget(Transform t)
+	{
+		_target = t;
+		_lastTargetUpdate = -100;
+	}
+
+	#endregion
+
+	#region Unity methods
 	private void Awake()
 	{
 		_controller = GetComponent<FirstPersonController>();
-		//get enemies
-		foreach(FirstPersonController c in FindObjectsOfType<FirstPersonController>())
-		{
-			if(c!= _controller)
-			{
-				_others.Add(c);
-			}
-		}
-
+		_agent = GetComponent<NavMeshAgent>();
+		_agent.updatePosition = false;
+		_agent.updateRotation = false;
+		_agent.updateUpAxis = false;
 	}
 
 	private void Update()
 	{
-		if (!coroutineIsRuning)
-		{
-			StartCoroutine(UpdateBehaviour());
-		}
+		UpdateAgentPosition();
+		UpdateTargetdestination();
+		UpdateNextCorner();
+		UpdateDirection();
+		ShouldJump();
 
-		//follow path if it exist
-		if (currentPath == null && currentPath.status != NavMeshPathStatus.PathComplete) return;
+		Vector2 rotTarget = DirectionToRotInput();
+		_rotInput = Vector2.Lerp(_rotInput, rotTarget, rotationInputSmooth * Time.deltaTime);
 
-		if (cornerIndex >= currentPath.corners.Length) return;
+		Vector2 moveTarget = DirectionToMoveInput();
+		moveTarget = Vector2.Lerp(moveTarget, Random.insideUnitCircle, uncertainty);
+		_moveInput = Vector2.Lerp(_moveInput, moveTarget, moveInputSmooth * Time.deltaTime);
 
-		//cameraMovement.MoveCamera()
-		_controller.SetInputMovement(new Vector2(0, 1));
 
-		float sqrDelta = (transform.position - currentPath.corners[cornerIndex]).sqrMagnitude;
-		if(sqrDelta < 1)
-		{
-			cornerIndex++;
-		}
-	
-	
+		SetInputs(_moveInput, _rotInput, true);
 	}
+	#endregion
 
-	private IEnumerator UpdateBehaviour()
+	#region internal
+	private void UpdateTargetdestination()
 	{
-		coroutineIsRuning = true;
-		//no synch between IA, determine reaction time
-		yield return new WaitForSeconds(Random.Range(0.5f,1));
-
-
-		NavMesh.CalculatePath(transform.position, _others[Random.Range(0, _others.Count)].transform.position,NavMesh.AllAreas,currentPath);
-
-
-		coroutineIsRuning = false;
+		if(_target && Time.time > _lastTargetUpdate + targetUpdateRate)
+		{
+			UpdateDestination(_target.position);
+			_lastTargetUpdate = Time.time;
+		}	
 	}
+
+	private Vector2 DirectionToRotInput()
+	{
+		float angle = Vector3.SignedAngle(Vector3.ProjectOnPlane(_direction, Vector3.up), Vector3.ProjectOnPlane(transform.forward, Vector3.up), Vector3.up);
+		angle = Mathf.Clamp(angle / 10, -1, 1);
+		return new Vector2(-angle, 0);
+	}
+
+	private Vector2 DirectionToMoveInput()
+	{
+		Vector3 local = transform.InverseTransformDirection(new Vector3(_direction.x, transform.position.y, _direction.z));
+		return new Vector2(local.x, local.z).normalized;
+	}
+
+	private void UpdateDirection()
+	{
+		Vector3 samplePos = TrySamplePosition(transform.position);
+		_direction = _nextCorner - samplePos;
+	}
+
+	private void UpdateNextCorner()
+	{
+		if (_agent.path == null || _agent.path.status == NavMeshPathStatus.PathInvalid)
+			return;
+		if (_cornerIndex >= _agent.path.corners.Length)
+		{
+			return; //reach destination
+		}
+		_nextCorner = _agent.path.corners[_cornerIndex];
+		float sqrDelta = (transform.position - new Vector3(_agent.path.corners[_cornerIndex].x, transform.position.y, _agent.path.corners[_cornerIndex].z)).sqrMagnitude;
+		if (sqrDelta < 1)
+			_cornerIndex++;
+		DisplayDebug();
+	}
+
+	private void DisplayDebug()
+	{
+		for (int i = 0; i < _agent.path.corners.Length - 1; i++)
+			Debug.DrawLine(_agent.path.corners[i], _agent.path.corners[i + 1]);
+	}
+
+	private void ShouldJump()
+	{
+		if (_agent.isOnOffMeshLink)
+			_controller.Jump();
+	}
+
+	private void UpdateAgentPosition()
+	{
+		_agent.nextPosition = transform.position;
+		//prevent desync, TO DO use sqrt
+		if (Vector3.Distance(_agent.nextPosition, transform.position) > 2f)
+		{
+			//Debug.Log("teleport");
+			_agent.Warp(transform.position);
+		}
+	}
+
+	//get the closest position on the navmesh (if fail return the source position)
+	private Vector3 TrySamplePosition(Vector3 source, float dist = Mathf.Infinity, int areas = NavMesh.AllAreas)
+	{
+		NavMeshHit hit;
+		if (NavMesh.SamplePosition(source, out hit, dist, areas))
+		{
+			return hit.position;
+		}
+		else
+		{
+			return source;
+		}
+	}
+
+	private void SetInputs(Vector2 move, Vector2 rot, bool run)
+	{
+		_controller.SetInputMovement(move);
+		cameraMovement.MoveCamera(rot);
+		_controller.SetRunning(run);
+	}
+
+	private void UpdateDestination(Vector3 v)
+	{
+		if(!_agent.isOnNavMesh) return;
+		_agent.SetDestination(v);
+		_cornerIndex = 1;
+	}
+	#endregion
 }

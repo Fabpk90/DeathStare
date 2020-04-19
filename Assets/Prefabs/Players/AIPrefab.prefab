@@ -732,7 +732,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1512329940506386857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -778,6 +778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 6873219619255920052}
+  health: {fileID: 0}
+  controller: {fileID: 0}
 --- !u!1 &4518211771190888129
 GameObject:
   m_ObjectHideFlags: 0
