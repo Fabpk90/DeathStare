@@ -12,6 +12,7 @@ public class AIController : MonoBehaviour
 	public float rotationInputSmooth = 10;
 	public float moveInputSmooth = 10;
 	public float uncertainty = 0.1f;
+	public float rotationAngleMultiplier = 0.1f;
 
 
 	private FirstPersonController _controller;
@@ -23,6 +24,9 @@ public class AIController : MonoBehaviour
 	private Vector2 _moveInput;
 	private Vector2 _rotInput;
 	private float _lastTargetUpdate;
+	private float _speed;
+	private Vector3 _lookDirection;
+	private bool _lookAtTarget;
 
 	
 
@@ -40,6 +44,22 @@ public class AIController : MonoBehaviour
 		_lastTargetUpdate = -100;
 	}
 
+	public void SetSpeed(float s)
+	{
+		_speed = Mathf.Clamp01(s);
+	}
+
+	public void LookToward(Vector3 direction)
+	{
+		_lookAtTarget = false;
+		_lookDirection = direction;
+	}
+
+	public void LookAtTarget(bool active)
+	{
+		_lookAtTarget = active;
+	}
+
 	#endregion
 
 	#region Unity methods
@@ -50,6 +70,7 @@ public class AIController : MonoBehaviour
 		_agent.updatePosition = false;
 		_agent.updateRotation = false;
 		_agent.updateUpAxis = false;
+		_speed = 1;
 	}
 
 	private void Update()
@@ -60,12 +81,16 @@ public class AIController : MonoBehaviour
 		UpdateDirection();
 		ShouldJump();
 
-		Vector2 rotTarget = DirectionToRotInput();
-		_rotInput = Vector2.Lerp(_rotInput, rotTarget, rotationInputSmooth * Time.deltaTime);
+		Vector2 rotTarget = DirectionToRotInput(_lookDirection);
+		if (_lookAtTarget)
+		{
+			rotTarget = DirectionToRotInput(_direction);
+		}
+		_rotInput = Vector2.Lerp(_rotInput, rotTarget, rotationInputSmooth * Time.deltaTime) * _speed;
 
-		Vector2 moveTarget = DirectionToMoveInput();
+		Vector2 moveTarget = DirectionToMoveInput(_direction);
 		moveTarget = Vector2.Lerp(moveTarget, Random.insideUnitCircle, uncertainty);
-		_moveInput = Vector2.Lerp(_moveInput, moveTarget, moveInputSmooth * Time.deltaTime);
+		_moveInput = Vector2.Lerp(_moveInput, moveTarget, moveInputSmooth * Time.deltaTime) * _speed;
 
 
 		SetInputs(_moveInput, _rotInput, true);
@@ -82,16 +107,16 @@ public class AIController : MonoBehaviour
 		}	
 	}
 
-	private Vector2 DirectionToRotInput()
+	private Vector2 DirectionToRotInput(Vector3 dir)
 	{
-		float angle = Vector3.SignedAngle(Vector3.ProjectOnPlane(_direction, Vector3.up), Vector3.ProjectOnPlane(transform.forward, Vector3.up), Vector3.up);
-		angle = Mathf.Clamp(angle / 10, -1, 1);
+		float angle = Vector3.SignedAngle(Vector3.ProjectOnPlane(dir, Vector3.up), Vector3.ProjectOnPlane(transform.forward, Vector3.up), Vector3.up);
+		angle = Mathf.Clamp(angle * rotationAngleMultiplier, -1, 1);
 		return new Vector2(-angle, 0);
 	}
 
-	private Vector2 DirectionToMoveInput()
+	private Vector2 DirectionToMoveInput(Vector3 dir)
 	{
-		Vector3 local = transform.InverseTransformDirection(new Vector3(_direction.x, transform.position.y, _direction.z));
+		Vector3 local = transform.InverseTransformDirection(new Vector3(dir.x, transform.position.y, dir.z));
 		return new Vector2(local.x, local.z).normalized;
 	}
 

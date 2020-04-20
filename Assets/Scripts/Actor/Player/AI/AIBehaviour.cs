@@ -38,6 +38,8 @@ public class AIBehaviour : MonoBehaviour
 			yield return new WaitForSeconds(Random.Range(0.2f, 0.5f));
 
 			_controller.SetTarget(_player.transform);
+			_controller.LookAtTarget(false);
+			_controller.LookToward(transform.position);
 		}
 	}
 }
