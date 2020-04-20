@@ -6,6 +6,13 @@
 				<Property Name="Color" Type="int16" Value="13"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="VOICE_SNB" ID="{A5900404-D394-4423-BA7D-A679D4EC3E8A}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

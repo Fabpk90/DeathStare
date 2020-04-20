@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<Sound Name="Test" ID="{74FC38F6-1FBF-4E80-B819-2E95C0691F53}" ShortID="29772152">
 					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-9</Value>
