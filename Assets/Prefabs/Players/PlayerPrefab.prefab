@@ -588,67 +588,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 4920591685460016817}
---- !u!114 &1452936683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229372953350150472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbaa1f683d1836643ba73cfc80cb5e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  characterCamera: {fileID: 400000}
-  bodyUpdateRotationSpeed: 500
-  controller: {fileID: -3625789616987428581}
---- !u!114 &1483885940178567835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229372953350150472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchGroupName: SWITCHES_Surfaces
-  startingSwitchName: Cobble
-  switchGameObject: {fileID: 5046942744904166362}
---- !u!114 &4379214644093090247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229372953350150472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8773c123fd2548458f1fb08b7a1157b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 8016140257322171950}
-  leftFoot: {fileID: 3516518313192198300}
-  rightFoot: {fileID: 5046942744904166362}
-  wwiseListener: {fileID: 2074932669744444564}
---- !u!114 &5743003642258224631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3229372953350150472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  switchGroupName: SWITCHES_Surfaces
-  startingSwitchName: Cobble
-  switchGameObject: {fileID: 3516518313192198300}
 --- !u!1 &3479849005798977540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,16 +1160,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 400002}
     m_Modifications:
-    - target: {fileID: 505115967935311325, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-        type: 3}
-      propertyPath: m_DynamicOccludee
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2065981099872986947, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-        type: 3}
-      propertyPath: m_Avatar
+    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
+      propertyPath: characterCamera
       value: 
-      objectReference: {fileID: 9000000, guid: 564b3f1f1654c9047912d8c5a0076226, type: 3}
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 4379214644093090247, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8016140257322171950}
+    - target: {fileID: 4379214644093090247, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+        type: 3}
+      propertyPath: wwiseListener
+      value: 
+      objectReference: {fileID: 2074932669744444564}
     - target: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1293,24 +1240,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
---- !u!1 &3516518313192198300 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8328876010266153376, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4853528394774987068}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &5046942744904166362 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 383199541453302502, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4853528394774987068}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3229372953350150472 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8037302230046824564, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4853528394774987068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1912429295161469787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,

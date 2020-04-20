@@ -1,10 +1,10 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	957512978	STATE_Music_DuelState_Don			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Don	
 	1152474735	STATE_Music_DuelState_Stan			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Stan	
+	1498827748	STATE_Music_Main			\DS STATES\MUSIC STATES\STATE_Music_Main	
 	1847488509	STATE_General_LeadingPlayer			\DS STATES\GENERAL STATES\STATE_General_LeadingPlayer	
 	2940497260	STATE_Music_DuelState_Medusa			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Medusa	
 	3273751220	STATE_Music_DuelState_Marta			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Marta	
-	3847902346	STATE_Music_FightState			\DS STATES\MUSIC STATES\STATE_Music_FightState	
 
 State	ID	Name	State Group			Notes
 	748895195	None	STATE_Music_DuelState_Don			
@@ -13,6 +13,15 @@ State	ID	Name	State Group			Notes
 	748895195	None	STATE_Music_DuelState_Stan			
 	2452206122	False	STATE_Music_DuelState_Stan			
 	3053630529	True	STATE_Music_DuelState_Stan			
+	748895195	None	STATE_Music_Main			
+	1585161430	Fight_Intro	STATE_Music_Main			
+	1714471738	Outro_Marta	STATE_Music_Main			
+	2851607052	Outro_Don	STATE_Music_Main			
+	3204829974	Outro_Medusa	STATE_Music_Main			
+	3604647259	MainMenu	STATE_Music_Main			
+	3762960553	Fight_Silence	STATE_Music_Main			
+	4201650965	Outro_Stan	STATE_Music_Main			
+	4258958663	Fight_End	STATE_Music_Main			
 	748895195	None	STATE_General_LeadingPlayer			
 	2188949034	Player4	STATE_General_LeadingPlayer			
 	2188949036	Player2	STATE_General_LeadingPlayer			
@@ -24,11 +33,6 @@ State	ID	Name	State Group			Notes
 	748895195	None	STATE_Music_DuelState_Marta			
 	2452206122	False	STATE_Music_DuelState_Marta			
 	3053630529	True	STATE_Music_DuelState_Marta			
-	168610243	Fighting	STATE_Music_FightState			
-	529726532	End	STATE_Music_FightState			
-	748895195	None	STATE_Music_FightState			
-	1281810935	Start	STATE_Music_FightState			
-	3966194980	Ending	STATE_Music_FightState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	

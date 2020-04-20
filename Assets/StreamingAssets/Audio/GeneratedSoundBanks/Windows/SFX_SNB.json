@@ -1771,78 +1771,78 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "3135077181",
-      "Name": "SWITCHES_Character",
-      "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_Character",
-      "GUID": "{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}",
-      "Switches": [
-       {
-        "Id": "1986576095",
-        "Name": "Stanislas",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_Character\\Stanislas",
-        "GUID": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}"
-       },
-       {
-        "Id": "1358509506",
-        "Name": "Marta",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_Character\\Marta",
-        "GUID": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"
-       },
-       {
-        "Id": "2609729838",
-        "Name": "Medusa",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_Character\\Medusa",
-        "GUID": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"
-       },
-       {
-        "Id": "546651172",
-        "Name": "Don",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_Character\\Don",
-        "GUID": "{32631DF3-1804-4308-8ADB-CBAD960F3706}"
-       }
-      ]
-     },
-     {
-      "Id": "3184247664",
-      "Name": "SWITCHES_Surfaces",
-      "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces",
+      "Id": "2089079731",
+      "Name": "SWITCHES_Foleys_Surfaces",
+      "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces",
       "GUID": "{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}",
       "Switches": [
        {
         "Id": "3135525842",
         "Name": "Cobble",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Cobble",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Cobble",
         "GUID": "{23908CC5-373B-4844-841B-05045E5E4F14}"
        },
        {
         "Id": "841620460",
         "Name": "Concrete",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Concrete",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Concrete",
         "GUID": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"
        },
        {
         "Id": "2195636714",
         "Name": "Dirt",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Dirt",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Dirt",
         "GUID": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"
        },
        {
         "Id": "4248645337",
         "Name": "Grass",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Grass",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Grass",
         "GUID": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"
        },
        {
         "Id": "803837735",
         "Name": "Sand",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Sand",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Sand",
         "GUID": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}"
        },
        {
         "Id": "2058049674",
         "Name": "Wood",
-        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Surfaces\\Wood",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Wood",
         "GUID": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"
+       }
+      ]
+     },
+     {
+      "Id": "3424733800",
+      "Name": "SWITCHES_General_Character",
+      "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character",
+      "GUID": "{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}",
+      "Switches": [
+       {
+        "Id": "1986576095",
+        "Name": "Stanislas",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Stanislas",
+        "GUID": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}"
+       },
+       {
+        "Id": "1358509506",
+        "Name": "Marta",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Marta",
+        "GUID": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"
+       },
+       {
+        "Id": "2609729838",
+        "Name": "Medusa",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Medusa",
+        "GUID": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"
+       },
+       {
+        "Id": "546651172",
+        "Name": "Don",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Don",
+        "GUID": "{32631DF3-1804-4308-8ADB-CBAD960F3706}"
        }
       ]
      }

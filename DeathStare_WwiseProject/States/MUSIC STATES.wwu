@@ -7,13 +7,17 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<StateGroup Name="STATE_Music_FightState" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}">
+				<StateGroup Name="STATE_Music_Main" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}">
 					<ChildrenList>
 						<State Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
-						<State Name="Start" ID="{7494CA80-3EBE-42E6-BCC5-FB522A0478FE}"/>
-						<State Name="Fighting" ID="{DF750D60-7A48-4547-9F0A-6F6090F6AB04}"/>
-						<State Name="Ending" ID="{9AD1D7AC-BC8A-4EF9-AA21-D6E37987DFEA}"/>
-						<State Name="End" ID="{F05254E7-56F5-4257-B9A4-1A24FD9F6B2F}"/>
+						<State Name="MainMenu" ID="{270F57B3-C631-4860-AC4E-C2852FF48010}"/>
+						<State Name="Fight_Intro" ID="{A99B4BF6-EF52-4D35-82F6-B7142CD4CC07}"/>
+						<State Name="Fight_End" ID="{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"/>
+						<State Name="Outro_Stan" ID="{21293A09-F303-48B7-9A70-7559B9CCDD88}"/>
+						<State Name="Fight_Silence" ID="{C90A8475-12D9-499E-8BC4-CE7027D7CFFE}"/>
+						<State Name="Outro_Marta" ID="{C2E2F4E5-BFF6-4327-AC7A-FDB021BA41B5}"/>
+						<State Name="Outro_Medusa" ID="{8315AB55-62F8-49E0-8AAA-1943D47B9B38}"/>
+						<State Name="Outro_Don" ID="{0F4C10BE-1997-4536-A981-C7D962CBBC82}"/>
 					</ChildrenList>
 				</StateGroup>
 				<Folder Name="STATE_Music_DuelState" ID="{0DAEAAD2-8844-45D1-8043-073C47B47421}" ShortID="669928406">

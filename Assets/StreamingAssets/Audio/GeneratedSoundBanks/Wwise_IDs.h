@@ -102,40 +102,31 @@ namespace AK
             } // namespace STATE
         } // namespace STATE_MUSIC_DUELSTATE_STAN
 
-        namespace STATE_MUSIC_FIGHTSTATE
+        namespace STATE_MUSIC_MAIN
         {
-            static const AkUniqueID GROUP = 3847902346U;
+            static const AkUniqueID GROUP = 1498827748U;
 
             namespace STATE
             {
-                static const AkUniqueID END = 529726532U;
-                static const AkUniqueID ENDING = 3966194980U;
-                static const AkUniqueID FIGHTING = 168610243U;
+                static const AkUniqueID FIGHT_END = 4258958663U;
+                static const AkUniqueID FIGHT_INTRO = 1585161430U;
+                static const AkUniqueID FIGHT_SILENCE = 3762960553U;
+                static const AkUniqueID MAINMENU = 3604647259U;
                 static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID START = 1281810935U;
+                static const AkUniqueID OUTRO_DON = 2851607052U;
+                static const AkUniqueID OUTRO_MARTA = 1714471738U;
+                static const AkUniqueID OUTRO_MEDUSA = 3204829974U;
+                static const AkUniqueID OUTRO_STAN = 4201650965U;
             } // namespace STATE
-        } // namespace STATE_MUSIC_FIGHTSTATE
+        } // namespace STATE_MUSIC_MAIN
 
     } // namespace STATES
 
     namespace SWITCHES
     {
-        namespace SWITCHES_CHARACTER
+        namespace SWITCHES_FOLEYS_SURFACES
         {
-            static const AkUniqueID GROUP = 3135077181U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID DON = 546651172U;
-                static const AkUniqueID MARTA = 1358509506U;
-                static const AkUniqueID MEDUSA = 2609729838U;
-                static const AkUniqueID STANISLAS = 1986576095U;
-            } // namespace SWITCH
-        } // namespace SWITCHES_CHARACTER
-
-        namespace SWITCHES_SURFACES
-        {
-            static const AkUniqueID GROUP = 3184247664U;
+            static const AkUniqueID GROUP = 2089079731U;
 
             namespace SWITCH
             {
@@ -146,7 +137,20 @@ namespace AK
                 static const AkUniqueID SAND = 803837735U;
                 static const AkUniqueID WOOD = 2058049674U;
             } // namespace SWITCH
-        } // namespace SWITCHES_SURFACES
+        } // namespace SWITCHES_FOLEYS_SURFACES
+
+        namespace SWITCHES_GENERAL_CHARACTER
+        {
+            static const AkUniqueID GROUP = 3424733800U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DON = 546651172U;
+                static const AkUniqueID MARTA = 1358509506U;
+                static const AkUniqueID MEDUSA = 2609729838U;
+                static const AkUniqueID STANISLAS = 1986576095U;
+            } // namespace SWITCH
+        } // namespace SWITCHES_GENERAL_CHARACTER
 
     } // namespace SWITCHES
 
@@ -160,20 +164,30 @@ namespace AK
 
     namespace TRIGGERS
     {
-        static const AkUniqueID TRIGGER_DEATHSTARE_DON_L = 4121139050U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_DON_R = 4121139060U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_MARTA_L = 4128946428U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_MARTA_R = 4128946402U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_MEDUSA_L = 4165225650U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_MEDUSA_R = 4165225644U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_STANISLAS_L = 1376875353U;
-        static const AkUniqueID TRIGGER_DEATHSTARE_STANISLAS_R = 1376875335U;
+        static const AkUniqueID TRIGGER_DS_DON_L = 2046853094U;
+        static const AkUniqueID TRIGGER_DS_DON_R = 2046853112U;
+        static const AkUniqueID TRIGGER_DS_MARTA_L = 2960638048U;
+        static const AkUniqueID TRIGGER_DS_MARTA_R = 2960638078U;
+        static const AkUniqueID TRIGGER_DS_MEDUSA_L = 4277786702U;
+        static const AkUniqueID TRIGGER_DS_MEDUSA_R = 4277786704U;
+        static const AkUniqueID TRIGGER_DS_STANISLAS_L = 43587861U;
+        static const AkUniqueID TRIGGER_DS_STANISLAS_R = 43587851U;
+        static const AkUniqueID TRIGGER_KILL_DON_L_01 = 1713667741U;
+        static const AkUniqueID TRIGGER_KILL_DON_R_01 = 286473427U;
+        static const AkUniqueID TRIGGER_KILL_MARTA_L_01 = 3665013311U;
+        static const AkUniqueID TRIGGER_KILL_MARTA_R_01 = 2252523825U;
+        static const AkUniqueID TRIGGER_KILL_MEDUSA_L_01 = 1310078611U;
+        static const AkUniqueID TRIGGER_KILL_MEDUSA_R_01 = 2778849629U;
+        static const AkUniqueID TRIGGER_KILL_STANISLAS_L_01 = 2769502708U;
+        static const AkUniqueID TRIGGER_KILL_STANISLAS_R_01 = 1253770830U;
     } // namespace TRIGGERS
 
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID MUSIC_MAIN_SNB = 2058607680U;
         static const AkUniqueID MUSIC_SNB = 2767260180U;
+        static const AkUniqueID MUSIC_STINGERS_SNB = 3967014322U;
         static const AkUniqueID SFX_SNB = 26215100U;
         static const AkUniqueID TEST = 3157003241U;
         static const AkUniqueID VOICE_SNB = 133924915U;

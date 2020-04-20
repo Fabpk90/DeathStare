@@ -28,7 +28,6 @@
 						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
 						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
 						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
-						<CurrentStateRef Name="Ending" ID="{9AD1D7AC-BC8A-4EF9-AA21-D6E37987DFEA}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>

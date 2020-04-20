@@ -986,22 +986,22 @@
 				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
-				<SwitchGroup Id="3135077181" Name="SWITCHES_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+				<SwitchGroup Id="2089079731" Name="SWITCHES_Foleys_Surfaces" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces" GUID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
 					<Switches>
-						<Switch Id="1986576095" Name="Stanislas" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Stanislas" GUID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
-						<Switch Id="1358509506" Name="Marta" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Marta" GUID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
-						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Medusa" GUID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
-						<Switch Id="546651172" Name="Don" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character\Don" GUID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+						<Switch Id="3135525842" Name="Cobble" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Cobble" GUID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Concrete" GUID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>
+						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Dirt" GUID="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"/>
+						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Grass" GUID="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"/>
+						<Switch Id="803837735" Name="Sand" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Sand" GUID="{C342220B-1EF3-461A-871B-EF5A4F624DBC}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces\Wood" GUID="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"/>
 					</Switches>
 				</SwitchGroup>
-				<SwitchGroup Id="3184247664" Name="SWITCHES_Surfaces" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces" GUID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
+				<SwitchGroup Id="3424733800" Name="SWITCHES_General_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
 					<Switches>
-						<Switch Id="3135525842" Name="Cobble" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Cobble" GUID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
-						<Switch Id="841620460" Name="Concrete" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Concrete" GUID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>
-						<Switch Id="2195636714" Name="Dirt" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Dirt" GUID="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"/>
-						<Switch Id="4248645337" Name="Grass" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Grass" GUID="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"/>
-						<Switch Id="803837735" Name="Sand" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Sand" GUID="{C342220B-1EF3-461A-871B-EF5A4F624DBC}"/>
-						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces\Wood" GUID="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"/>
+						<Switch Id="1986576095" Name="Stanislas" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Stanislas" GUID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+						<Switch Id="1358509506" Name="Marta" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Marta" GUID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Medusa" GUID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+						<Switch Id="546651172" Name="Don" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Don" GUID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
@@ -1021,6 +1021,11 @@
 				<AuxBus Id="376471427" Name="RVB_Zone1" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone1" GUID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}"/>
 				<AuxBus Id="376471430" Name="RVB_Zone4" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone4" GUID="{AB48812F-CA5F-4C29-8262-71D1EB9106EB}"/>
 			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="2058607680" GUID="{39E4041C-821F-40B4-9DA8-89C9C96F3150}" Language="SFX">
+			<ObjectPath>\SoundBanks\DS SNB\MUSIC SNB\MUSIC_MAIN_SNB</ObjectPath>
+			<ShortName>MUSIC_MAIN_SNB</ShortName>
+			<Path>MUSIC_MAIN_SNB.bnk</Path>
 		</SoundBank>
 		<SoundBank Id="2767260180" GUID="{157C3D6A-86AC-4F8C-85A9-0C02730F1925}" Language="SFX">
 			<ObjectPath>\SoundBanks\DS SNB\MUSIC SNB\MUSIC_SNB</ObjectPath>
@@ -1363,6 +1368,11 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3967014322" GUID="{5C82EBE0-34CA-4234-984B-C21126CF1593}" Language="SFX">
+			<ObjectPath>\SoundBanks\DS SNB\MUSIC SNB\MUSIC_STINGERS_SNB</ObjectPath>
+			<ShortName>MUSIC_STINGERS_SNB</ShortName>
+			<Path>MUSIC_STINGERS_SNB.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

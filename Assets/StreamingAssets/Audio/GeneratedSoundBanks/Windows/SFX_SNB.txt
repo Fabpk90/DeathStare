@@ -7,20 +7,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2350611728	FOLEYS_Char_Walk_Footsteps			\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	3135077181	SWITCHES_Character			\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_Character	
-	3184247664	SWITCHES_Surfaces			\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Surfaces	
+	2089079731	SWITCHES_Foleys_Surfaces			\DS SWITCHES\SFX SWITCHES\FOLEYS SWITCHES\SWITCHES_Foleys_Surfaces	
+	3424733800	SWITCHES_General_Character			\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character	
 
 Switch	ID	Name	Switch Group			Notes
-	546651172	Don	SWITCHES_Character			
-	1358509506	Marta	SWITCHES_Character			
-	1986576095	Stanislas	SWITCHES_Character			
-	2609729838	Medusa	SWITCHES_Character			
-	803837735	Sand	SWITCHES_Surfaces			
-	841620460	Concrete	SWITCHES_Surfaces			
-	2058049674	Wood	SWITCHES_Surfaces			
-	2195636714	Dirt	SWITCHES_Surfaces			
-	3135525842	Cobble	SWITCHES_Surfaces			
-	4248645337	Grass	SWITCHES_Surfaces			
+	803837735	Sand	SWITCHES_Foleys_Surfaces			
+	841620460	Concrete	SWITCHES_Foleys_Surfaces			
+	2058049674	Wood	SWITCHES_Foleys_Surfaces			
+	2195636714	Dirt	SWITCHES_Foleys_Surfaces			
+	3135525842	Cobble	SWITCHES_Foleys_Surfaces			
+	4248645337	Grass	SWITCHES_Foleys_Surfaces			
+	546651172	Don	SWITCHES_General_Character			
+	1358509506	Marta	SWITCHES_General_Character			
+	1986576095	Stanislas	SWITCHES_General_Character			
+	2609729838	Medusa	SWITCHES_General_Character			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5715417	Character_MoveSet_Jump_TakeOff_Grass_001	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Windows\SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\SFX\FOLEYS\Foleys\Character\Jump\TakeOff\FOLEYS_Char_Jump_TakeOff\Jump_TakeOff\Jump_TakeOff_Stan\Grass\Character_MoveSet_Jump_TakeOff_Grass_001		11738

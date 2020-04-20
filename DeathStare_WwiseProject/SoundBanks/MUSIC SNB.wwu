@@ -29,6 +29,16 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="MUSIC_MAIN_SNB" ID="{39E4041C-821F-40B4-9DA8-89C9C96F3150}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="MUSIC_STINGERS_SNB" ID="{5C82EBE0-34CA-4234-984B-C21126CF1593}">
+					<ObjectInclusionList/>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>
