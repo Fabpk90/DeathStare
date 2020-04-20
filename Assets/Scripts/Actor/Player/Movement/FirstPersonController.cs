@@ -111,7 +111,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float speed = GetSpeedFromState();
+        float speed = GetSpeedFromState() * m_Input.magnitude;
 
         Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
         

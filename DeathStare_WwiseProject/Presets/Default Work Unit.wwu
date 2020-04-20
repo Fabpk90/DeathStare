@@ -55,7 +55,7 @@
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
-								<Attenuation Name="DS_Default (Custom)" ID="{2566972E-2E76-477A-A9C4-0A323A97A4F1}" ShortID="1060562908">
+								<Attenuation Name="DS_Default (Custom)" ID="{2566972E-2E76-477A-A9C4-0A323A97A4F1}">
 									<CurveUsageInfoList>
 										<VolumeDryUsage>
 											<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -233,7 +233,7 @@
 							<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 						</Reference>
 						<Reference Name="SwitchGroupOrStateGroup">
-							<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+							<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 						</Reference>
 					</ReferenceList>
 					<GroupingInfo/>
