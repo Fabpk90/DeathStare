@@ -9,9 +9,14 @@
 			<ChildrenList>
 				<ActorMixer Name="Foleys" ID="{AD14DC5C-B8B9-4691-8234-F4698DA9A682}" ShortID="996437064">
 					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="DS_Default" ID="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}" WorkUnitID="{D21EA8B5-DEC8-468A-BF2A-859B116D5F87}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 						</Reference>
@@ -93,7 +98,7 @@
 																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -112,7 +117,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -967,7 +972,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -1822,7 +1827,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -2677,7 +2682,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -3607,7 +3612,7 @@
 																	<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -3764,7 +3769,7 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 														</Reference>
 														<Reference Name="SwitchGroupOrStateGroup">
-															<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+															<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -3783,7 +3788,7 @@
 																	<ObjectRef Name="Death" ID="{C62BC68D-3DD9-4211-8CC6-2BC55C86EA8F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																	<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -4340,7 +4345,7 @@
 																	<ObjectRef Name="Death" ID="{C62BC68D-3DD9-4211-8CC6-2BC55C86EA8F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																	<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -4897,7 +4902,7 @@
 																	<ObjectRef Name="Death" ID="{C62BC68D-3DD9-4211-8CC6-2BC55C86EA8F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																	<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -5454,7 +5459,7 @@
 																	<ObjectRef Name="Death" ID="{C62BC68D-3DD9-4211-8CC6-2BC55C86EA8F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																	<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -6102,7 +6107,7 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -6121,7 +6126,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -6976,7 +6981,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -7831,7 +7836,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -8686,7 +8691,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -9616,7 +9621,7 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -9759,7 +9764,7 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -9778,7 +9783,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -10539,7 +10544,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -11300,7 +11305,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -12061,7 +12066,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -12901,7 +12906,7 @@
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
 																<Reference Name="SwitchGroupOrStateGroup">
-																	<ObjectRef Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
@@ -12920,7 +12925,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -13635,7 +13640,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -14350,7 +14355,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -15065,7 +15070,7 @@
 																			<ObjectRef Name="SFX_Foleys" ID="{16C06318-C939-4DFF-8C55-57D030091E9B}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																		<Reference Name="SwitchGroupOrStateGroup">
-																			<ObjectRef Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
+																			<ObjectRef Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}" WorkUnitID="{2B8F83F4-F7D4-4A81-8950-F2EA9DBD59A0}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -17396,6 +17401,9 @@
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{C6E036A6-70A0-42CC-9431-E6E45A5A08E1}"/>
+					</PositioningInfo>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

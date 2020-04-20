@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Folder Name="Character" ID="{7D278039-2C8D-41AD-A183-3BD8C46D4F60}" ShortID="1008098549">
 					<ChildrenList>
-						<SwitchGroup Name="SWITCHES_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+						<SwitchGroup Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
 							<ChildrenList>
 								<Switch Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
 								<Switch Name="Marta" ID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>

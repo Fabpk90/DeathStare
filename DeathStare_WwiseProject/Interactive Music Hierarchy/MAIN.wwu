@@ -3586,56 +3586,56 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{41BBA8C6-9E2E-4F56-A2B9-F1F6DB3E8DAA}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{C7DB9541-5442-4EE7-9EC0-373C7AA426A8}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{61445A00-4462-4E35-852A-4018662C444B}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{07098A14-37EB-4C44-A4A5-9B8CDE0AB634}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{8B57DD8F-4766-4196-AF35-C036ACBAF481}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{82B87216-47F3-4BA2-BA79-7125938EE4E9}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{37A9DDA5-9259-4D38-B5E0-9370247292DF}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 									</StingerList>
@@ -3751,56 +3751,56 @@
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{0AA6EF91-E709-4445-A9D8-711C2A3F426A}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{A4FDC152-7747-4146-A694-BB5D772106A5}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{7F76588D-A10E-4DE7-B5B5-116DC46107A5}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{D5BA9AD1-0510-4126-B654-A91F0C0FEE8E}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{36593770-5DDC-41F5-A817-2649BCF3E32E}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{036E50FB-FBBA-463D-80CA-1410248E221B}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 										<MusicStinger Name="" ID="{7347994C-6127-453F-9E83-3E83BF0043BA}">
 											<PropertyList>
 												<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 											</PropertyList>
-											<TriggerRef Name="TRIGGER_DeathStare_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+											<TriggerRef Name="TRIGGER_DS_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 											<SegmentRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 										</MusicStinger>
 									</StingerList>
@@ -3836,17 +3836,9 @@
 								</MusicTransition>
 							</TransitionList>
 							<ArgumentList>
-								<ArgumentRef Name="STATE_Music_FightState" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}"/>
+								<ArgumentRef Name="STATE_Music_Main" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}"/>
 							</ArgumentList>
 							<EntryList>
-								<Entry>
-									<Path>
-										<PathElementRef Name="Ending" ID="{9AD1D7AC-BC8A-4EF9-AA21-D6E37987DFEA}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="Fighting" ID="{0A5F4E0C-FB69-4176-BF78-7143EBBDFDE8}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
 								<Entry>
 									<Path>
 										<PathElementRef Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
@@ -3857,15 +3849,7 @@
 								</Entry>
 								<Entry>
 									<Path>
-										<PathElementRef Name="Fighting" ID="{DF750D60-7A48-4547-9F0A-6F6090F6AB04}"/>
-									</Path>
-									<AudioNodeInfo>
-										<AudioNodeRef Name="Silence" ID="{D476B541-451E-48E0-8A0E-F124E992CE4D}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}" Platform="Linked"/>
-									</AudioNodeInfo>
-								</Entry>
-								<Entry>
-									<Path>
-										<PathElementRef Name="STATE_Music_FightState" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}"/>
+										<PathElementRef Name="STATE_Music_Main" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}"/>
 									</Path>
 									<AudioNodeInfo>
 										<NoObject Platform="Linked"/>

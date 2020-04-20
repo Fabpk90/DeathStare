@@ -476,8 +476,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 7cccdb0e548ba54ea6a63eaba775cd02
     GuidInternal: 
-    m_lastTime: -8586153610314069574
-    List: []
+    m_lastTime: -8586146273686549483
+    List:
+    - name: Play_Duel_Music
+      guid: c7413ea4806c3047909c8f0ce5254c4a
+      id: 2782150220
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Duel_Music
+        ObjectType: 3
+      Path: Default Work Unit\Play_Duel_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\DS EVENTS.wwu
     ParentPath: DS EVENTS
     guid: 160c1f23d3ff8445864b48dc9e04826e
