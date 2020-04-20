@@ -3,6 +3,7 @@
 	<ProjectInfo>
 		<Project Name="DeathStare_WwiseProject" ID="{F612C066-2061-4660-B790-010E4B7C044B}">
 			<Platforms>
+				<Platform Name="Linux" ReferencePlatform="Linux" ID="{30206ADB-83E2-4F59-BE6C-9E59F67CDB64}"/>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{AF47502D-6BF0-45FC-9034-096FC6931A5D}"/>
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{D1EFA9B9-8961-4188-AE8B-F43499FC7CB4}"/>
 			</Platforms>
@@ -18,12 +19,14 @@
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Linux"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
+						<Value Platform="Linux">GeneratedSoundBanks\Linux</Value>
 					</ValueList>
 				</Property>
 				<Property Name="GenerateMultipleBanks" Type="bool" Value="True"/>
@@ -32,6 +35,7 @@
 					<ValueList>
 						<Value Platform="Windows">512</Value>
 						<Value Platform="Mac">512</Value>
+						<Value Platform="Linux">512</Value>
 					</ValueList>
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjUzNTgiIG1hc2s9Ik1QTVQxMzk0IiBlbmM9IjAiPjxsaWNl bnNlIGlkPSIxIiBuYW1lPSJXd2lzZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSIyLDMs NCwxMCwxMywxNCIgZXhwaXJlcz0iMjAyMC0wNy0zMSIgIC8+PGxpY2Vuc2UgaWQ9 IjIyIiBuYW1lPSJMZXZlbCBBIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl IGlkPSIyMSIgbmFtZT0iTWFpbnRlbmFuY2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0i MiwzLDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjAtMDctMzEiICAvPjxsaWNlbnNl IGlkPSIyNSIgbmFtZT0iQWxsIFd3aXNlIFBsdWctSW5zIiB0eXBlPSIzIiAgZXhw aXJlcz0iMjAyMC0wNy0zMSIgIC8+PC9wcm9qZWN0Pg==|vpV1nDDGo3ypZmGDkNv SRsBQLDE/pcScUGADfpRovFmWUUK+fqxm/Sg6UfLnzAQzWkK0AzYlYgTSLQfBlgy 4nNqx7ld/DxrJ5aqpxp2q5fWObfujtFO7pvL/s3HsXklCt91Dvqekay8IRNiddV5 qrZfXemSIfVkHQ4sxCg7w57S/zapI/++vsV1U+91MCJsF8H1DrlS4I8q/nrIZcCj KjIuBkJ1pw5OOqXfaez3/j4xqESqYfT90KpG0Mi+n0my5CWkDU3Fvi7P/nMNH4SD alrSE31XbXBf3VYGlFfpriSoY01IkNObDnt9O66XNZlyQ4lnr7qxwVkbvpZdaod/ c5w== "/>
@@ -45,36 +49,43 @@
 					<ValueList>
 						<Value Platform="Windows">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
 						<Value Platform="Mac">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</Value>
+						<Value Platform="Linux">..\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Windows">Copy Streamed Files</Value>
 						<Value Platform="Mac">Copy Streamed Files</Value>
+						<Value Platform="Linux">Copy Streamed Files</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Windows">"$(CopyStreamedFilesExePath)" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 						<Value Platform="Mac">"$(CopyStreamedFilesExePath)" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+						<Value Platform="Linux">"$(CopyStreamedFilesExePath)" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Linux"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Linux"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="UseActionNameForEvent" Type="bool" Value="False"/>
 				<Property Name="VolumeThreshold" Type="Real64">
 					<ValueList>
 						<Value Platform="Windows">-96</Value>
 						<Value Platform="Mac">-96</Value>
+						<Value Platform="Linux">-96</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2019.2|Build=7216|VersionName=v2019.2.0|Config=Release"/>

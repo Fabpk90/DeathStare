@@ -6,6 +6,184 @@
 				<Property Name="Color" Type="int16" Value="19"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="STINGERS_DS_Marta_L" ID="{68303AC6-7305-4FA4-920D-7156C03C6182}">
+					<ChildrenList>
+						<Action Name="" ID="{112F28B2-8F36-4214-B2FD-8A2F8E52FE7F}" ShortID="482614161">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Marta_R" ID="{A81D6D39-5FA4-4B3C-BFFC-A15A97CDC025}">
+					<ChildrenList>
+						<Action Name="" ID="{E4364A42-219C-4505-A23B-C5361761393D}" ShortID="898464357">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Don_R" ID="{489BDAD2-C7D7-43C3-A81B-7BDA3E292AF1}">
+					<ChildrenList>
+						<Action Name="" ID="{0B8CC719-AB74-4AA4-9A95-96505D28B549}" ShortID="920271845">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Medusa_R" ID="{E4438202-6517-4ED3-BC5B-781C39B8A321}">
+					<ChildrenList>
+						<Action Name="" ID="{A791F85C-EEAE-4298-AE0A-BB3AF65003CE}" ShortID="144451938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Don_L" ID="{A24FCC13-CC80-4D7E-92EE-2767C08D9941}">
+					<ChildrenList>
+						<Action Name="" ID="{0E928F8F-4645-4A25-9FB9-3C76CC3A714F}" ShortID="857069091">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Medusa_L" ID="{197E560B-35B7-4E05-A2F1-906509A26725}">
+					<ChildrenList>
+						<Action Name="" ID="{3F788A63-86C7-451B-8C17-BA1A9CB0B97B}" ShortID="407260106">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Stan_R" ID="{1D989448-08A8-4F21-A30F-6EA6FEDB2689}">
+					<ChildrenList>
+						<Action Name="" ID="{DD5782E9-0F61-4AA7-8D7E-53D8D757ED72}" ShortID="874712131">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_DS_Stan_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}">
+					<ChildrenList>
+						<Action Name="" ID="{80AF0DCE-45D2-496D-9131-82F392682356}" ShortID="153313126">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Don_L" ID="{A3884006-09B8-4199-8ECA-EC8D16312478}">
+					<ChildrenList>
+						<Action Name="" ID="{3C07BEFD-8D74-4D4C-970A-E03F117B7B37}" ShortID="852431673">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Don_L" ID="{6B4C4D7F-563A-47EF-97BD-FC4D43D13CB3}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Don_R" ID="{17C3B30B-2BBB-437B-9B16-15CACC78BD05}">
+					<ChildrenList>
+						<Action Name="" ID="{760D16D0-DAE9-4316-9D23-BC07C0710C84}" ShortID="91792283">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Don_R" ID="{D6894FFD-A3A2-4CF7-98CE-E17FD03F8A82}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Medusa_R" ID="{B822169F-4781-4E39-BB0C-2D832475EF13}">
+					<ChildrenList>
+						<Action Name="" ID="{D47E85A2-026A-4F8F-A701-A49C6B0D2F27}" ShortID="674929015">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Medusa_R" ID="{24794F5B-B4DB-4E51-B556-9B5735FE0D3C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Stan_L" ID="{DA3042C8-9B7C-4E37-A31D-368BEF110989}">
+					<ChildrenList>
+						<Action Name="" ID="{1E499FB2-DCCD-4CFC-8536-62B0331609A1}" ShortID="777751573">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Stan_L" ID="{BF70FF26-69FD-4EF8-BB77-32470E3B08E7}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Stan_R" ID="{6FB4A5BD-5EC5-4D55-9350-4D5CA5F9193B}">
+					<ChildrenList>
+						<Action Name="" ID="{43425B3D-D7A0-4BC2-830F-7F58C645AB21}" ShortID="530438912">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Stan_R" ID="{E0A39ACE-58CF-4EB8-887F-A52735C8854C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Marta_R" ID="{D7374F6B-E08B-41A8-B0A1-F8639CFF1E09}">
+					<ChildrenList>
+						<Action Name="" ID="{014BA482-354E-4A21-8A7B-4E329B81586F}" ShortID="758179690">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Marta_R" ID="{A4C9E5AB-4A15-4EDF-9E7E-A752DB86AEBC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Marta_L" ID="{AEB4EC94-B591-4A5C-A655-CE07F87B4CE1}">
+					<ChildrenList>
+						<Action Name="" ID="{580F94ED-B025-4546-B30C-773653BC2E63}" ShortID="639806411">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Marta_L" ID="{357421D5-4ECE-40EC-97D9-E8A341D5AE71}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_Medusa_L" ID="{BF1A2322-2E28-49F5-8E83-6CACC6AE64BA}">
+					<ChildrenList>
+						<Action Name="" ID="{0D0C0A82-FB21-4970-A8B8-6FA44BFCA477}" ShortID="991472904">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_Medusa_L" ID="{97B29FC6-4F99-4A68-BD10-02CD0A6038F3}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

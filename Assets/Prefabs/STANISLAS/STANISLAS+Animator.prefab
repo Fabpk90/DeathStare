@@ -3247,7 +3247,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4465,6 +4465,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6472061975834896999}
   - component: {fileID: 2065981099872986947}
+  - component: {fileID: 1452936683}
+  - component: {fileID: 4379214644093090247}
+  - component: {fileID: 5743003642258224631}
+  - component: {fileID: 1483885940178567835}
   m_Layer: 0
   m_Name: STANISLAS+Animator
   m_TagString: Untagged
@@ -4498,7 +4502,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8037302230046824564}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 564b3f1f1654c9047912d8c5a0076226, type: 3}
   m_Controller: {fileID: 9100000, guid: b5acea7ae253e15478475c6cf56c9645, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -4508,6 +4512,67 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1452936683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbaa1f683d1836643ba73cfc80cb5e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterCamera: {fileID: 0}
+  bodyUpdateRotationSpeed: 500
+  controller: {fileID: 0}
+--- !u!114 &4379214644093090247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8773c123fd2548458f1fb08b7a1157b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  leftFoot: {fileID: 8328876010266153376}
+  rightFoot: {fileID: 383199541453302502}
+  wwiseListener: {fileID: 0}
+--- !u!114 &5743003642258224631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Foleys_Surfaces
+  startingSwitchName: Dirt
+  switchGameObject: {fileID: 8328876010266153376}
+--- !u!114 &1483885940178567835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Foleys_Surfaces
+  startingSwitchName: Dirt
+  switchGameObject: {fileID: 383199541453302502}
 --- !u!1 &8043872157628012999
 GameObject:
   m_ObjectHideFlags: 0

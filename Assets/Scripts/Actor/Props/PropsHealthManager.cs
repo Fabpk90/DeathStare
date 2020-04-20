@@ -5,11 +5,17 @@ namespace Actor.Props
     public class PropsHealthManager : HealthManager
     {
         public bool takesDamage;
-        public override bool TakeDamage(float amount)
+        public override bool TakeDamage(int playerIndex, float amount)
         {
             if(takesDamage)
-                return base.TakeDamage(amount);
+                return base.TakeDamage(playerIndex, amount);
             return false;
+        }
+
+        public override void Die()
+        {
+            base.Die();
+            Destroy(gameObject);
         }
     }
 }
