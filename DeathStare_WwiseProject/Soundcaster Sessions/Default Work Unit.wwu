@@ -1,6 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{719039D4-9188-4803-879A-DC9561F2A18E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="MusicSystem" ID="{2E06AE2D-8B83-4362-AD51-34C0E6E2B636}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P1" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P3" ID="{39A994FA-0282-4B73-8264-DC79F2CBFC4A}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P4" ID="{E51BCC2A-215B-4DD7-8AA6-1B751AEE5044}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P2" ID="{26F8A9E7-499D-4EE6-9658-34A7C89EFAB0}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="False" ID="{D1EEC0E4-8154-42A3-AB7C-36161B38D050}"/>
+						<CurrentStateRef Name="False" ID="{2BDC6330-8AF5-4985-B55B-182370D705D7}"/>
+						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
+						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
+						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
+						<CurrentStateRef Name="Ending" ID="{9AD1D7AC-BC8A-4EF9-AA21-D6E37987DFEA}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Stingers_1stTest" ID="{13E5C6DA-01E8-4182-896D-9A491AB3B500}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="STINGERS_DS_Stanislas_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_Kill_Stan_L" ID="{DA3042C8-9B7C-4E37-A31D-368BEF110989}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_DS_Marta_R" ID="{A81D6D39-5FA4-4B3C-BFFC-A15A97CDC025}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_Kill_Marta_R" ID="{D7374F6B-E08B-41A8-B0A1-F8639CFF1E09}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_DS_Medusa_L" ID="{197E560B-35B7-4E05-A2F1-906509A26725}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_Kill_Medusa_L" ID="{BF1A2322-2E28-49F5-8E83-6CACC6AE64BA}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_DS_Don_R" ID="{489BDAD2-C7D7-43C3-A81B-7BDA3E292AF1}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="STINGERS_Kill_Don_R" ID="{17C3B30B-2BBB-437B-9B16-15CACC78BD05}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P1" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P3" ID="{39A994FA-0282-4B73-8264-DC79F2CBFC4A}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P4" ID="{E51BCC2A-215B-4DD7-8AA6-1B751AEE5044}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health_P2" ID="{26F8A9E7-499D-4EE6-9658-34A7C89EFAB0}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{5359D31B-3146-494B-B780-C7A110A3023B}"/>
+						<CurrentStateRef Name="None" ID="{911D111C-F807-4E0D-8FE9-4D395DEF7F8A}"/>
+						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
+						<CurrentStateRef Name="None" ID="{9FE1C308-5F79-48F5-91A1-E4A6C444F9FB}"/>
+						<CurrentStateRef Name="None" ID="{3D20E4EA-9DAE-495A-B33A-DE138FC80716}"/>
+						<CurrentStateRef Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
