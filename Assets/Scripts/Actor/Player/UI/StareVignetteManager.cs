@@ -13,9 +13,7 @@ namespace Actor.Player.Stare
 
         public StareHandler stare;
 
-        private float currentTime;
-
-        public float normalizedTime;
+        private CooldownTimer _timer;
 
         private void OnEnable()
         {
@@ -23,9 +21,14 @@ namespace Actor.Player.Stare
             stare.OnStareStop += OnStareStop;
         }
 
+        private void Start()
+        {
+            _timer = new CooldownTimer(vignettingTime);
+        }
+
         private void Update()
         {
-            
+            _timer.Update(Time.deltaTime);
         }
 
         private void OnStareStop(object sender, EventArgs e)
@@ -37,7 +40,7 @@ namespace Actor.Player.Stare
         private void OnStareStart(object sender, EventArgs e)
         {
             isVignetting = true;
-            currentTime = 0.0f;
+            //_timer
         }
         
         private void OnDisable()
