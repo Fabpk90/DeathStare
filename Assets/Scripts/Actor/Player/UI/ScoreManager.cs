@@ -27,6 +27,10 @@ public class ScoreManager : MonoBehaviour
         _controller = GetComponentInParent<PlayerController>();
         
         scoreText.text = "Kills: " + _score;
+
+        //Sound
+        AudioManager.instance.AddListeners(gameObject, 4);
+        //Sound
     }
 
     private void OnKill(object sender, Tuple<int, int> e)
@@ -36,6 +40,23 @@ public class ScoreManager : MonoBehaviour
             _score++;
 
             scoreText.text = "Kills: " + _score;
+
+            //Sound
+            switch (e.Item1){
+                case (0):
+                    AkSoundEngine.PostEvent("STINGERS_Kill_Stan_L", gameObject);
+                    break;
+                case (1):
+                    AkSoundEngine.PostEvent("STINGERS_Kill_Marta_R", gameObject);
+                    break;
+                case (2):
+                    AkSoundEngine.PostEvent("STINGERS_Kill_Medusa_L", gameObject);
+                    break;
+                case (3):
+                    AkSoundEngine.PostEvent("STINGERS_Kill_Don_R", gameObject);
+                    break;
+            }
+            //Sound
 
             //TODO: fix this ugly hax to be more abstract
             if (((TestMode) TestMode.instance).killsToWin <= _score)

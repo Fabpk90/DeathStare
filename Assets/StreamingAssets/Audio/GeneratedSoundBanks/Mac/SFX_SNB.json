@@ -1,0 +1,1853 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "26215100",
+    "GUID": "{FAAFC306-D6DE-4285-ABD4-C94B4CE7145B}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\DS SNB\\SFX SNB\\SFX_SNB",
+    "ShortName": "SFX_SNB",
+    "Path": "SFX_SNB.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1903503235",
+      "Name": "FOLEYS_Char_Jump_Landing",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Jump_Landing",
+      "GUID": "{D100B9B6-46EB-4C9E-B75A-053764083313}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.265012",
+      "DurationMax": "0.871966",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "31245357",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_002_10C4C929.wem"
+       },
+       {
+        "Id": "226748808",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_002_10C4C929.wem"
+       },
+       {
+        "Id": "255959665",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_001_10C4C929.wem"
+       },
+       {
+        "Id": "305406559",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Concrete_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Concrete_001_10C4C929.wem"
+       },
+       {
+        "Id": "406860864",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_002_10C4C929.wem"
+       },
+       {
+        "Id": "459899386",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_001_C4EBBE69.wem"
+       },
+       {
+        "Id": "505658381",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_001_10C4C929.wem"
+       },
+       {
+        "Id": "698345088",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_002_10C4C929.wem"
+       },
+       {
+        "Id": "700285031",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_001_10C4C929.wem"
+       },
+       {
+        "Id": "781274263",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_001_10C4C929.wem"
+       },
+       {
+        "Id": "893162646",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Concrete_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Concrete_002_10C4C929.wem"
+       },
+       {
+        "Id": "993431990",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_002_10C4C929.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "781274263"
+           },
+           {
+            "Id": "993431990"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "31245357"
+           },
+           {
+            "Id": "700285031"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "226748808"
+           },
+           {
+            "Id": "255959665"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "505658381"
+           },
+           {
+            "Id": "698345088"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "893162646"
+           },
+           {
+            "Id": "305406559"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "406860864"
+           },
+           {
+            "Id": "459899386"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "781274263"
+           },
+           {
+            "Id": "993431990"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "31245357"
+           },
+           {
+            "Id": "700285031"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "226748808"
+           },
+           {
+            "Id": "255959665"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "505658381"
+           },
+           {
+            "Id": "698345088"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "893162646"
+           },
+           {
+            "Id": "305406559"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "406860864"
+           },
+           {
+            "Id": "459899386"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "781274263"
+           },
+           {
+            "Id": "993431990"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "31245357"
+           },
+           {
+            "Id": "700285031"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "226748808"
+           },
+           {
+            "Id": "255959665"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "505658381"
+           },
+           {
+            "Id": "698345088"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "893162646"
+           },
+           {
+            "Id": "305406559"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "406860864"
+           },
+           {
+            "Id": "459899386"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "781274263"
+           },
+           {
+            "Id": "993431990"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "31245357"
+           },
+           {
+            "Id": "700285031"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "226748808"
+           },
+           {
+            "Id": "255959665"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "505658381"
+           },
+           {
+            "Id": "698345088"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "893162646"
+           },
+           {
+            "Id": "305406559"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "406860864"
+           },
+           {
+            "Id": "459899386"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "567349118",
+      "Name": "FOLEYS_Char_Jump_TakeOff",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Jump_TakeOff",
+      "GUID": "{56C0CA43-E074-48E8-8F12-CC15134580EE}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.188677",
+      "DurationMax": "0.444565",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "5715417",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_001_10C4C929.wem"
+       },
+       {
+        "Id": "88503777",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_002_10C4C929.wem"
+       },
+       {
+        "Id": "251852521",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_001_10C4C929.wem"
+       },
+       {
+        "Id": "371042949",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_001_10C4C929.wem"
+       },
+       {
+        "Id": "606579897",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_001_10C4C929.wem"
+       },
+       {
+        "Id": "625683214",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_002_10C4C929.wem"
+       },
+       {
+        "Id": "643940714",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_003_10C4C929.wem"
+       },
+       {
+        "Id": "725719132",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_001_10C4C929.wem"
+       },
+       {
+        "Id": "760396261",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_003_10C4C929.wem"
+       },
+       {
+        "Id": "767399380",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_002_10C4C929.wem"
+       },
+       {
+        "Id": "858051333",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_002_10C4C929.wem"
+       },
+       {
+        "Id": "988968491",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_002_10C4C929.wem"
+       },
+       {
+        "Id": "995244962",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_001_10C4C929.wem"
+       },
+       {
+        "Id": "1064913877",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_002_10C4C929.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "371042949"
+           },
+           {
+            "Id": "760396261"
+           },
+           {
+            "Id": "625683214"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "251852521"
+           },
+           {
+            "Id": "1064913877"
+           },
+           {
+            "Id": "643940714"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "88503777"
+           },
+           {
+            "Id": "606579897"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "858051333"
+           },
+           {
+            "Id": "5715417"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "725719132"
+           },
+           {
+            "Id": "767399380"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "995244962"
+           },
+           {
+            "Id": "988968491"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "371042949"
+           },
+           {
+            "Id": "760396261"
+           },
+           {
+            "Id": "625683214"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "251852521"
+           },
+           {
+            "Id": "1064913877"
+           },
+           {
+            "Id": "643940714"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "88503777"
+           },
+           {
+            "Id": "606579897"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "858051333"
+           },
+           {
+            "Id": "5715417"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "725719132"
+           },
+           {
+            "Id": "767399380"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "995244962"
+           },
+           {
+            "Id": "988968491"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "371042949"
+           },
+           {
+            "Id": "760396261"
+           },
+           {
+            "Id": "625683214"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "251852521"
+           },
+           {
+            "Id": "1064913877"
+           },
+           {
+            "Id": "643940714"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "88503777"
+           },
+           {
+            "Id": "606579897"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "858051333"
+           },
+           {
+            "Id": "5715417"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "725719132"
+           },
+           {
+            "Id": "767399380"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "995244962"
+           },
+           {
+            "Id": "988968491"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "371042949"
+           },
+           {
+            "Id": "760396261"
+           },
+           {
+            "Id": "625683214"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "251852521"
+           },
+           {
+            "Id": "1064913877"
+           },
+           {
+            "Id": "643940714"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "88503777"
+           },
+           {
+            "Id": "606579897"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "858051333"
+           },
+           {
+            "Id": "5715417"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "725719132"
+           },
+           {
+            "Id": "767399380"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "995244962"
+           },
+           {
+            "Id": "988968491"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1039646526",
+      "Name": "FOLEYS_Char_Run_Footsteps",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Run_Footsteps",
+      "GUID": "{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.167911",
+      "DurationMax": "0.558261",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "63644349",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem"
+       },
+       {
+        "Id": "99105961",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem"
+       },
+       {
+        "Id": "121194433",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem"
+       },
+       {
+        "Id": "165071834",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem"
+       },
+       {
+        "Id": "192931564",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem"
+       },
+       {
+        "Id": "213875360",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem"
+       },
+       {
+        "Id": "294584460",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem"
+       },
+       {
+        "Id": "418583048",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem"
+       },
+       {
+        "Id": "436094280",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem"
+       },
+       {
+        "Id": "594014003",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem"
+       },
+       {
+        "Id": "665670132",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem"
+       },
+       {
+        "Id": "698470715",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem"
+       },
+       {
+        "Id": "745945899",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem"
+       },
+       {
+        "Id": "854541873",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem"
+       },
+       {
+        "Id": "895352448",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem"
+       },
+       {
+        "Id": "907411644",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem"
+       },
+       {
+        "Id": "910093027",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem"
+       },
+       {
+        "Id": "965590172",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
+        "Children": [
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+        "Media": [
+         {
+          "Id": "436094280"
+         },
+         {
+          "Id": "895352448"
+         },
+         {
+          "Id": "418583048"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+        "Media": [
+         {
+          "Id": "910093027"
+         },
+         {
+          "Id": "294584460"
+         },
+         {
+          "Id": "99105961"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+        "Media": [
+         {
+          "Id": "745945899"
+         },
+         {
+          "Id": "594014003"
+         },
+         {
+          "Id": "698470715"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+        "Media": [
+         {
+          "Id": "121194433"
+         },
+         {
+          "Id": "907411644"
+         },
+         {
+          "Id": "165071834"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+        "Media": [
+         {
+          "Id": "854541873"
+         },
+         {
+          "Id": "965590172"
+         },
+         {
+          "Id": "213875360"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+        "Media": [
+         {
+          "Id": "665670132"
+         },
+         {
+          "Id": "192931564"
+         },
+         {
+          "Id": "63644349"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2315528594",
+      "Name": "FOLEYS_Char_Run_Presence",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Run_Presence",
+      "GUID": "{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000",
+      "SwitchContainers": []
+     },
+     {
+      "Id": "2350611728",
+      "Name": "FOLEYS_Char_Walk_Footsteps",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Walk_Footsteps",
+      "GUID": "{333C3510-38C1-4331-8807-A15F5B07E949}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.167911",
+      "DurationMax": "0.558261",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "63644349",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem"
+       },
+       {
+        "Id": "99105961",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem"
+       },
+       {
+        "Id": "121194433",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem"
+       },
+       {
+        "Id": "165071834",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem"
+       },
+       {
+        "Id": "192931564",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem"
+       },
+       {
+        "Id": "213875360",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem"
+       },
+       {
+        "Id": "294584460",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem"
+       },
+       {
+        "Id": "418583048",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem"
+       },
+       {
+        "Id": "436094280",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem"
+       },
+       {
+        "Id": "594014003",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem"
+       },
+       {
+        "Id": "665670132",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem"
+       },
+       {
+        "Id": "698470715",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem"
+       },
+       {
+        "Id": "745945899",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem"
+       },
+       {
+        "Id": "854541873",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem"
+       },
+       {
+        "Id": "895352448",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem"
+       },
+       {
+        "Id": "907411644",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem"
+       },
+       {
+        "Id": "910093027",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem"
+       },
+       {
+        "Id": "965590172",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "401042956",
+      "Name": "FOLEYS_Char_Walk_Presence",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Walk_Presence",
+      "GUID": "{51055477-9ACA-4121-9B67-5D9E95058BF9}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "2089079731",
+      "Name": "SWITCHES_Foleys_Surfaces",
+      "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces",
+      "GUID": "{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}",
+      "Switches": [
+       {
+        "Id": "3135525842",
+        "Name": "Cobble",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Cobble",
+        "GUID": "{23908CC5-373B-4844-841B-05045E5E4F14}"
+       },
+       {
+        "Id": "841620460",
+        "Name": "Concrete",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Concrete",
+        "GUID": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"
+       },
+       {
+        "Id": "2195636714",
+        "Name": "Dirt",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Dirt",
+        "GUID": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Grass",
+        "GUID": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}"
+       },
+       {
+        "Id": "803837735",
+        "Name": "Sand",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Sand",
+        "GUID": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\SFX SWITCHES\\FOLEYS SWITCHES\\SWITCHES_Foleys_Surfaces\\Wood",
+        "GUID": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}"
+       }
+      ]
+     },
+     {
+      "Id": "3424733800",
+      "Name": "SWITCHES_General_Character",
+      "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character",
+      "GUID": "{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}",
+      "Switches": [
+       {
+        "Id": "1986576095",
+        "Name": "Stanislas",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Stanislas",
+        "GUID": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}"
+       },
+       {
+        "Id": "1358509506",
+        "Name": "Marta",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Marta",
+        "GUID": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"
+       },
+       {
+        "Id": "2609729838",
+        "Name": "Medusa",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Medusa",
+        "GUID": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"
+       },
+       {
+        "Id": "546651172",
+        "Name": "Don",
+        "ObjectPath": "\\Switches\\DS SWITCHES\\GENERAL SWITCHES\\Character\\SWITCHES_General_Character\\Don",
+        "GUID": "{32631DF3-1804-4308-8ADB-CBAD960F3706}"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

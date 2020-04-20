@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Actor;
 using Actor.Hittable;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class StareHandler : MonoBehaviour
@@ -83,10 +82,6 @@ public class StareHandler : MonoBehaviour
                         if (p != _controller)
                         {
                            playersHitDuringThisFrame.Add(p);
-                        }
-                        else
-                        {
-                           point.TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime);
                         }
                      }
                      else
