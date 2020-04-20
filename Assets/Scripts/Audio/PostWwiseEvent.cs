@@ -4,19 +4,43 @@ using UnityEngine;
 
 public class PostWwiseEvent : MonoBehaviour
 {
-    void Start()
+    public int[] listeners;
+    private bool listenersInit = false;
+    public GameObject defaultGameObject;
+
+    private void Start()
     {
-        AudioManager.instance.AddListeners(this.gameObject, 0);
-        AkSoundEngine.PostEvent("Play_Main_Music", this.gameObject);
+        if (defaultGameObject == null)
+        {
+            defaultGameObject = this.gameObject;
+        }
     }
 
-    public void Play_Foleys_Character1_Run_Footsteps()
+    private void PostEvent(string eventName)
     {
-        AkSoundEngine.PostEvent("Play_Foleys_Character1_Run_Footsteps", this.gameObject);
+        if (!listenersInit)
+        {
+            for (int i = 0; i < listeners.Length; i++)
+            {
+                AudioManager.instance.AddListeners(defaultGameObject, listeners[i]);
+            }
+        }
+
+        AkSoundEngine.PostEvent(eventName, this.gameObject);
+        Debug.Log("WWISE: Event " + eventName + " posted on " + this.gameObject.name);
     }
 
-    public void Play_Foleys_Character1_Walk_Footsteps()
+    private void PostEvent(string eventName, GameObject in_gameObject)
     {
-        AkSoundEngine.PostEvent("Play_Foleys_Character1_Walk_Footsteps", this.gameObject);
+        if (!listenersInit)
+        {
+            for (int i = 0; i < listeners.Length; i++)
+            {
+                AudioManager.instance.AddListeners(in_gameObject, listeners[i]);
+            }
+        }
+
+        AkSoundEngine.PostEvent(eventName, gameObject);
+        Debug.Log("WWISE: Event " + eventName + " posted on " + in_gameObject.name);
     }
 }

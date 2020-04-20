@@ -73,7 +73,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="STINGERS_DS_Stanislas_R" ID="{1D989448-08A8-4F21-A30F-6EA6FEDB2689}">
+				<Event Name="STINGERS_DS_Stan_R" ID="{1D989448-08A8-4F21-A30F-6EA6FEDB2689}">
 					<ChildrenList>
 						<Action Name="" ID="{DD5782E9-0F61-4AA7-8D7E-53D8D757ED72}" ShortID="874712131">
 							<ReferenceList>
@@ -84,7 +84,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="STINGERS_DS_Stanislas_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}">
+				<Event Name="STINGERS_DS_Stan_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}">
 					<ChildrenList>
 						<Action Name="" ID="{80AF0DCE-45D2-496D-9131-82F392682356}" ShortID="153313126">
 							<ReferenceList>

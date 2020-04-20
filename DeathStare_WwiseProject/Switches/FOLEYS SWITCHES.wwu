@@ -7,7 +7,7 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<SwitchGroup Name="SWITCHES_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
+				<SwitchGroup Name="SWITCHES_Foleys_Surfaces" ID="{25ACA1F0-4DD7-4D2B-9CFB-02D23D16DA70}">
 					<ChildrenList>
 						<Switch Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
 						<Switch Name="Concrete" ID="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}"/>

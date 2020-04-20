@@ -1,5 +1,81 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	957512978	STATE_Music_DuelState_Don			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Don	
+	1152474735	STATE_Music_DuelState_Stan			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Stan	
+	1498827748	STATE_Music_Main			\DS STATES\MUSIC STATES\STATE_Music_Main	
+	1847488509	STATE_General_LeadingPlayer			\DS STATES\GENERAL STATES\STATE_General_LeadingPlayer	
+	2940497260	STATE_Music_DuelState_Medusa			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Medusa	
+	3273751220	STATE_Music_DuelState_Marta			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Marta	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STATE_Music_DuelState_Don			
+	2452206122	False	STATE_Music_DuelState_Don			
+	3053630529	True	STATE_Music_DuelState_Don			
+	748895195	None	STATE_Music_DuelState_Stan			
+	2452206122	False	STATE_Music_DuelState_Stan			
+	3053630529	True	STATE_Music_DuelState_Stan			
+	748895195	None	STATE_Music_Main			
+	1585161430	Fight_Intro	STATE_Music_Main			
+	1714471738	Outro_Marta	STATE_Music_Main			
+	2851607052	Outro_Don	STATE_Music_Main			
+	3204829974	Outro_Medusa	STATE_Music_Main			
+	3604647259	MainMenu	STATE_Music_Main			
+	3762960553	Fight_Silence	STATE_Music_Main			
+	4201650965	Outro_Stan	STATE_Music_Main			
+	4258958663	Fight_End	STATE_Music_Main			
+	748895195	None	STATE_General_LeadingPlayer			
+	2188949034	Player4	STATE_General_LeadingPlayer			
+	2188949036	Player2	STATE_General_LeadingPlayer			
+	2188949037	Player3	STATE_General_LeadingPlayer			
+	2188949039	Player1	STATE_General_LeadingPlayer			
+	748895195	None	STATE_Music_DuelState_Medusa			
+	2452206122	False	STATE_Music_DuelState_Medusa			
+	3053630529	True	STATE_Music_DuelState_Medusa			
+	748895195	None	STATE_Music_DuelState_Marta			
+	2452206122	False	STATE_Music_DuelState_Marta			
+	3053630529	True	STATE_Music_DuelState_Marta			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	504532776	Brick			\Factory Reflect Acoustic Textures\Textures\Brick	
+	513139656	Mountain			\Factory Reflect Acoustic Textures\Textures\Mountain	
+	841620460	Concrete			\Factory Reflect Acoustic Textures\Textures\Concrete	
+	1755085759	Wood_Deep			\Factory Reflect Acoustic Textures\Textures\Wood_Deep	
+	1873957695	Anechoic			\Factory Reflect Acoustic Textures\Textures\Anechoic	
+	1970351858	Fabric			\Factory Reflect Acoustic Textures\Textures\Fabric	
+	2058049674	Wood			\Factory Reflect Acoustic Textures\Textures\Wood	
+	2412606308	Carpet			\Factory Reflect Acoustic Textures\Textures\Carpet	
+	2637588553	Tile			\Factory Reflect Acoustic Textures\Textures\Tile	
+	2928161104	Curtains			\Factory Reflect Acoustic Textures\Textures\Curtains	
+	3195498748	Cork_Tiles			\Factory Reflect Acoustic Textures\Textures\Cork_Tiles	
+	3670307564	Drywall			\Factory Reflect Acoustic Textures\Textures\Drywall	
+	4168643977	Acoustic_Banner			\Factory Reflect Acoustic Textures\Textures\Acoustic_Banner	
+	4262522749	Wood_Bright			\Factory Reflect Acoustic Textures\Textures\Wood_Bright	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\DS MIX\Master\SFX	
+	779278001	Death			\DS MIX\Master\SFX\SFX_Foleys\Characters\Death	
+	983310469	Aux			\DS MIX\Master\Aux	
+	1557941045	Characters			\DS MIX\Master\SFX\SFX_Foleys\Characters	
+	2324388809	SFX_Effects			\DS MIX\Master\SFX\SFX_Effects	
+	2383096572	SFX_Ambiances			\DS MIX\Master\SFX\SFX_Ambiances	
+	3183352817	SFX_Foleys			\DS MIX\Master\SFX\SFX_Foleys	
+	3313685232	Voices			\DS MIX\Master\Voices	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3862737079	SFX_UI			\DS MIX\Master\SFX\SFX_UI	
+	3991942870	Music			\DS MIX\Master\Music	
+	4056684167	Master			\DS MIX\Master	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	376471424	RVB_Zone2			\DS MIX\Master\Aux\RVB_Zone2	
+	376471425	RVB_Zone3			\DS MIX\Master\Aux\RVB_Zone3	
+	376471427	RVB_Zone1			\DS MIX\Master\Aux\RVB_Zone1	
+	376471430	RVB_Zone4			\DS MIX\Master\Aux\RVB_Zone4	
+
+Effect plug-ins	ID	Name	Type				Notes
+	174644556	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	470123256	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
+	506987871	Hall_Large_TooBright_(Custom)	Wwise RoomVerb			
+	574871007	Wwise_Recorder_(Custom)	Wwise Recorder			
+	648122362	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
