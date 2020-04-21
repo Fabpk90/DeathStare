@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Actor.Hittable;
 using UnityEngine;
@@ -7,9 +8,14 @@ namespace Actor
     public abstract class HealthManager : MonoBehaviour, IHittable
     {
         public float maxHealth;
-        private float health;
+        public float health;
 
         public List<HittablePoint> points;
+
+        private void Awake()
+        {
+            health = maxHealth;
+        }
 
         public Vector3 GetPosition()
         {
@@ -36,7 +42,7 @@ namespace Actor
 
             foreach (HittablePoint point in points)
             {
-                Stare.HittablePoints.Remove(point);
+                StareHandler.HittablePoints.Remove(point);
             }
 
         }

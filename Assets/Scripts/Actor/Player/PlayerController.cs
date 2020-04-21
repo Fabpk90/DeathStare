@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Actor;
 using Actor.Player;
+using Actor.Player.Stare;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -19,8 +20,10 @@ public class PlayerController : MonoBehaviour
     public FirstPersonController controller;
     
     public ActorCameraMovement cameraMovement;
-    public Stare _stare;
+    public StareHandler stareHandler;
 
+    public event EventHandler OnRespawn;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +52,11 @@ public class PlayerController : MonoBehaviour
     public int GetPlayerIndex()
     {
         return _input.playerIndex;
+    }
+
+    public void Respawn()
+    {
+        OnRespawn?.Invoke(this, null);
     }
 
     private void OnRunStop(InputAction.CallbackContext obj)
@@ -85,7 +93,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnStopStare(InputAction.CallbackContext obj)
     {
-        _stare.StopStare();
+        stareHandler.StopStare();
         controller.SetStare(false);
     }
 
@@ -93,7 +101,7 @@ public class PlayerController : MonoBehaviour
     {
         if (controller.canStare())
         {
-            _stare.StartStare();
+            stareHandler.StartStare();
             controller.SetStare(true);
             //SOUND
             int playerIndex = GetPlayerIndex();

@@ -12,10 +12,20 @@ public class ScoreManager : MonoBehaviour
     
     private uint _score;
 
+    private void OnEnable()
+    {
+        GameMode.OnKillEvent += OnKill;
+    }
+
+    private void OnDisable()
+    {
+        GameMode.OnKillEvent -= OnKill;
+    }
+
     private void Start()
     {
         _controller = GetComponentInParent<PlayerController>();
-        GameMode.OnKillEvent += OnKill;
+        
         scoreText.text = "Kills: " + _score;
 
         //Sound
