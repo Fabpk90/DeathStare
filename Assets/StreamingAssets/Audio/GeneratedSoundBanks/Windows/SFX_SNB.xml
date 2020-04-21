@@ -13,6 +13,172 @@
 			<ShortName>SFX_SNB</ShortName>
 			<Path>SFX_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Death" GUID="{3AD6246B-F042-47B4-A29E-9E3066309A59}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.659434" DurationMax="1.466029">
+					<IncludedMemoryFiles>
+						<File Id="68783575" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Wood.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Wood_755F56E2.wem</Path>
+						</File>
+						<File Id="193868444" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Cobble.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Cobble_755F56E2.wem</Path>
+						</File>
+						<File Id="375827832" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Grass.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Grass_755F56E2.wem</Path>
+						</File>
+						<File Id="511623743" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Sand.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Sand_755F56E2.wem</Path>
+						</File>
+						<File Id="522901430" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Dirt.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Dirt_755F56E2.wem</Path>
+						</File>
+						<File Id="691358117" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Concrete.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Concrete_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="193868444"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="691358117"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="522901430"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="375827832"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="511623743"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="68783575"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="193868444"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="691358117"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="522901430"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="375827832"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="511623743"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="68783575"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="193868444"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="691358117"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="522901430"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="375827832"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="511623743"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="68783575"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="193868444"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="691358117"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="522901430"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="375827832"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="511623743"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="68783575"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.265012" DurationMax="0.871966">
 					<IncludedMemoryFiles>
 						<File Id="31245357" Language="SFX">

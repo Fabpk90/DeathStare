@@ -383,6 +383,7 @@ MonoBehaviour:
     BobDuration: 0.2
     BobAmount: 0.1
   settings: {fileID: 11400000, guid: 717663e16327e1f4690db5ae7b8bc925, type: 2}
+  feet: {fileID: 5046942744904166362}
 --- !u!114 &8016140257322171950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -433,7 +434,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 24, y: 19.199997}
+  m_AnchoredPosition: {x: 23.999985, y: 19.200012}
   m_SizeDelta: {x: -100, y: -43.3}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &2101689570
@@ -1547,14 +1548,6 @@ PrefabInstance:
       propertyPath: controller
       value: 
       objectReference: {fileID: -3625789616987428581}
-    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
-      propertyPath: characterCamera
-      value: 
-      objectReference: {fileID: 400000}
-    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: -3625789616987428581}
     - target: {fileID: 4379214644093090247, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
         type: 3}
       propertyPath: player
@@ -1630,6 +1623,12 @@ PrefabInstance:
 --- !u!4 &1912429295161469787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5046942744904166362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 383199541453302502, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
     type: 3}
   m_PrefabInstance: {fileID: 4853528394774987068}
   m_PrefabAsset: {fileID: 0}
