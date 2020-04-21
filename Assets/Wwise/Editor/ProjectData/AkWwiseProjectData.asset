@@ -195,7 +195,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 8fcaf8cf947adf4bb88045b1a399cc8f
     GuidInternal: 
-    m_lastTime: -8586153610313989602
+    m_lastTime: -8586144720766276805
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -210,7 +210,7 @@ MonoBehaviour:
     ParentPath: DS MIX
     guid: 6a4dfaa9d7132e41ba1963c22c553c3b
     GuidInternal: 
-    m_lastTime: -8586148221104422119
+    m_lastTime: -8586144720766655798
     List:
     - name: Aux
       guid: bcb039dfabe09e4e908a207fee8be4cc
@@ -1313,6 +1313,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8586148221104392130
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /DeathStare_WwiseProject
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

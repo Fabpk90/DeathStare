@@ -24,6 +24,268 @@
     "Path": "SFX_SNB.bnk",
     "IncludedEvents": [
      {
+      "Id": "2031942103",
+      "Name": "FOLEYS_Char_Death",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Death",
+      "GUID": "{3AD6246B-F042-47B4-A29E-9E3066309A59}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.659434",
+      "DurationMax": "1.466029",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "68783575",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Wood.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Wood_10C4C929.wem"
+       },
+       {
+        "Id": "193868444",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Cobble.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Cobble_10C4C929.wem"
+       },
+       {
+        "Id": "375827832",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Grass.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Grass_10C4C929.wem"
+       },
+       {
+        "Id": "511623743",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Sand.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Sand_10C4C929.wem"
+       },
+       {
+        "Id": "522901430",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Dirt.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Dirt_10C4C929.wem"
+       },
+       {
+        "Id": "691358117",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Concrete.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Concrete_10C4C929.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "193868444"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "691358117"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "522901430"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "375827832"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "511623743"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "68783575"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "193868444"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "691358117"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "522901430"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "375827832"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "511623743"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "68783575"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "193868444"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "691358117"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "522901430"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "375827832"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "511623743"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "68783575"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "193868444"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "691358117"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "522901430"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "375827832"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "511623743"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "68783575"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "1903503235",
       "Name": "FOLEYS_Char_Jump_Landing",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Jump_Landing",

@@ -48,6 +48,8 @@ public class FirstPersonController : MonoBehaviour
     private CooldownTimer stareCooldown;
     private static readonly int Velocity = Animator.StringToHash("Velocity");
 
+    public GameObject feet;
+
     // Use this for initialization
     private void Start()
     {
@@ -106,6 +108,8 @@ public class FirstPersonController : MonoBehaviour
 
     private void PlayLandingSound()
     {
+        AkSoundEngine.PostEvent("FOLEYS_Char_Jump_Landing", feet);
+        Debug.Log("LANDING SOUND EVENT POSTED!");
         m_NextStep = m_StepCycle + .5f;
     }
 
@@ -178,7 +182,8 @@ public class FirstPersonController : MonoBehaviour
 
     private void PlayJumpSound()
     {
-        //insert here the audio
+        AkSoundEngine.PostEvent("FOLEYS_Char_Jump_TakeOff", feet);
+        Debug.Log("TAKEOFF SOUND EVENT POSTED!");
     }
 
 
@@ -221,6 +226,7 @@ public class FirstPersonController : MonoBehaviour
             
             m_Jump = true;
             _animator.SetTrigger(Jumping);
+            PlayJumpSound();
         }
     }
 

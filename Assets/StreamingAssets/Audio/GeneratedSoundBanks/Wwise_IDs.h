@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID FOLEYS_CHAR_DEATH = 2031942103U;
         static const AkUniqueID FOLEYS_CHAR_JUMP_LANDING = 1903503235U;
         static const AkUniqueID FOLEYS_CHAR_JUMP_TAKEOFF = 567349118U;
         static const AkUniqueID FOLEYS_CHAR_RUN_FOOTSTEPS = 1039646526U;
