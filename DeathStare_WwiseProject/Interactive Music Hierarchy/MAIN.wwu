@@ -2708,7 +2708,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+									<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3835,6 +3835,17 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
+							<StingerList>
+								<MusicStinger Name="" ID="{B06C7655-A023-4192-A017-0EE20E45595B}"/>
+								<MusicStinger Name="" ID="{26AC6152-E3A2-47A8-A64D-957AF0AF2B2F}"/>
+								<MusicStinger Name="" ID="{1A77038B-8AE5-42EE-8544-3E8783C3D16A}"/>
+								<MusicStinger Name="" ID="{EC558D3C-2E5F-46EE-BEE8-3EA764D96A52}"/>
+								<MusicStinger Name="" ID="{FB6AB5CC-BBD8-4250-9528-67742AFEDE22}"/>
+								<MusicStinger Name="" ID="{6C3C49E3-15C3-4712-9172-6999A03FF474}"/>
+								<MusicStinger Name="" ID="{FED76C29-E3F9-479B-AB16-92F091F53041}"/>
+								<MusicStinger Name="" ID="{8AE50638-F870-4200-BB21-AF83A8128F17}"/>
+								<MusicStinger Name="" ID="{63F3A336-734F-4F50-A3A6-D07C9BE4DB51}"/>
+							</StingerList>
 							<ArgumentList>
 								<ArgumentRef Name="STATE_Music_Main" ID="{25798F06-71D7-4FE6-A083-1C82A4060CC6}"/>
 							</ArgumentList>
