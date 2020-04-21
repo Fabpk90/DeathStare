@@ -109,7 +109,6 @@ public class FirstPersonController : MonoBehaviour
     private void PlayLandingSound()
     {
         AkSoundEngine.PostEvent("FOLEYS_Char_Jump_Landing", feet);
-        Debug.Log("LANDING SOUND EVENT POSTED!");
         m_NextStep = m_StepCycle + .5f;
     }
 
@@ -183,7 +182,6 @@ public class FirstPersonController : MonoBehaviour
     private void PlayJumpSound()
     {
         AkSoundEngine.PostEvent("FOLEYS_Char_Jump_TakeOff", feet);
-        Debug.Log("TAKEOFF SOUND EVENT POSTED!");
     }
 
 
