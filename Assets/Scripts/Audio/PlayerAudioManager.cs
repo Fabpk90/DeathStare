@@ -15,6 +15,7 @@ public class PlayerAudioManager : MonoBehaviour
     {
         AudioManager.instance.AddListeners(leftFoot, 0, 1, 2, 3);
         AudioManager.instance.AddListeners(rightFoot, 0, 1, 2, 3);
+        //AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         playerIndex = player.GetPlayerIndex();
         switch (playerIndex)
         {
@@ -62,5 +63,10 @@ public class PlayerAudioManager : MonoBehaviour
     public void PostChestEvent(string eventName)
     {
         AkSoundEngine.PostEvent(eventName, chest);
+    }
+
+    public void PostEvent(string eventName)
+    {
+        AkSoundEngine.PostEvent(eventName, rightFoot);
     }
 }

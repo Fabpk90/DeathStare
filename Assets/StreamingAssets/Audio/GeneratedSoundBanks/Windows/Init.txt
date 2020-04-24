@@ -74,7 +74,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	174644556	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	470123256	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
 	506987871	Hall_Large_TooBright_(Custom)	Wwise RoomVerb			
-	574871007	Wwise_Recorder_(Custom)	Wwise Recorder			
 	648122362	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

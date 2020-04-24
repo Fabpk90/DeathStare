@@ -18,11 +18,21 @@ public class AudioManager : MonoBehaviour
             instance = this;
         
         //SoundBanks Loading
+        /*
         for (int i=0; i<Soundbanks.Length; i++)
         {
             AkSoundEngine.LoadAndDecodeBank(Soundbanks[i], true, out uint bankID);
         }
-    } 
+        */
+
+        //Listener setting
+        AddListeners(gameObject, 4);
+    }
+
+    private void Start()
+    {
+        //AkSoundEngine.PostEvent("EFFECTS_CHAR_STARING2", gameObject);
+    }
 
     public void AddListeners(GameObject in_emitter, int listener1)
     {
@@ -45,5 +55,10 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.AddListener(in_emitter, Listeners[listener2]);
         AkSoundEngine.AddListener(in_emitter, Listeners[listener3]);
         AkSoundEngine.AddListener(in_emitter, Listeners[listener4]);
+    }
+
+    public void PostEvent(string eventName)
+    {
+        AkSoundEngine.PostEvent(eventName, gameObject);
     }
 }

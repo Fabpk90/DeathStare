@@ -13,6 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID EFFECTS_CHAR_DAMAGE = 2897623584U;
+        static const AkUniqueID EFFECTS_CHAR_DUEL = 1940990649U;
+        static const AkUniqueID EFFECTS_CHAR_EXITSTARING = 3646545493U;
+        static const AkUniqueID EFFECTS_CHAR_STARING = 4015725077U;
         static const AkUniqueID FOLEYS_CHAR_DEATH = 2031942103U;
         static const AkUniqueID FOLEYS_CHAR_JUMP_LANDING = 1903503235U;
         static const AkUniqueID FOLEYS_CHAR_JUMP_TAKEOFF = 567349118U;
@@ -37,6 +41,7 @@ namespace AK
         static const AkUniqueID STINGERS_KILL_MEDUSA_R = 1724805138U;
         static const AkUniqueID STINGERS_KILL_STAN_L = 854864811U;
         static const AkUniqueID STINGERS_KILL_STAN_R = 854864821U;
+        static const AkUniqueID VO_CHAR_BREATH_DAMAGE = 3140263292U;
     } // namespace EVENTS
 
     namespace STATES
@@ -157,10 +162,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID RTPC_CHARACTER_HEALTH_P1 = 1639329961U;
-        static const AkUniqueID RTPC_CHARACTER_HEALTH_P2 = 1639329962U;
-        static const AkUniqueID RTPC_CHARACTER_HEALTH_P3 = 1639329963U;
-        static const AkUniqueID RTPC_CHARACTER_HEALTH_P4 = 1639329964U;
+        static const AkUniqueID RTPC_CHARACTER_HEALTH = 3664139661U;
     } // namespace GAME_PARAMETERS
 
     namespace TRIGGERS
@@ -173,14 +175,15 @@ namespace AK
         static const AkUniqueID TRIGGER_DS_MEDUSA_R = 4277786704U;
         static const AkUniqueID TRIGGER_DS_STANISLAS_L = 43587861U;
         static const AkUniqueID TRIGGER_DS_STANISLAS_R = 43587851U;
-        static const AkUniqueID TRIGGER_KILL_DON_L_01 = 1713667741U;
-        static const AkUniqueID TRIGGER_KILL_DON_R_01 = 286473427U;
-        static const AkUniqueID TRIGGER_KILL_MARTA_L_01 = 3665013311U;
-        static const AkUniqueID TRIGGER_KILL_MARTA_R_01 = 2252523825U;
-        static const AkUniqueID TRIGGER_KILL_MEDUSA_L_01 = 1310078611U;
-        static const AkUniqueID TRIGGER_KILL_MEDUSA_R_01 = 2778849629U;
-        static const AkUniqueID TRIGGER_KILL_STANISLAS_L_01 = 2769502708U;
-        static const AkUniqueID TRIGGER_KILL_STANISLAS_R_01 = 1253770830U;
+        static const AkUniqueID TRIGGER_DUELMUSIC = 3444518989U;
+        static const AkUniqueID TRIGGER_KILL_DON_L = 3533683345U;
+        static const AkUniqueID TRIGGER_KILL_DON_R = 3533683343U;
+        static const AkUniqueID TRIGGER_KILL_MARTA_L = 3648566731U;
+        static const AkUniqueID TRIGGER_KILL_MARTA_R = 3648566741U;
+        static const AkUniqueID TRIGGER_KILL_MEDUSA_L = 1594170703U;
+        static const AkUniqueID TRIGGER_KILL_MEDUSA_R = 1594170705U;
+        static const AkUniqueID TRIGGER_KILL_STANISLAS_L = 1140603814U;
+        static const AkUniqueID TRIGGER_KILL_STANISLAS_R = 1140603832U;
     } // namespace TRIGGERS
 
     namespace BANKS

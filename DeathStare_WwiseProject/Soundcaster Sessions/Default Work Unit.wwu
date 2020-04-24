@@ -6,19 +6,7 @@
 				<SoundcasterSession Name="MusicSystem" ID="{2E06AE2D-8B83-4362-AD51-34C0E6E2B636}">
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P1" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P3" ID="{39A994FA-0282-4B73-8264-DC79F2CBFC4A}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P4" ID="{E51BCC2A-215B-4DD7-8AA6-1B751AEE5044}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P2" ID="{26F8A9E7-499D-4EE6-9658-34A7C89EFAB0}"/>
+							<GameParameterRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
 							<Value>50</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -71,20 +59,8 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P1" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P3" ID="{39A994FA-0282-4B73-8264-DC79F2CBFC4A}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P4" ID="{E51BCC2A-215B-4DD7-8AA6-1B751AEE5044}"/>
-							<Value>50</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Character_Health_P2" ID="{26F8A9E7-499D-4EE6-9658-34A7C89EFAB0}"/>
-							<Value>50</Value>
+							<GameParameterRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -97,7 +73,7 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
-						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+						<CurrentSwitchRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

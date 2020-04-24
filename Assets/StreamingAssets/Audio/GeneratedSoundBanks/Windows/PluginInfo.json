@@ -5,14 +5,14 @@
   "BasePlatform": "Windows",
   "Plugins": [
    {
+    "Name": "Wwise Sine",
+    "ID": "6553602",
+    "DLL": "AkSineTone"
+   },
+   {
     "Name": "Wwise RoomVerb",
     "ID": "7733251",
     "DLL": "AkRoomVerb"
-   },
-   {
-    "Name": "Wwise Recorder",
-    "ID": "8650755",
-    "DLL": "AkRecorder"
    },
    {
     "Name": "System",

@@ -1470,7 +1470,7 @@ PrefabInstance:
         type: 3}
       propertyPath: wwiseListener
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7887774620303229981}
     - target: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
         type: 3}
       propertyPath: m_LocalPosition.x

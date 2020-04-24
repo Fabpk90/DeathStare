@@ -7,10 +7,12 @@
 					<ChildrenList>
 						<Folder Name="Health" ID="{A20D39E2-B5B8-4449-9547-6E386BF9008A}" ShortID="872445263">
 							<ChildrenList>
-								<GameParameter Name="RTPC_Character_Health_P1" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
-								<GameParameter Name="RTPC_Character_Health_P2" ID="{26F8A9E7-499D-4EE6-9658-34A7C89EFAB0}"/>
-								<GameParameter Name="RTPC_Character_Health_P3" ID="{39A994FA-0282-4B73-8264-DC79F2CBFC4A}"/>
-								<GameParameter Name="RTPC_Character_Health_P4" ID="{E51BCC2A-215B-4DD7-8AA6-1B751AEE5044}"/>
+								<GameParameter Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}">
+									<PropertyList>
+										<Property Name="InitialValue" Type="Real64" Value="100"/>
+										<Property Name="RTPCRamping" Type="int16" Value="1"/>
+									</PropertyList>
+								</GameParameter>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

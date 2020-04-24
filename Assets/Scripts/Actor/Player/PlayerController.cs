@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public StareHandler stareHandler;
 
     public event EventHandler OnRespawn;
+
+    public PlayerAudioManager playerAudioManager;
     
     // Start is called before the first frame update
     void Start()
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
         _input.currentActionMap["Run"].canceled += OnRunStop;
 
         //SOUND
-        AudioManager.instance.AddListeners(gameObject, 4);
+        AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         //SOUND
     }
 
@@ -95,6 +97,9 @@ public class PlayerController : MonoBehaviour
     {
         stareHandler.StopStare();
         controller.SetStare(false);
+        //SOUND
+        //AkSoundEngine.StopPlayingID(AkSoundEngine.GetIDFromString("FOLEYS_Char_Death"), 1);
+        //SOUND
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
@@ -104,20 +109,21 @@ public class PlayerController : MonoBehaviour
             stareHandler.StartStare();
             controller.SetStare(true);
             //SOUND
+            //playerAudioManager.PostEvent("EFFECTS_CHAR_STARING2");
             int playerIndex = GetPlayerIndex();
             switch (playerIndex)
             {
                 case (0):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Stan_L", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Stan_L");
                     break;
                 case (1):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Marta_R", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Marta_R");
                     break;
                 case (2):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Medusa_L", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Medusa_L");
                     break;
                 case (3):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Don_R", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Don_R");
                     break;
             }
             //SOUND
