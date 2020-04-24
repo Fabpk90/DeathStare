@@ -25,6 +25,8 @@ public class StareHandler : MonoBehaviour
    private PlayerController _controller;
    public StareVignetteManager VignetteManager;
 
+   public bool debugRay;
+
    public event EventHandler OnStareStart;
    public event EventHandler<int> OnStareTouch;
    public event EventHandler OnStareStop;
@@ -58,13 +60,21 @@ public class StareHandler : MonoBehaviour
             Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
 
             if (viewportPoint.z > 0 
-                && viewportPoint.x > 0 && viewportPoint.x <= 1
-                && viewHeight.x <= viewportPoint.y && viewHeight.y >= viewportPoint.y
+                && viewportPoint.x > 0 && viewportPoint.x < 1
+                && viewHeight.x < viewportPoint.y && viewHeight.y > viewportPoint.y
                 && !_hitDuringThisFrame.Contains(point.healthManager))
             {
                RaycastHit hitInfo;
-               if(Physics.Raycast(camera.ViewportToWorldPoint(viewportPoint), (point.GetPosition() - transform.position).normalized, out hitInfo))
+               var worldRay = camera.ViewportPointToRay(viewportPoint);
+
+               if(Physics.Raycast(worldRay, out hitInfo))
                {
+                  if (debugRay)
+                  {
+                     print(worldRay);
+                     print(viewportPoint);
+                  }
+                  
                   IHittable hit = hitInfo.transform.GetComponent<IHittable>();
 
                   if (hit != null)

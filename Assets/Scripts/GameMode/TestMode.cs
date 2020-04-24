@@ -105,7 +105,7 @@ public class TestMode : GameMode
 
     private void OnEndTimeOfRound()
     {
-        print("End of round !");
+        EndOfTheMatch();
     }
 
     public override void Win(List<int> winners)
@@ -113,7 +113,12 @@ public class TestMode : GameMode
         base.Win(winners);
         
         _roundTimer.Pause();
+        
+        EndOfTheMatch();
+    }
 
+    private void EndOfTheMatch()
+    {
         List<FinalScoreHandler> playerScores = new List<FinalScoreHandler>(4);
 
         foreach (PlayerInput player in players)
@@ -127,7 +132,7 @@ public class TestMode : GameMode
 
         for (int i = 0; i < 4; i++)
         {
-            scoreTexts[i].text = i + ". Player " + playerScores[i].player.playerIndex + " wins with a score of " +
+            scoreTexts[i].text = i + ". Player " + playerScores[i].player.playerIndex + " with a score of " +
                                  playerScores[i].score;
         }
     }
