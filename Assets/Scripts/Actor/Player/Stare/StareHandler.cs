@@ -63,7 +63,7 @@ public class StareHandler : MonoBehaviour
                 && !_hitDuringThisFrame.Contains(point.healthManager))
             {
                RaycastHit hitInfo;
-               if(Physics.Raycast(transform.position, (point.GetPosition() - transform.position).normalized, out hitInfo))
+               if(Physics.Raycast(camera.ViewportToWorldPoint(viewportPoint), (point.GetPosition() - transform.position).normalized, out hitInfo))
                {
                   IHittable hit = hitInfo.transform.GetComponent<IHittable>();
 
