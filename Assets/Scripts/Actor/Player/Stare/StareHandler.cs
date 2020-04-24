@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Actor;
 using Actor.Hittable;
+using Actor.Player.Stare;
 using UnityEngine;
 
 public class StareHandler : MonoBehaviour
@@ -22,6 +23,7 @@ public class StareHandler : MonoBehaviour
    public float stareForce;
 
    private PlayerController _controller;
+   public StareVignetteManager VignetteManager;
 
    public event EventHandler OnStareStart;
    public event EventHandler<int> OnStareTouch;
@@ -47,7 +49,8 @@ public class StareHandler : MonoBehaviour
       playersHitDuringThisFrame.Clear();
 
       bool found = false;
-      
+      var viewHeight = VignetteManager.GetViewHeight();
+
       foreach (HittablePoint point in HittablePoints)
       {
          if (point)
@@ -55,8 +58,8 @@ public class StareHandler : MonoBehaviour
             Vector3 viewportPoint = camera.WorldToViewportPoint(point.GetPosition());
 
             if (viewportPoint.z > 0 
-                && viewportPoint.x > 0 && viewportPoint.x < 1
-                && viewportPoint.y > 0 && viewportPoint.y < 1
+                && viewportPoint.x > 0 && viewportPoint.x <= 1
+                && viewHeight.x <= viewportPoint.y && viewHeight.y >= viewportPoint.y
                 && !_hitDuringThisFrame.Contains(point.healthManager))
             {
                RaycastHit hitInfo;
