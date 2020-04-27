@@ -104,6 +104,7 @@ public class PlayerController : MonoBehaviour
         {
             stareHandler.StartStare();
             controller.SetStare(true);
+            controller.SetRunning(false);
             //SOUND
             int playerIndex = GetPlayerIndex();
             switch (playerIndex)
