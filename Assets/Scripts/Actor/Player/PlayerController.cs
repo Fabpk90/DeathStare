@@ -66,7 +66,8 @@ public class PlayerController : MonoBehaviour
 
     private void OnRunStart(InputAction.CallbackContext obj)
     {
-        controller.SetRunning(true);
+        if(!stareHandler.isStaring)
+            controller.SetRunning(true);
     }
 
     private void OnCrouch(InputAction.CallbackContext obj)
