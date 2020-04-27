@@ -25,4 +25,9 @@ public class SetWwiseSwitch : MonoBehaviour
     {
         AkSoundEngine.SetSwitch(switchGroupName, switchToSet, gameObject);
     }
+
+    public void SetSwitch(string switchGroup, string switchToSet, GameObject gameObject)
+    {
+        AkSoundEngine.SetSwitch(switchGroup, switchToSet, gameObject);
+    }
 }

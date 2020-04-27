@@ -1640,7 +1640,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1649,7 +1649,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1777,7 +1777,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1786,7 +1786,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1914,7 +1914,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1923,7 +1923,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2051,7 +2051,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2060,7 +2060,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2188,7 +2188,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2197,7 +2197,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2325,7 +2325,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2334,7 +2334,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2462,7 +2462,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2471,7 +2471,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2599,7 +2599,7 @@
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2608,7 +2608,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2743,7 +2743,7 @@
 								<Property Name="Tempo" Type="Real64" Value="134"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -2829,6 +2829,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="Segments_Duel_Violin1Loop" ID="{F8C20EF5-00D0-41F7-A850-6AB36FB53E7C}" ShortID="507291116">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
@@ -2888,6 +2895,13 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="Segments_Duel_Violin2Loop" ID="{0653CF5D-DD58-4CF2-A077-DF18CB3FE629}" ShortID="1011515189">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-1</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>

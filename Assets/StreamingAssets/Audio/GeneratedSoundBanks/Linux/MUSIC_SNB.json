@@ -21,6 +21,39 @@
     "Path": "MUSIC_SNB.bnk",
     "IncludedEvents": [
      {
+      "Id": "1926112901",
+      "Name": "SEGMENTS_DuelMusic",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\SEGMENTS_DuelMusic",
+      "GUID": "{FC6502CC-1B7E-4EDB-AEDD-DBB4157B8DBC}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "19652934",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_Violin1Loop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_Violin1Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "46506750",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_Violin2Loop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_Violin2Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "353834140",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_CelliLoop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_CelliLoop_073B4D0C.wem"
+       },
+       {
+        "Id": "1040627007",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_ViolasLoop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_ViolasLoop_073B4D0C.wem"
+       }
+      ]
+     },
+     {
       "Id": "1290491939",
       "Name": "STINGERS_DS_Don_L",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Don_L",

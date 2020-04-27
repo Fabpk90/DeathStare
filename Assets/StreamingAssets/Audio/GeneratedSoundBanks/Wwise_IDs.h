@@ -13,6 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_COMMON_BED_SEA = 793348717U;
+        static const AkUniqueID AMB_COMMON_BED_WIND = 2231626466U;
+        static const AkUniqueID AMB_COMMON_SSHOTS = 2233841146U;
+        static const AkUniqueID AMB_SP_CAVE = 226148825U;
+        static const AkUniqueID AMB_SP_CAVE_01 = 3319622597U;
+        static const AkUniqueID AMB_SP_FOLIAGE = 3964420051U;
+        static const AkUniqueID AMB_SP_STONE = 2816467889U;
+        static const AkUniqueID AMB_SP_WATER = 3897627331U;
+        static const AkUniqueID AMB_SP_WOOD = 1104827821U;
         static const AkUniqueID EFFECTS_CHAR_DAMAGE = 2897623584U;
         static const AkUniqueID EFFECTS_CHAR_DUEL = 1940990649U;
         static const AkUniqueID EFFECTS_CHAR_EXITSTARING = 3646545493U;
@@ -25,6 +34,7 @@ namespace AK
         static const AkUniqueID FOLEYS_CHAR_WALK_FOOTSTEPS = 2350611728U;
         static const AkUniqueID FOLEYS_CHAR_WALK_PRESENCE = 401042956U;
         static const AkUniqueID PLAY_TEST = 3187507146U;
+        static const AkUniqueID SEGMENTS_DUELMUSIC = 1926112901U;
         static const AkUniqueID STINGERS_DS_DON_L = 1290491939U;
         static const AkUniqueID STINGERS_DS_DON_R = 1290491965U;
         static const AkUniqueID STINGERS_DS_MARTA_L = 459653097U;
@@ -41,7 +51,12 @@ namespace AK
         static const AkUniqueID STINGERS_KILL_MEDUSA_R = 1724805138U;
         static const AkUniqueID STINGERS_KILL_STAN_L = 854864811U;
         static const AkUniqueID STINGERS_KILL_STAN_R = 854864821U;
+        static const AkUniqueID STOP_EFFECTS_CHAR_DAMAGE = 3978900703U;
+        static const AkUniqueID STOP_EFFECTS_CHAR_STARING = 1985231276U;
+        static const AkUniqueID STOP_VO_CHAR_BREATH_DAMAGE = 107050159U;
+        static const AkUniqueID VO_CHAR_BARKS_DEATH = 3151326768U;
         static const AkUniqueID VO_CHAR_BREATH_DAMAGE = 3140263292U;
+        static const AkUniqueID VO_CHAR_PUNCHLINE_KILL = 4274014911U;
     } // namespace EVENTS
 
     namespace STATES

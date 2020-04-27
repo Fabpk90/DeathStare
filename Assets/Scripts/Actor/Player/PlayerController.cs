@@ -97,9 +97,25 @@ public class PlayerController : MonoBehaviour
     {
         stareHandler.StopStare();
         controller.SetStare(false);
-        //SOUND
-        //AkSoundEngine.StopPlayingID(AkSoundEngine.GetIDFromString("FOLEYS_Char_Death"), 1);
-        //SOUND
+        //Sound
+        playerAudioManager.PostEvent("Stop_EFFECTS_Char_Staring");
+        playerAudioManager.PostEvent("EFFECTS_Char_ExitStaring");
+        switch (GetPlayerIndex())
+        {
+            case (0):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
+                break;
+            case (1):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
+                break;
+            case (2):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
+                break;
+            case (3):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+                break;
+        }
+        //Sound
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
@@ -108,8 +124,8 @@ public class PlayerController : MonoBehaviour
         {
             stareHandler.StartStare();
             controller.SetStare(true);
-            //SOUND
-            //playerAudioManager.PostEvent("EFFECTS_CHAR_STARING2");
+            //Sound
+            playerAudioManager.PostEvent("EFFECTS_Char_Staring");
             int playerIndex = GetPlayerIndex();
             switch (playerIndex)
             {

@@ -9,6 +9,7 @@ public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     private PlayerController _controller;
+    public PlayerAudioManager playerAudioManager;
     
     private uint _score;
 
@@ -45,15 +46,19 @@ public class ScoreManager : MonoBehaviour
             switch (e.Item1){
                 case (0):
                     AkSoundEngine.PostEvent("STINGERS_Kill_Stan_L", gameObject);
+                    playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (1):
                     AkSoundEngine.PostEvent("STINGERS_Kill_Marta_R", gameObject);
+                    playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (2):
                     AkSoundEngine.PostEvent("STINGERS_Kill_Medusa_L", gameObject);
+                    playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (3):
                     AkSoundEngine.PostEvent("STINGERS_Kill_Don_R", gameObject);
+                    playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
             }
             //Sound

@@ -7,6 +7,10 @@ namespace Actor.Player
     {
         private PlayerController _controller;
         private CooldownTimer _timer;
+        //Sound
+        public PlayerAudioManager playerAudioManager;
+        private bool damageSoundsPosted = false;
+        //Sound
 
         public bool canTakeDamage = true;
 
@@ -40,12 +44,15 @@ namespace Actor.Player
         private void Update()
         {
             _timer.Update(Time.deltaTime);
+            playerAudioManager.SetRTPCValue("RTPC_Character_Health", health);
         }
 
         public override void Die()
         {
             //Animation maybe ?
-            //Sound ?
+            //Sound
+            playerAudioManager.PostEvent("VO_Char_Barks_Death");
+            //Sound
         }
 
         public override bool TakeDamage(int playerIndex, float amount)

@@ -817,6 +817,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 5
+  health: 0
   points: []
   takesDamage: 0
 --- !u!1 &685172879
@@ -2620,6 +2621,11 @@ PrefabInstance:
         type: 3}
       propertyPath: killsToWin
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6234653932296684974, guid: c1169c2b18584af43bcfdfac704cf8e9,
+        type: 3}
+      propertyPath: debugPlayers
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1169c2b18584af43bcfdfac704cf8e9, type: 3}

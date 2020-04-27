@@ -13,6 +13,26 @@
 			<ShortName>MUSIC_SNB</ShortName>
 			<Path>MUSIC_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1926112901" Name="SEGMENTS_DuelMusic" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\SEGMENTS_DuelMusic" GUID="{FC6502CC-1B7E-4EDB-AEDD-DBB4157B8DBC}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="19652934" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin1Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin1Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="46506750" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin2Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin2Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="353834140" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_CelliLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_CelliLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1040627007" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_ViolasLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_ViolasLoop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1290491939" Name="STINGERS_DS_Don_L" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Don_L" GUID="{A24FCC13-CC80-4D7E-92EE-2767C08D9941}" DurationType="OneShot" DurationMin="12.537313" DurationMax="12.537313">
 					<IncludedMemoryFiles>
 						<File Id="123246559" Language="SFX">

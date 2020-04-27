@@ -16,6 +16,60 @@
 			<ShortName>SFX_SNB</ShortName>
 			<Path>SFX_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="793348717" Name="AMB_Common_Bed_Sea" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Common_Bed_Sea" GUID="{5D596AA7-2684-4854-8BBF-021DEAA1BA42}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="61378412" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002_10C4C929.wem</Path>
+						</File>
+						<File Id="110326517" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003_10C4C929.wem</Path>
+						</File>
+						<File Id="918892782" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2231626466" Name="AMB_Common_Bed_Wind" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Common_Bed_Wind" GUID="{1B07D997-772B-430C-B7C9-A3D3B0B0A65C}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="61378412" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002_10C4C929.wem</Path>
+						</File>
+						<File Id="110326517" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003_10C4C929.wem</Path>
+						</File>
+						<File Id="918892782" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2233841146" Name="AMB_Common_Sshots" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Common_Sshots" GUID="{54A47712-9839-49CF-A445-5AC63A478820}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="24565442" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_003.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_003_10C4C929.wem</Path>
+						</File>
+						<File Id="172672242" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_002.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_002_10C4C929.wem</Path>
+						</File>
+						<File Id="578382007" Language="SFX">
+							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_001.wav</ShortName>
+							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_001_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="226148825" Name="AMB_SP_Cave" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Cave" GUID="{D2F339A5-866F-46A2-AD18-3C3066EB61B7}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3319622597" Name="AMB_SP_Cave_01" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Cave_01" GUID="{4D59B9EA-78D4-4C89-8F6B-40532471B243}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3964420051" Name="AMB_SP_Foliage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Foliage" GUID="{3B599F7F-2FDA-496C-942E-C9EC3DFDD4B1}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2816467889" Name="AMB_SP_Stone" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Stone" GUID="{22D0C852-53FA-4FEC-8A03-FA6E4BDEA426}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3897627331" Name="AMB_SP_Water" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Water" GUID="{8B7307DA-8847-46BB-A769-B01A6BC7A505}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1104827821" Name="AMB_SP_Wood" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Wood" GUID="{380FEC08-17C8-49BE-B602-C7F0EAA20847}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2897623584" Name="EFFECTS_Char_Damage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\EFFECTS_Char_Damage" GUID="{39AF3851-8A48-48B4-A481-7F4083946766}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="805367614" Language="SFX">
@@ -674,19 +728,265 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.188775" DurationMax="0.224492">
+				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+					<IncludedMemoryFiles>
+						<File Id="63644349" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem</Path>
+						</File>
+						<File Id="99105961" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem</Path>
+						</File>
+						<File Id="121194433" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem</Path>
+						</File>
+						<File Id="165071834" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem</Path>
+						</File>
+						<File Id="192931564" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem</Path>
+						</File>
+						<File Id="213875360" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem</Path>
+						</File>
+						<File Id="294584460" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem</Path>
+						</File>
+						<File Id="418583048" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem</Path>
+						</File>
+						<File Id="436094280" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem</Path>
+						</File>
+						<File Id="594014003" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem</Path>
+						</File>
+						<File Id="665670132" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem</Path>
+						</File>
+						<File Id="698470715" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem</Path>
+						</File>
+						<File Id="745945899" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem</Path>
+						</File>
+						<File Id="854541873" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem</Path>
+						</File>
+						<File Id="895352448" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem</Path>
+						</File>
+						<File Id="907411644" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem</Path>
+						</File>
+						<File Id="910093027" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem</Path>
+						</File>
+						<File Id="965590172" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
-							<Children/>
+							<Children>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
-							<Children/>
+							<Children>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
-							<Children/>
+							<Children>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
-							<Children/>
+							<Children>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="121194433"/>
+										<File Id="907411644"/>
+										<File Id="165071834"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="745945899"/>
+										<File Id="594014003"/>
+										<File Id="698470715"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
+									<Media>
+										<File Id="436094280"/>
+										<File Id="895352448"/>
+										<File Id="418583048"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
+									<Media>
+										<File Id="854541873"/>
+										<File Id="965590172"/>
+										<File Id="213875360"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="910093027"/>
+										<File Id="294584460"/>
+										<File Id="99105961"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="665670132"/>
+										<File Id="192931564"/>
+										<File Id="63644349"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
@@ -956,6 +1256,8 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3978900703" Name="Stop_EFFECTS_Char_Damage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\Stop_EFFECTS_Char_Damage" GUID="{98275331-A3A2-4086-98FE-B46C3878E9BF}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1985231276" Name="Stop_EFFECTS_Char_Staring" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\Stop_EFFECTS_Char_Staring" GUID="{83885303-55BD-43DF-A8C6-E066539DB22F}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3664139661" Name="RTPC_Character_Health" ObjectPath="\Game Parameters\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health" GUID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
@@ -981,11 +1283,114 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="133924915" GUID="{A5900404-D394-4423-BA7D-A679D4EC3E8A}" Language="SFX">
+		<SoundBank Id="133924915" GUID="{A5900404-D394-4423-BA7D-A679D4EC3E8A}" Language="English(US)">
 			<ObjectPath>\SoundBanks\DS SNB\VOICE SNB\VOICE_SNB</ObjectPath>
 			<ShortName>VOICE_SNB</ShortName>
-			<Path>VOICE_SNB.bnk</Path>
+			<Path>English(US)\VOICE_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="107050159" Name="Stop_VO_Char_Breath_Damage" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\Stop_VO_Char_Breath_Damage" GUID="{F057010B-212B-478D-8E00-2B326AD2B7F5}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3151326768" Name="VO_Char_Barks_Death" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Barks_Death" GUID="{48FE1229-B3E5-47BF-BAFE-6959CA904C26}" DurationType="OneShot" DurationMin="0.412729" DurationMax="3.948062">
+					<IncludedMemoryFiles>
+						<File Id="28355165" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_02.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_02_10C4C929.wem</Path>
+						</File>
+						<File Id="31087605" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_24.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_24_10C4C929.wem</Path>
+						</File>
+						<File Id="99584252" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_05.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_05_10C4C929.wem</Path>
+						</File>
+						<File Id="101667958" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_07.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_07_10C4C929.wem</Path>
+						</File>
+						<File Id="120648813" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_03.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_03_10C4C929.wem</Path>
+						</File>
+						<File Id="209691163" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_06.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_06_10C4C929.wem</Path>
+						</File>
+						<File Id="212118589" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_27.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_27_10C4C929.wem</Path>
+						</File>
+						<File Id="411244311" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_08.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_08_10C4C929.wem</Path>
+						</File>
+						<File Id="532287996" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_17.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_17_10C4C929.wem</Path>
+						</File>
+						<File Id="595821729" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_25.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_25_10C4C929.wem</Path>
+						</File>
+						<File Id="605915400" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_04.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_04_10C4C929.wem</Path>
+						</File>
+						<File Id="766784710" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_09.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_09_10C4C929.wem</Path>
+						</File>
+						<File Id="868736131" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\OOF.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\OOF_10C4C929.wem</Path>
+						</File>
+						<File Id="1002341506" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\Death.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\Death_2D8FD8FE.wem</Path>
+						</File>
+						<File Id="1057196584" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_06.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_06_10C4C929.wem</Path>
+						</File>
+						<File Id="1066536603" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_26.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_26_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="1002341506"/>
+								<File Id="868736131"/>
+								<File Id="31087605"/>
+								<File Id="595821729"/>
+								<File Id="1066536603"/>
+								<File Id="212118589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="101667958"/>
+								<File Id="411244311"/>
+								<File Id="532287996"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="99584252"/>
+								<File Id="209691163"/>
+								<File Id="766784710"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="28355165"/>
+								<File Id="120648813"/>
+								<File Id="605915400"/>
+								<File Id="1057196584"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3140263292" Name="VO_Char_Breath_Damage" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Breath_Damage" GUID="{251FDAF2-555F-4A58-994A-06FC4C1AA708}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="359267327" Language="SFX">
@@ -1013,11 +1418,140 @@
 							<Path>SFX\VO\BreathFast_02_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4274014911" Name="VO_Char_Punchline_Kill" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Punchline_Kill" GUID="{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}" DurationType="OneShot" DurationMin="1.887875" DurationMax="3.849771">
+					<IncludedMemoryFiles>
+						<File Id="13666830" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_02.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_02_10C4C929.wem</Path>
+						</File>
+						<File Id="99988190" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_47.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_47_10C4C929.wem</Path>
+						</File>
+						<File Id="207219399" Language="English(US)">
+							<ShortName>Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel_10C4C929.wem</Path>
+						</File>
+						<File Id="384329771" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_13.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_13_10C4C929.wem</Path>
+						</File>
+						<File Id="524612748" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_14.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_14_10C4C929.wem</Path>
+						</File>
+						<File Id="563281959" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_48.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_48_10C4C929.wem</Path>
+						</File>
+						<File Id="790679725" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_03.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_03_10C4C929.wem</Path>
+						</File>
+						<File Id="817738191" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_17.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_17_10C4C929.wem</Path>
+						</File>
+						<File Id="865212046" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_05.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_05_10C4C929.wem</Path>
+						</File>
+						<File Id="873747909" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_49.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_49_10C4C929.wem</Path>
+						</File>
+						<File Id="1036351180" Language="English(US)">
+							<ShortName>Characters\Character 1\Punchlines\Kill\End_Of_Line.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Punchlines\Kill\End_Of_Line_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="207219399"/>
+								<File Id="1036351180"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="99988190"/>
+								<File Id="563281959"/>
+								<File Id="873747909"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="384329771"/>
+								<File Id="524612748"/>
+								<File Id="817738191"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="13666830"/>
+								<File Id="790679725"/>
+								<File Id="865212046"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="3664139661" Name="RTPC_Character_Health" ObjectPath="\Game Parameters\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health" GUID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3424733800" Name="SWITCHES_General_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+					<Switches>
+						<Switch Id="1986576095" Name="Stanislas" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Stanislas" GUID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+						<Switch Id="1358509506" Name="Marta" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Marta" GUID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Medusa" GUID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+						<Switch Id="546651172" Name="Don" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Don" GUID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX">
 			<ObjectPath>Init</ObjectPath>
@@ -1040,6 +1574,26 @@
 			<ShortName>MUSIC_SNB</ShortName>
 			<Path>MUSIC_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1926112901" Name="SEGMENTS_DuelMusic" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\SEGMENTS_DuelMusic" GUID="{FC6502CC-1B7E-4EDB-AEDD-DBB4157B8DBC}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="19652934" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin1Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin1Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="46506750" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin2Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin2Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="353834140" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_CelliLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_CelliLoop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="1040627007" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_ViolasLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_ViolasLoop_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1290491939" Name="STINGERS_DS_Don_L" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Don_L" GUID="{A24FCC13-CC80-4D7E-92EE-2767C08D9941}" DurationType="OneShot" DurationMin="12.537313" DurationMax="12.537313">
 					<IncludedMemoryFiles>
 						<File Id="123246559" Language="SFX">

@@ -21,6 +21,144 @@
     "Path": "SFX_SNB.bnk",
     "IncludedEvents": [
      {
+      "Id": "793348717",
+      "Name": "AMB_Common_Bed_Sea",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Sea",
+      "GUID": "{5D596AA7-2684-4854-8BBF-021DEAA1BA42}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "61378412",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+       },
+       {
+        "Id": "110326517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+       },
+       {
+        "Id": "918892782",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2231626466",
+      "Name": "AMB_Common_Bed_Wind",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Wind",
+      "GUID": "{1B07D997-772B-430C-B7C9-A3D3B0B0A65C}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "61378412",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+       },
+       {
+        "Id": "110326517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+       },
+       {
+        "Id": "918892782",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2233841146",
+      "Name": "AMB_Common_Sshots",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Common_Sshots",
+      "GUID": "{54A47712-9839-49CF-A445-5AC63A478820}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "24565442",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003_755F56E2.wem"
+       },
+       {
+        "Id": "172672242",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002_755F56E2.wem"
+       },
+       {
+        "Id": "578382007",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "226148825",
+      "Name": "AMB_SP_Cave",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave",
+      "GUID": "{D2F339A5-866F-46A2-AD18-3C3066EB61B7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3319622597",
+      "Name": "AMB_SP_Cave_01",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave_01",
+      "GUID": "{4D59B9EA-78D4-4C89-8F6B-40532471B243}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3964420051",
+      "Name": "AMB_SP_Foliage",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Foliage",
+      "GUID": "{3B599F7F-2FDA-496C-942E-C9EC3DFDD4B1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2816467889",
+      "Name": "AMB_SP_Stone",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Stone",
+      "GUID": "{22D0C852-53FA-4FEC-8A03-FA6E4BDEA426}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3897627331",
+      "Name": "AMB_SP_Water",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Water",
+      "GUID": "{8B7307DA-8847-46BB-A769-B01A6BC7A505}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1104827821",
+      "Name": "AMB_SP_Wood",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Wood",
+      "GUID": "{380FEC08-17C8-49BE-B602-C7F0EAA20847}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
       "Id": "2897623584",
       "Name": "EFFECTS_Char_Damage",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\EFFECTS_Char_Damage",
@@ -1151,24 +1289,474 @@
       "GUID": "{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}",
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.188775",
-      "DurationMax": "0.224492",
+      "DurationMin": "0.167911",
+      "DurationMax": "0.558261",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "63644349",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "99105961",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "121194433",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "165071834",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "192931564",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "213875360",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001_755F56E2.wem"
+       },
+       {
+        "Id": "294584460",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "418583048",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002_755F56E2.wem"
+       },
+       {
+        "Id": "436094280",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003_755F56E2.wem"
+       },
+       {
+        "Id": "594014003",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "665670132",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "698470715",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003_755F56E2.wem"
+       },
+       {
+        "Id": "745945899",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "854541873",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003_755F56E2.wem"
+       },
+       {
+        "Id": "895352448",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_001_755F56E2.wem"
+       },
+       {
+        "Id": "907411644",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "910093027",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002_755F56E2.wem"
+       },
+       {
+        "Id": "965590172",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002_755F56E2.wem"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
-        "Children": []
+        "Children": [
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
        },
        {
         "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
-        "Children": []
+        "Children": [
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         }
+        ]
        },
        {
         "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
-        "Children": []
+        "Children": [
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         }
+        ]
        },
        {
         "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
-        "Children": []
+        "Children": [
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
+         }
+        ]
        }
       ]
      },
@@ -1667,6 +2255,26 @@
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Walk_Presence",
       "GUID": "{51055477-9ACA-4121-9B67-5D9E95058BF9}",
       "MaxAttenuation": "80.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3978900703",
+      "Name": "Stop_EFFECTS_Char_Damage",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\Stop_EFFECTS_Char_Damage",
+      "GUID": "{98275331-A3A2-4086-98FE-B46C3878E9BF}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1985231276",
+      "Name": "Stop_EFFECTS_Char_Staring",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\Stop_EFFECTS_Char_Staring",
+      "GUID": "{83885303-55BD-43DF-A8C6-E066539DB22F}",
+      "MaxAttenuation": "0.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
       "DurationMax": "0.000000"

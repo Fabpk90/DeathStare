@@ -116,18 +116,53 @@ public class StareHandler : MonoBehaviour
             //is he/she staring at us ?
             if (!playerController.stareHandler.playersHitDuringThisFrame.Contains(_controller))
             {
-               //WE DESTROY DAT MF !
-               if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
+                    //Sound
+                    switch (playerController.GetPlayerIndex())
+                    {
+                        case (0):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
+                            break;
+                        case (1):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
+                            break;
+                        case (2):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
+                            break;
+                        case (3):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+                            break;
+                    }
+                    //Sound
+                    //WE DESTROY DAT MF !
+                    if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
                {
                   //the mf is ded
                   _playerKilledDuringFrame.Add(playerController);
                }
+
             }
             else // it's staring back at us !
             {
-               print("Duel with " +  playerController.GetComponent<HealthManager>().transform.gameObject);
+                    print("Duel with " + playerController.GetComponent<HealthManager>().transform.gameObject);
+                    //Sound
+                    switch (playerController.GetPlayerIndex())
+                    {
+                        case (0):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "True");
+                            break;
+                        case (1):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "True");
+                            break;
+                        case (2):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "True");
+                            break;
+                        case (3):
+                            AkSoundEngine.SetState("STATE_Music_DuelState_Don", "True");
+                            break;
+                    }
+                    //Sound
+                }
             }
-         }
       }
 
       foreach (PlayerController controller in _playerKilledDuringFrame)
@@ -142,7 +177,7 @@ public class StareHandler : MonoBehaviour
    public bool StartStare()
    {
       isStaring = true;
-      
+
       OnStareStart?.Invoke(this, null);
       
       return CheckForThingsInSight();

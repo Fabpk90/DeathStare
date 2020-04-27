@@ -5,11 +5,6 @@
   "BasePlatform": "Linux",
   "Plugins": [
    {
-    "Name": "Wwise Sine",
-    "ID": "6553602",
-    "DLL": "AkSineTone"
-   },
-   {
     "Name": "Wwise RoomVerb",
     "ID": "7733251",
     "DLL": "AkRoomVerb"
