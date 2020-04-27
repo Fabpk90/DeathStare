@@ -13,6 +13,7 @@
 						<ObjectRef Name="FOLEYS_Char_Walk_Footsteps" ID="{333C3510-38C1-4331-8807-A15F5B07E949}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FOLEYS_Char_Run_Footsteps" ID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FOLEYS_Char_Run_Presence" ID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FOLEYS_Char_Death" ID="{3AD6246B-F042-47B4-A29E-9E3066309A59}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FOLEYS_Char_Jump_TakeOff" ID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FOLEYS_Char_Jump_Landing" ID="{D100B9B6-46EB-4C9E-B75A-053764083313}" WorkUnitID="{8F06FB46-DE49-4975-A90C-336E4500397C}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

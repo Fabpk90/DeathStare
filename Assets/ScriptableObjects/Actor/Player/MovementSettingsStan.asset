@@ -24,7 +24,7 @@ MonoBehaviour:
     crouchingSpeedBackwards: 2
     crouchingHeightCollider: 1
     aerialSpeedForward: 10
-    aerialSpeedBackwards: 5
+    aerialSpeedBackwards: 0
     stareAerialSpeedForward: 1
     stareAerialSpeedBackwards: 1
     stareWalkingSpeedForward: 1

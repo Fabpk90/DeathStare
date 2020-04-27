@@ -7,6 +7,7 @@ public class PlayerAudioManager : MonoBehaviour
     public PlayerController player;
     public GameObject leftFoot;
     public GameObject rightFoot;
+    public GameObject chest;
     private int playerIndex;
     public WwiseListener wwiseListener;
     
@@ -56,5 +57,10 @@ public class PlayerAudioManager : MonoBehaviour
     public void PostRightFootEvent(string eventName)
     {
         AkSoundEngine.PostEvent(eventName, rightFoot);
+    }
+
+    public void PostChestEvent(string eventName)
+    {
+        AkSoundEngine.PostEvent(eventName, chest);
     }
 }
