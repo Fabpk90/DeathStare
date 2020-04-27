@@ -57,6 +57,9 @@ public class TestMode : GameMode
 
         instance = this;
         
+        if(Gamepad.all.Count == 0)
+            print("Attention pas de manette connectée !");
+        
         if (!debugPlayers)
         {
             //we add the 4 players, or less depending on connected gamepads
@@ -65,15 +68,15 @@ public class TestMode : GameMode
                 _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[i]);
             }
         }
-        
-        if(Gamepad.all.Count == 0)
-            print("Attention pas de manette connectée !");
-            
-        for (int i = 0; i < 4; i++)
+        else
         {
-            _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
+                 
+            for (int i = 0; i < 4; i++)
+            {
+                _manager.JoinPlayer(i, i, "GamePads", Gamepad.all[0]);
+            }
         }
-        
+
         _roundTimer = new CooldownTimer(secondsInRound);
         _roundTimer.TimerCompleteEvent += OnEndTimeOfRound;
         

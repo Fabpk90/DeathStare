@@ -6,9 +6,5 @@ TextAsset:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: current_version
-<<<<<<< HEAD
-  m_Script: 113
-=======
-  m_Script: 234
->>>>>>> BranchGD
+  m_Name: 
+  m_Script: 238
