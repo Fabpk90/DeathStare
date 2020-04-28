@@ -21,6 +21,230 @@
     "Path": "SFX_SNB.bnk",
     "IncludedEvents": [
      {
+      "Id": "793348717",
+      "Name": "AMB_Common_Bed_Sea",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Sea",
+      "GUID": "{5D596AA7-2684-4854-8BBF-021DEAA1BA42}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "61378412",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+       },
+       {
+        "Id": "110326517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+       },
+       {
+        "Id": "918892782",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2231626466",
+      "Name": "AMB_Common_Bed_Wind",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Wind",
+      "GUID": "{1B07D997-772B-430C-B7C9-A3D3B0B0A65C}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "61378412",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+       },
+       {
+        "Id": "110326517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+       },
+       {
+        "Id": "918892782",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2233841146",
+      "Name": "AMB_Common_Sshots",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Common_Sshots",
+      "GUID": "{54A47712-9839-49CF-A445-5AC63A478820}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "24565442",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003_755F56E2.wem"
+       },
+       {
+        "Id": "172672242",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002_755F56E2.wem"
+       },
+       {
+        "Id": "578382007",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001.wav",
+        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "226148825",
+      "Name": "AMB_SP_Cave",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave",
+      "GUID": "{D2F339A5-866F-46A2-AD18-3C3066EB61B7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3319622597",
+      "Name": "AMB_SP_Cave_01",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave_01",
+      "GUID": "{4D59B9EA-78D4-4C89-8F6B-40532471B243}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3964420051",
+      "Name": "AMB_SP_Foliage",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Foliage",
+      "GUID": "{3B599F7F-2FDA-496C-942E-C9EC3DFDD4B1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2816467889",
+      "Name": "AMB_SP_Stone",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Stone",
+      "GUID": "{22D0C852-53FA-4FEC-8A03-FA6E4BDEA426}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3897627331",
+      "Name": "AMB_SP_Water",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Water",
+      "GUID": "{8B7307DA-8847-46BB-A769-B01A6BC7A505}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1104827821",
+      "Name": "AMB_SP_Wood",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Wood",
+      "GUID": "{380FEC08-17C8-49BE-B602-C7F0EAA20847}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "2897623584",
+      "Name": "EFFECTS_Char_Damage",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\EFFECTS_Char_Damage",
+      "GUID": "{39AF3851-8A48-48B4-A481-7F4083946766}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "805367614",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\Damage\\Character_Damage_Tick.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\Damage\\Character_Damage_Tick_963DA2B4.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1940990649",
+      "Name": "EFFECTS_Char_Duel",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\EFFECTS_Char_Duel",
+      "GUID": "{1251C39E-B1EE-4B10-BF0F-5025FBEDCF46}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "576184738",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\Duel\\Character_DeathStare_Duel.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\Duel\\Character_DeathStare_Duel_708A5178.wem"
+       }
+      ]
+     },
+     {
+      "Id": "3646545493",
+      "Name": "EFFECTS_Char_ExitStaring",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\EFFECTS_Char_ExitStaring",
+      "GUID": "{029044F0-1CAA-463F-85AD-5D98A8DC0FE6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.981317",
+      "DurationMax": "1.251387",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "13107196",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_002.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_002_755F56E2.wem"
+       },
+       {
+        "Id": "603687993",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_003.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_003_755F56E2.wem"
+       },
+       {
+        "Id": "875258876",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_001.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\ExitStaring\\Character_DeathStare_ExitStaring_001_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "4015725077",
+      "Name": "EFFECTS_Char_Staring",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\EFFECTS_Char_Staring",
+      "GUID": "{0AF0DEE4-8C6A-4D20-AFA0-F404D32CD8BB}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "424395784",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_001.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_001_7C6FF753.wem"
+       },
+       {
+        "Id": "918843551",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_002.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_002_EFD3513E.wem"
+       },
+       {
+        "Id": "963218955",
+        "Language": "SFX",
+        "ShortName": "Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_003.wav",
+        "Path": "SFX\\Effects\\Characters\\Character 1\\DeathStare\\Staring\\Character_DeathStare_Staring_003_A6668C9C.wem"
+       }
+      ]
+     },
+     {
       "Id": "2031942103",
       "Name": "FOLEYS_Char_Death",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\FOLEYS EVENTS\\Characters\\FOLEYS_Char_Death",
@@ -1268,108 +1492,19 @@
         ]
        },
        {
-        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
-        "Children": [
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
-           {
-            "Id": "436094280"
-           },
-           {
-            "Id": "895352448"
-           },
-           {
-            "Id": "418583048"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-          "Media": [
-           {
-            "Id": "910093027"
-           },
-           {
-            "Id": "294584460"
-           },
-           {
-            "Id": "99105961"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-          "Media": [
-           {
-            "Id": "745945899"
-           },
-           {
-            "Id": "594014003"
-           },
-           {
-            "Id": "698470715"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-          "Media": [
-           {
-            "Id": "121194433"
-           },
-           {
-            "Id": "907411644"
-           },
-           {
-            "Id": "165071834"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
-           {
-            "Id": "854541873"
-           },
-           {
-            "Id": "965590172"
-           },
-           {
-            "Id": "213875360"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-          "Media": [
-           {
-            "Id": "665670132"
-           },
-           {
-            "Id": "192931564"
-           },
-           {
-            "Id": "63644349"
-           }
-          ]
-         }
-        ]
-       },
-       {
         "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
         "Children": [
          {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
           "Media": [
            {
-            "Id": "854541873"
+            "Id": "665670132"
            },
            {
-            "Id": "965590172"
+            "Id": "192931564"
            },
            {
-            "Id": "213875360"
+            "Id": "63644349"
            }
           ]
          },
@@ -1430,6 +1565,25 @@
           ]
          },
          {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
+        "Children": [
+         {
           "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
           "Media": [
            {
@@ -1442,90 +1596,165 @@
             "Id": "63644349"
            }
           ]
+         },
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
          }
         ]
        },
        {
-        "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-        "Media": [
+        "SwitchValue": "{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}",
+        "Children": [
          {
-          "Id": "436094280"
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "121194433"
+           },
+           {
+            "Id": "907411644"
+           },
+           {
+            "Id": "165071834"
+           }
+          ]
          },
          {
-          "Id": "895352448"
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "745945899"
+           },
+           {
+            "Id": "594014003"
+           },
+           {
+            "Id": "698470715"
+           }
+          ]
          },
          {
-          "Id": "418583048"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-        "Media": [
-         {
-          "Id": "910093027"
+          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
+          "Media": [
+           {
+            "Id": "436094280"
+           },
+           {
+            "Id": "895352448"
+           },
+           {
+            "Id": "418583048"
+           }
+          ]
          },
          {
-          "Id": "294584460"
+          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
+          "Media": [
+           {
+            "Id": "854541873"
+           },
+           {
+            "Id": "965590172"
+           },
+           {
+            "Id": "213875360"
+           }
+          ]
          },
          {
-          "Id": "99105961"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-        "Media": [
-         {
-          "Id": "745945899"
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "910093027"
+           },
+           {
+            "Id": "294584460"
+           },
+           {
+            "Id": "99105961"
+           }
+          ]
          },
          {
-          "Id": "594014003"
-         },
-         {
-          "Id": "698470715"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-        "Media": [
-         {
-          "Id": "121194433"
-         },
-         {
-          "Id": "907411644"
-         },
-         {
-          "Id": "165071834"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-        "Media": [
-         {
-          "Id": "854541873"
-         },
-         {
-          "Id": "965590172"
-         },
-         {
-          "Id": "213875360"
-         }
-        ]
-       },
-       {
-        "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-        "Media": [
-         {
-          "Id": "665670132"
-         },
-         {
-          "Id": "192931564"
-         },
-         {
-          "Id": "63644349"
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "665670132"
+           },
+           {
+            "Id": "192931564"
+           },
+           {
+            "Id": "63644349"
+           }
+          ]
          }
         ]
        }
@@ -2029,6 +2258,34 @@
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
       "DurationMax": "0.000000"
+     },
+     {
+      "Id": "3978900703",
+      "Name": "Stop_EFFECTS_Char_Damage",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\Stop_EFFECTS_Char_Damage",
+      "GUID": "{98275331-A3A2-4086-98FE-B46C3878E9BF}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     },
+     {
+      "Id": "1985231276",
+      "Name": "Stop_EFFECTS_Char_Staring",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\EFFECTS EVENTS\\Characters\\Stop_EFFECTS_Char_Staring",
+      "GUID": "{83885303-55BD-43DF-A8C6-E066539DB22F}",
+      "MaxAttenuation": "0.000000",
+      "DurationType": "OneShot",
+      "DurationMin": "0.000000",
+      "DurationMax": "0.000000"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3664139661",
+      "Name": "RTPC_Character_Health",
+      "ObjectPath": "\\Game Parameters\\DS RTPC\\GENERAL RTPC\\Characters\\Health\\RTPC_Character_Health",
+      "GUID": "{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"
      }
     ],
     "SwitchGroups": [

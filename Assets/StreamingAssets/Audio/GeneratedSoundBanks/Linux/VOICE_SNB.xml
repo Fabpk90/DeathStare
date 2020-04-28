@@ -12,6 +12,39 @@
 			<ObjectPath>\SoundBanks\DS SNB\VOICE SNB\VOICE_SNB</ObjectPath>
 			<ShortName>VOICE_SNB</ShortName>
 			<Path>VOICE_SNB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3140263292" Name="VO_Char_Breath_Damage" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Breath_Damage" GUID="{251FDAF2-555F-4A58-994A-06FC4C1AA708}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="359267327" Language="SFX">
+							<ShortName>VO\BreathFast_06.wav</ShortName>
+							<Path>SFX\VO\BreathFast_06_755F56E2.wem</Path>
+						</File>
+						<File Id="449657686" Language="SFX">
+							<ShortName>VO\BreathFast_03.wav</ShortName>
+							<Path>SFX\VO\BreathFast_03_755F56E2.wem</Path>
+						</File>
+						<File Id="702388435" Language="SFX">
+							<ShortName>VO\BreathFast_04.wav</ShortName>
+							<Path>SFX\VO\BreathFast_04_755F56E2.wem</Path>
+						</File>
+						<File Id="858382067" Language="SFX">
+							<ShortName>VO\BreathFast_01.wav</ShortName>
+							<Path>SFX\VO\BreathFast_01_755F56E2.wem</Path>
+						</File>
+						<File Id="901285455" Language="SFX">
+							<ShortName>VO\BreathFast_05.wav</ShortName>
+							<Path>SFX\VO\BreathFast_05_755F56E2.wem</Path>
+						</File>
+						<File Id="954966903" Language="SFX">
+							<ShortName>VO\BreathFast_02.wav</ShortName>
+							<Path>SFX\VO\BreathFast_02_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3664139661" Name="RTPC_Character_Health" ObjectPath="\Game Parameters\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health" GUID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
