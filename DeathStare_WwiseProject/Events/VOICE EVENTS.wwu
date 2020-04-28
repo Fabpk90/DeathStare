@@ -7,7 +7,62 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Folder Name="Character1" ID="{B9DA473E-C396-497F-AC8A-A88D1E01EA7E}" ShortID="427618579"/>
+				<Folder Name="Characters" ID="{B9DA473E-C396-497F-AC8A-A88D1E01EA7E}" ShortID="427618579">
+					<ChildrenList>
+						<Event Name="VO_Char_Breath_Damage" ID="{251FDAF2-555F-4A58-994A-06FC4C1AA708}">
+							<ChildrenList>
+								<Action Name="" ID="{1272CF3D-A2B6-4530-9437-F19BC1DFE6EB}" ShortID="417003745">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Char_Breath_Damage" ID="{9F8D941F-78BC-4308-B2B6-DE36A35F0CC5}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_VO_Char_Breath_Damage" ID="{F057010B-212B-478D-8E00-2B326AD2B7F5}">
+							<ChildrenList>
+								<Action Name="" ID="{0FF409E4-44AF-4AE7-929F-E57FE30298FC}" ShortID="179519558">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Char_Breath_Damage" ID="{9F8D941F-78BC-4308-B2B6-DE36A35F0CC5}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VO_Char_Punchline_Kill" ID="{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}">
+							<ChildrenList>
+								<Action Name="" ID="{EAC8C8B3-C9CC-4AD0-A660-DE5ED8F6476F}" ShortID="798365802">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.7"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Char_Punchline_Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VO_Char_Barks_Death" ID="{48FE1229-B3E5-47BF-BAFE-6959CA904C26}">
+							<ChildrenList>
+								<Action Name="" ID="{EB464A38-0B52-4443-909E-097F4ADD58BC}" ShortID="911466194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Char_Barks_Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" WorkUnitID="{ECB8BC0C-BEC5-4FB1-A795-FC9D64EE6131}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

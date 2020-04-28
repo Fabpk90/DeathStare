@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3140263292	VO_Char_Breath_Damage			\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Breath_Damage	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3664139661	RTPC_Character_Health			\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	359267327	BreathFast_06	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_06_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_06		52767
+	449657686	BreathFast_03	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_03_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_03		77470
+	702388435	BreathFast_04	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_04_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_04		65368
+	858382067	BreathFast_01	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_01_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_01		68990
+	901285455	BreathFast_05	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_05_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_05		79924
+	954966903	BreathFast_02	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Linux\SFX\VO\BreathFast_02_755F56E2.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_02		65749
+

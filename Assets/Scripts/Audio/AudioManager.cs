@@ -20,9 +20,21 @@ public class AudioManager : MonoBehaviour
         //SoundBanks Loading
         for (int i=0; i<Soundbanks.Length; i++)
         {
-            AkSoundEngine.LoadAndDecodeBank(Soundbanks[i], true, out uint bankID);
+            AkSoundEngine.LoadBank(Soundbanks[i], out uint bankID);
         }
-    } 
+
+        //Listener setting
+        AddListeners(gameObject, 4);
+    }
+
+    private void Start()
+    {
+        AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
+        AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
+        AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
+        AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+        AkSoundEngine.PostEvent("SEGMENTS_DuelMusic", gameObject);
+    }
 
     public void AddListeners(GameObject in_emitter, int listener1)
     {
@@ -45,5 +57,10 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.AddListener(in_emitter, Listeners[listener2]);
         AkSoundEngine.AddListener(in_emitter, Listeners[listener3]);
         AkSoundEngine.AddListener(in_emitter, Listeners[listener4]);
+    }
+
+    public void PostEvent(string eventName)
+    {
+        AkSoundEngine.PostEvent(eventName, gameObject);
     }
 }

@@ -20,7 +20,6 @@ namespace Audio
                 AudioManager.instance.AddListeners(gameObject, listeners[i]);
             }
             AkSoundEngine.PostEvent(eventName, gameObject);
-            Debug.Log("WWISE: Event " + eventName + " posted on " + gameObject.name);
         }
     }
 }
