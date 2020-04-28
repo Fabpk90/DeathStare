@@ -18,6 +18,11 @@
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Characters" ID="{457DBFC6-FD92-424D-A6DA-2C8C9347C149}" ShortID="691797239">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -27,534 +32,63 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<ActorMixer Name="Character 1" ID="{8A889FBC-8BC6-4DFF-A7FB-D22D4F8E602D}" ShortID="502654273">
+								<ActorMixer Name="Damage" ID="{0D2E5A1A-A953-4BF6-8604-C0EF09356A64}" ShortID="69532469">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="DeathStare" ID="{B8A6E573-22DB-41B1-BE52-CD19DE03F056}" ShortID="715589900">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<ActorMixer Name="Staring" ID="{DE0EC192-3CB0-4C9D-895F-DFE62C3BE9EE}" ShortID="1002234316">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MaxSoundPerInstance" Type="int16">
-															<ValueList>
-																<Value>3</Value>
-															</ValueList>
-														</Property>
-														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="UseMaxSoundPerInstance" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<BlendContainer Name="Effects_Character1_Staring" ID="{1948C827-9A26-42FD-AD15-B091ED22D227}" ShortID="390808883">
-															<PropertyList>
-																<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-																<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="Staring" ID="{F8B5F5A7-B500-415F-B1D9-FA627899E9DE}" ShortID="109712205">
-																	<PropertyList>
-																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
-																		<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-																		<Property Name="Volume" Type="Real64">
-																			<ValueList>
-																				<Value>-6</Value>
-																			</ValueList>
-																		</Property>
-																	</PropertyList>
-																	<ReferenceList>
-																		<Reference Name="Attenuation">
-																			<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
-																				<Attenuation Name="DS_Default (Custom)" ID="{A05DA71F-7352-47A3-B690-5C87C570AE89}" ShortID="977658208">
-																					<CurveUsageInfoList>
-																						<VolumeDryUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="VolumeDry" ID="{53FC19A3-2C82-4BF0-9E86-2CBF39749953}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="3"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>0</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>1.88087</XPos>
-																											<YPos>0</YPos>
-																											<Flags>0</Flags>
-																											<SegmentShape>Log1</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>30.40751</XPos>
-																											<YPos>-11.1592</YPos>
-																											<Flags>0</Flags>
-																											<SegmentShape>Log3</SegmentShape>
-																										</Point>
-																										<Point>
-																											<XPos>100</XPos>
-																											<YPos>-200</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</VolumeDryUsage>
-																						<VolumeWetGameUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																						</VolumeWetGameUsage>
-																						<VolumeWetUserUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																						</VolumeWetUserUsage>
-																						<LowPassFilterUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																						</LowPassFilterUsage>
-																						<HighPassFilterUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																						</HighPassFilterUsage>
-																						<SpreadUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																								<Curve Name="Spread" ID="{FB093F3D-9E6C-4E7D-88B9-99BBDE09B105}">
-																									<PropertyList>
-																										<Property Name="Flags" Type="int32" Value="1"/>
-																									</PropertyList>
-																									<PointList>
-																										<Point>
-																											<XPos>0</XPos>
-																											<YPos>100</YPos>
-																											<Flags>5</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>2.3511</XPos>
-																											<YPos>100</YPos>
-																											<Flags>0</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>15.83071</XPos>
-																											<YPos>32.82658</YPos>
-																											<Flags>0</Flags>
-																										</Point>
-																										<Point>
-																											<XPos>100</XPos>
-																											<YPos>0</YPos>
-																											<Flags>37</Flags>
-																										</Point>
-																									</PointList>
-																								</Curve>
-																							</CurveUsageInfo>
-																						</SpreadUsage>
-																						<FocusUsage>
-																							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																						</FocusUsage>
-																					</CurveUsageInfoList>
-																				</Attenuation>
-																			</Custom>
-																		</Reference>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																		</Reference>
-																		<Reference Name="UserAuxSend0">
-																			<ObjectRef Name="RVB_Zone1" ID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="Character_DeathStare_Staring_001" ID="{05234AD2-DBC7-430F-A4E2-A93411A4ECA0}" ShortID="347872943">
-																			<PropertyList>
-																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_Staring_001" ID="{BAEE4A7A-454C-497A-BF89-B9126F4C5A59}">
-																					<PropertyList>
-																						<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="0.0537449383802817"/>
-																						<Property Name="LoopBegin" Type="Real64" Value="0.501619424882629"/>
-																						<Property Name="LoopEnd" Type="Real64" Value="4.46082988556338"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimBegin" Type="Real64" Value="0.0895748973004695"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="4.92661935152582"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_001.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="424395784"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_Staring_001" ID="{BAEE4A7A-454C-497A-BF89-B9126F4C5A59}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="Character_DeathStare_Staring_002" ID="{CF97D14C-4E71-44BC-9695-20F38BB77DF0}" ShortID="996478386">
-																			<PropertyList>
-																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_Staring_002" ID="{D14F1D15-CDE6-45EE-B4E1-B94B162F6D2B}">
-																					<PropertyList>
-																						<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
-																						<Property Name="LoopBegin" Type="Real64" Value="0.537983311326291"/>
-																						<Property Name="LoopEnd" Type="Real64" Value="4.53182552083333"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="5.0606904709507"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_002.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="918843551"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_Staring_002" ID="{D14F1D15-CDE6-45EE-B4E1-B94B162F6D2B}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="Character_DeathStare_Staring_003" ID="{7B302B04-AF18-4182-89FD-AE4CC4F4F4A8}" ShortID="689524015">
-																			<PropertyList>
-																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_Staring_003" ID="{0668AD63-93DA-4D70-84D4-7EF5374E4BEF}">
-																					<PropertyList>
-																						<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
-																						<Property Name="LoopBegin" Type="Real64" Value="0.474101379107981"/>
-																						<Property Name="LoopEnd" Type="Real64" Value="4.6133711120892"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="5.02365115170188"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_003.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="963218955"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_Staring_003" ID="{0668AD63-93DA-4D70-84D4-7EF5374E4BEF}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-															</ChildrenList>
-														</BlendContainer>
-													</ChildrenList>
-												</ActorMixer>
-												<ActorMixer Name="ExitStaring" ID="{980769F3-130A-4DC0-A656-A186F92A97D6}" ShortID="83737940">
-													<PropertyList>
-														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MaxSoundPerInstance" Type="int16">
-															<ValueList>
-																<Value>4</Value>
-															</ValueList>
-														</Property>
-														<Property Name="UseMaxSoundPerInstance" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<BlendContainer Name="Effects_Character1_ExitStaring" ID="{B969E565-2621-4099-B5AB-332F378A2FA9}" ShortID="705027256">
-															<PropertyList>
-																<Property Name="Pitch" Type="int32">
-																	<ValueList>
-																		<Value>-580</Value>
-																	</ValueList>
-																</Property>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-6</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="ExitStaring" ID="{F29A8A52-1633-4CFD-AD1C-180C0F5FD32E}" ShortID="544927791">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="Character_DeathStare_ExitStaring_001" ID="{4A20F2EB-EED3-4918-AE7F-7AB982ED2E63}" ShortID="851674345">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_ExitStaring_001" ID="{9F16A3CC-34A6-4A70-AC6A-793C6BEA35E1}">
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_001.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="875258876"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_ExitStaring_001" ID="{9F16A3CC-34A6-4A70-AC6A-793C6BEA35E1}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="Character_DeathStare_ExitStaring_002" ID="{56916405-A9C0-48FD-AB5B-F4A0F944F129}" ShortID="226414507">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_ExitStaring_002" ID="{84EB50F5-A6D7-4821-BA48-3E9A98BEE6AA}">
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_002.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="13107196"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_ExitStaring_002" ID="{84EB50F5-A6D7-4821-BA48-3E9A98BEE6AA}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="Character_DeathStare_ExitStaring_003" ID="{0B0433A6-CF12-4FF5-BD83-95CB8D33635D}" ShortID="512416407">
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_ExitStaring_003" ID="{AA2C40AD-117A-477F-AC47-360AA19F625E}">
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_003.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="603687993"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_ExitStaring_003" ID="{AA2C40AD-117A-477F-AC47-360AA19F625E}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-															</ChildrenList>
-														</BlendContainer>
-													</ChildrenList>
-												</ActorMixer>
-												<ActorMixer Name="Duel" ID="{032DE6D9-7D46-481B-A9C5-41AFD565B162}" ShortID="503704490">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-														<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-														<Property Name="MaxSoundPerInstance" Type="int16">
-															<ValueList>
-																<Value>2</Value>
-															</ValueList>
-														</Property>
-														<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
-														<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-														<Property Name="UseMaxSoundPerInstance" Type="bool">
-															<ValueList>
-																<Value>True</Value>
-															</ValueList>
-														</Property>
-														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
-													</PropertyList>
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<BlendContainer Name="Effects_Character1_Duel" ID="{45804702-A1C8-473A-BAC0-C0ED7880E121}" ShortID="411573239">
-															<PropertyList>
-																<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="Duel" ID="{12831A35-61C1-4931-BB25-CCE83C6FED71}" ShortID="39287427">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="Character_DeathStare_Duel" ID="{DF1AB7E7-A3CE-4F75-BCA8-35834FD71757}" ShortID="407044678">
-																			<PropertyList>
-																				<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-																				<Property Name="Pitch" Type="int32">
-																					<ModifierList>
-																						<ModifierInfo>
-																							<Modifier Name="" ID="{8C6149EB-4D87-44E2-A554-39BCADDDFBB7}">
-																								<PropertyList>
-																									<Property Name="Enabled" Type="bool" Value="True"/>
-																									<Property Name="Max" Type="Real64" Value="100"/>
-																									<Property Name="Min" Type="Real64" Value="-100"/>
-																								</PropertyList>
-																							</Modifier>
-																						</ModifierInfo>
-																					</ModifierList>
-																				</Property>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-5</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Character_DeathStare_Duel" ID="{65AC47B5-B9B0-443A-89BB-1CD6D63751DC}">
-																					<PropertyList>
-																						<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="0.05"/>
-																						<Property Name="LoopBegin" Type="Real64" Value="0.519285211267606"/>
-																						<Property Name="LoopEnd" Type="Real64" Value="3.93397887323944"/>
-																						<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																						<Property Name="TrimEnd" Type="Real64" Value="4.37458450704226"/>
-																					</PropertyList>
-																					<Language>SFX</Language>
-																					<AudioFile>Effects\Characters\Character 1\DeathStare\Duel\Character_DeathStare_Duel.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="576184738"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Character_DeathStare_Duel" ID="{65AC47B5-B9B0-443A-89BB-1CD6D63751DC}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-															</ChildrenList>
-														</BlendContainer>
-													</ChildrenList>
-												</ActorMixer>
-											</ChildrenList>
-										</ActorMixer>
-										<ActorMixer Name="Damage" ID="{0D2E5A1A-A953-4BF6-8604-C0EF09356A64}" ShortID="69532469">
+										<BlendContainer Name="EFFECTS_Char_Damage" ID="{4EF4294F-5A25-4018-9343-3CF1B40C3980}" ShortID="323832840">
 											<PropertyList>
-												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-												<Property Name="MaxSoundPerInstance" Type="int16">
+												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>6</Value>
 													</ValueList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{67B2DEFE-2B8A-406A-80C0-41F6B6CF8341}" ShortID="650275258">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{26A9BE2D-9256-425F-8AB8-4C607DAFBE4E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-9</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -566,7 +100,10 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<BlendContainer Name="Effects_Character1_Damage" ID="{4EF4294F-5A25-4018-9343-3CF1B40C3980}" ShortID="323832840">
+												<Sound Name="Character_Damage_Tick" ID="{4C304333-4491-4F43-94EB-A6B4CCEA88B5}" ShortID="190743309">
+													<PropertyList>
+														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -576,7 +113,182 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Character_Damage_Tick" ID="{4C304333-4491-4F43-94EB-A6B4CCEA88B5}" ShortID="190743309">
+														<AudioFileSource Name="Character_Damage_Tick" ID="{7294DA88-5DC5-4A5E-A253-2115D2CD3438}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.45335178257042"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Effects\Characters\Character 1\Damage\Character_Damage_Tick.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="805367614"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Character_Damage_Tick" ID="{7294DA88-5DC5-4A5E-A253-2115D2CD3438}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Staring" ID="{DE0EC192-3CB0-4C9D-895F-DFE62C3BE9EE}" ShortID="1002234316">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="EFFECTS_Char_Staring" ID="{1948C827-9A26-42FD-AD15-B091ED22D227}" ShortID="390808883">
+											<PropertyList>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Staring" ID="{F8B5F5A7-B500-415F-B1D9-FA627899E9DE}" ShortID="109712205">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
+																<Attenuation Name="DS_Default (Custom)" ID="{A05DA71F-7352-47A3-B690-5C87C570AE89}" ShortID="977658208">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{53FC19A3-2C82-4BF0-9E86-2CBF39749953}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>1.88087</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log1</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>30.40751</XPos>
+																							<YPos>-11.1592</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="Spread" ID="{FB093F3D-9E6C-4E7D-88B9-99BBDE09B105}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>2.3511</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>15.83071</XPos>
+																							<YPos>32.82658</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>0</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone1" ID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Character_DeathStare_Staring_001" ID="{05234AD2-DBC7-430F-A4E2-A93411A4ECA0}" ShortID="347872943">
 															<PropertyList>
 																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 															</PropertyList>
@@ -589,26 +301,340 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Character_Damage_Tick" ID="{7294DA88-5DC5-4A5E-A253-2115D2CD3438}">
+																<AudioFileSource Name="Character_DeathStare_Staring_001" ID="{BAEE4A7A-454C-497A-BF89-B9126F4C5A59}">
 																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0537449383802817"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.501619424882629"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="4.46082988556338"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="2.45335178257042"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0895748973004695"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="4.92661935152582"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
-																	<AudioFile>Effects\Characters\Character 1\Damage\Character_Damage_Tick.wav</AudioFile>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_001.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="805367614"/>
+																		<MediaID ID="424395784"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="Character_Damage_Tick" ID="{7294DA88-5DC5-4A5E-A253-2115D2CD3438}" Platform="Linked"/>
+																<ActiveSource Name="Character_DeathStare_Staring_001" ID="{BAEE4A7A-454C-497A-BF89-B9126F4C5A59}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Character_DeathStare_Staring_002" ID="{CF97D14C-4E71-44BC-9695-20F38BB77DF0}" ShortID="996478386">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_Staring_002" ID="{D14F1D15-CDE6-45EE-B4E1-B94B162F6D2B}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.537983311326291"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="4.53182552083333"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="5.0606904709507"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="918843551"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_Staring_002" ID="{D14F1D15-CDE6-45EE-B4E1-B94B162F6D2B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Character_DeathStare_Staring_003" ID="{7B302B04-AF18-4182-89FD-AE4CC4F4F4A8}" ShortID="689524015">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_Staring_003" ID="{0668AD63-93DA-4D70-84D4-7EF5374E4BEF}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.1"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.474101379107981"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="4.6133711120892"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="5.02365115170188"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="963218955"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_Staring_003" ID="{0668AD63-93DA-4D70-84D4-7EF5374E4BEF}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
-												</BlendContainer>
+												</RandomSequenceContainer>
 											</ChildrenList>
-										</ActorMixer>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="ExitStaring" ID="{980769F3-130A-4DC0-A656-A186F92A97D6}" ShortID="83737940">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="EFFECTS_Char_ExitStaring" ID="{B969E565-2621-4099-B5AB-332F378A2FA9}" ShortID="705027256">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-580</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="ExitStaring" ID="{F29A8A52-1633-4CFD-AD1C-180C0F5FD32E}" ShortID="544927791">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Character_DeathStare_ExitStaring_001" ID="{4A20F2EB-EED3-4918-AE7F-7AB982ED2E63}" ShortID="851674345">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_ExitStaring_001" ID="{9F16A3CC-34A6-4A70-AC6A-793C6BEA35E1}">
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="875258876"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_ExitStaring_001" ID="{9F16A3CC-34A6-4A70-AC6A-793C6BEA35E1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Character_DeathStare_ExitStaring_002" ID="{56916405-A9C0-48FD-AB5B-F4A0F944F129}" ShortID="226414507">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_ExitStaring_002" ID="{84EB50F5-A6D7-4821-BA48-3E9A98BEE6AA}">
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="13107196"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_ExitStaring_002" ID="{84EB50F5-A6D7-4821-BA48-3E9A98BEE6AA}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Character_DeathStare_ExitStaring_003" ID="{0B0433A6-CF12-4FF5-BD83-95CB8D33635D}" ShortID="512416407">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_ExitStaring_003" ID="{AA2C40AD-117A-477F-AC47-360AA19F625E}">
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="603687993"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_ExitStaring_003" ID="{AA2C40AD-117A-477F-AC47-360AA19F625E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Duel" ID="{032DE6D9-7D46-481B-A9C5-41AFD565B162}" ShortID="503704490">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX_Effects" ID="{9FE3C926-A528-45E9-B277-1DDCEF5B0C4F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<BlendContainer Name="EFFECTS_Char_Duel" ID="{45804702-A1C8-473A-BAC0-C0ED7880E121}" ShortID="411573239">
+											<PropertyList>
+												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Duel" ID="{12831A35-61C1-4931-BB25-CCE83C6FED71}" ShortID="39287427">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Character_DeathStare_Duel" ID="{DF1AB7E7-A3CE-4F75-BCA8-35834FD71757}" ShortID="407044678">
+															<PropertyList>
+																<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+																<Property Name="Pitch" Type="int32">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{8C6149EB-4D87-44E2-A554-39BCADDDFBB7}">
+																				<PropertyList>
+																					<Property Name="Enabled" Type="bool" Value="True"/>
+																					<Property Name="Max" Type="Real64" Value="100"/>
+																					<Property Name="Min" Type="Real64" Value="-100"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="Volume" Type="Real64">
+																	<ValueList>
+																		<Value>-5</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Character_DeathStare_Duel" ID="{65AC47B5-B9B0-443A-89BB-1CD6D63751DC}">
+																	<PropertyList>
+																		<Property Name="CrossfadeDuration" Type="Real64" Value="500"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.05"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0.519285211267606"/>
+																		<Property Name="LoopEnd" Type="Real64" Value="3.93397887323944"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="4.37458450704226"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Effects\Characters\Character 1\DeathStare\Duel\Character_DeathStare_Duel.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="576184738"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Character_DeathStare_Duel" ID="{65AC47B5-B9B0-443A-89BB-1CD6D63751DC}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+										</BlendContainer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

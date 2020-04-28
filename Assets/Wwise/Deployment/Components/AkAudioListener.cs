@@ -13,7 +13,7 @@
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__listeners.html" target="_blank">Integrating Listeners</a> (Note: This is described in the Wwise SDK documentation.)
 public class AkAudioListener : UnityEngine.MonoBehaviour
 {
-    private static readonly DefaultListenerList defaultListeners = new DefaultListenerList();
+	private static readonly DefaultListenerList defaultListeners = new DefaultListenerList();
 	private ulong akGameObjectID = AkSoundEngine.AK_INVALID_GAME_OBJECT;
 	private System.Collections.Generic.List<AkGameObj> EmittersToStartListeningTo = 
 		new System.Collections.Generic.List<AkGameObj>();
@@ -22,7 +22,7 @@ public class AkAudioListener : UnityEngine.MonoBehaviour
 
 	public bool isDefaultListener = true;
 
-    public static DefaultListenerList DefaultListeners
+	public static DefaultListenerList DefaultListeners
 	{
 		get { return defaultListeners; }
 	}
@@ -60,7 +60,7 @@ public class AkAudioListener : UnityEngine.MonoBehaviour
 			akGameObj.Register();
 
 		akGameObjectID = AkSoundEngine.GetAkGameObjectID(gameObject);
-    }
+	}
 
 	private void OnEnable()
 	{

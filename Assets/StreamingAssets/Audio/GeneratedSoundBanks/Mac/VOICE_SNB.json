@@ -18,7 +18,62 @@
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\DS SNB\\VOICE SNB\\VOICE_SNB",
     "ShortName": "VOICE_SNB",
-    "Path": "VOICE_SNB.bnk"
+    "Path": "VOICE_SNB.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3140263292",
+      "Name": "VO_Char_Breath_Damage",
+      "ObjectPath": "\\Events\\DS EVENTS\\VOICE EVENTS\\Characters\\VO_Char_Breath_Damage",
+      "GUID": "{251FDAF2-555F-4A58-994A-06FC4C1AA708}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "359267327",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_06.wav",
+        "Path": "SFX\\VO\\BreathFast_06_10C4C929.wem"
+       },
+       {
+        "Id": "449657686",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_03.wav",
+        "Path": "SFX\\VO\\BreathFast_03_10C4C929.wem"
+       },
+       {
+        "Id": "702388435",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_04.wav",
+        "Path": "SFX\\VO\\BreathFast_04_10C4C929.wem"
+       },
+       {
+        "Id": "858382067",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_01.wav",
+        "Path": "SFX\\VO\\BreathFast_01_10C4C929.wem"
+       },
+       {
+        "Id": "901285455",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_05.wav",
+        "Path": "SFX\\VO\\BreathFast_05_10C4C929.wem"
+       },
+       {
+        "Id": "954966903",
+        "Language": "SFX",
+        "ShortName": "VO\\BreathFast_02.wav",
+        "Path": "SFX\\VO\\BreathFast_02_10C4C929.wem"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3664139661",
+      "Name": "RTPC_Character_Health",
+      "ObjectPath": "\\Game Parameters\\DS RTPC\\GENERAL RTPC\\Characters\\Health\\RTPC_Character_Health",
+      "GUID": "{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"
+     }
+    ]
    }
   ]
  }

@@ -12,13 +12,11 @@ public class SetWwiseState : MonoBehaviour
         if (stateGroupName != null && startingStateName != null)
         {
             AkSoundEngine.SetState(stateGroupName, startingStateName);
-            Debug.Log("WWISE: State set to " + startingStateName);
         }
     }
 
     public void Setstate(string stateToSet)
     {
         AkSoundEngine.SetState(stateGroupName, stateToSet);
-        Debug.Log("WWISE: State set to " + stateToSet);
     }
 }

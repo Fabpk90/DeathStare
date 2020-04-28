@@ -6,6 +6,93 @@
 				<Property Name="Color" Type="int16" Value="16"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Characters" ID="{68314202-AB8C-43CF-AC99-F42D4ED6D59D}" ShortID="246974453">
+					<ChildrenList>
+						<Event Name="EFFECTS_Char_ExitStaring" ID="{029044F0-1CAA-463F-85AD-5D98A8DC0FE6}">
+							<ChildrenList>
+								<Action Name="" ID="{BAA51BC2-82EC-4C46-A347-A66607F04601}" ShortID="107213058">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_ExitStaring" ID="{B969E565-2621-4099-B5AB-332F378A2FA9}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EFFECTS_Char_Duel" ID="{1251C39E-B1EE-4B10-BF0F-5025FBEDCF46}">
+							<ChildrenList>
+								<Action Name="" ID="{4F0619A3-E64A-4285-9DC4-781969D18232}" ShortID="908679180">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_Duel" ID="{45804702-A1C8-473A-BAC0-C0ED7880E121}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EFFECTS_Char_Damage" ID="{39AF3851-8A48-48B4-A481-7F4083946766}">
+							<ChildrenList>
+								<Action Name="" ID="{10A4CAC7-F4AC-42B5-B7F9-AD18E971450F}" ShortID="965559532">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_Damage" ID="{4EF4294F-5A25-4018-9343-3CF1B40C3980}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EFFECTS_Char_Staring" ID="{0AF0DEE4-8C6A-4D20-AFA0-F404D32CD8BB}">
+							<ChildrenList>
+								<Action Name="" ID="{598CDFFF-BDBB-4D0F-A93E-B2F7F5EBF593}" ShortID="682289987">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_Staring" ID="{1948C827-9A26-42FD-AD15-B091ED22D227}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_EFFECTS_Char_Staring" ID="{83885303-55BD-43DF-A8C6-E066539DB22F}">
+							<ChildrenList>
+								<Action Name="" ID="{A1B1E957-8AE9-45E8-8727-21E7BBEEF551}" ShortID="212005595">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_Staring" ID="{1948C827-9A26-42FD-AD15-B091ED22D227}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_EFFECTS_Char_Damage" ID="{98275331-A3A2-4086-98FE-B46C3878E9BF}">
+							<ChildrenList>
+								<Action Name="" ID="{CA015233-5032-43E9-AEA5-566C61D6B837}" ShortID="91988506">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeInCurve" Type="int16" Value="7"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EFFECTS_Char_Damage" ID="{4EF4294F-5A25-4018-9343-3CF1B40C3980}" WorkUnitID="{A8237E17-700D-4D06-AE0A-A3587AB6A15E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

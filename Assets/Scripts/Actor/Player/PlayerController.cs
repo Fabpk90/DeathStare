@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public StareHandler stareHandler;
 
     public event EventHandler OnRespawn;
+
+    public PlayerAudioManager playerAudioManager;
     
     // Start is called before the first frame update
     void Start()
@@ -45,7 +47,7 @@ public class PlayerController : MonoBehaviour
         _input.currentActionMap["Run"].canceled += OnRunStop;
 
         //SOUND
-        AudioManager.instance.AddListeners(gameObject, 4);
+        AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         //SOUND
     }
 
@@ -96,6 +98,25 @@ public class PlayerController : MonoBehaviour
     {
         stareHandler.StopStare();
         controller.SetStare(false);
+        //Sound
+        playerAudioManager.PostEvent("Stop_EFFECTS_Char_Staring");
+        playerAudioManager.PostEvent("EFFECTS_Char_ExitStaring");
+        switch (GetPlayerIndex())
+        {
+            case (0):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
+                break;
+            case (1):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
+                break;
+            case (2):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
+                break;
+            case (3):
+                AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+                break;
+        }
+        //Sound
     }
 
     private void OnStartStare(InputAction.CallbackContext obj)
@@ -106,20 +127,21 @@ public class PlayerController : MonoBehaviour
             controller.SetStare(true);
             controller.SetRunning(false);
             //SOUND
+            playerAudioManager.PostEvent("EFFECTS_Char_Staring");
             int playerIndex = GetPlayerIndex();
             switch (playerIndex)
             {
                 case (0):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Stan_L", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Stan_L");
                     break;
                 case (1):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Marta_R", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Marta_R");
                     break;
                 case (2):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Medusa_L", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Medusa_L");
                     break;
                 case (3):
-                    AkSoundEngine.PostEvent("STINGERS_DS_Don_R", gameObject);
+                    AudioManager.instance.PostEvent("STINGERS_DS_Don_R");
                     break;
             }
             //SOUND
