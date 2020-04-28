@@ -2730,6 +2730,558 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
+								<MusicSegment Name="STINGERS_Kill_P2" ID="{AB8F0525-2386-44A8-BBF3-0CC12674F511}" ShortID="26499884">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EndPosition" Type="Real64" Value="9375"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="STINGERS_Kill_Don" ID="{DC759DCE-DDC0-4F95-8D7D-273726ED472C}" ShortID="567661392">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="STINGERS_Kill_Don" ID="{2B027C8C-4B99-42E1-993C-3F5645F0EE6F}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Stingers\Kills\STINGERS_Kill_Don.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="488594087"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{F571626D-776B-49D8-9F75-633D397F43D0}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{E5EECC80-45C9-45DF-8969-59D583A4B231}">
+													<ClipList>
+														<MusicClip Name="STINGERS_Kill_Don" ID="{F501D611-48BF-4FCA-B6EA-8E5377DE2492}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="213.845761136434"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9375"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-213.845761136434"/>
+															</PropertyList>
+															<AudioSourceRef Name="STINGERS_Kill_Don" ID="{2B027C8C-4B99-42E1-993C-3F5645F0EE6F}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{F851E27E-FCAA-42EA-9475-66FDFBA22316}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.21385</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{F47ADEB5-E12A-41EC-95D0-F0356A078F50}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.21385</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{971CA0EC-8F46-4050-9428-B75DB02861C8}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.21385</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{B22189C9-E37E-403D-95E3-C2D985D1B371}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-70"/>
+												<Property Name="PanY" Type="Real64" Value="70"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{B903629A-E2DB-4DD1-B0D4-C1F6AC4E327E}"/>
+										<MusicCue Name="Exit Cue" ID="{5861F822-33C3-40C7-8F3A-AE49FCBBC2E7}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="9375"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="STINGERS_Kill_P1" ID="{FC572F0B-8637-46B8-A708-D5763A27EC43}" ShortID="396510370">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EndPosition" Type="Real64" Value="10410.4941515711"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="STINGERS_Kill_Marta" ID="{89A1EA53-EC59-4491-B174-AD17765AAE55}" ShortID="911816491">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="STINGERS_Kill_Marta" ID="{587AC59A-1D3B-4495-A4C2-C0F98B2BCDD1}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Stingers\Kills\STINGERS_Kill_Marta.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="976832013"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{BFD99ECB-2E80-43E1-A216-235CFBF2EFB6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{C941AB2C-6E8F-46BF-928A-A1CE7082F515}">
+													<ClipList>
+														<MusicClip Name="STINGERS_Kill_Marta" ID="{1B75F948-9024-452B-9E08-648AB8039DA0}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="206.048526280739"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="10208.3333333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-206.048526280739"/>
+															</PropertyList>
+															<AudioSourceRef Name="STINGERS_Kill_Marta" ID="{587AC59A-1D3B-4495-A4C2-C0F98B2BCDD1}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{F73AD83C-BD19-45BB-B399-2BDA2B57778E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20605</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10.2083333333333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{69D25397-A92C-4C0F-B13F-7F7C076BECB7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20605</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10.2083333333333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{D5742416-A0DF-415F-9985-C011BD1D920A}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20605</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>10.2083333333333</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0D212E67-012B-4471-B123-BCECE9DA8D99}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-70"/>
+												<Property Name="PanY" Type="Real64" Value="70"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{F321F27C-F744-4AD3-8E91-02DC508C3376}"/>
+										<MusicCue Name="Exit Cue" ID="{90F868F4-FE0B-4E1A-ACDC-E44ADCE10292}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="10208.3333333333"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="STINGERS_Kill_P3" ID="{90F3659A-5C6B-4B52-8ED7-8EE2A17C2490}" ShortID="233359199">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EndPosition" Type="Real64" Value="9375"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="STINGERS_Kill_Stan" ID="{EBA577C5-91C6-4D05-8903-22B3C704CFCB}" ShortID="36720480">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="STINGERS_Kill_Stan" ID="{5E3EF2C1-4AB9-4E98-ACE7-2A3B750792F5}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Stingers\Kills\STINGERS_Kill_Stan.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="626168802"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{3B837DC4-264E-45B8-87DA-2568B974E362}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{A9D4F83C-A368-4352-A941-C400DCB9BCA2}">
+													<ClipList>
+														<MusicClip Name="STINGERS_Kill_Stan" ID="{B4972498-E053-4153-8427-8CB1146F8B71}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="208.637453244472"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9375"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-208.637453244472"/>
+															</PropertyList>
+															<AudioSourceRef Name="STINGERS_Kill_Stan" ID="{5E3EF2C1-4AB9-4E98-ACE7-2A3B750792F5}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{E9192E46-D937-4282-AB25-E71F54ED3D62}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20864</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{05953DDF-AE6B-44C6-94EA-A220A8D72DE0}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20864</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{F2650227-5FF9-437B-AE07-0D56B6E2279F}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20864</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{27C95F21-6CDF-4C46-B8C8-F6F8F45EE335}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-70"/>
+												<Property Name="PanY" Type="Real64" Value="70"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{C63CADD4-BA0C-492F-8F62-56A22D8DA221}"/>
+										<MusicCue Name="Exit Cue" ID="{4134B924-E26F-43AB-A825-36576CF77D0C}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="9375"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
+								<MusicSegment Name="STINGERS_Kill_P4" ID="{4C5E5027-0CD2-4E15-B40B-F2DB78B9AECB}" ShortID="360582254">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="EndPosition" Type="Real64" Value="9375"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Music" ID="{8694CF2B-7C0E-4018-A8C5-E60CD816124F}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="STINGERS_Kill_Medusa" ID="{4787141F-F409-4C0F-9F6D-D0957E217AB2}" ShortID="951154336">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="STINGERS_Kill_Medusa" ID="{2504584C-1F54-4F0E-B1C5-D595DCDF6247}">
+													<Language>SFX</Language>
+													<AudioFile>Music\Stingers\Kills\STINGERS_Kill_Medusa.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="742550713"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{1B8A332E-E21F-4B7A-AEB2-CF80BE26490A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<SequenceList>
+												<MusicTrackSequence Name="" ID="{299F4E19-F5BB-4631-9959-DC504B5FD65D}">
+													<ClipList>
+														<MusicClip Name="STINGERS_Kill_Medusa" ID="{BE88FF72-FF54-43B1-AABA-8E16FC87207D}">
+															<PropertyList>
+																<Property Name="BeginTrimOffset" Type="Real64" Value="204.127659324789"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="9375"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																<Property Name="PlayAt" Type="Real64" Value="-204.127659324789"/>
+															</PropertyList>
+															<AudioSourceRef Name="STINGERS_Kill_Medusa" ID="{2504584C-1F54-4F0E-B1C5-D595DCDF6247}"/>
+															<PropertyCurveList>
+																<PropertyCurve PropertyName="Highpass">
+																	<Curve Name="" ID="{BE0CBD7F-FE1E-46F9-AC47-92201569C0A6}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20413</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Lowpass">
+																	<Curve Name="" ID="{F03C441F-C1A5-41FC-AAD3-CE7EA7B0D7F2}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="1"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20413</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+																<PropertyCurve PropertyName="Volume">
+																	<Curve Name="" ID="{A5C5BFF0-7373-40CF-8C88-BE92596BE134}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0.20413</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>9.375</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</PropertyCurve>
+															</PropertyCurveList>
+														</MusicClip>
+													</ClipList>
+												</MusicTrackSequence>
+											</SequenceList>
+										</MusicTrack>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{97C9E02F-BFFF-47B8-A5BE-F8BE9CCD27D9}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="70"/>
+												<Property Name="PanY" Type="Real64" Value="70"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+									<CueList>
+										<MusicCue Name="Entry Cue" ID="{4B4CCA1A-4CD0-405A-893B-7EFADDED15ED}"/>
+										<MusicCue Name="Exit Cue" ID="{CF4DD08B-ACCD-495E-9EAA-F1901C4A243C}">
+											<PropertyList>
+												<Property Name="CueType" Type="int16" Value="1"/>
+												<Property Name="TimeMs" Type="Real64" Value="9375"/>
+											</PropertyList>
+										</MusicCue>
+									</CueList>
+								</MusicSegment>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -3081,7 +3633,7 @@
 								<Property Name="Tempo" Type="Real64" Value="134"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -3944,64 +4496,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<StingerList>
-								<MusicStinger Name="" ID="{ED423E25-34C1-437D-A222-AC18DFCF4B16}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{41BBA8C6-9E2E-4F56-A2B9-F1F6DB3E8DAA}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{C7DB9541-5442-4EE7-9EC0-373C7AA426A8}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{61445A00-4462-4E35-852A-4018662C444B}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{07098A14-37EB-4C44-A4A5-9B8CDE0AB634}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{8B57DD8F-4766-4196-AF35-C036ACBAF481}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{82B87216-47F3-4BA2-BA79-7125938EE4E9}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{37A9DDA5-9259-4D38-B5E0-9370247292DF}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-							</StingerList>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{9F913F1E-BF31-44FC-9B63-9E3722A5CB1F}" ShortID="545954530">
 									<PropertyList>
@@ -4109,64 +4603,6 @@
 									<TransitionInfo/>
 								</MusicTransition>
 							</TransitionList>
-							<StingerList>
-								<MusicStinger Name="" ID="{4A3BD191-F0A2-4D0A-8086-8D9C00EFF1D1}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{0AA6EF91-E709-4445-A9D8-711C2A3F426A}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{A4FDC152-7747-4146-A694-BB5D772106A5}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Marta_L" ID="{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Marta_L" ID="{AA5D4168-1504-456F-9B5B-38139E210D25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{7F76588D-A10E-4DE7-B5B5-116DC46107A5}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Marta_R" ID="{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Marta_R" ID="{9343150B-F314-4525-9EF3-C1BA10F3E2C4}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{D5BA9AD1-0510-4126-B654-A91F0C0FEE8E}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Medusa_L" ID="{1405F734-019A-4D46-90C7-880C257C12F0}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Medusa_L" ID="{BF4A742B-DCDC-4F52-B785-CC1B7FD6BD25}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{36593770-5DDC-41F5-A817-2649BCF3E32E}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Medusa_R" ID="{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Medusa_R" ID="{995A76E1-B292-4B89-8BE7-7E3F0C92AE02}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{036E50FB-FBBA-463D-80CA-1410248E221B}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-								<MusicStinger Name="" ID="{7347994C-6127-453F-9E83-3E83BF0043BA}">
-									<PropertyList>
-										<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
-									</PropertyList>
-									<TriggerRef Name="TRIGGER_DS_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-									<SegmentRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
-								</MusicStinger>
-							</StingerList>
 							<Playlist>
 								<MusicPlaylistItem Name="" ID="{BF133C3F-DCBB-40A8-BFD6-B7F786ADBB3D}" ShortID="371949782">
 									<ChildrenList>
@@ -4305,12 +4741,33 @@
 							<TriggerRef Name="TRIGGER_Kill_Stanislas_R" ID="{74246316-18FB-49A3-B635-13BDB43493D1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 							<SegmentRef Name="STINGERS_Kill_Stan_R" ID="{E0A39ACE-58CF-4EB8-887F-A52735C8854C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
-						<MusicStinger Name="" ID="{0E3CB44D-7FDC-4570-9E1F-8C7B1E1F9220}">
+						<MusicStinger Name="" ID="{8312E677-9C02-4900-8D17-396C4989FCD7}">
 							<PropertyList>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
-							<TriggerRef Name="TRIGGER_DuelMusic" ID="{3FEBF1E1-B7D1-45E0-8AE6-D36824F4B339}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-							<SegmentRef Name="DuelMusic" ID="{31CB8159-C769-40C2-AD03-E24991A55F9E}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+							<TriggerRef Name="TRIGGER_Kill_P1" ID="{4834D336-30A0-4382-BC73-2CC9D6F41DFC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_Kill_P1" ID="{FC572F0B-8637-46B8-A708-D5763A27EC43}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+						</MusicStinger>
+						<MusicStinger Name="" ID="{57E01B05-329F-4F7C-90F7-BD6D6852149F}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+							</PropertyList>
+							<TriggerRef Name="TRIGGER_Kill_P2" ID="{2D2CFE97-97EA-4B96-B036-06CFE79FF94E}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_Kill_P2" ID="{AB8F0525-2386-44A8-BBF3-0CC12674F511}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+						</MusicStinger>
+						<MusicStinger Name="" ID="{32CB8DD2-A0DB-41BF-A5C2-438F07A206A1}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+							</PropertyList>
+							<TriggerRef Name="TRIGGER_Kill_P3" ID="{66953C16-BB83-43C9-8451-1AF0998ACA9F}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_Kill_P3" ID="{90F3659A-5C6B-4B52-8ED7-8EE2A17C2490}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+						</MusicStinger>
+						<MusicStinger Name="" ID="{3FA15468-EBD7-4E06-BF24-ED2DFFA1E282}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+							</PropertyList>
+							<TriggerRef Name="TRIGGER_Kill_P4" ID="{3E38FA31-CADD-4194-AFEA-11D44062B526}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_Kill_P4" ID="{4C5E5027-0CD2-4E15-B40B-F2DB78B9AECB}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 					</StingerList>
 					<ArgumentList>

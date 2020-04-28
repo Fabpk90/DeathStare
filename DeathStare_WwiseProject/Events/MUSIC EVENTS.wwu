@@ -197,6 +197,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="STINGERS_Kill_P1" ID="{E736F939-F557-4D18-86AC-E619FED2218A}">
+					<ChildrenList>
+						<Action Name="" ID="{584EE7C1-554A-485B-8759-F76929180361}" ShortID="456856868">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_P1" ID="{FC572F0B-8637-46B8-A708-D5763A27EC43}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_P2" ID="{07C4C68C-4266-47D6-8DA3-24C42DBA8E2A}">
+					<ChildrenList>
+						<Action Name="" ID="{B4EE79FF-39E9-4630-9E92-6B1A2645A9B0}" ShortID="253938667">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_P2" ID="{AB8F0525-2386-44A8-BBF3-0CC12674F511}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_P4" ID="{1CF2E66B-832A-4ACD-B198-DF44E802CBF8}">
+					<ChildrenList>
+						<Action Name="" ID="{E8F25A70-36BD-4DDB-885F-968E8D250931}" ShortID="752562374">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_P4" ID="{4C5E5027-0CD2-4E15-B40B-F2DB78B9AECB}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="STINGERS_Kill_P3" ID="{40101D43-5AE3-4CD7-8D91-3CC497E94F6F}">
+					<ChildrenList>
+						<Action Name="" ID="{9E62415D-3CAE-42DE-B01B-FD8359641B8C}" ShortID="850403147">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="STINGERS_Kill_P3" ID="{90F3659A-5C6B-4B52-8ED7-8EE2A17C2490}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

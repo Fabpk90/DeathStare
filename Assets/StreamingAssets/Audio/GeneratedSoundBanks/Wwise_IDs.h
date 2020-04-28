@@ -49,6 +49,10 @@ namespace AK
         static const AkUniqueID STINGERS_KILL_MARTA_R = 2968734036U;
         static const AkUniqueID STINGERS_KILL_MEDUSA_L = 1724805132U;
         static const AkUniqueID STINGERS_KILL_MEDUSA_R = 1724805138U;
+        static const AkUniqueID STINGERS_KILL_P1 = 2299281131U;
+        static const AkUniqueID STINGERS_KILL_P2 = 2299281128U;
+        static const AkUniqueID STINGERS_KILL_P3 = 2299281129U;
+        static const AkUniqueID STINGERS_KILL_P4 = 2299281134U;
         static const AkUniqueID STINGERS_KILL_STAN_L = 854864811U;
         static const AkUniqueID STINGERS_KILL_STAN_R = 854864821U;
         static const AkUniqueID STOP_EFFECTS_CHAR_DAMAGE = 3978900703U;
@@ -197,6 +201,10 @@ namespace AK
         static const AkUniqueID TRIGGER_KILL_MARTA_R = 3648566741U;
         static const AkUniqueID TRIGGER_KILL_MEDUSA_L = 1594170703U;
         static const AkUniqueID TRIGGER_KILL_MEDUSA_R = 1594170705U;
+        static const AkUniqueID TRIGGER_KILL_P1 = 2839118456U;
+        static const AkUniqueID TRIGGER_KILL_P2 = 2839118459U;
+        static const AkUniqueID TRIGGER_KILL_P3 = 2839118458U;
+        static const AkUniqueID TRIGGER_KILL_P4 = 2839118461U;
         static const AkUniqueID TRIGGER_KILL_STANISLAS_L = 1140603814U;
         static const AkUniqueID TRIGGER_KILL_STANISLAS_R = 1140603832U;
     } // namespace TRIGGERS

@@ -31,6 +31,10 @@
 								<Trigger Name="TRIGGER_Kill_Marta_R" ID="{0C46B2AD-D86B-436C-BBBD-A354BC69428C}"/>
 								<Trigger Name="TRIGGER_Kill_Medusa_R" ID="{610BEAE3-CA94-4EE8-822A-E80FD44DBFE9}"/>
 								<Trigger Name="TRIGGER_Kill_Don_L" ID="{4F80F2AC-AB5C-48A3-A04C-CC51216D1A96}"/>
+								<Trigger Name="TRIGGER_Kill_P1" ID="{4834D336-30A0-4382-BC73-2CC9D6F41DFC}"/>
+								<Trigger Name="TRIGGER_Kill_P2" ID="{2D2CFE97-97EA-4B96-B036-06CFE79FF94E}"/>
+								<Trigger Name="TRIGGER_Kill_P3" ID="{66953C16-BB83-43C9-8451-1AF0998ACA9F}"/>
+								<Trigger Name="TRIGGER_Kill_P4" ID="{3E38FA31-CADD-4194-AFEA-11D44062B526}"/>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

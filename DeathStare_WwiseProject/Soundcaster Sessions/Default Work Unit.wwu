@@ -69,7 +69,7 @@
 						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
 						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
 						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
-						<CurrentStateRef Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
+						<CurrentStateRef Name="Fight_End" ID="{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
