@@ -36,6 +36,7 @@ public class ScoreManager : MonoBehaviour
 
     private void OnKill(object sender, Tuple<int, int> e)
     {
+        print(e.Item1);
         if (e.Item1 == _controller.GetPlayerIndex())
         {
             _score++;
