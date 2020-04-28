@@ -249,6 +249,7 @@ MonoBehaviour:
   - {fileID: 3321603992670702703}
   - {fileID: 5090961460125910833}
   - {fileID: 5606579654272250538}
+  playerAudioManager: {fileID: 9195553123199793403}
   canTakeDamage: 1
 --- !u!143 &-3625789616987428581
 CharacterController:
@@ -402,6 +403,7 @@ MonoBehaviour:
   controller: {fileID: 5282536666849687883}
   cameraMovement: {fileID: 2513252499995458673}
   stareHandler: {fileID: 1566957950012044675}
+  playerAudioManager: {fileID: 9195553123199793403}
 --- !u!1 &1083635643
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,6 +888,7 @@ GameObject:
   - component: {fileID: 1032957814435113469}
   - component: {fileID: 7233371273762478531}
   - component: {fileID: 5068898711899070579}
+  - component: {fileID: 4147522119241991021}
   m_Layer: 5
   m_Name: UIManager
   m_TagString: Untagged
@@ -925,6 +928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 4920591685460016817}
+  playerAudioManager: {fileID: 9195553123199793403}
 --- !u!114 &5068898711899070579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -981,6 +985,21 @@ MonoBehaviour:
   stare: {fileID: 1566957950012044675}
   imageTop: {fileID: 8951406457928787211}
   imageBottom: {fileID: 2936187306114344941}
+--- !u!114 &9158148405002187771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229372953350150472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_General_Character
+  startingSwitchName: Stanislas
+  switchGameObject: {fileID: 3229372953350150472}
 --- !u!1 &3479849005798977540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,11 +1868,51 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 400002}
     m_Modifications:
-    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
+    - target: {fileID: 1452936683}
+      propertyPath: characterCamera
+      value: 
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683}
       propertyPath: controller
       value: 
       objectReference: {fileID: -3625789616987428581}
-    - target: {fileID: 1452936683, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
+    - target: {fileID: 1452936683}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 1452936683}
+      propertyPath: characterCamera
+      value: 
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 1452936683}
+      propertyPath: characterCamera
+      value: 
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 1452936683}
+      propertyPath: characterCamera
+      value: 
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 1452936683}
+      propertyPath: characterCamera
+      value: 
+      objectReference: {fileID: 400000}
+    - target: {fileID: 1452936683}
+      propertyPath: controller
+      value: 
+      objectReference: {fileID: -3625789616987428581}
+    - target: {fileID: 1452936683}
       propertyPath: characterCamera
       value: 
       objectReference: {fileID: 400000}
@@ -1939,22 +1998,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: STANISLAS+Animator
       objectReference: {fileID: 0}
-    - target: {fileID: 1452936683}
-      propertyPath: characterCamera
-      value: 
-      objectReference: {fileID: 400000}
-    - target: {fileID: 1452936683}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: -3625789616987428581}
-    - target: {fileID: 1452936683}
-      propertyPath: characterCamera
-      value: 
-      objectReference: {fileID: 400000}
-    - target: {fileID: 1452936683}
-      propertyPath: controller
-      value: 
-      objectReference: {fileID: -3625789616987428581}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4, type: 3}
 --- !u!95 &6913276672448685695 stripped
@@ -1963,15 +2006,33 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 4853528394774987068}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5046942744904166362 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 383199541453302502, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
-    type: 3}
-  m_PrefabInstance: {fileID: 4853528394774987068}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1912429295161469787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9195553123199793403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4379214644093090247, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3229372953350150472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8773c123fd2548458f1fb08b7a1157b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &3229372953350150472 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8037302230046824564, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 4853528394774987068}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5046942744904166362 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 383199541453302502, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
     type: 3}
   m_PrefabInstance: {fileID: 4853528394774987068}
   m_PrefabAsset: {fileID: 0}

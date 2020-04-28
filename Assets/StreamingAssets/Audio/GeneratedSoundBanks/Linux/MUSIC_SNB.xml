@@ -13,6 +13,26 @@
 			<ShortName>MUSIC_SNB</ShortName>
 			<Path>MUSIC_SNB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1926112901" Name="SEGMENTS_DuelMusic" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\SEGMENTS_DuelMusic" GUID="{FC6502CC-1B7E-4EDB-AEDD-DBB4157B8DBC}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="19652934" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin1Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin1Loop_073B4D0C.wem</Path>
+						</File>
+						<File Id="46506750" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_Violin2Loop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_Violin2Loop_073B4D0C.wem</Path>
+						</File>
+						<File Id="353834140" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_CelliLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_CelliLoop_073B4D0C.wem</Path>
+						</File>
+						<File Id="1040627007" Language="SFX">
+							<ShortName>Music\Duel\Segments_Duel_ViolasLoop.wav</ShortName>
+							<Path>SFX\Music\Duel\Segments_Duel_ViolasLoop_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1290491939" Name="STINGERS_DS_Don_L" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Don_L" GUID="{A24FCC13-CC80-4D7E-92EE-2767C08D9941}" DurationType="OneShot" DurationMin="12.537313" DurationMax="12.537313">
 					<IncludedMemoryFiles>
 						<File Id="123246559" Language="SFX">
@@ -310,6 +330,38 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1724805138" Name="STINGERS_Kill_Medusa_R" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Medusa_R" GUID="{B822169F-4781-4E39-BB0C-2D832475EF13}" DurationType="OneShot" DurationMin="9.375000" DurationMax="9.375000">
+					<IncludedMemoryFiles>
+						<File Id="742550713" Language="SFX">
+							<ShortName>Music\Stingers\Kills\STINGERS_Kill_Medusa.wav</ShortName>
+							<Path>SFX\Music\Stingers\Kills\STINGERS_Kill_Medusa_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2299281131" Name="STINGERS_Kill_P1" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P1" GUID="{E736F939-F557-4D18-86AC-E619FED2218A}" DurationType="OneShot" DurationMin="10.208333" DurationMax="10.208333">
+					<IncludedMemoryFiles>
+						<File Id="976832013" Language="SFX">
+							<ShortName>Music\Stingers\Kills\STINGERS_Kill_Marta.wav</ShortName>
+							<Path>SFX\Music\Stingers\Kills\STINGERS_Kill_Marta_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2299281128" Name="STINGERS_Kill_P2" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P2" GUID="{07C4C68C-4266-47D6-8DA3-24C42DBA8E2A}" DurationType="OneShot" DurationMin="9.375000" DurationMax="9.375000">
+					<IncludedMemoryFiles>
+						<File Id="488594087" Language="SFX">
+							<ShortName>Music\Stingers\Kills\STINGERS_Kill_Don.wav</ShortName>
+							<Path>SFX\Music\Stingers\Kills\STINGERS_Kill_Don_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2299281129" Name="STINGERS_Kill_P3" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P3" GUID="{40101D43-5AE3-4CD7-8D91-3CC497E94F6F}" DurationType="OneShot" DurationMin="9.375000" DurationMax="9.375000">
+					<IncludedMemoryFiles>
+						<File Id="626168802" Language="SFX">
+							<ShortName>Music\Stingers\Kills\STINGERS_Kill_Stan.wav</ShortName>
+							<Path>SFX\Music\Stingers\Kills\STINGERS_Kill_Stan_073B4D0C.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2299281134" Name="STINGERS_Kill_P4" ObjectPath="\Events\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P4" GUID="{1CF2E66B-832A-4ACD-B198-DF44E802CBF8}" DurationType="OneShot" DurationMin="9.375000" DurationMax="9.375000">
 					<IncludedMemoryFiles>
 						<File Id="742550713" Language="SFX">
 							<ShortName>Music\Stingers\Kills\STINGERS_Kill_Medusa.wav</ShortName>

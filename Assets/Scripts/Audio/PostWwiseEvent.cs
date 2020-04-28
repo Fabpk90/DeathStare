@@ -27,7 +27,6 @@ public class PostWwiseEvent : MonoBehaviour
         }
 
         AkSoundEngine.PostEvent(eventName, this.gameObject);
-        Debug.Log("WWISE: Event " + eventName + " posted on " + this.gameObject.name);
     }
 
     private void PostEvent(string eventName, GameObject in_gameObject)
@@ -41,6 +40,5 @@ public class PostWwiseEvent : MonoBehaviour
         }
 
         AkSoundEngine.PostEvent(eventName, gameObject);
-        Debug.Log("WWISE: Event " + eventName + " posted on " + in_gameObject.name);
     }
 }

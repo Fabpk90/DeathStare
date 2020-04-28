@@ -8,6 +8,7 @@
 			</PropertyList>
 			<ChildrenList>
 				<WorkUnit Name="SFX TRIGGERS" ID="{57C4061D-A0D1-46FE-9C02-B2BAB8A72E26}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC TRIGGERS" ID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Triggers>

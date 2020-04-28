@@ -144,6 +144,7 @@ GameObject:
   - component: {fileID: 1921116991778789020}
   - component: {fileID: 1921116992430261956}
   - component: {fileID: 4056037288341877797}
+  - component: {fileID: 7887774620303229981}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -270,6 +271,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: fe0f03977ea85bd45994262e06dc473a, type: 2}
   camParent: {fileID: 1921116991768088306}
+--- !u!114 &7887774620303229981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921116991768088304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d392c9c5627d6da4fa83d5be1f49a4d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VolumesOffset:
+  - -20
+  - 0
 --- !u!1 &1921116991768088306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1544,7 @@ PrefabInstance:
         type: 3}
       propertyPath: startingSwitchName
       value: Dirt
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7887774620303229981}
     - target: {fileID: 6472061975834896999, guid: d92fad4b7e37e8b46b7b26ad8d5ae1d4,
         type: 3}
       propertyPath: m_LocalPosition.x
