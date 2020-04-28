@@ -11,11 +11,16 @@ public class PlayerUIManager : MonoBehaviour
 	private int playerIndex = 0;
 	public RectTransform score;
 
+	public Camera mainCam;
+
 	
 	private void Start()
 	{
+		
 		SetPlayerIndex();
+		SetCam();
 		UpdateScorePos();
+		
 	}
 
 	private void SetPlayerIndex()
@@ -42,6 +47,25 @@ public class PlayerUIManager : MonoBehaviour
 				break;
 			case 3:
 				score.anchoredPosition = new Vector2(-score.sizeDelta.x / 2, score.sizeDelta.y / 2);
+				break;
+		}
+	}
+
+	private void SetCam()
+	{
+		switch (playerIndex)
+		{
+			case 0:
+				mainCam.rect = new Rect(0.5f, 0, 0.5f, 0.5f);
+				break;
+			case 1:
+				mainCam.rect = new Rect(0, 0, 0.5f, 0.5f);
+				break;
+			case 2:
+				mainCam.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
+				break;
+			case 3:
+				mainCam.rect = new Rect(0, 0.5f, 0.5f, 0.5f);
 				break;
 		}
 	}

@@ -39,7 +39,7 @@ public class ScoreManager : MonoBehaviour
         {
             _score++;
 
-            scoreText.text = "Kills: " + _score;
+            scoreText.text = "" + _score;
 
             //Sound
             switch (e.Item1){
