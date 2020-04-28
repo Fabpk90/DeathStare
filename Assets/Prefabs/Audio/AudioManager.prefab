@@ -92,7 +92,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 896981138271726879}
   Soundbanks:
-  - TEST
+  - VOICE_SNB
   - MUSIC_SNB
   - SFX_SNB
 --- !u!114 &2078232733

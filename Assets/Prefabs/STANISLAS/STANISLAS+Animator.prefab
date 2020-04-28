@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520074242794321799}
+  - component: {fileID: 5906863745569419384}
   m_Layer: 0
   m_Name: Character1_RightFoot
   m_TagString: Untagged
@@ -152,6 +153,28 @@ Transform:
   m_Father: {fileID: 5420916267419300560}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5906863745569419384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383199541453302502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83327bf85a7691f41ba8df7aeb088b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 0
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &409536650524997219
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,6 +2717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 531530185868223760}
+  - component: {fileID: 1875293487795804020}
   m_Layer: 0
   m_Name: Character1_Ctrl_ChestOriginEffector
   m_TagString: Untagged
@@ -2715,6 +2739,28 @@ Transform:
   m_Father: {fileID: 4310533912748234891}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875293487795804020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5100350701745779558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83327bf85a7691f41ba8df7aeb088b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 0
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &5102515611574002316
 GameObject:
   m_ObjectHideFlags: 0
@@ -4469,6 +4515,7 @@ GameObject:
   - component: {fileID: 4379214644093090247}
   - component: {fileID: 5743003642258224631}
   - component: {fileID: 1483885940178567835}
+  - component: {fileID: 6067422478536305617}
   m_Layer: 0
   m_Name: STANISLAS+Animator
   m_TagString: Untagged
@@ -4542,6 +4589,7 @@ MonoBehaviour:
   player: {fileID: 0}
   leftFoot: {fileID: 8328876010266153376}
   rightFoot: {fileID: 383199541453302502}
+  chest: {fileID: 5100350701745779558}
   wwiseListener: {fileID: 0}
 --- !u!114 &5743003642258224631
 MonoBehaviour:
@@ -4556,7 +4604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchGroupName: SWITCHES_Foleys_Surfaces
-  startingSwitchName: Dirt
+  startingSwitchName: Cobble
   switchGameObject: {fileID: 8328876010266153376}
 --- !u!114 &1483885940178567835
 MonoBehaviour:
@@ -4571,8 +4619,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchGroupName: SWITCHES_Foleys_Surfaces
-  startingSwitchName: Dirt
+  startingSwitchName: Cobble
   switchGameObject: {fileID: 383199541453302502}
+--- !u!114 &6067422478536305617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Foleys_Surfaces
+  startingSwitchName: Cobble
+  switchGameObject: {fileID: 4390200309763112742}
 --- !u!1 &8043872157628012999
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,6 +4831,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6496812990937538948}
+  - component: {fileID: 6161943362812549498}
   m_Layer: 0
   m_Name: Character1_LeftFoot
   m_TagString: Untagged
@@ -4790,6 +4854,28 @@ Transform:
   m_Father: {fileID: 4576483327552435394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6161943362812549498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328876010266153376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83327bf85a7691f41ba8df7aeb088b44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 0
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &8418955982123758243
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,15 +16,6 @@
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{4B7A90C9-1A0B-4B5B-9AF4-67A87B4CD4C1}" WorkUnitID="{E05C3D60-4D29-4492-B904-6B9F704E6735}"/>
 						</Reference>
-						<Reference Name="Effect0">
-							<Custom>
-								<Effect Name="Wwise_Recorder_(Custom)" ID="{F9DB0442-0FE8-4C47-9EEC-DB0EF64BA17A}" ShortID="574871007" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3">
-									<PropertyList>
-										<Property Name="AuthoringFilename" Type="string" Value="D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Ziks\TestStingers.wav"/>
-									</PropertyList>
-								</Effect>
-							</Custom>
-						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="SFX" ID="{1F8D9160-41FD-426B-A918-F39DDF2DA1B9}">
