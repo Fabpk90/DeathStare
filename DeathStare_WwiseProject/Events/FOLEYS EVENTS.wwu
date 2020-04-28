@@ -75,6 +75,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="FOLEYS_Char_Death" ID="{3AD6246B-F042-47B4-A29E-9E3066309A59}">
+							<ChildrenList>
+								<Action Name="" ID="{8524C5F1-4379-45E0-B977-E801D555BF43}" ShortID="522687881">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOLEYS_Char_Death" ID="{B8AA436D-4678-45CE-ABB3-8C890BAC1FCA}" WorkUnitID="{869E4CF0-9D3B-4A5D-BD49-AB4ED3F6D2DF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

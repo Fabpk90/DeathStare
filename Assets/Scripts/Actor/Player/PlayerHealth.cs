@@ -51,6 +51,8 @@ namespace Actor.Player
         public override bool TakeDamage(int playerIndex, float amount)
         {
             if (!canTakeDamage) return false;
+
+            print("I'm " + _controller.GetPlayerIndex() + " and " + playerIndex);
             
             OnTakingDamage?.Invoke(this, amount);
             

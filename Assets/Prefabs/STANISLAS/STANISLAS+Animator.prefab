@@ -4469,6 +4469,7 @@ GameObject:
   - component: {fileID: 4379214644093090247}
   - component: {fileID: 5743003642258224631}
   - component: {fileID: 1483885940178567835}
+  - component: {fileID: 6067422478536305617}
   m_Layer: 0
   m_Name: STANISLAS+Animator
   m_TagString: Untagged
@@ -4542,6 +4543,7 @@ MonoBehaviour:
   player: {fileID: 0}
   leftFoot: {fileID: 8328876010266153376}
   rightFoot: {fileID: 383199541453302502}
+  chest: {fileID: 5100350701745779558}
   wwiseListener: {fileID: 0}
 --- !u!114 &5743003642258224631
 MonoBehaviour:
@@ -4556,7 +4558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchGroupName: SWITCHES_Foleys_Surfaces
-  startingSwitchName: Dirt
+  startingSwitchName: Cobble
   switchGameObject: {fileID: 8328876010266153376}
 --- !u!114 &1483885940178567835
 MonoBehaviour:
@@ -4571,8 +4573,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchGroupName: SWITCHES_Foleys_Surfaces
-  startingSwitchName: Dirt
+  startingSwitchName: Cobble
   switchGameObject: {fileID: 383199541453302502}
+--- !u!114 &6067422478536305617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037302230046824564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aef08cb4b79232478a49e1414098f67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  switchGroupName: SWITCHES_Foleys_Surfaces
+  startingSwitchName: Cobble
+  switchGameObject: {fileID: 4390200309763112742}
 --- !u!1 &8043872157628012999
 GameObject:
   m_ObjectHideFlags: 0
