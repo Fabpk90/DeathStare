@@ -43,9 +43,6 @@ public class PlayerController : MonoBehaviour
         
         _input.currentActionMap["Crouch"].started += OnCrouch;
 
-        _input.currentActionMap["Run"].started += OnRunStart;
-        _input.currentActionMap["Run"].canceled += OnRunStop;
-
         //SOUND
         AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         //SOUND
@@ -61,25 +58,15 @@ public class PlayerController : MonoBehaviour
         OnRespawn?.Invoke(this, null);
     }
 
-    private void OnRunStop(InputAction.CallbackContext obj)
-    {
-        controller.SetRunning(false);
-    }
-
-    private void OnRunStart(InputAction.CallbackContext obj)
-    {
-        if(!stareHandler.isStaring)
-            controller.SetRunning(true);
-    }
-
     private void OnCrouch(InputAction.CallbackContext obj)
     {
-        controller.ToggleCrouch();
+        if(!stareHandler.isStaring)
+            controller.ToggleCrouch();
     }
 
     private void OnJump(InputAction.CallbackContext obj)
     {
-        if(controller.canJump())
+        if(controller.canJump() && !stareHandler.isStaring)
             controller.Jump();
     }
 
@@ -125,7 +112,6 @@ public class PlayerController : MonoBehaviour
         {
             stareHandler.StartStare();
             controller.SetStare(true);
-            controller.SetRunning(false);
             //SOUND
             playerAudioManager.PostEvent("EFFECTS_Char_Staring");
             int playerIndex = GetPlayerIndex();

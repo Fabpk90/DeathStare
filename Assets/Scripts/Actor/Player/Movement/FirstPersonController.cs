@@ -113,7 +113,9 @@ public class FirstPersonController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        UpdateMovementState();
         float speed = GetSpeedFromState() * m_Input.magnitude;
+        
 
         Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
         
@@ -147,6 +149,20 @@ public class FirstPersonController : MonoBehaviour
         m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
         ProgressStepCycle(speed);
+    }
+
+    private void UpdateMovementState()
+    {
+        if (_isStaring)
+        {
+            _isRunning = false;
+            animator.SetBool(Running, false);
+        }
+        else if(m_Input.magnitude > 0.4f)
+        {
+            _isRunning = true;
+            animator.SetBool(Running, true);
+        }
     }
 
     public void SetInputMovement(Vector2 input)
@@ -229,7 +245,7 @@ public class FirstPersonController : MonoBehaviour
 
     public bool canStare()
     {
-        if (stareCooldown.IsCompleted && !_isRunning)
+        if (stareCooldown.IsCompleted)
         {
             stareCooldown.Start();
             return true;
@@ -298,23 +314,6 @@ public class FirstPersonController : MonoBehaviour
             var v = transform1.localPosition;
             v.y *= 2;
             transform1.localPosition = v;
-        }
-    }
-
-    public void SetRunning(bool isRunning)
-    {
-        if (isRunning && m_CharacterController.isGrounded)
-        {
-            if(_isCrouching)
-                SetCrouch(false);
-            
-            animator.SetBool(Running, true);
-            _isRunning = true;
-        }
-        else
-        {
-            _isRunning = false;
-            animator.SetBool(Running, false);
         }
     }
 
