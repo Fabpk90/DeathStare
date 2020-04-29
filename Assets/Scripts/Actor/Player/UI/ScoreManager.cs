@@ -46,19 +46,23 @@ public class ScoreManager : MonoBehaviour
             //Sound
             switch (e.Item1){
                 case (0):
-                    AkSoundEngine.PostEvent("STINGERS_Kill_Stan_L", gameObject);
+                    //AkSoundEngine.PostEvent("STINGERS_Kill_Stan_L", gameObject);
+                    AkSoundEngine.PostTrigger("TRIGGER_Kill_Stan_L", AudioManager.instance.gameObject);
                     playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (1):
-                    AkSoundEngine.PostEvent("STINGERS_Kill_Marta_R", gameObject);
+                    //AkSoundEngine.PostEvent("STINGERS_Kill_Marta_R", gameObject);
+                    AkSoundEngine.PostTrigger("TRIGGER_Kill_Marta_R", AudioManager.instance.gameObject);
                     playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (2):
-                    AkSoundEngine.PostEvent("STINGERS_Kill_Medusa_L", gameObject);
+                    //AkSoundEngine.PostEvent("STINGERS_Kill_Medusa_L", gameObject);
+                    AkSoundEngine.PostTrigger("TRIGGER_Kill_Medusa_L", AudioManager.instance.gameObject);
                     playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
                 case (3):
-                    AkSoundEngine.PostEvent("STINGERS_Kill_Don_R", gameObject);
+                    //AkSoundEngine.PostEvent("STINGERS_Kill_Don_R", gameObject);
+                    AkSoundEngine.PostTrigger("TRIGGER_Kill_Don_R", AudioManager.instance.gameObject);
                     playerAudioManager.PostEvent("VO_Char_Punchline_Kill");
                     break;
             }

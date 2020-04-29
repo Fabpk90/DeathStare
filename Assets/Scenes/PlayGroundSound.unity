@@ -2001,6 +2001,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7991844393066936265, guid: 14e49804e1dbd37489f6bed03057c29c,
+        type: 3}
+      propertyPath: combatMusicOnStart
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14e49804e1dbd37489f6bed03057c29c, type: 3}
 --- !u!1 &1787541594
