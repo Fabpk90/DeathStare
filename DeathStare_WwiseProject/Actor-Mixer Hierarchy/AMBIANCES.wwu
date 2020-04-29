@@ -186,7 +186,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="AMB_Stareland_Sshots" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" ShortID="795747782">
+										<BlendContainer Name="AMB_Common_Sshots" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" ShortID="795747782">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -587,14 +587,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="AMB_Stareland_Bed" ID="{FBD526A0-17BC-4CFF-ADAF-959C4056D44F}" ShortID="177969433">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
+										<ActorMixer Name="Sea" ID="{90542E63-6D02-4ECA-9BD6-696369685099}" ShortID="182168445">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -604,14 +597,437 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<RandomSequenceContainer Name="Bed" ID="{CE53B6A0-5215-4BC4-813F-D1A787D6866A}" ShortID="967739907">
+												<BlendContainer Name="AMB_Common_Bed_Sea" ID="{FBD526A0-17BC-4CFF-ADAF-959C4056D44F}" ShortID="177969433">
 													<PropertyList>
-														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
+																<Attenuation Name="DS_Default (Custom)" ID="{33352934-BFD4-46EB-87F8-EBEDE0841424}" ShortID="103754890">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{7CD4FF80-BE7B-4A67-BEF1-FF5C39903DF2}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>1.88087</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log1</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>30.40751</XPos>
+																							<YPos>-11.1592</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="Spread" ID="{BD62E157-FE55-4192-80B7-FEE6C738A7C0}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>2.3511</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>15.83071</XPos>
+																							<YPos>32.82658</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>0</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Bed" ID="{CE53B6A0-5215-4BC4-813F-D1A787D6866A}" ShortID="967739907">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Zone_Zone3_Bed_001" ID="{64FCA359-55C0-4649-9CCE-2C4D91344084}" ShortID="277517335">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_001" ID="{4B9CBBA3-8874-4C20-982F-D9D4E6AD8C0C}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="918892782"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_001" ID="{4B9CBBA3-8874-4C20-982F-D9D4E6AD8C0C}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Zone_Zone3_Bed_002" ID="{064F07B2-3490-4D40-8366-5E899E5BB4CB}" ShortID="408848048">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_002" ID="{13277E63-C10A-4C3F-AD55-F121E97F8DC9}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="61378412"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_002" ID="{13277E63-C10A-4C3F-AD55-F121E97F8DC9}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Zone_Zone3_Bed_003" ID="{2034E9CF-2EBC-4B34-B1C2-19772A2929D9}" ShortID="461089404">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_003" ID="{072D4D4F-5E67-41E5-B99A-FD2A8FB89372}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="110326517"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_003" ID="{072D4D4F-5E67-41E5-B99A-FD2A8FB89372}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Wind" ID="{C733B5C7-83B5-48BA-9632-76B827A13CC1}" ShortID="936320521">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_Common_Bed_Wind" ID="{55FA91E5-EEEC-4513-B8A4-12CE081FC5CB}" ShortID="493039450">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<Custom CreatedFrom="{D5D9CAF5-7B94-4908-84C5-27EC7B959CDB}">
+																<Attenuation Name="DS_Default (Custom)" ID="{F49B86C8-A897-43D4-9DD0-5F3A2E835814}" ShortID="130801919">
+																	<CurveUsageInfoList>
+																		<VolumeDryUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="VolumeDry" ID="{8AEF1141-0485-418F-BB23-265D6BDA6538}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="3"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>0</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>1.88087</XPos>
+																							<YPos>0</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log1</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>30.40751</XPos>
+																							<YPos>-11.1592</YPos>
+																							<Flags>0</Flags>
+																							<SegmentShape>Log3</SegmentShape>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>-200</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</VolumeDryUsage>
+																		<VolumeWetGameUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetGameUsage>
+																		<VolumeWetUserUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+																		</VolumeWetUserUsage>
+																		<LowPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</LowPassFilterUsage>
+																		<HighPassFilterUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</HighPassFilterUsage>
+																		<SpreadUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																				<Curve Name="Spread" ID="{A29520DB-5E66-41B5-8905-22D98743F356}">
+																					<PropertyList>
+																						<Property Name="Flags" Type="int32" Value="1"/>
+																					</PropertyList>
+																					<PointList>
+																						<Point>
+																							<XPos>0</XPos>
+																							<YPos>100</YPos>
+																							<Flags>5</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>2.3511</XPos>
+																							<YPos>100</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>15.83071</XPos>
+																							<YPos>32.82658</YPos>
+																							<Flags>0</Flags>
+																						</Point>
+																						<Point>
+																							<XPos>100</XPos>
+																							<YPos>0</YPos>
+																							<Flags>37</Flags>
+																						</Point>
+																					</PointList>
+																				</Curve>
+																			</CurveUsageInfo>
+																		</SpreadUsage>
+																		<FocusUsage>
+																			<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+																		</FocusUsage>
+																	</CurveUsageInfoList>
+																</Attenuation>
+															</Custom>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<RandomSequenceContainer Name="Bed" ID="{3D48F327-0BAF-495E-933A-EF8CACB6CA51}" ShortID="775995160">
+															<PropertyList>
+																<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<Sound Name="Zone_Zone3_Bed_001" ID="{27FBF413-87E3-40CC-9FA5-EA942554A148}" ShortID="378704024">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_001" ID="{D3CE5188-3524-492E-ABB7-8F1C714DE647}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="918892782"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_001" ID="{D3CE5188-3524-492E-ABB7-8F1C714DE647}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Zone_Zone3_Bed_002" ID="{06D10584-3163-47B9-806D-B38476A80470}" ShortID="519872930">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_002" ID="{9483C6A9-499D-411A-9E69-6FFFA2EEF685}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="61378412"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_002" ID="{9483C6A9-499D-411A-9E69-6FFFA2EEF685}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+																<Sound Name="Zone_Zone3_Bed_003" ID="{CCBCF748-A30C-43EB-890B-392030681DA7}" ShortID="656343703">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="Zone_Zone3_Bed_003" ID="{3FE4BE69-DC5E-4046-9570-8FACA22C968B}">
+																			<Language>SFX</Language>
+																			<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="110326517"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="Zone_Zone3_Bed_003" ID="{3FE4BE69-DC5E-4046-9570-8FACA22C968B}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</RandomSequenceContainer>
+													</ChildrenList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="SoundPoints" ID="{27837998-0601-4F43-AAE0-00E713EF8EE1}" ShortID="725628730">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Cave" ID="{04EF8091-150C-4CF5-9B95-BF1C39E75C9F}" ShortID="81551264">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Cave" ID="{365AB730-5912-44CC-8CB4-976C1CB790F1}" ShortID="649362116">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -620,77 +1036,149 @@
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 														</Reference>
 													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="Zone_Zone3_Bed_001" ID="{64FCA359-55C0-4649-9CCE-2C4D91344084}" ShortID="277517335">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Zone_Zone3_Bed_001" ID="{4B9CBBA3-8874-4C20-982F-D9D4E6AD8C0C}">
-																	<Language>SFX</Language>
-																	<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="918892782"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Zone_Zone3_Bed_001" ID="{4B9CBBA3-8874-4C20-982F-D9D4E6AD8C0C}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Zone_Zone3_Bed_002" ID="{064F07B2-3490-4D40-8366-5E899E5BB4CB}" ShortID="408848048">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Zone_Zone3_Bed_002" ID="{13277E63-C10A-4C3F-AD55-F121E97F8DC9}">
-																	<Language>SFX</Language>
-																	<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="61378412"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Zone_Zone3_Bed_002" ID="{13277E63-C10A-4C3F-AD55-F121E97F8DC9}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Zone_Zone3_Bed_003" ID="{2034E9CF-2EBC-4B34-B1C2-19772A2929D9}" ShortID="461089404">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Zone_Zone3_Bed_003" ID="{072D4D4F-5E67-41E5-B99A-FD2A8FB89372}">
-																	<Language>SFX</Language>
-																	<AudioFile>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="110326517"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Zone_Zone3_Bed_003" ID="{072D4D4F-5E67-41E5-B99A-FD2A8FB89372}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
+												</BlendContainer>
 											</ChildrenList>
-										</BlendContainer>
+										</ActorMixer>
+										<ActorMixer Name="Water" ID="{9A05031B-F70A-4462-B63A-2ACE479479BD}" ShortID="105837354">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Water" ID="{756D2608-398E-49B6-88C2-E95D3233BFBE}" ShortID="101305962">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Foliage" ID="{75DA9B81-E724-406A-8D6A-70721C7A1362}" ShortID="891805131">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Foliage" ID="{EF95A8E2-96BF-49DF-91A9-6B5BAD8E1FA6}" ShortID="718707080">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Wood" ID="{8FFD012D-29B2-4AF6-A861-59D51CA04643}" ShortID="435841973">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Wood" ID="{80A488BC-7B46-46A0-BC22-EAC3C4148358}" ShortID="1023805231">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Stone" ID="{6F9CC82B-D9C1-477A-AC1B-7617CEB88A4E}" ShortID="247375333">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Stone" ID="{3504A182-6068-4D15-A507-338567DF46BF}" ShortID="746702293">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+										<ActorMixer Name="Rock" ID="{DFDC827E-713B-4889-A59F-D9DBE65705BE}" ShortID="494409168">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="AMB_SP_Cave" ID="{83CE1D57-1BBF-449F-87BF-854C687414CA}" ShortID="667267040">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="RVB_Zone3" ID="{8213D1B2-A907-435C-8014-41B993836799}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+														</Reference>
+													</ReferenceList>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
 							</ChildrenList>

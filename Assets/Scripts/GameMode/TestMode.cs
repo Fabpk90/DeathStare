@@ -60,7 +60,7 @@ public class TestMode : GameMode
         if(Gamepad.all.Count == 0)
             print("Attention pas de manette connectée !");
         
-        if (!debugPlayers)
+        if (!debugPlayers || Gamepad.all.Count > 1)
         {
             //we add the 4 players, or less depending on connected gamepads
             for (int i = 0; i < Gamepad.all.Count && i < 4; i++)

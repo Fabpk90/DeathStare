@@ -884,8 +884,7 @@ public class AkWwiseWWUBuilder
 			var list = AkWwiseProjectInfo.GetData().GetWwuListByString(in_wwuType);
 			var index = list.BinarySearch(new AkWwiseProjectData.WorkUnit { PhysicalPath = wwuRelPath });
 			wwuRelPath = (list[index] as AkWwiseProjectData.WorkUnit).ParentPath;
-            wwuRelPath = wwuRelPath.Substring(0, wwuRelPath.LastIndexOf("\\") + 1);
-        }
+		}
 
 		//Add physical folders to the hierarchy if the work unit isn't in the root folder
 		var physicalPath = in_relativePhysicalPath.Split(System.IO.Path.DirectorySeparatorChar);

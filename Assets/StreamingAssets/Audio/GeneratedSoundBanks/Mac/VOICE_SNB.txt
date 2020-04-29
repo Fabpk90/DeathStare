@@ -1,0 +1,14 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3140263292	VO_Char_Breath_Damage			\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Breath_Damage	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3664139661	RTPC_Character_Health			\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	359267327	BreathFast_06	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_06_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_06		248544
+	449657686	BreathFast_03	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_03_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_03		361676
+	702388435	BreathFast_04	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_04_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_04		305004
+	858382067	BreathFast_01	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_01_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_01		323172
+	901285455	BreathFast_05	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_05_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_05		375616
+	954966903	BreathFast_02	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\VO\BreathFast_02_10C4C929.wem		\Actor-Mixer Hierarchy\DS AUDIO\VOICES\Voice\Character 1\Breathing\Damage\VO_Char_Breath_Damage\VO_Char_Breath_Damage\BreathFast_02		304152
+

@@ -8,6 +8,21 @@
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Voice" ID="{B0DA3290-4BD7-415E-8DEB-B61F5EA15374}" ShortID="1020736010">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -17,7 +32,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<ActorMixer Name="Character 1" ID="{1CD5CC12-8010-4CDE-A896-74C86DBACD28}" ShortID="515775443">
+						<ActorMixer Name="Character" ID="{1CD5CC12-8010-4CDE-A896-74C86DBACD28}" ShortID="515775443">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -37,7 +52,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="Stare" ID="{45AA9EB4-E733-461B-9BB9-7A237F9DAA9A}" ShortID="410598322">
+										<ActorMixer Name="Damage" ID="{1142D5E3-0BBC-4553-A85A-50B56C9DA576}" ShortID="836016725">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -46,254 +68,892 @@
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 												</Reference>
 											</ReferenceList>
-										</ActorMixer>
-										<ActorMixer Name="Release" ID="{1142D5E3-0BBC-4553-A85A-50B56C9DA576}" ShortID="836016725">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-												</Reference>
-											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="VO_Char_Breath_Damage" ID="{9F8D941F-78BC-4308-B2B6-DE36A35F0CC5}" ShortID="926427165">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+															<RTPCList>
+																<RTPC Name="" ID="{D25BA79E-C529-45E3-BCFB-50A9F2DB0622}" ShortID="269246881">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{6AD2CDE4-895E-40CA-960B-DC1FAA78B966}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>-6</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SwitchContainer Name="Breath_Damage" ID="{85E2CE84-AEAE-49E5-90A1-FCAA9779CEBA}" ShortID="211524020">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Stan" ID="{D4BB5FC7-83C6-470B-A0B5-202FD9027EDD}" ShortID="6345330">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+																			<RTPCList>
+																				<RTPC Name="" ID="{1B9B6B65-33FD-4D96-A390-46BEDC57089E}" ShortID="901331294">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{16E50F1A-5C78-40A8-8C4F-39E122460262}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="BreathFast_06" ID="{2410161F-A13F-4483-BD69-B8F9976F5293}" ShortID="978553603">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_06" ID="{61D78283-A270-4527-8F46-D8BDA58C8840}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="359267327"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_06" ID="{61D78283-A270-4527-8F46-D8BDA58C8840}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_01" ID="{8F4CC550-4552-4EB4-97FF-6E334A678236}" ShortID="507021133">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_01" ID="{0A2A5747-D6F2-4999-9664-5435DC53918B}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="858382067"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_01" ID="{0A2A5747-D6F2-4999-9664-5435DC53918B}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_03" ID="{70BB186C-6776-4715-9843-F267DB2A4016}" ShortID="1013123315">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_03" ID="{58098376-8634-4ADC-A2B4-DD9BA368CA08}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="449657686"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_03" ID="{58098376-8634-4ADC-A2B4-DD9BA368CA08}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_05" ID="{8395027E-5D56-41E0-8CDB-2605F242D97B}" ShortID="515056033">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_05" ID="{C91D4EAA-4D57-4EAC-ACE2-FA68044ECF6E}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="901285455"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_05" ID="{C91D4EAA-4D57-4EAC-ACE2-FA68044ECF6E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_04" ID="{8A198CBE-90D9-4ACA-A672-870C7BC1E864}" ShortID="389234467">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_04" ID="{43388172-A21E-4D34-94A4-D85F5FF2482C}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="702388435"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_04" ID="{43388172-A21E-4D34-94A4-D85F5FF2482C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_02" ID="{73B4BF13-C5B7-4B99-8E30-09A4488A4169}" ShortID="999959300">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_02" ID="{EDFE604C-9F9C-45BA-BE15-C410F780298D}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="954966903"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_02" ID="{EDFE604C-9F9C-45BA-BE15-C410F780298D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Marta" ID="{DCFEB582-FC77-4B47-B49B-2863CE78A121}" ShortID="661274310">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+																			<RTPCList>
+																				<RTPC Name="" ID="{A880D9C1-4AF7-48C1-8BAB-3AFD5BAD2F49}" ShortID="84278539">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{EF940B31-A115-425D-B241-FBC2999D9CEC}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="BreathFast_06" ID="{8CB5380E-6F40-44A7-A9CC-997D339A61F1}" ShortID="185076509">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_06" ID="{85DA1D0A-3FDB-43DA-BA66-FFE1AA81FF7C}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="359267327"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_06" ID="{85DA1D0A-3FDB-43DA-BA66-FFE1AA81FF7C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_01" ID="{93B2B6B0-7FD7-4A3F-A6D2-6639B0254573}" ShortID="214575750">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_01" ID="{C4FE1004-7172-4850-8B1D-09116E1C38B2}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="858382067"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_01" ID="{C4FE1004-7172-4850-8B1D-09116E1C38B2}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_03" ID="{48E16D2B-BC69-4341-866E-64BB867CDC70}" ShortID="945089351">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_03" ID="{E17AA0D5-3B12-4DEA-B0FA-5DE6E6BB0307}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="449657686"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_03" ID="{E17AA0D5-3B12-4DEA-B0FA-5DE6E6BB0307}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_05" ID="{0C5B7EC6-8EA2-4E50-B84C-8F6DD773E886}" ShortID="995876546">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_05" ID="{E30A729D-2544-4D63-9064-DDB2A56BC2E3}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="901285455"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_05" ID="{E30A729D-2544-4D63-9064-DDB2A56BC2E3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_04" ID="{5CB679B8-B01F-4B94-B159-7B676AE882B0}" ShortID="7671309">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_04" ID="{8D6A1B18-7BA2-49CC-86DF-8958074FEF95}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="702388435"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_04" ID="{8D6A1B18-7BA2-49CC-86DF-8958074FEF95}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_02" ID="{E001D385-6A2C-4B7C-AC1A-7A805A06701B}" ShortID="776226395">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_02" ID="{2D187BD9-9209-458C-9A14-8DB325ED48AF}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="954966903"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_02" ID="{2D187BD9-9209-458C-9A14-8DB325ED48AF}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Medusa" ID="{8E7867CE-7202-45AE-887C-396C9D33FADA}" ShortID="936777683">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+																			<RTPCList>
+																				<RTPC Name="" ID="{6FFA2A50-B095-451E-88DD-95C3E045273D}" ShortID="322851568">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{C64922B8-8833-475F-B1A2-2F57E566C756}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="BreathFast_06" ID="{E6BF14AE-5A20-4AF4-8DDE-3D3F53843893}" ShortID="527180599">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_06" ID="{1F7A5EC7-BF3F-42CB-AAC7-91632845A93F}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="359267327"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_06" ID="{1F7A5EC7-BF3F-42CB-AAC7-91632845A93F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_01" ID="{FC08B7ED-E77B-4A96-86C7-459D572EA6AC}" ShortID="828298200">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_01" ID="{01B8A6C3-15BF-4A34-A5FB-8919A796457D}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="858382067"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_01" ID="{01B8A6C3-15BF-4A34-A5FB-8919A796457D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_03" ID="{8C30776D-EE9E-41D6-8BA8-AF3ADF7FAD34}" ShortID="630086147">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_03" ID="{68D69D69-67C2-4A25-B31E-91524BFDF47F}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="449657686"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_03" ID="{68D69D69-67C2-4A25-B31E-91524BFDF47F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_05" ID="{EAA4E77B-5341-4D17-BA15-1CF827F7B181}" ShortID="962111829">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_05" ID="{57A9EB50-ACA1-43EF-BF4D-6E1E4DCF035D}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="901285455"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_05" ID="{57A9EB50-ACA1-43EF-BF4D-6E1E4DCF035D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_04" ID="{D8164EC7-90D0-400E-9B4C-167037794E0D}" ShortID="824284116">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_04" ID="{E10FAE6B-24B2-461E-B698-B3B56E325B4C}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="702388435"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_04" ID="{E10FAE6B-24B2-461E-B698-B3B56E325B4C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_02" ID="{A76BB7EC-E785-40FD-A149-3D2FA489FC98}" ShortID="176389868">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_02" ID="{56AF8B46-75F4-4836-83DC-4D04CE936CE5}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="954966903"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_02" ID="{56AF8B46-75F4-4836-83DC-4D04CE936CE5}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Don" ID="{241CFF48-B18C-47CF-BE5E-80E399EFCFD1}" ShortID="706295674">
+																	<PropertyList>
+																		<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																		<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																		<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+																		<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+																		<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+																			<RTPCList>
+																				<RTPC Name="" ID="{3FC19F1F-C990-4A3B-BE61-5F02B31F7A34}" ShortID="84903578">
+																					<ReferenceList>
+																						<Reference Name="ControlInput">
+																							<ObjectRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}" WorkUnitID="{4031D214-7ED6-4213-9F67-4B9266988D7F}"/>
+																						</Reference>
+																					</ReferenceList>
+																					<Curve Name="" ID="{C542D82E-30EA-4D76-8165-F597EAF718DB}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>100</XPos>
+																								<YPos>1</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</RTPC>
+																			</RTPCList>
+																		</Property>
+																		<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+																		<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+																		<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="BreathFast_06" ID="{AF5836B1-66F9-402A-BE29-9E5D6C4B950E}" ShortID="927523262">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_06" ID="{68BF8CCA-46B7-4E32-9593-EF8E1982CCFC}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="359267327"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_06" ID="{68BF8CCA-46B7-4E32-9593-EF8E1982CCFC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_01" ID="{0CBB9F63-587D-47BD-94AE-C901DD276889}" ShortID="790899553">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_01" ID="{FB6359D3-4A5B-4645-998E-377A13574A27}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_01.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="858382067"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_01" ID="{FB6359D3-4A5B-4645-998E-377A13574A27}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_03" ID="{B29D7EB2-9B52-415D-BF94-49E4157176FE}" ShortID="131090393">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_03" ID="{8884E701-DF48-44E4-A020-40D9FED062C6}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="449657686"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_03" ID="{8884E701-DF48-44E4-A020-40D9FED062C6}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_05" ID="{BA899955-598E-4DB2-ADFE-5F2D99303617}" ShortID="482948036">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_05" ID="{99ED5950-E511-45CA-B873-8E75EB282910}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="901285455"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_05" ID="{99ED5950-E511-45CA-B873-8E75EB282910}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_04" ID="{FB716068-0DCF-4E0B-BE07-9BF9C96A3A77}" ShortID="896321092">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_04" ID="{C764DAAF-8BFC-40B1-8027-67EB35DB5160}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="702388435"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_04" ID="{C764DAAF-8BFC-40B1-8027-67EB35DB5160}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="BreathFast_02" ID="{66E7C299-7437-478D-95C4-ABBE2B51E56B}" ShortID="68012645">
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="BreathFast_02" ID="{1B0E468F-6F15-496D-8123-F90E10CDFF77}">
+																					<Language>SFX</Language>
+																					<AudioFile>VO\BreathFast_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="954966903"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="BreathFast_02" ID="{1B0E468F-6F15-496D-8123-F90E10CDFF77}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="Don" ID="{241CFF48-B18C-47CF-BE5E-80E399EFCFD1}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Marta" ID="{DCFEB582-FC77-4B47-B49B-2863CE78A121}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Stan" ID="{D4BB5FC7-83C6-470B-A0B5-202FD9027EDD}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Medusa" ID="{8E7867CE-7202-45AE-887C-396C9D33FADA}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+																		<ItemList>
+																			<ItemRef Name="Stan" ID="{D4BB5FC7-83C6-470B-A0B5-202FD9027EDD}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Marta" ID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+																		<ItemList>
+																			<ItemRef Name="Marta" ID="{DCFEB582-FC77-4B47-B49B-2863CE78A121}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Medusa" ID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+																		<ItemList>
+																			<ItemRef Name="Medusa" ID="{8E7867CE-7202-45AE-887C-396C9D33FADA}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+																		<ItemList>
+																			<ItemRef Name="Don" ID="{241CFF48-B18C-47CF-BE5E-80E399EFCFD1}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+													</ChildrenList>
+												</BlendContainer>
+											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>
 								</ActorMixer>
-								<ActorMixer Name="Barks and Punchlines" ID="{196AAFD7-75C7-4E21-B013-F999D2F41E93}" ShortID="678302988">
-									<PropertyList>
-										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<ActorMixer Name="Barks" ID="{155A0383-3D45-4A0D-AD2C-8DF46C1DFC8A}" ShortID="698819222">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+											<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<ActorMixer Name="Punchlines" ID="{B67C3C66-9D78-4C28-BABF-F0F66BD9E399}" ShortID="793758739">
+										<ActorMixer Name="Jump" ID="{6BF859BD-CC55-460E-991F-E112BBDFF073}" ShortID="637762203">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 												</Reference>
 											</ReferenceList>
-											<ChildrenList>
-												<ActorMixer Name="Kill" ID="{EEEE7C23-C81B-4013-9FBB-BAB6B6DBE9CD}" ShortID="106424725">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<BlendContainer Name="Voice_Character1_Punchline_Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" ShortID="245671161">
-															<PropertyList>
-																<Property Name="Volume" Type="Real64">
-																	<ValueList>
-																		<Value>-7</Value>
-																	</ValueList>
-																</Property>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="Kill" ID="{B2E6ED85-8F23-43F4-A2D0-4A2264AB50F9}" ShortID="851013884">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="EndOfLine" ID="{CA984E13-0C62-4055-AC0C-7EF753370810}" ShortID="798971262">
-																			<PropertyList>
-																				<Property Name="IsVoice" Type="bool" Value="True"/>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-3</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}">
-																					<Language>English(US)</Language>
-																					<AudioFile>Characters\Character 1\Punchlines\Kill\End_Of_Line.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="1036351180"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																		<Sound Name="FishBarrel" ID="{4144198A-2ADA-43AF-99C9-33C34F6D6F39}" ShortID="633600436">
-																			<PropertyList>
-																				<Property Name="IsVoice" Type="bool" Value="True"/>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-3</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}">
-																					<Language>English(US)</Language>
-																					<AudioFile>Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="207219399"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-															</ChildrenList>
-														</BlendContainer>
-													</ChildrenList>
-												</ActorMixer>
-												<ActorMixer Name="Respawn" ID="{865B793B-0021-495F-83DD-B95294371A6E}" ShortID="248084407">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<BlendContainer Name="Voice_Character1_Punchline_Kill" ID="{F8377A70-21E7-49C4-9F75-E8C2DB76B7D7}" ShortID="73354566">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<RandomSequenceContainer Name="Respawn" ID="{C4CB1149-E9E3-4934-81AB-2AE354E311E4}" ShortID="397589004">
-																	<ReferenceList>
-																		<Reference Name="Conversion">
-																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																		</Reference>
-																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																		</Reference>
-																	</ReferenceList>
-																	<ChildrenList>
-																		<Sound Name="Easy Partner" ID="{D53509A1-6F63-45D6-80A9-FF06B7B81E77}" ShortID="1051898413">
-																			<PropertyList>
-																				<Property Name="IsVoice" Type="bool" Value="True"/>
-																				<Property Name="Volume" Type="Real64">
-																					<ValueList>
-																						<Value>-9</Value>
-																					</ValueList>
-																				</Property>
-																			</PropertyList>
-																			<ReferenceList>
-																				<Reference Name="Conversion">
-																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-																				</Reference>
-																				<Reference Name="OutputBus">
-																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-																				</Reference>
-																			</ReferenceList>
-																			<ChildrenList>
-																				<AudioFileSource Name="Easy_Partner" ID="{C92EF052-9B98-4149-95CC-441F6E82683F}">
-																					<Language>English(US)</Language>
-																					<AudioFile>Characters\Character 1\Punchlines\Respawn\Easy_Partner.wav</AudioFile>
-																					<MediaIDList>
-																						<MediaID ID="67942260"/>
-																					</MediaIDList>
-																				</AudioFileSource>
-																			</ChildrenList>
-																			<ActiveSourceList>
-																				<ActiveSource Name="Easy_Partner" ID="{C92EF052-9B98-4149-95CC-441F6E82683F}" Platform="Linked"/>
-																			</ActiveSourceList>
-																		</Sound>
-																	</ChildrenList>
-																</RandomSequenceContainer>
-															</ChildrenList>
-														</BlendContainer>
-													</ChildrenList>
-												</ActorMixer>
-											</ChildrenList>
 										</ActorMixer>
-										<ActorMixer Name="Barks" ID="{155A0383-3D45-4A0D-AD2C-8DF46C1DFC8A}" ShortID="698819222">
+										<ActorMixer Name="Hit" ID="{E81BC9E5-B497-4098-A1C5-A1E1AB3DAD53}" ShortID="1025619649">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+										</ActorMixer>
+										<ActorMixer Name="Death" ID="{904A4EA7-1A2B-4961-A6BF-FA653A676804}" ShortID="937058728">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<ActorMixer Name="Jump" ID="{6BF859BD-CC55-460E-991F-E112BBDFF073}" ShortID="637762203">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-												</ActorMixer>
-												<ActorMixer Name="Hit" ID="{E81BC9E5-B497-4098-A1C5-A1E1AB3DAD53}" ShortID="1025619649">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-														</Reference>
-													</ReferenceList>
-												</ActorMixer>
-												<ActorMixer Name="Death" ID="{904A4EA7-1A2B-4961-A6BF-FA653A676804}" ShortID="937058728">
+												<BlendContainer Name="VO_Char_Barks_Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" ShortID="603225822">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -303,23 +963,29 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<BlendContainer Name="Voice_Character1_Barks_Death" ID="{CBE2BC6D-1552-4ADB-80F0-5D8D426EF522}" ShortID="603225822">
+														<SwitchContainer Name="Death" ID="{A72A8833-D688-4B6B-8229-8230A2B2F38A}" ShortID="134927710">
 															<ReferenceList>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<RandomSequenceContainer Name="Death" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}" ShortID="744767379">
+																<RandomSequenceContainer Name="Stan" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}" ShortID="744767379">
 																	<ReferenceList>
 																		<Reference Name="Conversion">
 																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
 																		</Reference>
 																		<Reference Name="OutputBus">
-																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 																		</Reference>
 																	</ReferenceList>
 																	<ChildrenList>
@@ -328,7 +994,7 @@
 																				<Property Name="IsVoice" Type="bool" Value="True"/>
 																				<Property Name="Volume" Type="Real64">
 																					<ValueList>
-																						<Value>-5</Value>
+																						<Value>-4</Value>
 																					</ValueList>
 																				</Property>
 																			</PropertyList>
@@ -363,12 +1029,965 @@
 																				<ActiveSource Name="Death" ID="{F61EFC43-3C51-445B-A2BF-BE0029601769}" Platform="Linked"/>
 																			</ActiveSourceList>
 																		</Sound>
+																		<Sound Name="OOF" ID="{06B12A82-3E90-47EA-88F3-AF9647C8530F}" ShortID="186741232">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="OOF" ID="{C07B6315-85F4-4D1B-826E-7E08BD734423}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Barks\Death\OOF.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="868736131"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="OOF" ID="{C07B6315-85F4-4D1B-826E-7E08BD734423}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_24" ID="{28DDB91F-8A80-4024-814F-4C2264C142EB}" ShortID="619824313">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>2</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_24" ID="{13284A1F-A8EB-46E3-B5FF-DAEF6EEF4E96}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Barks\Death\VO_HumanPain_24.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="31087605"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_24" ID="{13284A1F-A8EB-46E3-B5FF-DAEF6EEF4E96}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_25" ID="{8FE80CD9-2DC3-4EB7-8C89-CB31CC2445B0}" ShortID="1052367995">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-1</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_25" ID="{7C1C5B04-B51B-451A-8CC1-E3ECCCF7BB1C}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Barks\Death\VO_HumanPain_25.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="595821729"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_25" ID="{7C1C5B04-B51B-451A-8CC1-E3ECCCF7BB1C}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_26" ID="{D6DAAD2A-855A-4CFF-AE8E-19DA7A54FCF9}" ShortID="805200325">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_26" ID="{B668DDA4-7857-420D-BFE6-7F93BECC4F32}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Barks\Death\VO_HumanPain_26.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1066536603"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_26" ID="{B668DDA4-7857-420D-BFE6-7F93BECC4F32}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_27" ID="{B0CA580F-FE2E-42CC-82B7-FADD44BEA32B}" ShortID="845785888">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_27" ID="{8B81E8D3-F985-4AF5-9795-CDEA2DE7ACED}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Barks\Death\VO_HumanPain_27.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="212118589"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_27" ID="{8B81E8D3-F985-4AF5-9795-CDEA2DE7ACED}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Marta" ID="{FC1A24F7-A650-4FC2-B711-2EC6CB88930E}" ShortID="258391073">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanDeath_07" ID="{CC989F55-F24C-497C-B8FE-C0EE7E7CC083}" ShortID="452920371">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_07" ID="{4A1F03F7-A307-4DF6-AF84-0377F18689F0}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Barks\Death\VO_HumanDeath_07.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="101667958"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_07" ID="{4A1F03F7-A307-4DF6-AF84-0377F18689F0}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanDeath_08" ID="{1D24F91F-4869-43A2-B83F-B577B0FF5E6E}" ShortID="602428977">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_08" ID="{175A9790-5491-47B0-B4A5-A9445396D860}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Barks\Death\VO_HumanDeath_08.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="411244311"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_08" ID="{175A9790-5491-47B0-B4A5-A9445396D860}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanDeath_17" ID="{839FBFD6-29D2-49CA-B1B7-C0BA59421B38}" ShortID="653868884">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_17" ID="{2B104583-4D98-4EAE-9772-A24D053E5A05}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Barks\Death\VO_HumanDeath_17.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="532287996"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_17" ID="{2B104583-4D98-4EAE-9772-A24D053E5A05}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Medusa" ID="{7A26CE95-1D02-43C4-AA64-82DD43439B8C}" ShortID="901955868">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanPain_05" ID="{CD588376-D769-435B-8E37-9200BE41E2B4}" ShortID="64734796">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_05" ID="{497512B2-3CF5-4016-8D37-0F4B6C67C12F}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Barks\Death\VO_HumanPain_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="99584252"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_05" ID="{497512B2-3CF5-4016-8D37-0F4B6C67C12F}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_06" ID="{4A0318EA-9B66-4E73-BDE4-8C9C322ECEC6}" ShortID="240526574">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_06" ID="{24A61EDC-0F16-4E92-A6D0-6110B8934528}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Barks\Death\VO_HumanPain_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="209691163"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_06" ID="{24A61EDC-0F16-4E92-A6D0-6110B8934528}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanPain_09" ID="{8C4AADC7-0FD1-4D93-A471-0B4403113780}" ShortID="292800007">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanPain_09" ID="{F5098F74-F3D9-4D18-9F8A-E027378E56CD}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Barks\Death\VO_HumanPain_09.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="766784710"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanPain_09" ID="{F5098F74-F3D9-4D18-9F8A-E027378E56CD}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Don" ID="{C437FA7A-756F-4A86-967E-0080E263A961}" ShortID="783027570">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-4</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanDeath_02" ID="{4841F583-18DC-4849-A5EB-CBC85E246AB0}" ShortID="566892479">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_02" ID="{9FA00102-A6A9-49A7-B55D-ACB951F5FF3E}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Barks\Death\VO_HumanDeath_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="28355165"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_02" ID="{9FA00102-A6A9-49A7-B55D-ACB951F5FF3E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanDeath_03" ID="{61B539DB-B473-4197-B6A5-8EA5C6C6E202}" ShortID="521342778">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_03" ID="{FFC4A6A1-C50E-4215-8B90-E9A0CF84940E}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Barks\Death\VO_HumanDeath_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="120648813"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_03" ID="{FFC4A6A1-C50E-4215-8B90-E9A0CF84940E}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanDeath_04" ID="{A0D8CD44-CD65-4B27-969C-589C03B41FB4}" ShortID="900476585">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_04" ID="{5A32BFD0-564D-43CE-932D-6294DCFFDB5B}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Barks\Death\VO_HumanDeath_04.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="605915400"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_04" ID="{5A32BFD0-564D-43CE-932D-6294DCFFDB5B}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanDeath_06" ID="{6CF45713-91E8-4C9C-BCB1-5F1D205E979D}" ShortID="1020075908">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanDeath_06" ID="{CE2B6F84-9C3A-4E40-B3B3-7CDF8BCA8EAB}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Barks\Death\VO_HumanDeath_06.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1057196584"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanDeath_06" ID="{CE2B6F84-9C3A-4E40-B3B3-7CDF8BCA8EAB}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
 																	</ChildrenList>
 																</RandomSequenceContainer>
 															</ChildrenList>
-														</BlendContainer>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="Don" ID="{C437FA7A-756F-4A86-967E-0080E263A961}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Medusa" ID="{7A26CE95-1D02-43C4-AA64-82DD43439B8C}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Stan" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Marta" ID="{FC1A24F7-A650-4FC2-B711-2EC6CB88930E}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+																		<ItemList>
+																			<ItemRef Name="Stan" ID="{71D9F9DD-8B9A-4E82-B491-8DCA69CE72F6}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Marta" ID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+																		<ItemList>
+																			<ItemRef Name="Marta" ID="{FC1A24F7-A650-4FC2-B711-2EC6CB88930E}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Medusa" ID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+																		<ItemList>
+																			<ItemRef Name="Medusa" ID="{7A26CE95-1D02-43C4-AA64-82DD43439B8C}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+																		<ItemList>
+																			<ItemRef Name="Don" ID="{C437FA7A-756F-4A86-967E-0080E263A961}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
 													</ChildrenList>
-												</ActorMixer>
+												</BlendContainer>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</ActorMixer>
+								<ActorMixer Name="Punchlines" ID="{B67C3C66-9D78-4C28-BABF-F0F66BD9E399}" ShortID="793758739">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<ActorMixer Name="Kill" ID="{EEEE7C23-C81B-4013-9FBB-BAB6B6DBE9CD}" ShortID="106424725">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<BlendContainer Name="VO_Char_Punchline_Kill" ID="{491197E7-AF61-44A5-81BA-A2FA4843E04D}" ShortID="245671161">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SwitchContainer Name="Kill" ID="{62B721F2-0116-47E7-B45C-23126B3AE234}" ShortID="358674874">
+															<PropertyList>
+																<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																</Reference>
+																<Reference Name="DefaultSwitchOrState">
+																	<ObjectRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																</Reference>
+																<Reference Name="SwitchGroupOrStateGroup">
+																	<ObjectRef Name="SWITCHES_General_Character" ID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}" WorkUnitID="{D2958D19-75B2-44EB-B94C-DD531CE26D4E}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<RandomSequenceContainer Name="Stan" ID="{AB37A2BA-0C56-4032-8692-EC419141B672}" ShortID="771830167">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>-4</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="FishBarrel" ID="{4144198A-2ADA-43AF-99C9-33C34F6D6F39}" ShortID="633600436">
+																			<PropertyList>
+																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="207219399"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="Like_Fish_Barrel" ID="{529B10DF-2DC5-417A-AC30-C0E595A43EF5}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="EndOfLine" ID="{CA984E13-0C62-4055-AC0C-7EF753370810}" ShortID="798971262">
+																			<PropertyList>
+																				<Property Name="3DSpatialization" Type="int16" Value="1"/>
+																				<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																				<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+																				<Property Name="Volume" Type="Real64">
+																					<ValueList>
+																						<Value>-3</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Character 1\Punchlines\Kill\End_Of_Line.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="1036351180"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="End_Of_Line" ID="{65FAAD84-3262-4ABE-8B83-A62ED1684AB9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Marta" ID="{3AE3EED6-5783-4DD3-BF79-18BD56BD8F40}" ShortID="631625730">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanLaugh_47" ID="{1CEAE5EC-1C41-4657-9A49-BB1AC97230A9}" ShortID="381774853">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_47" ID="{C43D57B0-9C8F-4B83-A4A6-48456FAEC1A9}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Punchlines\VO_HumanLaugh_47.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="99988190"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_47" ID="{C43D57B0-9C8F-4B83-A4A6-48456FAEC1A9}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_48" ID="{4EE1AB97-075A-4ABA-87CD-893F5A59B4D2}" ShortID="4081875">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_48" ID="{DF585ECD-5FF2-4DA3-B9E0-4A407FFEDCA1}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Punchlines\VO_HumanLaugh_48.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="563281959"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_48" ID="{DF585ECD-5FF2-4DA3-B9E0-4A407FFEDCA1}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_49" ID="{30CA69A7-52EE-43BF-9336-826E3C242CE3}" ShortID="455041461">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_49" ID="{FD412F11-D75D-476C-BDBE-4F450102D99D}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Marta\Punchlines\VO_HumanLaugh_49.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="873747909"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_49" ID="{FD412F11-D75D-476C-BDBE-4F450102D99D}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Medusa" ID="{357806E9-6D59-42DC-9952-F71CD6EC5B0E}" ShortID="728168051">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64">
+																			<ValueList>
+																				<Value>2</Value>
+																			</ValueList>
+																		</Property>
+																	</PropertyList>
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanLaugh_13" ID="{9F7E242E-8D6A-4176-A986-E32CBA025F83}" ShortID="291386286">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_13" ID="{8056FE86-1695-4AB3-84D0-64A018856682}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Punchlines\VO_HumanLaugh_13.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="384329771"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_13" ID="{8056FE86-1695-4AB3-84D0-64A018856682}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_14" ID="{E119D3BD-9B4E-4C8A-83A0-30F56324C5C1}" ShortID="703458030">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_14" ID="{D5B8B3E3-BC15-4931-9D05-F6D67098414B}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Punchlines\VO_HumanLaugh_14.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="524612748"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_14" ID="{D5B8B3E3-BC15-4931-9D05-F6D67098414B}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_17" ID="{40443449-3E96-49FF-B9E3-4B048911A98B}" ShortID="11469047">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_17" ID="{AE6085D1-722C-4B33-8D8F-FD6AE39A3FF3}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Medusa\Punchlines\VO_HumanLaugh_17.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="817738191"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_17" ID="{AE6085D1-722C-4B33-8D8F-FD6AE39A3FF3}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+																<RandomSequenceContainer Name="Don" ID="{5274BBF1-0BD5-484B-B6C4-A38C3A21A65E}" ShortID="410555360">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Voices" ID="{13455080-A3D2-4955-9F4F-6C04DFA35521}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<Sound Name="VO_HumanLaugh_02" ID="{B381E9F2-5596-4AC2-AC8F-182BE4C9F6D5}" ShortID="966261655">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_02" ID="{28CF38CA-1C3B-403C-B41A-BB0C9E758E65}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Punchline\VO_HumanLaugh_02.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="13666830"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_02" ID="{28CF38CA-1C3B-403C-B41A-BB0C9E758E65}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_03" ID="{6FFCB8B3-19BA-4263-B29F-5660DE09A1F0}" ShortID="500737099">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_03" ID="{57B52670-7982-4B5D-8E71-38B928BBD25A}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Punchline\VO_HumanLaugh_03.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="790679725"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_03" ID="{57B52670-7982-4B5D-8E71-38B928BBD25A}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																		<Sound Name="VO_HumanLaugh_05" ID="{EDF1F065-0637-465F-8D9C-AC6F78A9907C}" ShortID="20532334">
+																			<PropertyList>
+																				<Property Name="IsVoice" Type="bool" Value="True"/>
+																			</PropertyList>
+																			<ReferenceList>
+																				<Reference Name="Conversion">
+																					<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
+																				</Reference>
+																				<Reference Name="OutputBus">
+																					<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<ChildrenList>
+																				<AudioFileSource Name="VO_HumanLaugh_05" ID="{AB4BCC31-95D7-4E5E-81B1-AE02173E75EC}">
+																					<Language>English(US)</Language>
+																					<AudioFile>Characters\Don\Punchline\VO_HumanLaugh_05.wav</AudioFile>
+																					<MediaIDList>
+																						<MediaID ID="865212046"/>
+																					</MediaIDList>
+																				</AudioFileSource>
+																			</ChildrenList>
+																			<ActiveSourceList>
+																				<ActiveSource Name="VO_HumanLaugh_05" ID="{AB4BCC31-95D7-4E5E-81B1-AE02173E75EC}" Platform="Linked"/>
+																			</ActiveSourceList>
+																		</Sound>
+																	</ChildrenList>
+																</RandomSequenceContainer>
+															</ChildrenList>
+															<GroupingInfo>
+																<GroupingBehaviorList>
+																	<GroupingBehavior>
+																		<ItemRef Name="Stan" ID="{AB37A2BA-0C56-4032-8692-EC419141B672}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Marta" ID="{3AE3EED6-5783-4DD3-BF79-18BD56BD8F40}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Medusa" ID="{357806E9-6D59-42DC-9952-F71CD6EC5B0E}"/>
+																	</GroupingBehavior>
+																	<GroupingBehavior>
+																		<ItemRef Name="Don" ID="{5274BBF1-0BD5-484B-B6C4-A38C3A21A65E}"/>
+																	</GroupingBehavior>
+																</GroupingBehaviorList>
+																<GroupingList>
+																	<Grouping>
+																		<SwitchRef Name="Stanislas" ID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+																		<ItemList>
+																			<ItemRef Name="Stan" ID="{AB37A2BA-0C56-4032-8692-EC419141B672}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Marta" ID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+																		<ItemList>
+																			<ItemRef Name="Marta" ID="{3AE3EED6-5783-4DD3-BF79-18BD56BD8F40}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Medusa" ID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+																		<ItemList>
+																			<ItemRef Name="Medusa" ID="{357806E9-6D59-42DC-9952-F71CD6EC5B0E}"/>
+																		</ItemList>
+																	</Grouping>
+																	<Grouping>
+																		<SwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+																		<ItemList>
+																			<ItemRef Name="Don" ID="{5274BBF1-0BD5-484B-B6C4-A38C3A21A65E}"/>
+																		</ItemList>
+																	</Grouping>
+																</GroupingList>
+															</GroupingInfo>
+														</SwitchContainer>
+													</ChildrenList>
+												</BlendContainer>
 											</ChildrenList>
 										</ActorMixer>
 									</ChildrenList>

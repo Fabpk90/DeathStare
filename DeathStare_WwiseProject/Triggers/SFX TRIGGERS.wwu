@@ -6,9 +6,6 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
-			<ChildrenList>
-				<WorkUnit Name="MUSIC TRIGGERS" ID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}" PersistMode="Reference"/>
-			</ChildrenList>
 		</WorkUnit>
 	</Triggers>
 </WwiseDocument>

@@ -21,14 +21,14 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>1.50469</XPos>
+											<XPos>1.12852</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10.40751</XPos>
-											<YPos>-11.5092</YPos>
+											<XPos>3.88711</XPos>
+											<YPos>-12.37997</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log3</SegmentShape>
 										</Point>
