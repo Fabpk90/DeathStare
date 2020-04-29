@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="376471424" Name="RVB_Zone2" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone2" GUID="{B5C47425-A678-42A1-8FC5-FDE6A2BD525C}"/>
+				<AuxBus Id="376471425" Name="RVB_Zone3" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone3" GUID="{8213D1B2-A907-435C-8014-41B993836799}"/>
+				<AuxBus Id="376471427" Name="RVB_Zone1" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone1" GUID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}"/>
+				<AuxBus Id="376471430" Name="RVB_Zone4" ObjectPath="\Master-Mixer Hierarchy\DS MIX\Master\Aux\RVB_Zone4" GUID="{AB48812F-CA5F-4C29-8262-71D1EB9106EB}"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

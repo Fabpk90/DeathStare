@@ -78,7 +78,7 @@
 						<Action Name="" ID="{DD5782E9-0F61-4AA7-8D7E-53D8D757ED72}" ShortID="874712131">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<ObjectRef Name="STINGERS_DS_Stan_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,7 +89,7 @@
 						<Action Name="" ID="{80AF0DCE-45D2-496D-9131-82F392682356}" ShortID="153313126">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<ObjectRef Name="STINGERS_DS_Stan_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -237,6 +237,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="STINGERS_Kill_P3" ID="{90F3659A-5C6B-4B52-8ED7-8EE2A17C2490}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="SEGMENTS_MainMusic" ID="{14E7144B-2A19-4894-9F21-E2FECF76BD1A}">
+					<ChildrenList>
+						<Action Name="" ID="{FFED216A-2A7F-4126-8C51-37218996E7B2}" ShortID="132990588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SEGMENTS_MainMusic" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

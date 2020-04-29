@@ -1,0 +1,136 @@
+Event	ID	Name			Wwise Object Path	Notes
+	365611210	STINGERS_Kill_Don_R			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Don_R	
+	365611220	STINGERS_Kill_Don_L			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Don_L	
+	459653097	STINGERS_DS_Marta_L			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Marta_L	
+	459653111	STINGERS_DS_Marta_R			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Marta_R	
+	554142247	STINGERS_DS_Medusa_R			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Medusa_R	
+	554142265	STINGERS_DS_Medusa_L			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Medusa_L	
+	854864811	STINGERS_Kill_Stan_L			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Stan_L	
+	854864821	STINGERS_Kill_Stan_R			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Stan_R	
+	1290491939	STINGERS_DS_Don_L			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Don_L	
+	1290491965	STINGERS_DS_Don_R			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Don_R	
+	1704734930	SEGMENTS_MainMusic			\DS EVENTS\MUSIC EVENTS\SEGMENTS_MainMusic	
+	1724805132	STINGERS_Kill_Medusa_L			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Medusa_L	
+	1724805138	STINGERS_Kill_Medusa_R			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Medusa_R	
+	1926112901	SEGMENTS_DuelMusic			\DS EVENTS\MUSIC EVENTS\SEGMENTS_DuelMusic	
+	2011547304	STINGERS_DS_Stan_R			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Stan_R	
+	2011547318	STINGERS_DS_Stan_L			\DS EVENTS\MUSIC EVENTS\STINGERS_DS_Stan_L	
+	2299281128	STINGERS_Kill_P2			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P2	
+	2299281129	STINGERS_Kill_P3			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P3	
+	2299281131	STINGERS_Kill_P1			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P1	
+	2299281134	STINGERS_Kill_P4			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_P4	
+	2968734026	STINGERS_Kill_Marta_L			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Marta_L	
+	2968734036	STINGERS_Kill_Marta_R			\DS EVENTS\MUSIC EVENTS\STINGERS_Kill_Marta_R	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	957512978	STATE_Music_DuelState_Don			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Don	
+	1152474735	STATE_Music_DuelState_Stan			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Stan	
+	1498827748	STATE_Music_Main			\DS STATES\MUSIC STATES\STATE_Music_Main	
+	2940497260	STATE_Music_DuelState_Medusa			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Medusa	
+	3273751220	STATE_Music_DuelState_Marta			\DS STATES\MUSIC STATES\STATE_Music_DuelState\STATE_Music_DuelState_Marta	
+
+State	ID	Name	State Group			Notes
+	748895195	None	STATE_Music_DuelState_Don			
+	2452206122	False	STATE_Music_DuelState_Don			
+	3053630529	True	STATE_Music_DuelState_Don			
+	748895195	None	STATE_Music_DuelState_Stan			
+	2452206122	False	STATE_Music_DuelState_Stan			
+	3053630529	True	STATE_Music_DuelState_Stan			
+	748895195	None	STATE_Music_Main			
+	1585161430	Fight_Intro	STATE_Music_Main			
+	1714471738	Outro_Marta	STATE_Music_Main			
+	2851607052	Outro_Don	STATE_Music_Main			
+	3204829974	Outro_Medusa	STATE_Music_Main			
+	3604647259	MainMenu	STATE_Music_Main			
+	3762960553	Fight_Silence	STATE_Music_Main			
+	4201650965	Outro_Stan	STATE_Music_Main			
+	4258958663	Fight_End	STATE_Music_Main			
+	748895195	None	STATE_Music_DuelState_Medusa			
+	2452206122	False	STATE_Music_DuelState_Medusa			
+	3053630529	True	STATE_Music_DuelState_Medusa			
+	748895195	None	STATE_Music_DuelState_Marta			
+	2452206122	False	STATE_Music_DuelState_Marta			
+	3053630529	True	STATE_Music_DuelState_Marta			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	65872737	False	STATE_Music_DuelState_Marta	\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_CelliLoop		
+	185289956	False	STATE_Music_DuelState_Stan	\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_Violin2Loop		
+	187310372	False	STATE_Music_DuelState_Medusa	\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_Violin1Loop		
+	300534548	False	STATE_Music_DuelState_Don	\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_ViolasLoop		
+
+Trigger	ID	Name			Wwise Object Path	Notes
+	529325935	TRIGGER_DS_Stan_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Stan_R	
+	529325937	TRIGGER_DS_Stan_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Stan_L	
+	1594170703	TRIGGER_Kill_Medusa_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Medusa_L	
+	1594170705	TRIGGER_Kill_Medusa_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Medusa_R	
+	1870033824	TRIGGER_Kill_Stan_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Stan_L	
+	1870033854	TRIGGER_Kill_Stan_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Stan_R	
+	2046853094	TRIGGER_DS_Don_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Don_L	
+	2046853112	TRIGGER_DS_Don_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Don_R	
+	2839118456	TRIGGER_Kill_P1			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_P1	
+	2839118458	TRIGGER_Kill_P3			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_P3	
+	2839118459	TRIGGER_Kill_P2			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_P2	
+	2839118461	TRIGGER_Kill_P4			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_P4	
+	2960638048	TRIGGER_DS_Marta_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Marta_L	
+	2960638078	TRIGGER_DS_Marta_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Marta_R	
+	3533683343	TRIGGER_Kill_Don_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Don_R	
+	3533683345	TRIGGER_Kill_Don_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Don_L	
+	3648566731	TRIGGER_Kill_Marta_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Marta_L	
+	3648566741	TRIGGER_Kill_Marta_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\Kill\TRIGGER_Kill_Marta_R	
+	4277786702	TRIGGER_DS_Medusa_L			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Medusa_L	
+	4277786704	TRIGGER_DS_Medusa_R			\DS TRIGGERS\MUSIC TRIGGERS\Stingers\DeathStare\TRIGGER_DS_Medusa_R	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	19652934	Segments_Duel_Violin1Loop	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Duel\Segments_Duel_Violin1Loop_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_Violin1Loop		547099
+	46506750	Segments_Duel_Violin2Loop	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Duel\Segments_Duel_Violin2Loop_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_Violin2Loop		530564
+	123246559	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		591470
+	171571049	DrumKit	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Drumkit_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\DrumKit		883552
+	182886624	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_005_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		268767
+	186120177	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_005_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		297539
+	202254220	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_007_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		144425
+	242819915	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		94347
+	261850193	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		266197
+	266327702	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_005_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		148150
+	285054235	Segments_Fight_EndLoop_001_Banjo_000	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Banjo_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\Segments_Fight_EndLoop_001_Banjo_000		840166
+	323243085	Segments_Fight_EndLoop_001_Accordeon_000	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Accordeon_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\Segments_Fight_EndLoop_001_Accordeon_000		709630
+	350732487	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_003_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		303186
+	353834140	Segments_Duel_CelliLoop	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Duel\Segments_Duel_CelliLoop_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_CelliLoop		517210
+	371187270	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_004_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		398249
+	372446375	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		320826
+	425417005	AccGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\AccGtr		453959
+	488594087	STINGERS_Kill_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\Kills\STINGERS_Kill_Don_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\Kill\STINGERS_Kill_Don_L\STINGERS_Kill_Don		387595
+	507203963	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		287363
+	515118085	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		296780
+	519564728	CombatMusic_Test1_Launch	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\CombatMusic_Test1_Launch_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\CombatMusic_Test1_Launch\CombatMusic_Test1_Launch		2897109
+	545061261	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		249744
+	545547126	ElecGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_ElecGtr_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\ElecGtr		494812
+	552167880	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_005_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		300885
+	556592728	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		262820
+	590380662	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_006_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		153242
+	610886810	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		292949
+	616109991	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_006_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		465420
+	624186810	Bass	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Bass_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\Bass		644941
+	626168802	STINGERS_Kill_Stan	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\Kills\STINGERS_Kill_Stan_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\Kill\STINGERS_Kill_P3\STINGERS_Kill_Stan		370086
+	635846287	AccGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\AccGtr		572260
+	648061523	DrumKit	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Drumkit_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\DrumKit		795525
+	701999234	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_004_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		214394
+	714366655	ElecGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_ElecGtr_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\ElecGtr		570627
+	718592240	Stingers_DeathStare_Don	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Don_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Don_L\Stingers_DeathStare_Don		328893
+	738237128	AccGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\AccGtr		502588
+	742550713	STINGERS_Kill_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\Kills\STINGERS_Kill_Medusa_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\Kill\STINGERS_Kill_Medusa_R\STINGERS_Kill_Medusa		379597
+	841085410	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_004_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		290305
+	852245913	DrumKit	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Drumkit_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\DrumKit		922578
+	877440624	DrumKit	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Drumkit_003_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\DrumKit		790800
+	880087353	Stingers_DeathStare_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Marta_003_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Marta_L\Stingers_DeathStare_Marta		307221
+	892660261	CombatMusic_Test1_Loop	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\CombatMusic_Test1_Loop_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\CombatMusic_Test1_Loop\CombatMusic_Test1_Loop		4009779
+	903170528	ElecGtr	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_ElecGtr_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\ElecGtr		525924
+	912087750	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_004_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		174245
+	932992452	Bass	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Fight\Segments_Fight_EndLoop_001_Bass_000_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\SEGMENTS_MainMusic\Fighting\Segments_Fight_End2\Bass		603992
+	942806768	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_002_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		121841
+	954973998	Stingers_DeathStare_Medusa	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Medusa_003_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Medusa_L\Stingers_DeathStare_Medusa		154146
+	976832013	STINGERS_Kill_Marta	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\Kills\STINGERS_Kill_Marta_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\Kill\STINGERS_Kill_Marta_R\STINGERS_Kill_Marta		409936
+	992862984	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_003_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		199283
+	1040627007	Segments_Duel_ViolasLoop	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Duel\Segments_Duel_ViolasLoop_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Fight\Duel Music\DuelMusic\Segments_Duel_ViolasLoop		524896
+	1041136182	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_006_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		263297
+	1064606260	Stingers_DeathStare_Stanislas	D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Mac\SFX\Music\Stingers\DeathStare\Stingers_DeathStare_Stanislas_001_073B4D0C.wem		\Interactive Music Hierarchy\DS MUSIC\MAIN\Stingers\DeathStare\STINGERS_DS_Stan_R\Stingers_DeathStare_Stanislas		260450
+

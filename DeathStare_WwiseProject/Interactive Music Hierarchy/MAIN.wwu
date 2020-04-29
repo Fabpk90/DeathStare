@@ -406,7 +406,7 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
-								<MusicSegment Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" ShortID="176623804">
+								<MusicSegment Name="STINGERS_DS_Stan_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" ShortID="176623804">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="10000"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -815,7 +815,7 @@
 										</MusicCue>
 									</CueList>
 								</MusicSegment>
-								<MusicSegment Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" ShortID="215420276">
+								<MusicSegment Name="STINGERS_DS_Stan_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" ShortID="215420276">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="10000"/>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -3322,6 +3322,19 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Segments_Duel_ViolasLoop" ID="{6F3CAAEF-94E0-4AC6-AEE8-101FEBB0F169}" ShortID="97588246">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
@@ -3382,6 +3395,17 @@
 										</MusicTrack>
 										<MusicTrack Name="Segments_Duel_Violin1Loop" ID="{F8C20EF5-00D0-41F7-A850-6AB36FB53E7C}" ShortID="507291116">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -3448,6 +3472,17 @@
 										</MusicTrack>
 										<MusicTrack Name="Segments_Duel_Violin2Loop" ID="{0653CF5D-DD58-4CF2-A077-DF18CB3FE629}" ShortID="1011515189">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-1</Value>
@@ -3513,6 +3548,19 @@
 											</SequenceList>
 										</MusicTrack>
 										<MusicTrack Name="Segments_Duel_CelliLoop" ID="{0FFF253E-E425-4D01-8F53-867BA9C3C6DB}" ShortID="825453225">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
@@ -3612,7 +3660,7 @@
 						</MusicPlaylistContainer>
 					</ChildrenList>
 				</Folder>
-				<MusicSwitchContainer Name="MainMusic" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" ShortID="238987031">
+				<MusicSwitchContainer Name="SEGMENTS_MainMusic" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" ShortID="238987031">
 					<PropertyList>
 						<Property Name="ContinuePlay" Type="bool" Value="False"/>
 						<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
@@ -4636,10 +4684,16 @@
 					</TransitionList>
 					<StingerList>
 						<MusicStinger Name="" ID="{B06C7655-A023-4192-A017-0EE20E45595B}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+							</PropertyList>
 							<TriggerRef Name="TRIGGER_DS_Don_L" ID="{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 							<SegmentRef Name="STINGERS_DS_Don_L" ID="{EE3017C2-583A-488C-9612-0A3B9034E8FC}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 						<MusicStinger Name="" ID="{26AC6152-E3A2-47A8-A64D-957AF0AF2B2F}">
+							<PropertyList>
+								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
+							</PropertyList>
 							<TriggerRef Name="TRIGGER_DS_Don_R" ID="{966E938A-496B-40B5-A721-DCBA921AD2C9}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 							<SegmentRef Name="STINGERS_DS_Don_R" ID="{185810B5-4555-45DA-934A-198F9B2EB52C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
@@ -4675,15 +4729,15 @@
 							<PropertyList>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
-							<TriggerRef Name="TRIGGER_DS_Stanislas_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-							<SegmentRef Name="STINGERS_DS_Stanislas_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+							<TriggerRef Name="TRIGGER_DS_Stan_L" ID="{7AEB2E13-8238-4097-9912-7BEC99845B8B}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_DS_Stan_L" ID="{27647481-2F8D-4DFE-BCAF-F78F095FF020}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 						<MusicStinger Name="" ID="{8AE50638-F870-4200-BB21-AF83A8128F17}">
 							<PropertyList>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
-							<TriggerRef Name="TRIGGER_DS_Stanislas_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
-							<SegmentRef Name="STINGERS_DS_Stanislas_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+							<TriggerRef Name="TRIGGER_DS_Stan_R" ID="{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<SegmentRef Name="STINGERS_DS_Stan_R" ID="{CD79CD01-00BB-4DB6-BCF5-DBB7487E0970}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 						<MusicStinger Name="" ID="{63F3A336-734F-4F50-A3A6-D07C9BE4DB51}">
 							<PropertyList>
@@ -4731,14 +4785,14 @@
 							<PropertyList>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
-							<TriggerRef Name="TRIGGER_Kill_Stanislas_L" ID="{E4AB426D-FB30-47CC-8335-551EC2356A15}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<TriggerRef Name="TRIGGER_Kill_Stan_L" ID="{E4AB426D-FB30-47CC-8335-551EC2356A15}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 							<SegmentRef Name="STINGERS_Kill_Stan_L" ID="{BF70FF26-69FD-4EF8-BB77-32470E3B08E7}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 						<MusicStinger Name="" ID="{8D48C2C7-2AE6-4AA7-8F4D-F56AA263E24C}">
 							<PropertyList>
 								<Property Name="PlaySegmentAt" Type="int16" Value="1"/>
 							</PropertyList>
-							<TriggerRef Name="TRIGGER_Kill_Stanislas_R" ID="{74246316-18FB-49A3-B635-13BDB43493D1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
+							<TriggerRef Name="TRIGGER_Kill_Stan_R" ID="{74246316-18FB-49A3-B635-13BDB43493D1}" WorkUnitID="{143DBAD5-A8A2-44AD-998B-4B6ECD1C25FD}"/>
 							<SegmentRef Name="STINGERS_Kill_Stan_R" ID="{E0A39ACE-58CF-4EB8-887F-A52735C8854C}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 						</MusicStinger>
 						<MusicStinger Name="" ID="{8312E677-9C02-4900-8D17-396C4989FCD7}">

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\English(US)\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Documents\- ENJMIN\- PROJETS\H - Mini Projet\Repo\DeathStare\DeathStare_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="133924915" GUID="{A5900404-D394-4423-BA7D-A679D4EC3E8A}" Language="English(US)">
+			<ObjectPath>\SoundBanks\DS SNB\VOICE SNB\VOICE_SNB</ObjectPath>
+			<ShortName>VOICE_SNB</ShortName>
+			<Path>English(US)\VOICE_SNB.bnk</Path>
+			<IncludedEvents>
+				<Event Id="107050159" Name="Stop_VO_Char_Breath_Damage" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\Stop_VO_Char_Breath_Damage" GUID="{F057010B-212B-478D-8E00-2B326AD2B7F5}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3151326768" Name="VO_Char_Barks_Death" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Barks_Death" GUID="{48FE1229-B3E5-47BF-BAFE-6959CA904C26}" DurationType="OneShot" DurationMin="0.412729" DurationMax="3.948062">
+					<IncludedMemoryFiles>
+						<File Id="28355165" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_02.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_02_755F56E2.wem</Path>
+						</File>
+						<File Id="31087605" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_24.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_24_755F56E2.wem</Path>
+						</File>
+						<File Id="99584252" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_05.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_05_755F56E2.wem</Path>
+						</File>
+						<File Id="101667958" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_07.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_07_755F56E2.wem</Path>
+						</File>
+						<File Id="120648813" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_03.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_03_755F56E2.wem</Path>
+						</File>
+						<File Id="209691163" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_06.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_06_755F56E2.wem</Path>
+						</File>
+						<File Id="212118589" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_27.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_27_755F56E2.wem</Path>
+						</File>
+						<File Id="411244311" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_08.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_08_755F56E2.wem</Path>
+						</File>
+						<File Id="532287996" Language="English(US)">
+							<ShortName>Characters\Marta\Barks\Death\VO_HumanDeath_17.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Barks\Death\VO_HumanDeath_17_755F56E2.wem</Path>
+						</File>
+						<File Id="595821729" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_25.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_25_755F56E2.wem</Path>
+						</File>
+						<File Id="605915400" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_04.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_04_755F56E2.wem</Path>
+						</File>
+						<File Id="766784710" Language="English(US)">
+							<ShortName>Characters\Medusa\Barks\Death\VO_HumanPain_09.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Barks\Death\VO_HumanPain_09_755F56E2.wem</Path>
+						</File>
+						<File Id="868736131" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\OOF.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\OOF_755F56E2.wem</Path>
+						</File>
+						<File Id="1002341506" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\Death.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\Death_D309D571.wem</Path>
+						</File>
+						<File Id="1057196584" Language="English(US)">
+							<ShortName>Characters\Don\Barks\Death\VO_HumanDeath_06.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Barks\Death\VO_HumanDeath_06_755F56E2.wem</Path>
+						</File>
+						<File Id="1066536603" Language="English(US)">
+							<ShortName>Characters\Character 1\Barks\Death\VO_HumanPain_26.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Barks\Death\VO_HumanPain_26_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="1002341506"/>
+								<File Id="868736131"/>
+								<File Id="31087605"/>
+								<File Id="595821729"/>
+								<File Id="1066536603"/>
+								<File Id="212118589"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="101667958"/>
+								<File Id="411244311"/>
+								<File Id="532287996"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="99584252"/>
+								<File Id="209691163"/>
+								<File Id="766784710"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="28355165"/>
+								<File Id="120648813"/>
+								<File Id="605915400"/>
+								<File Id="1057196584"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="3140263292" Name="VO_Char_Breath_Damage" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Breath_Damage" GUID="{251FDAF2-555F-4A58-994A-06FC4C1AA708}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="359267327" Language="SFX">
+							<ShortName>VO\BreathFast_06.wav</ShortName>
+							<Path>SFX\VO\BreathFast_06_755F56E2.wem</Path>
+						</File>
+						<File Id="449657686" Language="SFX">
+							<ShortName>VO\BreathFast_03.wav</ShortName>
+							<Path>SFX\VO\BreathFast_03_755F56E2.wem</Path>
+						</File>
+						<File Id="702388435" Language="SFX">
+							<ShortName>VO\BreathFast_04.wav</ShortName>
+							<Path>SFX\VO\BreathFast_04_755F56E2.wem</Path>
+						</File>
+						<File Id="858382067" Language="SFX">
+							<ShortName>VO\BreathFast_01.wav</ShortName>
+							<Path>SFX\VO\BreathFast_01_755F56E2.wem</Path>
+						</File>
+						<File Id="901285455" Language="SFX">
+							<ShortName>VO\BreathFast_05.wav</ShortName>
+							<Path>SFX\VO\BreathFast_05_755F56E2.wem</Path>
+						</File>
+						<File Id="954966903" Language="SFX">
+							<ShortName>VO\BreathFast_02.wav</ShortName>
+							<Path>SFX\VO\BreathFast_02_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="359267327"/>
+								<File Id="858382067"/>
+								<File Id="449657686"/>
+								<File Id="901285455"/>
+								<File Id="702388435"/>
+								<File Id="954966903"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="4274014911" Name="VO_Char_Punchline_Kill" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Punchline_Kill" GUID="{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}" DurationType="OneShot" DurationMin="1.987875" DurationMax="3.949771">
+					<IncludedMemoryFiles>
+						<File Id="13666830" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_02.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_02_755F56E2.wem</Path>
+						</File>
+						<File Id="99988190" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_47.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_47_755F56E2.wem</Path>
+						</File>
+						<File Id="207219399" Language="English(US)">
+							<ShortName>Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Punchlines\Kill\Like_Fish_Barrel_755F56E2.wem</Path>
+						</File>
+						<File Id="384329771" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_13.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_13_755F56E2.wem</Path>
+						</File>
+						<File Id="524612748" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_14.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_14_755F56E2.wem</Path>
+						</File>
+						<File Id="563281959" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_48.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_48_755F56E2.wem</Path>
+						</File>
+						<File Id="790679725" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_03.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_03_755F56E2.wem</Path>
+						</File>
+						<File Id="817738191" Language="English(US)">
+							<ShortName>Characters\Medusa\Punchlines\VO_HumanLaugh_17.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Medusa\Punchlines\VO_HumanLaugh_17_755F56E2.wem</Path>
+						</File>
+						<File Id="865212046" Language="English(US)">
+							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_05.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Don\Punchline\VO_HumanLaugh_05_755F56E2.wem</Path>
+						</File>
+						<File Id="873747909" Language="English(US)">
+							<ShortName>Characters\Marta\Punchlines\VO_HumanLaugh_49.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Marta\Punchlines\VO_HumanLaugh_49_755F56E2.wem</Path>
+						</File>
+						<File Id="1036351180" Language="English(US)">
+							<ShortName>Characters\Character 1\Punchlines\Kill\End_Of_Line.wav</ShortName>
+							<Path>Voices\English(US)\Characters\Character 1\Punchlines\Kill\End_Of_Line_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="207219399"/>
+								<File Id="1036351180"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
+							<Media>
+								<File Id="99988190"/>
+								<File Id="563281959"/>
+								<File Id="873747909"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}">
+							<Media>
+								<File Id="384329771"/>
+								<File Id="524612748"/>
+								<File Id="817738191"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
+							<Media>
+								<File Id="13666830"/>
+								<File Id="790679725"/>
+								<File Id="865212046"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3664139661" Name="RTPC_Character_Health" ObjectPath="\Game Parameters\DS RTPC\GENERAL RTPC\Characters\Health\RTPC_Character_Health" GUID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="3424733800" Name="SWITCHES_General_Character" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character" GUID="{9DAC723B-00E9-4DF5-883B-07F8F839D2C9}">
+					<Switches>
+						<Switch Id="1986576095" Name="Stanislas" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Stanislas" GUID="{4C382281-7FAC-4DD1-B692-B02E92399DA5}"/>
+						<Switch Id="1358509506" Name="Marta" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Marta" GUID="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}"/>
+						<Switch Id="2609729838" Name="Medusa" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Medusa" GUID="{D598D9B9-8A2F-4A38-BA2F-BF955F036EFA}"/>
+						<Switch Id="546651172" Name="Don" ObjectPath="\Switches\DS SWITCHES\GENERAL SWITCHES\Character\SWITCHES_General_Character\Don" GUID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
