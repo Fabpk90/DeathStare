@@ -49,6 +49,7 @@ public class FirstPersonController : MonoBehaviour
     private static readonly int Velocity = Animator.StringToHash("Velocity");
 
     public GameObject feet;
+    private static readonly int Backwards = Animator.StringToHash("Backwards");
 
     // Use this for initialization
     private void Start()
@@ -114,6 +115,7 @@ public class FirstPersonController : MonoBehaviour
     private void FixedUpdate()
     {
         UpdateMovementState();
+        UpdateAnimationSpeed();
         float speed = GetSpeedFromState() * m_Input.magnitude;
         
 
@@ -151,6 +153,21 @@ public class FirstPersonController : MonoBehaviour
         ProgressStepCycle(speed);
     }
 
+    private void UpdateAnimationSpeed()
+    {
+        float magnitude = m_Input.magnitude;
+
+        if (!_isStaring && m_CharacterController.isGrounded && magnitude > 0)
+        {
+            animator.SetFloat(Backwards, m_Input.y > 0 ? 1 : -1);
+            animator.speed = Mathf.Clamp01(magnitude + 0.2f);
+        }
+        else
+            animator.speed = 1.0f;
+
+        //todo reverse the animation if going backwards
+    }
+
     private void UpdateMovementState()
     {
         if (_isStaring)
@@ -176,10 +193,6 @@ public class FirstPersonController : MonoBehaviour
 
     private float GetSpeedFromState()
     {
-        if (_isCrouching)
-            return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
-        if (_isRunning)
-            return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
         if (_isStaring)
         {
             if (m_CharacterController.isGrounded)
@@ -187,9 +200,12 @@ public class FirstPersonController : MonoBehaviour
 
             return m_Input.y > 0 ? _settingsData.stareAerialSpeedForward : _settingsData.stareAerialSpeedBackwards;
         }
-
         if (!m_CharacterController.isGrounded)
             return m_Input.y > 0 ? _settingsData.aerialSpeedForward : _settingsData.aerialSpeedBackwards;
+        if (_isCrouching)
+            return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
+        if (_isRunning)
+            return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
 
         return m_Input.y > 0 ? _settingsData.walkSpeedForward : _settingsData.walkSpeedBackwards;
     }
@@ -267,6 +283,7 @@ public class FirstPersonController : MonoBehaviour
 
     public void ToggleCrouch()
     {
+        if(!m_CharacterController.isGrounded) return;
         _isCrouching = !_isCrouching;
 
         animator.SetBool(Crouching, _isCrouching);
