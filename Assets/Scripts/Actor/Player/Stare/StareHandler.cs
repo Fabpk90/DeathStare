@@ -23,7 +23,8 @@ public class StareHandler : MonoBehaviour
    public float stareForce;
 
    private PlayerController _controller;
-   public StareVignetteManager VignetteManager;
+	// public StareVignetteManager VignetteManager;
+	public PlayerUIManager UIManager;
 
    public bool debugRay;
 
@@ -51,7 +52,8 @@ public class StareHandler : MonoBehaviour
       playersHitDuringThisFrame.Clear();
 
       bool found = false;
-      var viewHeight = VignetteManager.GetViewHeight();
+		// var viewHeight = VignetteManager.GetViewHeight();
+		var viewHeight = UIManager.GetViewHeight();
 
       foreach (HittablePoint point in HittablePoints)
       {
