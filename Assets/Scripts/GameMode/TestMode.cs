@@ -180,7 +180,7 @@ public class TestMode : GameMode
 
     //Creating this because the unity's system doesn't work
     private void InitPlayersCamera()
-    {
+    {/*
         var playerCam = players[0].GetComponentInChildren<Camera>();
 
         Rect camRect = playerCam.rect;
@@ -206,6 +206,6 @@ public class TestMode : GameMode
         {
             //players[i].GetComponentInChildren<MeshRenderer>().material.color = playersColor[i];
         }
-        
+        */
     }
 }
