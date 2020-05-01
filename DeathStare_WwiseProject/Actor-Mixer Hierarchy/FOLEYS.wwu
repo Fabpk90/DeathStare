@@ -16054,9 +16054,6 @@
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
 										</Reference>
-										<Reference Name="UserAuxSend0">
-											<ObjectRef Name="RVB_Zone4" ID="{AB48812F-CA5F-4C29-8262-71D1EB9106EB}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-										</Reference>
 									</ReferenceList>
 									<ChildrenList>
 										<BlendContainer Name="Foleys_Props_Bell" ID="{C96D9D8A-95D2-4D75-B63F-129CD5891035}" ShortID="759380670">

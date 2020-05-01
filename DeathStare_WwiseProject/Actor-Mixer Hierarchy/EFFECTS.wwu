@@ -76,7 +76,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
@@ -282,9 +282,6 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-														</Reference>
-														<Reference Name="UserAuxSend0">
-															<ObjectRef Name="RVB_Zone1" ID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>

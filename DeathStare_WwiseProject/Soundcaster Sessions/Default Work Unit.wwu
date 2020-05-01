@@ -76,6 +76,48 @@
 						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="Ambiance" ID="{37C44C95-7519-4A28-9804-99CFD73E6E32}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="AMB_Bed_Waves" ID="{B32E55E4-BF26-47B6-BF75-606F97F6145C}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Bed_Sea" ID="{42CAA89A-975D-4BFC-A470-BF117C9EB76B}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Bed_Wind" ID="{3D21AB75-8410-4A17-89DA-1A64785A3682}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Sshots_Long" ID="{01928392-A514-4453-977D-215FFD9DBE10}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="AMB_Sshots_Shots" ID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+							<Value>89.0701468189233</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{5359D31B-3146-494B-B780-C7A110A3023B}"/>
+						<CurrentStateRef Name="None" ID="{911D111C-F807-4E0D-8FE9-4D395DEF7F8A}"/>
+						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
+						<CurrentStateRef Name="None" ID="{9FE1C308-5F79-48F5-91A1-E4A6C444F9FB}"/>
+						<CurrentStateRef Name="None" ID="{3D20E4EA-9DAE-495A-B33A-DE138FC80716}"/>
+						<CurrentStateRef Name="None" ID="{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>
