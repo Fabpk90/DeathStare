@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using Actor;
 using Actor.Player;
-using Actor.Player.Stare;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityStandardAssets.Characters.FirstPerson;
@@ -25,6 +24,8 @@ public class PlayerController : MonoBehaviour
     public event EventHandler OnRespawn;
 
     public PlayerAudioManager playerAudioManager;
+
+    private LayerMask layer;
     
     // Start is called before the first frame update
     void Start()
@@ -46,6 +47,9 @@ public class PlayerController : MonoBehaviour
         //SOUND
         AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         //SOUND
+
+        layer = LayerMask.GetMask("J" + GetPlayerIndex() + "Body");
+        stareHandler.layerRay = layer;
     }
 
     public int GetPlayerIndex()

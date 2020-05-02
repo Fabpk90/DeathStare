@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using Actor;
 using Actor.Hittable;
-using Actor.Player.Stare;
 using UnityEngine;
 
 public class StareHandler : MonoBehaviour
@@ -28,9 +27,18 @@ public class StareHandler : MonoBehaviour
 
    public bool debugRay;
 
+   public LayerMask layerRay;
+
    public event EventHandler OnStareStart;
+   //fired on hitting someone
    public event EventHandler<int> OnStareTouch;
    public event EventHandler OnStareStop;
+
+   public event EventHandler<List<int>> OnDuelStart; 
+   public event EventHandler<List<int>> OnDuelContinue; 
+   public event EventHandler<int> OnDuelStop;
+   private List<int> actorsInDuel;
+   private bool alreadyInDuel;
    
    private void Awake()
    {
@@ -40,6 +48,7 @@ public class StareHandler : MonoBehaviour
       targetToAttack = new List<IHittable>(25);
       playersHitDuringThisFrame = new List<PlayerController>(3);
       _playerKilledDuringFrame = new List<PlayerController>(3);
+      actorsInDuel = new List<int>(3);
    }
 
    /// <summary>
@@ -69,7 +78,7 @@ public class StareHandler : MonoBehaviour
                RaycastHit hitInfo;
                var worldRay = camera.ViewportPointToRay(viewportPoint);
 
-               if(Physics.Raycast(worldRay, out hitInfo))
+               if(Physics.Raycast(worldRay, out hitInfo, layerRay))
                {
                   if (debugRay)
                   {
@@ -87,7 +96,6 @@ public class StareHandler : MonoBehaviour
                
                      _hitDuringThisFrame.Add(point.healthManager);
                      found = true;
-                     
                      
                      PlayerController p = point.healthManager.GetComponent<PlayerController>();
 
@@ -123,61 +131,63 @@ public class StareHandler : MonoBehaviour
    private void LateUpdate()
    {
       if(!isStaring) return;
-      
+      actorsInDuel.Clear();
+
       foreach (PlayerController playerController in playersHitDuringThisFrame)
       {
-         if (playerController)
+         if (!playerController) continue;
+         
+         //is he/she staring at us ?
+         if (!playerController.stareHandler.playersHitDuringThisFrame.Contains(_controller))
          {
-            //is he/she staring at us ?
-            if (!playerController.stareHandler.playersHitDuringThisFrame.Contains(_controller))
+            //Sound
+            switch (playerController.GetPlayerIndex())
             {
-                    //Sound
-                    switch (playerController.GetPlayerIndex())
-                    {
-                        case (0):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
-                            break;
-                        case (1):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
-                            break;
-                        case (2):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
-                            break;
-                        case (3):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
-                            break;
-                    }
-                    //Sound
-                    //WE DESTROY DAT MF !
-                    if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
-               {
-                  //the mf is ded
-                  _playerKilledDuringFrame.Add(playerController);
-               }
+               case (0):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "False");
+                  break;
+               case (1):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
+                  break;
+               case (2):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
+                  break;
+               case (3):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+                  break;
+            }
+            //Sound
+            
+            //WE DESTROY DAT MF !
+            if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
+            {
+               //the mf is ded
+               _playerKilledDuringFrame.Add(playerController);
+            }
 
-            }
-            else // it's staring back at us !
+         }
+         else // it's staring back at us !
+         {
+            actorsInDuel.Add(playerController.GetPlayerIndex());
+           // print("Duel with " + playerController.GetComponent<HealthManager>().transform.gameObject);
+            //Sound
+            switch (playerController.GetPlayerIndex())
             {
-                    print("Duel with " + playerController.GetComponent<HealthManager>().transform.gameObject);
-                    //Sound
-                    switch (playerController.GetPlayerIndex())
-                    {
-                        case (0):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "True");
-                            break;
-                        case (1):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "True");
-                            break;
-                        case (2):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "True");
-                            break;
-                        case (3):
-                            AkSoundEngine.SetState("STATE_Music_DuelState_Don", "True");
-                            break;
-                    }
-                    //Sound
-                }
+               case (0):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Stan", "True");
+                  break;
+               case (1):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "True");
+                  break;
+               case (2):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "True");
+                  break;
+               case (3):
+                  AkSoundEngine.SetState("STATE_Music_DuelState_Don", "True");
+                  break;
             }
+            //Sound
+         }
       }
 
       foreach (PlayerController controller in _playerKilledDuringFrame)
@@ -186,9 +196,25 @@ public class StareHandler : MonoBehaviour
       }
       
       _playerKilledDuringFrame.Clear();
+
+      if (actorsInDuel.Count > 0)
+      {
+         if (!alreadyInDuel)
+         {
+            alreadyInDuel = true;
+            OnDuelStart?.Invoke(this, actorsInDuel);
+         }
+         else
+         {
+            OnDuelContinue?.Invoke(this, actorsInDuel);
+         }
+      }
+      else
+      {
+         alreadyInDuel = false;
+      }
    }
-
-
+   
    public bool StartStare()
    {
       isStaring = true;
@@ -201,6 +227,13 @@ public class StareHandler : MonoBehaviour
    public void StopStare()
    {
       isStaring = false;
+
+      if (alreadyInDuel)
+      {
+         OnDuelStop?.Invoke(this, _controller.GetPlayerIndex());
+         alreadyInDuel = false;
+      }
+      
       OnStareStop?.Invoke(this, null);
    }
 }
