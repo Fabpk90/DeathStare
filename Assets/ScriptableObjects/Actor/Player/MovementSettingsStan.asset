@@ -27,8 +27,8 @@ MonoBehaviour:
     aerialSpeedBackwards: 3
     stareAerialSpeedForward: 1
     stareAerialSpeedBackwards: 1
-    stareWalkingSpeedForward: 1
-    stareWalkingSpeedBackwards: 0.5
+    stareWalkingSpeedForward: 2
+    stareWalkingSpeedBackwards: 2
     stepInterval: 2
     stickToGroundForce: 5
     jumpCooldown: 0
