@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: fe0f03977ea85bd45994262e06dc473a, type: 2}
   camParent: {fileID: 1131398257506250779}
+  _sensitivity: {x: 0, y: 0}
 --- !u!114 &1402920751461171753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +313,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.6
   m_SkinWidth: 0.08

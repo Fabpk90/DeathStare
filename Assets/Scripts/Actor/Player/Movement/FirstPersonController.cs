@@ -18,6 +18,8 @@ public class FirstPersonController : MonoBehaviour
 
     public bool isStaring;
 
+    public bool isGrounded;
+
     private float _startingHeightCollider;
 
     public CharacterController m_CharacterController;
@@ -49,6 +51,10 @@ public class FirstPersonController : MonoBehaviour
 
     public GameObject feet;
     private static readonly int Backwards = Animator.StringToHash("Backwards");
+
+    private Ray[] _rays = new Ray[5];
+    public int minRayToGround = 3;
+    public float maxDistanceToCheck = 0.5f;
 
     // Use this for initialization
     private void Start()
@@ -85,6 +91,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        CheckForGround();
         if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
         {
             StartCoroutine(m_JumpBob.DoBobCycle());
@@ -102,6 +109,24 @@ public class FirstPersonController : MonoBehaviour
         
         jumpCooldown.Update(Time.deltaTime);
         stareCooldown.Update(Time.deltaTime);
+    }
+
+    private void CheckForGround()
+    {
+        Vector3 downPosition = transform.position;
+        downPosition.y -= m_CharacterController.height / 2;
+
+        _rays[0].origin = downPosition;
+        _rays[0].direction = Vector3.down;
+
+        if (Physics.Raycast(_rays[0], maxDistanceToCheck))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
     }
 
 
