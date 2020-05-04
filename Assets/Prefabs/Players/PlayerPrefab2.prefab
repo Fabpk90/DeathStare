@@ -346,6 +346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isCrouching: 0
+  isRunning: 0
+  isStaring: 0
+  m_CharacterController: {fileID: 0}
   m_FovKick:
     Camera: {fileID: 0}
     originalFov: 0
@@ -555,7 +559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc710093fd5402b4e98eaf735b2d4a59, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSecond: 25
+  damagePerSecond: 15
   isStaring: 0
   camera: {fileID: 1131398257507365437}
   playersHitDuringThisFrame: []
@@ -565,6 +569,7 @@ MonoBehaviour:
   layerRay:
     serializedVersion: 2
     m_Bits: 0
+  damageTickRate: 0.5
 --- !u!1 &4609821810698127033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,12 +1053,12 @@ PrefabInstance:
     - target: {fileID: 4545144207307792235, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 246.23853
+      value: 246.23846
       objectReference: {fileID: 0}
     - target: {fileID: 4545144207307792235, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 492.47705
+      value: 492.477
       objectReference: {fileID: 0}
     - target: {fileID: 4545144208001754532, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
@@ -1063,7 +1068,7 @@ PrefabInstance:
     - target: {fileID: 4545144208001754532, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1008.574
+      value: 1008.5739
       objectReference: {fileID: 0}
     - target: {fileID: 4545144208001754532, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
@@ -1073,12 +1078,12 @@ PrefabInstance:
     - target: {fileID: 4545144208200433488, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 74.403015
+      value: 74.402954
       objectReference: {fileID: 0}
     - target: {fileID: 4545144208200433488, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1180.9999
+      value: 1181
       objectReference: {fileID: 0}
     - target: {fileID: 4545144208200433488, guid: 8187908f1cb87fb4885e168f51a6c841,
         type: 3}

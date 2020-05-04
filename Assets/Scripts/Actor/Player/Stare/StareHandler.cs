@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class StareHandler : MonoBehaviour
 {
-   public static List<HittablePoint> HittablePoints = new List<HittablePoint>(200);
+   public static List<HittablePoint> HittablePoints = new List<HittablePoint>(500);
    
    public List<IHittable> targetToAttack;
    public int damagePerSecond;
@@ -22,13 +22,15 @@ public class StareHandler : MonoBehaviour
    public float stareForce;
 
    private PlayerController _controller;
-	// public StareVignetteManager VignetteManager;
-	public PlayerUIManager UIManager;
+   public PlayerUIManager UIManager;
 
    public bool debugRay;
 
    public LayerMask layerRay;
 
+   private CooldownTimer _cooldownDamageStare;
+   [Tooltip("Le temps à attendre avant un tick de damage (en secondes)")]
+   public float damageTickRate;
    public event EventHandler OnStareStart;
    //fired on hitting someone
    public event EventHandler<int> OnStareTouch;
@@ -37,8 +39,8 @@ public class StareHandler : MonoBehaviour
    public event EventHandler<List<int>> OnDuelStart; 
    public event EventHandler<List<int>> OnDuelContinue; 
    public event EventHandler<int> OnDuelStop;
-   private List<int> actorsInDuel;
-   private bool alreadyInDuel;
+   private List<int> _actorsInDuel;
+   private bool _alreadyInDuel;
    
    private void Awake()
    {
@@ -48,7 +50,9 @@ public class StareHandler : MonoBehaviour
       targetToAttack = new List<IHittable>(25);
       playersHitDuringThisFrame = new List<PlayerController>(3);
       _playerKilledDuringFrame = new List<PlayerController>(3);
-      actorsInDuel = new List<int>(3);
+      _actorsInDuel = new List<int>(3);
+      _cooldownDamageStare = new CooldownTimer(damageTickRate);
+      _cooldownDamageStare.TimerCompleteEvent += StareTick;
    }
 
    /// <summary>
@@ -122,21 +126,27 @@ public class StareHandler : MonoBehaviour
 
    private void Update()
    {
-      if (isStaring)
-      {
-         CheckForThingsInSight();
-      }
+      if (!isStaring) return;
+      
+      CheckForThingsInSight();
    }
 
    private void LateUpdate()
    {
       if(!isStaring) return;
-      actorsInDuel.Clear();
+      
+      _cooldownDamageStare.Update(Time.deltaTime);
+   }
+
+   private void StareTick()
+   {
+      _cooldownDamageStare.Start();
+      _actorsInDuel.Clear();
 
       foreach (PlayerController playerController in playersHitDuringThisFrame)
       {
          if (!playerController) continue;
-         
+
          //is he/she staring at us ?
          if (!playerController.stareHandler.playersHitDuringThisFrame.Contains(_controller))
          {
@@ -157,19 +167,19 @@ public class StareHandler : MonoBehaviour
                   break;
             }
             //Sound
-            
+
             //WE DESTROY DAT MF !
-            if (playerController.GetComponent<HealthManager>().TakeDamage(_controller.GetPlayerIndex(), damagePerSecond * Time.deltaTime))
+            if (playerController.GetComponent<HealthManager>()
+               .TakeDamage(_controller.GetPlayerIndex(), damagePerSecond))
             {
                //the mf is ded
                _playerKilledDuringFrame.Add(playerController);
             }
-
          }
          else // it's staring back at us !
          {
-            actorsInDuel.Add(playerController.GetPlayerIndex());
-           // print("Duel with " + playerController.GetComponent<HealthManager>().transform.gameObject);
+            _actorsInDuel.Add(playerController.GetPlayerIndex());
+            // print("Duel with " + playerController.GetComponent<HealthManager>().transform.gameObject);
             //Sound
             switch (playerController.GetPlayerIndex())
             {
@@ -186,6 +196,7 @@ public class StareHandler : MonoBehaviour
                   AkSoundEngine.SetState("STATE_Music_DuelState_Don", "True");
                   break;
             }
+
             //Sound
          }
       }
@@ -194,44 +205,48 @@ public class StareHandler : MonoBehaviour
       {
          playersHitDuringThisFrame.Remove(controller);
       }
-      
+
       _playerKilledDuringFrame.Clear();
 
-      if (actorsInDuel.Count > 0)
+      if (_actorsInDuel.Count > 0)
       {
-         if (!alreadyInDuel)
+         if (!_alreadyInDuel)
          {
-            alreadyInDuel = true;
-            OnDuelStart?.Invoke(this, actorsInDuel);
+            _alreadyInDuel = true;
+            OnDuelStart?.Invoke(this, _actorsInDuel);
          }
          else
          {
-            OnDuelContinue?.Invoke(this, actorsInDuel);
+            OnDuelContinue?.Invoke(this, _actorsInDuel);
          }
       }
       else
       {
-         alreadyInDuel = false;
+         _alreadyInDuel = false;
       }
    }
-   
+
    public bool StartStare()
    {
       isStaring = true;
 
       OnStareStart?.Invoke(this, null);
+
+      if (!CheckForThingsInSight()) return false;
       
-      return CheckForThingsInSight();
+      _cooldownDamageStare.Start();
+      return true;
+
    }
 
    public void StopStare()
    {
       isStaring = false;
 
-      if (alreadyInDuel)
+      if (_alreadyInDuel)
       {
          OnDuelStop?.Invoke(this, _controller.GetPlayerIndex());
-         alreadyInDuel = false;
+         _alreadyInDuel = false;
       }
       
       OnStareStop?.Invoke(this, null);

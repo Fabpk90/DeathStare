@@ -38,8 +38,6 @@ namespace Actor
 
         public virtual void Die()
         {
-            //TODO: remove the points from the pool
-
             foreach (HittablePoint point in points)
             {
                 StareHandler.HittablePoints.Remove(point);

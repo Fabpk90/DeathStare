@@ -11,17 +11,16 @@ public class FirstPersonController : MonoBehaviour
     private static readonly int Running = Animator.StringToHash("Running");
     private static readonly int Walking = Animator.StringToHash("Walking");
     private static readonly int Staring = Animator.StringToHash("Staring");
+    
+    public bool isCrouching;
 
-    private bool _isCrouching;
+    public bool isRunning;
 
-    private bool _isRunning;
-
-    private bool _isStaring;
-    private float _mYRotation;
+    public bool isStaring;
 
     private float _startingHeightCollider;
 
-    private CharacterController m_CharacterController;
+    public CharacterController m_CharacterController;
     private CollisionFlags m_CollisionFlags;
 
     [SerializeField] private FOVKick m_FovKick = new FOVKick();
@@ -63,9 +62,9 @@ public class FirstPersonController : MonoBehaviour
         m_StepCycle = 0f;
         m_NextStep = m_StepCycle / 2f;
         m_Jumping = false;
-        _isCrouching = false;
-        _isRunning = false;
-        _isStaring = false;
+        isCrouching = false;
+        isRunning = false;
+        isStaring = false;
     }
 
     /// <summary>
@@ -157,7 +156,7 @@ public class FirstPersonController : MonoBehaviour
     {
         float magnitude = m_Input.magnitude;
 
-        if (!_isStaring && m_CharacterController.isGrounded && magnitude > 0)
+        if (!isStaring && m_CharacterController.isGrounded && magnitude > 0)
         {
             animator.SetFloat(Backwards, m_Input.y > 0 ? 1 : -1);
             animator.speed = Mathf.Clamp01(magnitude + 0.2f);
@@ -170,14 +169,14 @@ public class FirstPersonController : MonoBehaviour
 
     private void UpdateMovementState()
     {
-        if (_isStaring)
+        if (isStaring)
         {
-            _isRunning = false;
+            isRunning = false;
             animator.SetBool(Running, false);
         }
         else if(m_Input.magnitude > 0.4f)
         {
-            _isRunning = true;
+            isRunning = true;
             animator.SetBool(Running, true);
         }
     }
@@ -193,7 +192,7 @@ public class FirstPersonController : MonoBehaviour
 
     private float GetSpeedFromState()
     {
-        if (_isStaring)
+        if (isStaring)
         {
             if (m_CharacterController.isGrounded)
                 return m_Input.y > 0 ?_settingsData.stareWalkingSpeedForward : _settingsData.stareWalkingSpeedBackwards;
@@ -202,9 +201,9 @@ public class FirstPersonController : MonoBehaviour
         }
         if (!m_CharacterController.isGrounded)
             return m_Input.y > 0 ? _settingsData.aerialSpeedForward : _settingsData.aerialSpeedBackwards;
-        if (_isCrouching)
+        if (isCrouching)
             return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
-        if (_isRunning)
+        if (isRunning)
             return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
 
         return m_Input.y > 0 ? _settingsData.walkSpeedForward : _settingsData.walkSpeedBackwards;
@@ -250,7 +249,7 @@ public class FirstPersonController : MonoBehaviour
     {
         if (m_CharacterController.isGrounded)
         {
-            if(_isCrouching)
+            if(isCrouching)
                 SetCrouch(false);
             
             m_Jump = true;
@@ -284,11 +283,11 @@ public class FirstPersonController : MonoBehaviour
     public void ToggleCrouch()
     {
         if(!m_CharacterController.isGrounded) return;
-        _isCrouching = !_isCrouching;
+        isCrouching = !isCrouching;
 
-        animator.SetBool(Crouching, _isCrouching);
+        animator.SetBool(Crouching, isCrouching);
 
-        if (_isCrouching)
+        if (isCrouching)
         {
             m_CharacterController.height = _settingsData.crouchingHeightCollider;
             var transform1 = animator.transform;
@@ -310,11 +309,11 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetCrouch(bool isCrouching)
     {
-        _isCrouching = isCrouching;
+        this.isCrouching = isCrouching;
 
         animator.SetBool(Crouching, isCrouching);
 
-        if (_isCrouching)
+        if (this.isCrouching)
         {
             m_CharacterController.height = _settingsData.crouchingHeightCollider;
             var transform1 = animator.transform;
@@ -353,7 +352,7 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetStare(bool isStaring)
     {
-        _isStaring = isStaring;
+        this.isStaring = isStaring;
         animator.SetBool(Staring, isStaring);
     }
 }
