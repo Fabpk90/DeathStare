@@ -179,6 +179,10 @@ public class FirstPersonController : MonoBehaviour
             isRunning = true;
             animator.SetBool(Running, true);
         }
+        else
+        {
+            isRunning = false;
+        }
     }
 
     public void SetInputMovement(Vector2 input)

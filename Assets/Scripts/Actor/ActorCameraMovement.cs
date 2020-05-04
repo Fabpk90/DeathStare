@@ -20,10 +20,11 @@ namespace Actor
 
         private PlayerController _controller;
 
-        private Matrix4x4 rotation;
-        private Vector2 delta;
-        private float xRotation = 0.0f;
-        private float yRotation = 0.0f;
+        private Matrix4x4 _rotation;
+        private Vector2 _delta;
+        private float _xRotation = 0.0f;
+        private float _yRotation = 0.0f;
+        public Vector2 _sensitivity;
 
         private void Start()
         {
@@ -32,7 +33,7 @@ namespace Actor
 
         public void MoveCamera(Vector2 delta)
         {
-            this.delta = delta;
+            _delta = delta;
         }
 
         private Vector2 GetSensitivity()
@@ -48,20 +49,19 @@ namespace Actor
             return settings.cameraSettings.sensitivityAerial;
         }
 
-        private void FixedUpdate()
+        private void Update()
         {
-            var sensitivity = GetSensitivity();
-            xRotation += -delta.y * sensitivity.y * Time.fixedTime;
-            xRotation = Mathf.Clamp(xRotation, settings.cameraSettings.angleYClamp.x, settings.cameraSettings.angleYClamp.y);
+            _sensitivity = GetSensitivity();
+            _xRotation += -_delta.y * _sensitivity.y;
+            _xRotation = Mathf.Clamp(_xRotation, settings.cameraSettings.angleYClamp.x, settings.cameraSettings.angleYClamp.y);
 
-            
-            yRotation += delta.x * sensitivity.x * Time.fixedTime;
+            _yRotation += _delta.x * _sensitivity.x;
             
             if(settings.cameraSettings.angleXClamp != Vector2.zero)
-                yRotation = Mathf.Clamp(yRotation, settings.cameraSettings.angleXClamp.x, settings.cameraSettings.angleXClamp.y);
+                _yRotation = Mathf.Clamp(_yRotation, settings.cameraSettings.angleXClamp.x, settings.cameraSettings.angleXClamp.y);
 
-            transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-            camParent.transform.localRotation = Quaternion.Euler(Vector3.up * yRotation);
+            transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+            camParent.transform.localRotation = Quaternion.Euler(Vector3.up * _yRotation);
         }
     }
 }
