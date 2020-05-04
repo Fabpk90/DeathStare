@@ -148,7 +148,7 @@ public class FirstPersonController : MonoBehaviour
         // get a normal for the surface that is being touched to move along it
         RaycastHit hitInfo;
         Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
-            m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+            m_CharacterController.height / 4f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
         desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
 
         m_MoveDir.x = desiredMove.x * speed;
@@ -188,8 +188,6 @@ public class FirstPersonController : MonoBehaviour
         }
         else
             animator.speed = 1.0f;
-
-        //todo reverse the animation if going backwards
     }
 
     private void UpdateMovementState()

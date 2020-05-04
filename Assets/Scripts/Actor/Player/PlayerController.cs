@@ -48,7 +48,8 @@ public class PlayerController : MonoBehaviour
         AudioManager.instance.AddListeners(gameObject, 0, 1, 2, 3);
         //SOUND
 
-        layer = LayerMask.GetMask("J" + GetPlayerIndex() + "Body");
+        layer = LayerMask.GetMask("J" + (GetPlayerIndex() + 1) + "Body");
+        gameObject.layer = layer;
         stareHandler.layerRay = layer;
     }
 

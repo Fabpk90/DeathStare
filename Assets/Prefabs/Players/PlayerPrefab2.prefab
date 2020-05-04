@@ -350,6 +350,7 @@ MonoBehaviour:
   isCrouching: 0
   isRunning: 0
   isStaring: 0
+  isGrounded: 0
   m_CharacterController: {fileID: 0}
   m_FovKick:
     Camera: {fileID: 0}
@@ -442,6 +443,8 @@ MonoBehaviour:
   settings: {fileID: 11400000, guid: 717663e16327e1f4690db5ae7b8bc925, type: 2}
   animator: {fileID: 5783585342324609218}
   feet: {fileID: 5312522526438006119}
+  minRayToGround: 3
+  maxDistanceToCheck: 0.5
 --- !u!114 &6957082512074147987
 MonoBehaviour:
   m_ObjectHideFlags: 0
