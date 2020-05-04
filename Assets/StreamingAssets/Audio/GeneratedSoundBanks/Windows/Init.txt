@@ -64,17 +64,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\DS MIX\Master\Music	
 	4056684167	Master			\DS MIX\Master	
 
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	376471424	RVB_Zone2			\DS MIX\Master\Aux\RVB_Zone2	
-	376471425	RVB_Zone3			\DS MIX\Master\Aux\RVB_Zone3	
-	376471427	RVB_Zone1			\DS MIX\Master\Aux\RVB_Zone1	
-	376471430	RVB_Zone4			\DS MIX\Master\Aux\RVB_Zone4	
-
 Effect plug-ins	ID	Name	Type				Notes
-	174644556	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	470123256	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	506987871	Hall_Large_TooBright_(Custom)	Wwise RoomVerb			
-	648122362	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	748015649	Wwise_Recorder_(Custom)	Wwise Recorder			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

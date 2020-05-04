@@ -28,10 +28,10 @@ public class PlayerAudioManager : MonoBehaviour
                 Debug.Log("Cobble set to p1");
                 break;
             case (1):
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Dirt", leftFoot);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Dirt", rightFoot);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Dirt", chest);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Marta", gameObject);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Sand", leftFoot);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Sand", rightFoot);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Sand", chest);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = -20;
                 wwiseListener.VolumesOffset[1] = 0;
                 Debug.Log("Dirt set to p2");
@@ -40,7 +40,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Grass", leftFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Grass", rightFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Grass", chest);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Medusa", gameObject);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = 0;
                 wwiseListener.VolumesOffset[1] = -20;
                 Debug.Log("Grass set to p3");
@@ -49,7 +49,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Wood", leftFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Wood", rightFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Wood", chest);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Don", gameObject);
+                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = -20;
                 wwiseListener.VolumesOffset[1] = 0;
                 Debug.Log("Wood set to p4");

@@ -13,15 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMB_COMMON_BED_SEA = 793348717U;
-        static const AkUniqueID AMB_COMMON_BED_WIND = 2231626466U;
-        static const AkUniqueID AMB_COMMON_SSHOTS = 2233841146U;
-        static const AkUniqueID AMB_SP_CAVE = 226148825U;
-        static const AkUniqueID AMB_SP_CAVE_01 = 3319622597U;
+        static const AkUniqueID AMB_BED_SEA = 246007687U;
+        static const AkUniqueID AMB_BED_WAVES = 2193181892U;
+        static const AkUniqueID AMB_BED_WIND = 151163884U;
         static const AkUniqueID AMB_SP_FOLIAGE = 3964420051U;
         static const AkUniqueID AMB_SP_STONE = 2816467889U;
-        static const AkUniqueID AMB_SP_WATER = 3897627331U;
+        static const AkUniqueID AMB_SP_TORCH = 1492342808U;
         static const AkUniqueID AMB_SP_WOOD = 1104827821U;
+        static const AkUniqueID AMB_SSHOTS_LONG = 416895869U;
+        static const AkUniqueID AMB_SSHOTS_SHOTS = 2230827290U;
         static const AkUniqueID EFFECTS_CHAR_DAMAGE = 2897623584U;
         static const AkUniqueID EFFECTS_CHAR_DUEL = 1940990649U;
         static const AkUniqueID EFFECTS_CHAR_EXITSTARING = 3646545493U;
@@ -33,7 +33,6 @@ namespace AK
         static const AkUniqueID FOLEYS_CHAR_RUN_PRESENCE = 2315528594U;
         static const AkUniqueID FOLEYS_CHAR_WALK_FOOTSTEPS = 2350611728U;
         static const AkUniqueID FOLEYS_CHAR_WALK_PRESENCE = 401042956U;
-        static const AkUniqueID PLAY_TEST = 3187507146U;
         static const AkUniqueID SEGMENTS_DUELMUSIC = 1926112901U;
         static const AkUniqueID SEGMENTS_MAINMUSIC = 1704734930U;
         static const AkUniqueID STINGERS_DS_DON_L = 1290491939U;
@@ -236,14 +235,6 @@ namespace AK
         static const AkUniqueID SFX_UI = 3862737079U;
         static const AkUniqueID VOICES = 3313685232U;
     } // namespace BUSSES
-
-    namespace AUX_BUSSES
-    {
-        static const AkUniqueID RVB_ZONE1 = 376471427U;
-        static const AkUniqueID RVB_ZONE2 = 376471424U;
-        static const AkUniqueID RVB_ZONE3 = 376471425U;
-        static const AkUniqueID RVB_ZONE4 = 376471430U;
-    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
