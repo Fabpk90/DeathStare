@@ -57,6 +57,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1557941045	Characters			\DS MIX\Master\SFX\SFX_Foleys\Characters	
 	2324388809	SFX_Effects			\DS MIX\Master\SFX\SFX_Effects	
 	2383096572	SFX_Ambiances			\DS MIX\Master\SFX\SFX_Ambiances	
+	2737366150	StingersR			\DS MIX\Master\Music\StingersR	
+	2737366168	StingersL			\DS MIX\Master\Music\StingersL	
 	3183352817	SFX_Foleys			\DS MIX\Master\SFX\SFX_Foleys	
 	3313685232	Voices			\DS MIX\Master\Voices	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

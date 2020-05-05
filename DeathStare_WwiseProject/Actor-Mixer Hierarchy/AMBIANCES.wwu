@@ -32,7 +32,7 @@
 							<ChildrenList>
 								<ActorMixer Name="Sshots" ID="{C0613636-8512-450E-A6A8-0AEDAB8DAE7C}" ShortID="641850274">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
@@ -49,6 +49,11 @@
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -76,8 +81,8 @@
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>30.40751</XPos>
-																			<YPos>-11.1592</YPos>
+																			<XPos>30.09403</XPos>
+																			<YPos>-10.82276</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log3</SegmentShape>
 																		</Point>
@@ -180,7 +185,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<BlendContainer Name="AMB_Sshots_Shots" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" ShortID="795747782">
+										<BlendContainer Name="AMB_Sshots_Shorts" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" ShortID="795747782">
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -218,7 +223,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.2">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.2">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{18C482DC-7254-48C4-B57E-A2F694EAB7ED}">
@@ -689,7 +694,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{F8AD5558-209E-43D3-806E-6ACD8E6EEF91}">
@@ -988,8 +993,8 @@
 											<ChildrenList>
 												<Path2D Name="FL" ID="{934DAE43-44DF-449A-AF53-02A28746D9C4}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
+														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomY" Type="Real64" Value="40"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -1002,8 +1007,8 @@
 												</Path2D>
 												<Path2D Name="RL" ID="{4B5D49EC-600B-45AD-B133-5D2DEF4EF30B}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
+														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomY" Type="Real64" Value="40"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -1016,8 +1021,8 @@
 												</Path2D>
 												<Path2D Name="BL" ID="{C56718CD-3DC7-4FF7-8188-1D9CC479D3E6}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
+														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomY" Type="Real64" Value="40"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -1030,8 +1035,8 @@
 												</Path2D>
 												<Path2D Name="BR" ID="{C34CB431-B24C-4DA5-AB5A-3B6833B7AC89}">
 													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
+														<Property Name="RandomX" Type="Real64" Value="40"/>
+														<Property Name="RandomY" Type="Real64" Value="40"/>
 													</PropertyList>
 													<PointList>
 														<Point>
@@ -1050,22 +1055,20 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>3</Value>
+												<Value>12</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
+										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>True</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
-										<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -1165,6 +1168,17 @@
 									<ChildrenList>
 										<ActorMixer Name="Sea" ID="{90542E63-6D02-4ECA-9BD6-696369685099}" ShortID="182168445">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>2</Value>
@@ -1187,7 +1201,7 @@
 														<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>2</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1293,6 +1307,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.8"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 															</PropertyList>
 															<ReferenceList>
@@ -1307,6 +1322,11 @@
 																<Sound Name="AMB_Bed_Sea_000" ID="{9212F6D2-6AA2-4CF6-BA05-6132F8A8C3DA}" ShortID="616761173">
 																	<PropertyList>
 																		<Property Name="IsStreamingEnabled" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="IsZeroLantency" Type="bool">
 																			<ValueList>
 																				<Value>True</Value>
 																			</ValueList>
@@ -1345,6 +1365,11 @@
 																				<Value>True</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="IsZeroLantency" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -1375,6 +1400,11 @@
 																<Sound Name="AMB_Bed_Sea_002" ID="{E1E52697-E9A7-421F-A9D7-954603504489}" ShortID="569236536">
 																	<PropertyList>
 																		<Property Name="IsStreamingEnabled" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="IsZeroLantency" Type="bool">
 																			<ValueList>
 																				<Value>True</Value>
 																			</ValueList>
@@ -1413,6 +1443,11 @@
 																				<Value>True</Value>
 																			</ValueList>
 																		</Property>
+																		<Property Name="IsZeroLantency" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
 																	</PropertyList>
 																	<ReferenceList>
 																		<Reference Name="Conversion">
@@ -1443,6 +1478,11 @@
 																<Sound Name="AMB_Bed_Sea_004" ID="{015658A7-BD72-424E-ACE4-D9163232C5F6}" ShortID="92436406">
 																	<PropertyList>
 																		<Property Name="IsStreamingEnabled" Type="bool">
+																			<ValueList>
+																				<Value>True</Value>
+																			</ValueList>
+																		</Property>
+																		<Property Name="IsZeroLantency" Type="bool">
 																			<ValueList>
 																				<Value>True</Value>
 																			</ValueList>
@@ -1482,6 +1522,17 @@
 										</ActorMixer>
 										<ActorMixer Name="Wind" ID="{C733B5C7-83B5-48BA-9632-76B827A13CC1}" ShortID="936320521">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>1</Value>
@@ -1610,6 +1661,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.8"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 															</PropertyList>
 															<ReferenceList>
@@ -1798,6 +1850,19 @@
 											</ChildrenList>
 										</ActorMixer>
 										<ActorMixer Name="Waves" ID="{679D3665-279D-4D3A-A000-BB4F75C7B507}" ShortID="134107106">
+											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
@@ -1825,6 +1890,7 @@
 																<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 																<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+																<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.8"/>
 																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 																<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="0"/>
 															</PropertyList>

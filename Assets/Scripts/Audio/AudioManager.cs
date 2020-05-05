@@ -40,6 +40,9 @@ public class AudioManager : MonoBehaviour
             AkSoundEngine.SetState("STATE_Music_Main", "Fight_Silence");
         AkSoundEngine.PostEvent("SEGMENTS_DuelMusic", gameObject);
         AkSoundEngine.PostEvent("SEGMENTS_MainMusic", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Sea", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Waves", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Wind", gameObject);
     }
 
     public void AddListeners(GameObject in_emitter, int listener1)

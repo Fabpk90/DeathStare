@@ -24,7 +24,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", chest);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = 0;
-                wwiseListener.VolumesOffset[1] = -20;
+                wwiseListener.VolumesOffset[1] = -14;
                 Debug.Log("Cobble set to p1");
                 break;
             case (1):
@@ -32,7 +32,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Sand", rightFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Sand", chest);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
-                wwiseListener.VolumesOffset[0] = -20;
+                wwiseListener.VolumesOffset[0] = -14;
                 wwiseListener.VolumesOffset[1] = 0;
                 Debug.Log("Dirt set to p2");
                 break;
@@ -42,7 +42,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Grass", chest);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = 0;
-                wwiseListener.VolumesOffset[1] = -20;
+                wwiseListener.VolumesOffset[1] = -14;
                 Debug.Log("Grass set to p3");
                 break;
             case (3):
@@ -50,7 +50,7 @@ public class PlayerAudioManager : MonoBehaviour
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Wood", rightFoot);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Wood", chest);
                 GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
-                wwiseListener.VolumesOffset[0] = -20;
+                wwiseListener.VolumesOffset[0] = -14;
                 wwiseListener.VolumesOffset[1] = 0;
                 Debug.Log("Wood set to p4");
                 break;

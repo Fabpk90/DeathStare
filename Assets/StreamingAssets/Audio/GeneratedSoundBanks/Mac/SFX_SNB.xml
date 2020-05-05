@@ -36,6 +36,33 @@
 							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_003_755F56E2.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
+						<File Id="227734491" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_004.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_004_755F56E2.wem</Path>
+							<PrefetchSize>6918</PrefetchSize>
+						</File>
+						<File Id="351894709" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_002.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_002_755F56E2.wem</Path>
+							<PrefetchSize>6359</PrefetchSize>
+						</File>
+						<File Id="503679517" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_000.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_000_755F56E2.wem</Path>
+							<PrefetchSize>6546</PrefetchSize>
+						</File>
+						<File Id="784360378" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_001.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_001_755F56E2.wem</Path>
+							<PrefetchSize>6403</PrefetchSize>
+						</File>
+						<File Id="952945187" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_003.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_003_755F56E2.wem</Path>
+							<PrefetchSize>6419</PrefetchSize>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2193181892" Name="AMB_Bed_Waves" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Bed_Waves" GUID="{B32E55E4-BF26-47B6-BF75-606F97F6145C}" MaxAttenuation="100.000000" DurationType="Infinite">
 					<ReferencedStreamedFiles>
@@ -265,7 +292,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2230827290" Name="AMB_Sshots_Shots" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Sshots_Shots" GUID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="1929281362" Name="AMB_Sshots_Shorts" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Sshots_Shorts" GUID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="42055961" Language="SFX">
 							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_002.wav</ShortName>

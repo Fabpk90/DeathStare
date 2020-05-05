@@ -23,14 +23,6 @@
 						</Folder>
 						<Folder Name="Kill" ID="{305E28B9-0D57-4282-902E-B3D481C99BB2}" ShortID="968499008">
 							<ChildrenList>
-								<Trigger Name="TRIGGER_Kill_Stan_L" ID="{E4AB426D-FB30-47CC-8335-551EC2356A15}"/>
-								<Trigger Name="TRIGGER_Kill_Marta_L" ID="{E5CB6821-8C28-4691-AE5C-A1285894B39F}"/>
-								<Trigger Name="TRIGGER_Kill_Medusa_L" ID="{EE636C11-9722-45B3-BACE-754C29F0340D}"/>
-								<Trigger Name="TRIGGER_Kill_Stan_R" ID="{74246316-18FB-49A3-B635-13BDB43493D1}"/>
-								<Trigger Name="TRIGGER_Kill_Don_R" ID="{2C40BEDC-008D-4C67-AC30-6330440DD6C4}"/>
-								<Trigger Name="TRIGGER_Kill_Marta_R" ID="{0C46B2AD-D86B-436C-BBBD-A354BC69428C}"/>
-								<Trigger Name="TRIGGER_Kill_Medusa_R" ID="{610BEAE3-CA94-4EE8-822A-E80FD44DBFE9}"/>
-								<Trigger Name="TRIGGER_Kill_Don_L" ID="{4F80F2AC-AB5C-48A3-A04C-CC51216D1A96}"/>
 								<Trigger Name="TRIGGER_Kill_P1" ID="{4834D336-30A0-4382-BC73-2CC9D6F41DFC}"/>
 								<Trigger Name="TRIGGER_Kill_P2" ID="{2D2CFE97-97EA-4B96-B036-06CFE79FF94E}"/>
 								<Trigger Name="TRIGGER_Kill_P3" ID="{66953C16-BB83-43C9-8451-1AF0998ACA9F}"/>

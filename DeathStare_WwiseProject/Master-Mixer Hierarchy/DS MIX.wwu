@@ -102,6 +102,32 @@
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="StingersL" ID="{7FABE9FB-8DAA-4B61-ACC9-1068AE329CE3}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{F959174E-E2FD-4089-859A-25CA90FE7AAD}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-65"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+								</Bus>
+								<Bus Name="StingersR" ID="{8685BC64-1691-44B1-9A06-97F2FEE1B30F}">
+									<PropertyList>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+									</PropertyList>
+									<PositioningInfo>
+										<Panner Name="" ID="{EFBC49EE-6E07-4F56-A3DE-77D7A65AFF52}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="65"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
+								</Bus>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="Aux" ID="{DF39B0BC-E0AB-4E9E-908A-207FEE8BE4CC}">
 							<PropertyList>

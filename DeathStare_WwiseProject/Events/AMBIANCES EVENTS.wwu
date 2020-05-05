@@ -105,12 +105,12 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Sshots_Shots" ID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}">
+						<Event Name="AMB_Sshots_Shorts" ID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}">
 							<ChildrenList>
 								<Action Name="" ID="{720C0D41-AEDA-453F-9171-8DF7527DBDDB}" ShortID="637815432">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="AMB_Sshots_Shots" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
+											<ObjectRef Name="AMB_Sshots_Shorts" ID="{DB7253F6-31A1-4038-A11B-FF42E5DBF3B2}" WorkUnitID="{F84B7B84-7DB1-46B6-8E18-723C5B22E19B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

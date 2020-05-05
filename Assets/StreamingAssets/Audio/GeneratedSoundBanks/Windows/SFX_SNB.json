@@ -58,6 +58,43 @@
         "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_003.wav",
         "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_003_755F56E2.wem"
        }
+      ],
+      "IncludedMemoryFiles": [
+       {
+        "Id": "227734491",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_004.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_004_755F56E2.wem",
+        "PrefetchSize": "6918"
+       },
+       {
+        "Id": "351894709",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_002.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_002_755F56E2.wem",
+        "PrefetchSize": "6359"
+       },
+       {
+        "Id": "503679517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_000.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_000_755F56E2.wem",
+        "PrefetchSize": "6546"
+       },
+       {
+        "Id": "784360378",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_001.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_001_755F56E2.wem",
+        "PrefetchSize": "6403"
+       },
+       {
+        "Id": "952945187",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_003.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_003_755F56E2.wem",
+        "PrefetchSize": "6419"
+       }
       ]
      },
      {
@@ -431,9 +468,9 @@
       ]
      },
      {
-      "Id": "2230827290",
-      "Name": "AMB_Sshots_Shots",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Sshots_Shots",
+      "Id": "1929281362",
+      "Name": "AMB_Sshots_Shorts",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Sshots_Shorts",
       "GUID": "{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}",
       "MaxAttenuation": "100.000000",
       "DurationType": "Infinite",
