@@ -77,7 +77,7 @@
 						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
 						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
 						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
-						<CurrentStateRef Name="Fight_Silence" ID="{C90A8475-12D9-499E-8BC4-CE7027D7CFFE}"/>
+						<CurrentStateRef Name="Outro_Stan" ID="{21293A09-F303-48B7-9A70-7559B9CCDD88}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>

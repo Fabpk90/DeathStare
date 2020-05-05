@@ -1227,7 +1227,7 @@
 												<Property Name="Tempo" Type="Real64" Value="134"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>2.5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1307,7 +1307,7 @@
 												<Property Name="Tempo" Type="Real64" Value="134"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>2.5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1391,7 +1391,7 @@
 												<Property Name="Tempo" Type="Real64" Value="134"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>2.5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1530,7 +1530,7 @@
 												<Property Name="Tempo" Type="Real64" Value="134"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>2.5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2999,6 +2999,7 @@
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Outro_Stan" ID="{9432FE43-ED4B-4A17-BE51-9647F4C450DB}" ShortID="803331883">
 							<PropertyList>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="57"/>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="72"/>
 							</PropertyList>
@@ -3089,7 +3090,7 @@
 										<Property Name="EndPosition" Type="Real64" Value="58378.3783783784"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

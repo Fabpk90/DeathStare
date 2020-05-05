@@ -53,7 +53,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -75,20 +75,20 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>1.88087</XPos>
+																			<XPos>10.18808</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>30.09403</XPos>
-																			<YPos>-10.82276</YPos>
+																			<XPos>41.84951</XPos>
+																			<YPos>-12.85889</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log3</SegmentShape>
 																		</Point>
 																		<Point>
 																			<XPos>100</XPos>
-																			<YPos>-200</YPos>
+																			<YPos>-39</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>
@@ -189,7 +189,7 @@
 											<PropertyList>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>2</Value>
+														<Value>4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -223,7 +223,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.2">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{18C482DC-7254-48C4-B57E-A2F694EAB7ED}">
@@ -539,11 +539,6 @@
 												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>1</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -694,7 +689,7 @@
 														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 														<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{F8AD5558-209E-43D3-806E-6ACD8E6EEF91}">
