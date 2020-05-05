@@ -57,6 +57,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1557941045	Characters			\DS MIX\Master\SFX\SFX_Foleys\Characters	
 	2324388809	SFX_Effects			\DS MIX\Master\SFX\SFX_Effects	
 	2383096572	SFX_Ambiances			\DS MIX\Master\SFX\SFX_Ambiances	
+	2737366150	StingersR			\DS MIX\Master\Music\StingersR	
+	2737366168	StingersL			\DS MIX\Master\Music\StingersL	
 	3183352817	SFX_Foleys			\DS MIX\Master\SFX\SFX_Foleys	
 	3313685232	Voices			\DS MIX\Master\Voices	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
@@ -64,17 +66,8 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\DS MIX\Master\Music	
 	4056684167	Master			\DS MIX\Master	
 
-Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	376471424	RVB_Zone2			\DS MIX\Master\Aux\RVB_Zone2	
-	376471425	RVB_Zone3			\DS MIX\Master\Aux\RVB_Zone3	
-	376471427	RVB_Zone1			\DS MIX\Master\Aux\RVB_Zone1	
-	376471430	RVB_Zone4			\DS MIX\Master\Aux\RVB_Zone4	
-
 Effect plug-ins	ID	Name	Type				Notes
-	174644556	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	470123256	Wwise_RoomVerb_(Custom)	Wwise RoomVerb			
-	506987871	Hall_Large_TooBright_(Custom)	Wwise RoomVerb			
-	648122362	Have_U_Ever_Been_Outside_(Custom)	Wwise RoomVerb			
+	748015649	Wwise_Recorder_(Custom)	Wwise Recorder			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

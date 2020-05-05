@@ -12,7 +12,104 @@
    "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "DialogueEvents": [],
-  "StreamedFiles": [],
+  "StreamedFiles": [
+   {
+    "Id": "122735323",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_003.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_003_755F56E2.wem"
+   },
+   {
+    "Id": "186014700",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_000.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_000_755F56E2.wem"
+   },
+   {
+    "Id": "227734491",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_004.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_004_755F56E2.wem"
+   },
+   {
+    "Id": "269173258",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_002.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_002_755F56E2.wem"
+   },
+   {
+    "Id": "351894709",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_002.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_002_755F56E2.wem"
+   },
+   {
+    "Id": "420964168",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_001.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_001_755F56E2.wem"
+   },
+   {
+    "Id": "425417005",
+    "Language": "SFX",
+    "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002.wav",
+    "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem"
+   },
+   {
+    "Id": "431916476",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_000.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_000_755F56E2.wem"
+   },
+   {
+    "Id": "503679517",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_000.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_000_755F56E2.wem"
+   },
+   {
+    "Id": "635846287",
+    "Language": "SFX",
+    "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000.wav",
+    "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem"
+   },
+   {
+    "Id": "738237128",
+    "Language": "SFX",
+    "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001.wav",
+    "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem"
+   },
+   {
+    "Id": "784360378",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_001.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_001_755F56E2.wem"
+   },
+   {
+    "Id": "828533347",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_002.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_002_755F56E2.wem"
+   },
+   {
+    "Id": "883806390",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_001.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_001_755F56E2.wem"
+   },
+   {
+    "Id": "952945187",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_003.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_003_755F56E2.wem"
+   },
+   {
+    "Id": "1007305584",
+    "Language": "SFX",
+    "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_004.wav",
+    "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_004_755F56E2.wem"
+   }
+  ],
   "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
@@ -24,142 +121,515 @@
     "Path": "SFX_SNB.bnk",
     "IncludedEvents": [
      {
-      "Id": "793348717",
-      "Name": "AMB_Common_Bed_Sea",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Sea",
-      "GUID": "{5D596AA7-2684-4854-8BBF-021DEAA1BA42}",
+      "Id": "246007687",
+      "Name": "AMB_Bed_Sea",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Bed_Sea",
+      "GUID": "{42CAA89A-975D-4BFC-A470-BF117C9EB76B}",
       "MaxAttenuation": "100.000000",
       "DurationType": "Infinite",
+      "ReferencedStreamedFiles": [
+       {
+        "Id": "227734491",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_004.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_004_755F56E2.wem"
+       },
+       {
+        "Id": "351894709",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_002.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_002_755F56E2.wem"
+       },
+       {
+        "Id": "503679517",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_000.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_000_755F56E2.wem"
+       },
+       {
+        "Id": "784360378",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_001.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_001_755F56E2.wem"
+       },
+       {
+        "Id": "952945187",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_003.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_003_755F56E2.wem"
+       }
+      ],
       "IncludedMemoryFiles": [
        {
-        "Id": "61378412",
+        "Id": "227734491",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_004.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_004_755F56E2.wem",
+        "PrefetchSize": "6918"
        },
        {
-        "Id": "110326517",
+        "Id": "351894709",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_002.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_002_755F56E2.wem",
+        "PrefetchSize": "6359"
        },
        {
-        "Id": "918892782",
+        "Id": "503679517",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_000.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_000_755F56E2.wem",
+        "PrefetchSize": "6546"
+       },
+       {
+        "Id": "784360378",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_001.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_001_755F56E2.wem",
+        "PrefetchSize": "6403"
+       },
+       {
+        "Id": "952945187",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Sea_003.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Sea_003_755F56E2.wem",
+        "PrefetchSize": "6419"
        }
       ]
      },
      {
-      "Id": "2231626466",
-      "Name": "AMB_Common_Bed_Wind",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Common_Bed_Wind",
-      "GUID": "{1B07D997-772B-430C-B7C9-A3D3B0B0A65C}",
+      "Id": "2193181892",
+      "Name": "AMB_Bed_Waves",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Bed_Waves",
+      "GUID": "{B32E55E4-BF26-47B6-BF75-606F97F6145C}",
       "MaxAttenuation": "100.000000",
       "DurationType": "Infinite",
-      "IncludedMemoryFiles": [
+      "ReferencedStreamedFiles": [
        {
-        "Id": "61378412",
+        "Id": "269173258",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_002_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_002.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_002_755F56E2.wem"
        },
        {
-        "Id": "110326517",
+        "Id": "431916476",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_003_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_000.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_000_755F56E2.wem"
        },
        {
-        "Id": "918892782",
+        "Id": "883806390",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Bed\\Zone_Zone3_Bed_001_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Waves_001.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Waves_001_755F56E2.wem"
        }
       ]
      },
      {
-      "Id": "2233841146",
-      "Name": "AMB_Common_Sshots",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Common_Sshots",
-      "GUID": "{54A47712-9839-49CF-A445-5AC63A478820}",
+      "Id": "151163884",
+      "Name": "AMB_Bed_Wind",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Beds\\AMB_Bed_Wind",
+      "GUID": "{3D21AB75-8410-4A17-89DA-1A64785A3682}",
       "MaxAttenuation": "100.000000",
       "DurationType": "Infinite",
-      "IncludedMemoryFiles": [
+      "ReferencedStreamedFiles": [
        {
-        "Id": "24565442",
+        "Id": "122735323",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_003_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_003.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_003_755F56E2.wem"
        },
        {
-        "Id": "172672242",
+        "Id": "186014700",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_002_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_000.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_000_755F56E2.wem"
        },
        {
-        "Id": "578382007",
+        "Id": "420964168",
         "Language": "SFX",
-        "ShortName": "Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001.wav",
-        "Path": "SFX\\Ambiances\\Zone 3\\Sshots\\Zone_Zone3_Sshots_001_755F56E2.wem"
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_001.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_001_755F56E2.wem"
+       },
+       {
+        "Id": "828533347",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_002.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_002_755F56E2.wem"
+       },
+       {
+        "Id": "1007305584",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Beds\\AMB_Bed_Wind_004.wav",
+        "Path": "SFX\\Ambiances\\Beds\\AMB_Bed_Wind_004_755F56E2.wem"
        }
       ]
-     },
-     {
-      "Id": "226148825",
-      "Name": "AMB_SP_Cave",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave",
-      "GUID": "{D2F339A5-866F-46A2-AD18-3C3066EB61B7}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
-     },
-     {
-      "Id": "3319622597",
-      "Name": "AMB_SP_Cave_01",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Cave_01",
-      "GUID": "{4D59B9EA-78D4-4C89-8F6B-40532471B243}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
      },
      {
       "Id": "3964420051",
       "Name": "AMB_SP_Foliage",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Foliage",
-      "GUID": "{3B599F7F-2FDA-496C-942E-C9EC3DFDD4B1}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "GUID": "{844F472A-FF3C-4315-8432-2B1349C53ADC}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "402938465",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Foliage_000.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Foliage_000_E53F03F3.wem"
+       },
+       {
+        "Id": "665254925",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Foliage_002.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Foliage_002_92237196.wem"
+       },
+       {
+        "Id": "802983561",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Foliage_001.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Foliage_001_06567DA7.wem"
+       }
+      ]
      },
      {
       "Id": "2816467889",
       "Name": "AMB_SP_Stone",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Stone",
-      "GUID": "{22D0C852-53FA-4FEC-8A03-FA6E4BDEA426}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "GUID": "{BE76A177-8837-4C99-A628-A4D6FB5F78C1}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "31622159",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_003.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_003_755F56E2.wem"
+       },
+       {
+        "Id": "99966953",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_010.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_010_755F56E2.wem"
+       },
+       {
+        "Id": "159802458",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_008.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_008_755F56E2.wem"
+       },
+       {
+        "Id": "413774303",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_007.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_007_755F56E2.wem"
+       },
+       {
+        "Id": "487880339",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_000.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_000_755F56E2.wem"
+       },
+       {
+        "Id": "709508514",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_005.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_005_755F56E2.wem"
+       },
+       {
+        "Id": "716737378",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_012.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_012_755F56E2.wem"
+       },
+       {
+        "Id": "747713200",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_002.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_002_755F56E2.wem"
+       },
+       {
+        "Id": "794499018",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_001.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_001_755F56E2.wem"
+       },
+       {
+        "Id": "855133521",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_011.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_011_755F56E2.wem"
+       },
+       {
+        "Id": "922109525",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_013.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_013_755F56E2.wem"
+       },
+       {
+        "Id": "931237603",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_006.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_006_755F56E2.wem"
+       },
+       {
+        "Id": "1012669128",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Stone_004.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Stone_004_755F56E2.wem"
+       }
+      ]
      },
      {
-      "Id": "3897627331",
-      "Name": "AMB_SP_Water",
-      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Water",
-      "GUID": "{8B7307DA-8847-46BB-A769-B01A6BC7A505}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "Id": "1492342808",
+      "Name": "AMB_SP_Torch",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Torch",
+      "GUID": "{48C61389-C38A-4687-A821-445B63A16420}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "506760846",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Torch_003.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Torch_003_755F56E2.wem"
+       },
+       {
+        "Id": "674086172",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Torch_002.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Torch_002_755F56E2.wem"
+       },
+       {
+        "Id": "874570841",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Torch_001.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Torch_001_755F56E2.wem"
+       },
+       {
+        "Id": "886689005",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Torch_000.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Torch_000_755F56E2.wem"
+       }
+      ]
      },
      {
       "Id": "1104827821",
       "Name": "AMB_SP_Wood",
       "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\SoundPoints\\AMB_SP_Wood",
-      "GUID": "{380FEC08-17C8-49BE-B602-C7F0EAA20847}",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "GUID": "{3255B103-8739-42DC-9678-3CE6E7D554EB}",
+      "MaxAttenuation": "80.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "17226168",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_008.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_008_755F56E2.wem"
+       },
+       {
+        "Id": "56216148",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_007.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_007_755F56E2.wem"
+       },
+       {
+        "Id": "144017181",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_010.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_010_755F56E2.wem"
+       },
+       {
+        "Id": "190785563",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_011.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_011_755F56E2.wem"
+       },
+       {
+        "Id": "323315820",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_004.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_004_755F56E2.wem"
+       },
+       {
+        "Id": "442969432",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_015.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_015_755F56E2.wem"
+       },
+       {
+        "Id": "517211540",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_013.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_013_755F56E2.wem"
+       },
+       {
+        "Id": "517575681",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_014.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_014_755F56E2.wem"
+       },
+       {
+        "Id": "624338881",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_006.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_006_755F56E2.wem"
+       },
+       {
+        "Id": "638099460",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_002.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "647175153",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_017.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_017_755F56E2.wem"
+       },
+       {
+        "Id": "658678771",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_000.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_000_755F56E2.wem"
+       },
+       {
+        "Id": "675557955",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_003.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "861689829",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_012.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_012_755F56E2.wem"
+       },
+       {
+        "Id": "902492493",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_016.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_016_755F56E2.wem"
+       },
+       {
+        "Id": "986202924",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_001.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "1028314853",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\SoundPoints\\AMB_SP_Wood_005.wav",
+        "Path": "SFX\\Ambiances\\SoundPoints\\AMB_SP_Wood_005_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "416895869",
+      "Name": "AMB_Sshots_Long",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Sshots_Long",
+      "GUID": "{01928392-A514-4453-977D-215FFD9DBE10}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "41740410",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Long_001.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Long_001_755F56E2.wem"
+       },
+       {
+        "Id": "249370520",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Long_004.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Long_004_755F56E2.wem"
+       },
+       {
+        "Id": "402303279",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Long_003.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Long_003_755F56E2.wem"
+       },
+       {
+        "Id": "823267283",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Long_002.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Long_002_755F56E2.wem"
+       },
+       {
+        "Id": "944553583",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Long_000.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Long_000_755F56E2.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1929281362",
+      "Name": "AMB_Sshots_Shorts",
+      "ObjectPath": "\\Events\\DS EVENTS\\SFX EVENTS\\AMBIANCES EVENTS\\Sshots\\AMB_Sshots_Shorts",
+      "GUID": "{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "42055961",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_002.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_002_755F56E2.wem"
+       },
+       {
+        "Id": "135630706",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_008.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_008_755F56E2.wem"
+       },
+       {
+        "Id": "187413255",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_006.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_006_755F56E2.wem"
+       },
+       {
+        "Id": "318461229",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_007.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_007_755F56E2.wem"
+       },
+       {
+        "Id": "411309560",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_003.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_003_755F56E2.wem"
+       },
+       {
+        "Id": "456005314",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_001.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_001_755F56E2.wem"
+       },
+       {
+        "Id": "637549687",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_004.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_004_755F56E2.wem"
+       },
+       {
+        "Id": "701774055",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_000.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_000_755F56E2.wem"
+       },
+       {
+        "Id": "867998728",
+        "Language": "SFX",
+        "ShortName": "Ambiances\\Sshots\\AMB_SShots_Shorts_005.wav",
+        "Path": "SFX\\Ambiances\\Sshots\\AMB_SShots_Shorts_005_755F56E2.wem"
+       }
+      ]
      },
      {
       "Id": "2897623584",
@@ -254,8 +724,8 @@
       "GUID": "{3AD6246B-F042-47B4-A29E-9E3066309A59}",
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.659434",
-      "DurationMax": "1.466029",
+      "DurationMin": "0.000000",
+      "DurationMax": "1.641063",
       "IncludedMemoryFiles": [
        {
         "Id": "68783575",
@@ -264,16 +734,58 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Wood_755F56E2.wem"
        },
        {
+        "Id": "99171799",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_003_755F56E2.wem"
+       },
+       {
+        "Id": "126077809",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_001_755F56E2.wem"
+       },
+       {
         "Id": "193868444",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Cobble.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Cobble_755F56E2.wem"
        },
        {
+        "Id": "279559393",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "319254176",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "344324013",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_000_755F56E2.wem"
+       },
+       {
         "Id": "375827832",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Grass.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Grass_755F56E2.wem"
+       },
+       {
+        "Id": "462708231",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "463997083",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_003_755F56E2.wem"
        },
        {
         "Id": "511623743",
@@ -288,10 +800,88 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Dirt_755F56E2.wem"
        },
        {
+        "Id": "586413115",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "593125295",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "615723314",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_005_755F56E2.wem"
+       },
+       {
+        "Id": "639047717",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_000_755F56E2.wem"
+       },
+       {
         "Id": "691358117",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Concrete.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Death\\Character_Death_Fall_Concrete_755F56E2.wem"
+       },
+       {
+        "Id": "747937662",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_004_755F56E2.wem"
+       },
+       {
+        "Id": "777798517",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "791304353",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_000_755F56E2.wem"
+       },
+       {
+        "Id": "843437770",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_004_755F56E2.wem"
+       },
+       {
+        "Id": "878390117",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "898216102",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_004_755F56E2.wem"
+       },
+       {
+        "Id": "962402633",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Cobble_002_755F56E2.wem"
+       },
+       {
+        "Id": "982367589",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "984362373",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Death\\Char_Stan_Death_Grass_000_755F56E2.wem"
        }
       ],
       "SwitchContainers": [
@@ -302,23 +892,19 @@
           "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
           "Media": [
            {
-            "Id": "193868444"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
+            "Id": "791304353"
+           },
            {
-            "Id": "691358117"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
+            "Id": "586413115"
+           },
            {
-            "Id": "522901430"
+            "Id": "962402633"
+           },
+           {
+            "Id": "463997083"
+           },
+           {
+            "Id": "898216102"
            }
           ]
          },
@@ -326,7 +912,19 @@
           "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
           "Media": [
            {
-            "Id": "375827832"
+            "Id": "984362373"
+           },
+           {
+            "Id": "126077809"
+           },
+           {
+            "Id": "593125295"
+           },
+           {
+            "Id": "279559393"
+           },
+           {
+            "Id": "747937662"
            }
           ]
          },
@@ -334,7 +932,16 @@
           "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
           "Media": [
            {
-            "Id": "511623743"
+            "Id": "639047717"
+           },
+           {
+            "Id": "777798517"
+           },
+           {
+            "Id": "878390117"
+           },
+           {
+            "Id": "99171799"
            }
           ]
          },
@@ -342,7 +949,22 @@
           "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
           "Media": [
            {
-            "Id": "68783575"
+            "Id": "344324013"
+           },
+           {
+            "Id": "982367589"
+           },
+           {
+            "Id": "462708231"
+           },
+           {
+            "Id": "319254176"
+           },
+           {
+            "Id": "843437770"
+           },
+           {
+            "Id": "615723314"
            }
           ]
          }
@@ -516,14 +1138,44 @@
       "GUID": "{D100B9B6-46EB-4C9E-B75A-053764083313}",
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.265012",
-      "DurationMax": "0.871966",
+      "DurationMin": "0.264708",
+      "DurationMax": "1.026585",
       "IncludedMemoryFiles": [
+       {
+        "Id": "28538691",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004_755F56E2.wem"
+       },
        {
         "Id": "31245357",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "41819788",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_000_755F56E2.wem"
+       },
+       {
+        "Id": "57707508",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "103673871",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003_755F56E2.wem"
+       },
+       {
+        "Id": "167196666",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_000_755F56E2.wem"
        },
        {
         "Id": "226748808",
@@ -532,10 +1184,22 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_002_755F56E2.wem"
        },
        {
+        "Id": "230846623",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_002_755F56E2.wem"
+       },
+       {
         "Id": "255959665",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Dirt_001_755F56E2.wem"
+       },
+       {
+        "Id": "288659368",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_002_755F56E2.wem"
        },
        {
         "Id": "305406559",
@@ -544,10 +1208,28 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Concrete_001_755F56E2.wem"
        },
        {
+        "Id": "334061952",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "381012372",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002_755F56E2.wem"
+       },
+       {
         "Id": "406860864",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "411990412",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_001_755F56E2.wem"
        },
        {
         "Id": "459899386",
@@ -556,10 +1238,52 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Grass_001_D80904F6.wem"
        },
        {
+        "Id": "475118708",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000_755F56E2.wem"
+       },
+       {
+        "Id": "486664208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001_755F56E2.wem"
+       },
+       {
         "Id": "505658381",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "522579204",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "552730287",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_000_755F56E2.wem"
+       },
+       {
+        "Id": "599665536",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005_755F56E2.wem"
+       },
+       {
+        "Id": "649927608",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_000_755F56E2.wem"
+       },
+       {
+        "Id": "655283744",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_004_755F56E2.wem"
        },
        {
         "Id": "698345088",
@@ -574,10 +1298,40 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Sand_001_755F56E2.wem"
        },
        {
+        "Id": "709339750",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Sand\\Char_Stan_Jump_Landing_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "722951102",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "749798089",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_001_755F56E2.wem"
+       },
+       {
         "Id": "781274263",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "836408049",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Grass\\Char_Stan_Jump_Landing_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "862229070",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Wood\\Char_Stan_Jump_Landing_Wood_003_755F56E2.wem"
        },
        {
         "Id": "893162646",
@@ -590,80 +1344,15 @@
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_Landing_Cobble_002_755F56E2.wem"
+       },
+       {
+        "Id": "1032091314",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Landing\\Cobble\\Char_Stan_Jump_Landing_Cobble_004_755F56E2.wem"
        }
       ],
       "SwitchContainers": [
-       {
-        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
-        "Children": [
-         {
-          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-          "Media": [
-           {
-            "Id": "781274263"
-           },
-           {
-            "Id": "993431990"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-          "Media": [
-           {
-            "Id": "31245357"
-           },
-           {
-            "Id": "700285031"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
-           {
-            "Id": "226748808"
-           },
-           {
-            "Id": "255959665"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-          "Media": [
-           {
-            "Id": "505658381"
-           },
-           {
-            "Id": "698345088"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
-           {
-            "Id": "893162646"
-           },
-           {
-            "Id": "305406559"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-          "Media": [
-           {
-            "Id": "406860864"
-           },
-           {
-            "Id": "459899386"
-           }
-          ]
-         }
-        ]
-       },
        {
         "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
         "Children": [
@@ -807,7 +1496,7 @@
         ]
        },
        {
-        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
         "Children": [
          {
           "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
@@ -876,6 +1565,102 @@
           ]
          }
         ]
+       },
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "475118708"
+         },
+         {
+          "Id": "486664208"
+         },
+         {
+          "Id": "381012372"
+         },
+         {
+          "Id": "103673871"
+         },
+         {
+          "Id": "28538691"
+         },
+         {
+          "Id": "599665536"
+         }
+        ],
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "649927608"
+           },
+           {
+            "Id": "57707508"
+           },
+           {
+            "Id": "288659368"
+           },
+           {
+            "Id": "522579204"
+           },
+           {
+            "Id": "1032091314"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "41819788"
+           },
+           {
+            "Id": "709339750"
+           },
+           {
+            "Id": "334061952"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "552730287"
+           },
+           {
+            "Id": "411990412"
+           },
+           {
+            "Id": "722951102"
+           },
+           {
+            "Id": "862229070"
+           },
+           {
+            "Id": "655283744"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "167196666"
+           },
+           {
+            "Id": "749798089"
+           },
+           {
+            "Id": "230846623"
+           },
+           {
+            "Id": "836408049"
+           }
+          ]
+         }
+        ]
        }
       ]
      },
@@ -887,7 +1672,7 @@
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.188677",
-      "DurationMax": "0.444565",
+      "DurationMax": "0.524961",
       "IncludedMemoryFiles": [
        {
         "Id": "5715417",
@@ -896,10 +1681,46 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_001_755F56E2.wem"
        },
        {
+        "Id": "12549718",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "19313193",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_000_755F56E2.wem"
+       },
+       {
+        "Id": "28538691",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004_755F56E2.wem"
+       },
+       {
+        "Id": "57708345",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_003_755F56E2.wem"
+       },
+       {
         "Id": "88503777",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "103673871",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003_755F56E2.wem"
+       },
+       {
+        "Id": "162016036",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_001_755F56E2.wem"
        },
        {
         "Id": "251852521",
@@ -908,10 +1729,64 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_001_755F56E2.wem"
        },
        {
+        "Id": "288647545",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_002_755F56E2.wem"
+       },
+       {
         "Id": "371042949",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Concrete_001_755F56E2.wem"
+       },
+       {
+        "Id": "376209100",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "381012372",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002_755F56E2.wem"
+       },
+       {
+        "Id": "419360385",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "438940279",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "475118708",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000_755F56E2.wem"
+       },
+       {
+        "Id": "486664208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001_755F56E2.wem"
+       },
+       {
+        "Id": "491521284",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "599665536",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005_755F56E2.wem"
        },
        {
         "Id": "606579897",
@@ -932,6 +1807,12 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Cobble_003_755F56E2.wem"
        },
        {
+        "Id": "661270864",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_002_755F56E2.wem"
+       },
+       {
         "Id": "725719132",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_001.wav",
@@ -950,10 +1831,34 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Dirt_002_755F56E2.wem"
        },
        {
+        "Id": "799035293",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Grass\\Char_Stan_Jump_TakeOff_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "810614141",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_004_755F56E2.wem"
+       },
+       {
         "Id": "858051333",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "866316533",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "897196917",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_000_755F56E2.wem"
        },
        {
         "Id": "988968491",
@@ -962,10 +1867,22 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_002_755F56E2.wem"
        },
        {
+        "Id": "992424639",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Wood_000_755F56E2.wem"
+       },
+       {
         "Id": "995244962",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Jump\\Character_MoveSet_Jump_TakeOff_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "1022610164",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\TakeOff\\Char_Stan_Jump_TakeOff_Sand_002_755F56E2.wem"
        },
        {
         "Id": "1064913877",
@@ -975,83 +1892,6 @@
        }
       ],
       "SwitchContainers": [
-       {
-        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
-        "Children": [
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
-           {
-            "Id": "371042949"
-           },
-           {
-            "Id": "760396261"
-           },
-           {
-            "Id": "625683214"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-          "Media": [
-           {
-            "Id": "251852521"
-           },
-           {
-            "Id": "1064913877"
-           },
-           {
-            "Id": "643940714"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-          "Media": [
-           {
-            "Id": "88503777"
-           },
-           {
-            "Id": "606579897"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-          "Media": [
-           {
-            "Id": "858051333"
-           },
-           {
-            "Id": "5715417"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
-           {
-            "Id": "725719132"
-           },
-           {
-            "Id": "767399380"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-          "Media": [
-           {
-            "Id": "995244962"
-           },
-           {
-            "Id": "988968491"
-           }
-          ]
-         }
-        ]
-       },
        {
         "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
         "Children": [
@@ -1278,6 +2118,99 @@
            },
            {
             "Id": "988968491"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "475118708"
+         },
+         {
+          "Id": "486664208"
+         },
+         {
+          "Id": "381012372"
+         },
+         {
+          "Id": "103673871"
+         },
+         {
+          "Id": "28538691"
+         },
+         {
+          "Id": "599665536"
+         }
+        ],
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "19313193"
+           },
+           {
+            "Id": "866316533"
+           },
+           {
+            "Id": "288647545"
+           },
+           {
+            "Id": "438940279"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "897196917"
+           },
+           {
+            "Id": "12549718"
+           },
+           {
+            "Id": "1022610164"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "491521284"
+           },
+           {
+            "Id": "799035293"
+           },
+           {
+            "Id": "419360385"
+           },
+           {
+            "Id": "57708345"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "992424639"
+           },
+           {
+            "Id": "162016036"
+           },
+           {
+            "Id": "661270864"
+           },
+           {
+            "Id": "376209100"
+           },
+           {
+            "Id": "810614141"
            }
           ]
          }
@@ -1296,10 +2229,40 @@
       "DurationMax": "0.558261",
       "IncludedMemoryFiles": [
        {
+        "Id": "9744123",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_006_755F56E2.wem"
+       },
+       {
+        "Id": "28538691",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004_755F56E2.wem"
+       },
+       {
+        "Id": "50684555",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_008.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_008_755F56E2.wem"
+       },
+       {
         "Id": "63644349",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "65703772",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_001_755F56E2.wem"
+       },
+       {
+        "Id": "75623241",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_007.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_007_755F56E2.wem"
        },
        {
         "Id": "99105961",
@@ -1308,10 +2271,34 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001_755F56E2.wem"
        },
        {
+        "Id": "103673871",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003_755F56E2.wem"
+       },
+       {
         "Id": "121194433",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "126093791",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_004_755F56E2.wem"
+       },
+       {
+        "Id": "132570721",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "153028597",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_007.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_007_755F56E2.wem"
        },
        {
         "Id": "165071834",
@@ -1332,10 +2319,70 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001_755F56E2.wem"
        },
        {
+        "Id": "265850193",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "267332757",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "276001832",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_005_755F56E2.wem"
+       },
+       {
+        "Id": "276067157",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_000_755F56E2.wem"
+       },
+       {
         "Id": "294584460",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "305271914",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_006_755F56E2.wem"
+       },
+       {
+        "Id": "350568519",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "371579208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_000_755F56E2.wem"
+       },
+       {
+        "Id": "376140568",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "381012372",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002_755F56E2.wem"
+       },
+       {
+        "Id": "413391876",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_005_755F56E2.wem"
        },
        {
         "Id": "418583048",
@@ -1350,10 +2397,64 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003_755F56E2.wem"
        },
        {
+        "Id": "475118708",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000_755F56E2.wem"
+       },
+       {
+        "Id": "486664208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001_755F56E2.wem"
+       },
+       {
+        "Id": "486689094",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_004_755F56E2.wem"
+       },
+       {
+        "Id": "489719064",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "584810205",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_010.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_010_755F56E2.wem"
+       },
+       {
         "Id": "594014003",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "599665536",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005_755F56E2.wem"
+       },
+       {
+        "Id": "640653547",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Grass_003_755F56E2.wem"
+       },
+       {
+        "Id": "645357951",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_002_755F56E2.wem"
+       },
+       {
+        "Id": "654293886",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_000_755F56E2.wem"
        },
        {
         "Id": "665670132",
@@ -1362,16 +2463,46 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003_755F56E2.wem"
        },
        {
+        "Id": "689268125",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "697450412",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_002_755F56E2.wem"
+       },
+       {
         "Id": "698470715",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003_755F56E2.wem"
        },
        {
+        "Id": "727241920",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_003_755F56E2.wem"
+       },
+       {
         "Id": "745945899",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002_755F56E2.wem"
+       },
+       {
+        "Id": "831457490",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_006_755F56E2.wem"
+       },
+       {
+        "Id": "852390387",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_002_755F56E2.wem"
        },
        {
         "Id": "854541873",
@@ -1402,98 +2533,33 @@
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002_755F56E2.wem"
+       },
+       {
+        "Id": "970585301",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_008.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Cobble_008_755F56E2.wem"
+       },
+       {
+        "Id": "1039215921",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_004_755F56E2.wem"
+       },
+       {
+        "Id": "1057413679",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Char_Stan_Run_Footsteps_Wood_005_755F56E2.wem"
+       },
+       {
+        "Id": "1071934540",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_004_755F56E2.wem"
        }
       ],
       "SwitchContainers": [
-       {
-        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
-        "Children": [
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
-           {
-            "Id": "436094280"
-           },
-           {
-            "Id": "895352448"
-           },
-           {
-            "Id": "418583048"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-          "Media": [
-           {
-            "Id": "910093027"
-           },
-           {
-            "Id": "294584460"
-           },
-           {
-            "Id": "99105961"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-          "Media": [
-           {
-            "Id": "745945899"
-           },
-           {
-            "Id": "594014003"
-           },
-           {
-            "Id": "698470715"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-          "Media": [
-           {
-            "Id": "121194433"
-           },
-           {
-            "Id": "907411644"
-           },
-           {
-            "Id": "165071834"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
-           {
-            "Id": "854541873"
-           },
-           {
-            "Id": "965590172"
-           },
-           {
-            "Id": "213875360"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-          "Media": [
-           {
-            "Id": "665670132"
-           },
-           {
-            "Id": "192931564"
-           },
-           {
-            "Id": "63644349"
-           }
-          ]
-         }
-        ]
-       },
        {
         "SwitchValue": "{32631DF3-1804-4308-8ADB-CBAD960F3706}",
         "Children": [
@@ -1756,6 +2822,144 @@
            },
            {
             "Id": "63644349"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "475118708"
+         },
+         {
+          "Id": "486664208"
+         },
+         {
+          "Id": "381012372"
+         },
+         {
+          "Id": "103673871"
+         },
+         {
+          "Id": "28538691"
+         },
+         {
+          "Id": "599665536"
+         }
+        ],
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "654293886"
+           },
+           {
+            "Id": "265850193"
+           },
+           {
+            "Id": "645357951"
+           },
+           {
+            "Id": "132570721"
+           },
+           {
+            "Id": "126093791"
+           },
+           {
+            "Id": "413391876"
+           },
+           {
+            "Id": "305271914"
+           },
+           {
+            "Id": "75623241"
+           },
+           {
+            "Id": "970585301"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "371579208"
+           },
+           {
+            "Id": "489719064"
+           },
+           {
+            "Id": "697450412"
+           },
+           {
+            "Id": "727241920"
+           },
+           {
+            "Id": "1071934540"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "376140568"
+           },
+           {
+            "Id": "350568519"
+           },
+           {
+            "Id": "267332757"
+           },
+           {
+            "Id": "640653547"
+           },
+           {
+            "Id": "486689094"
+           },
+           {
+            "Id": "276001832"
+           },
+           {
+            "Id": "9744123"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "276067157"
+           },
+           {
+            "Id": "65703772"
+           },
+           {
+            "Id": "852390387"
+           },
+           {
+            "Id": "689268125"
+           },
+           {
+            "Id": "1039215921"
+           },
+           {
+            "Id": "1057413679"
+           },
+           {
+            "Id": "831457490"
+           },
+           {
+            "Id": "153028597"
+           },
+           {
+            "Id": "50684555"
+           },
+           {
+            "Id": "584810205"
            }
           ]
          }
@@ -1771,8 +2975,79 @@
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
-      "DurationMax": "0.000000",
-      "SwitchContainers": []
+      "DurationMax": "0.498301",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "138657710",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_004_755F56E2.wem"
+       },
+       {
+        "Id": "358133404",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_001_755F56E2.wem"
+       },
+       {
+        "Id": "453311358",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_002_755F56E2.wem"
+       },
+       {
+        "Id": "528151459",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_000_755F56E2.wem"
+       },
+       {
+        "Id": "585295958",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_003_755F56E2.wem"
+       },
+       {
+        "Id": "631449260",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_005_755F56E2.wem"
+       },
+       {
+        "Id": "719096504",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Run\\Presence\\Char_Stan_Run_Presence_006_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "528151459"
+         },
+         {
+          "Id": "358133404"
+         },
+         {
+          "Id": "453311358"
+         },
+         {
+          "Id": "585295958"
+         },
+         {
+          "Id": "138657710"
+         },
+         {
+          "Id": "631449260"
+         },
+         {
+          "Id": "719096504"
+         }
+        ]
+       }
+      ]
      },
      {
       "Id": "2350611728",
@@ -1782,13 +3057,43 @@
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.167911",
-      "DurationMax": "0.558261",
+      "DurationMax": "0.819608",
       "IncludedMemoryFiles": [
+       {
+        "Id": "28538691",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_004_755F56E2.wem"
+       },
+       {
+        "Id": "41181713",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_005_755F56E2.wem"
+       },
+       {
+        "Id": "47867243",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_004_755F56E2.wem"
+       },
        {
         "Id": "63644349",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_002_755F56E2.wem"
+       },
+       {
+        "Id": "65262427",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_002_755F56E2.wem"
+       },
+       {
+        "Id": "77168374",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_003_755F56E2.wem"
        },
        {
         "Id": "99105961",
@@ -1797,16 +3102,40 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_001_755F56E2.wem"
        },
        {
+        "Id": "103673871",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_003_755F56E2.wem"
+       },
+       {
         "Id": "121194433",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_002_755F56E2.wem"
        },
        {
+        "Id": "126219324",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_002_755F56E2.wem"
+       },
+       {
+        "Id": "127063260",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_002_755F56E2.wem"
+       },
+       {
         "Id": "165071834",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "167441393",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_004_755F56E2.wem"
        },
        {
         "Id": "192931564",
@@ -1821,10 +3150,46 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_001_755F56E2.wem"
        },
        {
+        "Id": "226138216",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_008.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_008_755F56E2.wem"
+       },
+       {
+        "Id": "278179663",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_006_755F56E2.wem"
+       },
+       {
         "Id": "294584460",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_003_755F56E2.wem"
+       },
+       {
+        "Id": "321374297",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_005_755F56E2.wem"
+       },
+       {
+        "Id": "334091533",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "371579208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_000_755F56E2.wem"
+       },
+       {
+        "Id": "381012372",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_002_755F56E2.wem"
        },
        {
         "Id": "418583048",
@@ -1833,10 +3198,46 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_002_755F56E2.wem"
        },
        {
+        "Id": "424769042",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_006.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_006_755F56E2.wem"
+       },
+       {
         "Id": "436094280",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Concrete_003_755F56E2.wem"
+       },
+       {
+        "Id": "475118708",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_000_755F56E2.wem"
+       },
+       {
+        "Id": "486664208",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_001_755F56E2.wem"
+       },
+       {
+        "Id": "489719064",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_001_755F56E2.wem"
+       },
+       {
+        "Id": "511065006",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_007.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_007_755F56E2.wem"
+       },
+       {
+        "Id": "538685563",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_000_755F56E2.wem"
        },
        {
         "Id": "594014003",
@@ -1845,10 +3246,28 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_001_755F56E2.wem"
        },
        {
+        "Id": "599665536",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Top\\Char_Stan_Footsteps_Top_005_755F56E2.wem"
+       },
+       {
+        "Id": "628853560",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_000_755F56E2.wem"
+       },
+       {
         "Id": "665670132",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Wood_003_755F56E2.wem"
+       },
+       {
+        "Id": "697450412",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_002_755F56E2.wem"
        },
        {
         "Id": "698470715",
@@ -1857,16 +3276,46 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_003_755F56E2.wem"
        },
        {
+        "Id": "698713552",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_000_755F56E2.wem"
+       },
+       {
+        "Id": "718446573",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_001_755F56E2.wem"
+       },
+       {
+        "Id": "727241920",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_003_755F56E2.wem"
+       },
+       {
         "Id": "745945899",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Sand_002_755F56E2.wem"
        },
        {
+        "Id": "774346380",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_004_755F56E2.wem"
+       },
+       {
         "Id": "854541873",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_003_755F56E2.wem"
+       },
+       {
+        "Id": "868153352",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_003_755F56E2.wem"
        },
        {
         "Id": "895352448",
@@ -1887,102 +3336,43 @@
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Cobble_002_755F56E2.wem"
        },
        {
+        "Id": "911841038",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_007.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_007_755F56E2.wem"
+       },
+       {
+        "Id": "945841414",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Wood\\Char_Stan_Walk_Footsteps_Wood_001_755F56E2.wem"
+       },
+       {
         "Id": "965590172",
         "Language": "SFX",
         "ShortName": "Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002.wav",
         "Path": "SFX\\Foleys\\Characters\\Character 1\\Run\\Character_MoveSet_Run_Footsteps_Dirt_002_755F56E2.wem"
+       },
+       {
+        "Id": "1004821526",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Grass\\Char_Stan_Walk_Footsteps_Grass_001_755F56E2.wem"
+       },
+       {
+        "Id": "1013874599",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Cobble\\Char_Stan_Walk_Footsteps_Cobble_005_755F56E2.wem"
+       },
+       {
+        "Id": "1071934540",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Sand\\Char_Stan_Footsteps_Sand_004_755F56E2.wem"
        }
       ],
       "SwitchContainers": [
-       {
-        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
-        "Children": [
-         {
-          "SwitchValue": "{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}",
-          "Media": [
-           {
-            "Id": "436094280"
-           },
-           {
-            "Id": "895352448"
-           },
-           {
-            "Id": "418583048"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
-          "Media": [
-           {
-            "Id": "910093027"
-           },
-           {
-            "Id": "294584460"
-           },
-           {
-            "Id": "99105961"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
-          "Media": [
-           {
-            "Id": "745945899"
-           },
-           {
-            "Id": "594014003"
-           },
-           {
-            "Id": "698470715"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
-          "Media": [
-           {
-            "Id": "121194433"
-           },
-           {
-            "Id": "907411644"
-           },
-           {
-            "Id": "165071834"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}",
-          "Media": [
-           {
-            "Id": "854541873"
-           },
-           {
-            "Id": "965590172"
-           },
-           {
-            "Id": "213875360"
-           }
-          ]
-         },
-         {
-          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
-          "Media": [
-           {
-            "Id": "665670132"
-           },
-           {
-            "Id": "192931564"
-           },
-           {
-            "Id": "63644349"
-           }
-          ]
-         }
-        ]
-       },
        {
         "SwitchValue": "{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}",
         "Children": [
@@ -2249,6 +3639,135 @@
           ]
          }
         ]
+       },
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "475118708"
+         },
+         {
+          "Id": "486664208"
+         },
+         {
+          "Id": "381012372"
+         },
+         {
+          "Id": "103673871"
+         },
+         {
+          "Id": "28538691"
+         },
+         {
+          "Id": "599665536"
+         }
+        ],
+        "Children": [
+         {
+          "SwitchValue": "{23908CC5-373B-4844-841B-05045E5E4F14}",
+          "Media": [
+           {
+            "Id": "628853560"
+           },
+           {
+            "Id": "718446573"
+           },
+           {
+            "Id": "65262427"
+           },
+           {
+            "Id": "868153352"
+           },
+           {
+            "Id": "167441393"
+           },
+           {
+            "Id": "1013874599"
+           },
+           {
+            "Id": "424769042"
+           },
+           {
+            "Id": "911841038"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{C342220B-1EF3-461A-871B-EF5A4F624DBC}",
+          "Media": [
+           {
+            "Id": "371579208"
+           },
+           {
+            "Id": "489719064"
+           },
+           {
+            "Id": "697450412"
+           },
+           {
+            "Id": "727241920"
+           },
+           {
+            "Id": "1071934540"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}",
+          "Media": [
+           {
+            "Id": "698713552"
+           },
+           {
+            "Id": "1004821526"
+           },
+           {
+            "Id": "126219324"
+           },
+           {
+            "Id": "77168374"
+           },
+           {
+            "Id": "47867243"
+           },
+           {
+            "Id": "321374297"
+           }
+          ]
+         },
+         {
+          "SwitchValue": "{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}",
+          "Media": [
+           {
+            "Id": "538685563"
+           },
+           {
+            "Id": "945841414"
+           },
+           {
+            "Id": "127063260"
+           },
+           {
+            "Id": "334091533"
+           },
+           {
+            "Id": "774346380"
+           },
+           {
+            "Id": "41181713"
+           },
+           {
+            "Id": "278179663"
+           },
+           {
+            "Id": "511065006"
+           },
+           {
+            "Id": "226138216"
+           }
+          ]
+         }
+        ]
        }
       ]
      },
@@ -2260,7 +3779,70 @@
       "MaxAttenuation": "80.000000",
       "DurationType": "OneShot",
       "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationMax": "0.778639",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "402665367",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_002.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_002_755F56E2.wem"
+       },
+       {
+        "Id": "507824767",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_005.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_005_755F56E2.wem"
+       },
+       {
+        "Id": "664945250",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_000.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_000_755F56E2.wem"
+       },
+       {
+        "Id": "676225416",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_004.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_004_755F56E2.wem"
+       },
+       {
+        "Id": "849991760",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_003.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_003_755F56E2.wem"
+       },
+       {
+        "Id": "1037982069",
+        "Language": "SFX",
+        "ShortName": "Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_001.wav",
+        "Path": "SFX\\Foleys\\Characters\\Stanislas\\Walk\\Presence\\Char_Stan_Walk_Presence_001_755F56E2.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{4C382281-7FAC-4DD1-B692-B02E92399DA5}",
+        "Media": [
+         {
+          "Id": "664945250"
+         },
+         {
+          "Id": "1037982069"
+         },
+         {
+          "Id": "402665367"
+         },
+         {
+          "Id": "849991760"
+         },
+         {
+          "Id": "676225416"
+         },
+         {
+          "Id": "507824767"
+         }
+        ]
+       }
+      ]
      },
      {
       "Id": "3978900703",
@@ -2710,8 +4292,8 @@
       "ObjectPath": "\\Events\\DS EVENTS\\VOICE EVENTS\\Characters\\VO_Char_Punchline_Kill",
       "GUID": "{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}",
       "DurationType": "OneShot",
-      "DurationMin": "1.887875",
-      "DurationMax": "3.849771",
+      "DurationMin": "1.987875",
+      "DurationMax": "3.949771",
       "IncludedMemoryFiles": [
        {
         "Id": "13666830",
@@ -2886,33 +4468,7 @@
     "Language": "SFX",
     "ObjectPath": "Init",
     "ShortName": "Init",
-    "Path": "Init.bnk",
-    "IncludedAuxBusses": [
-     {
-      "Id": "376471424",
-      "Name": "RVB_Zone2",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\DS MIX\\Master\\Aux\\RVB_Zone2",
-      "GUID": "{B5C47425-A678-42A1-8FC5-FDE6A2BD525C}"
-     },
-     {
-      "Id": "376471425",
-      "Name": "RVB_Zone3",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\DS MIX\\Master\\Aux\\RVB_Zone3",
-      "GUID": "{8213D1B2-A907-435C-8014-41B993836799}"
-     },
-     {
-      "Id": "376471427",
-      "Name": "RVB_Zone1",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\DS MIX\\Master\\Aux\\RVB_Zone1",
-      "GUID": "{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}"
-     },
-     {
-      "Id": "376471430",
-      "Name": "RVB_Zone4",
-      "ObjectPath": "\\Master-Mixer Hierarchy\\DS MIX\\Master\\Aux\\RVB_Zone4",
-      "GUID": "{AB48812F-CA5F-4C29-8262-71D1EB9106EB}"
-     }
-    ]
+    "Path": "Init.bnk"
    },
    {
     "Id": "2058607680",
@@ -2964,55 +4520,369 @@
       ]
      },
      {
+      "Id": "1704734930",
+      "Name": "SEGMENTS_MainMusic",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\SEGMENTS_MainMusic",
+      "GUID": "{14E7144B-2A19-4894-9F21-E2FECF76BD1A}",
+      "DurationType": "Infinite",
+      "ReferencedStreamedFiles": [
+       {
+        "Id": "425417005",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem"
+       },
+       {
+        "Id": "635846287",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem"
+       },
+       {
+        "Id": "738237128",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem"
+       }
+      ],
+      "IncludedMemoryFiles": [
+       {
+        "Id": "11282118",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P3.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P3_073B4D0C.wem"
+       },
+       {
+        "Id": "17309962",
+        "Language": "SFX",
+        "ShortName": "Music\\Outro\\Segments_Fight_OutroLoop_Stan.wav",
+        "Path": "SFX\\Music\\Outro\\Segments_Fight_OutroLoop_Stan_073B4D0C.wem"
+       },
+       {
+        "Id": "136646774",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
+       },
+       {
+        "Id": "171571049",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_001_073B4D0C.wem"
+       },
+       {
+        "Id": "285054235",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Banjo_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Banjo_000_073B4D0C.wem"
+       },
+       {
+        "Id": "300778837",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
+       },
+       {
+        "Id": "323243085",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Accordeon_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Accordeon_000_073B4D0C.wem"
+       },
+       {
+        "Id": "327829395",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
+       },
+       {
+        "Id": "329916654",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
+       },
+       {
+        "Id": "363596962",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P2.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P2_073B4D0C.wem"
+       },
+       {
+        "Id": "371607636",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
+       },
+       {
+        "Id": "425417005",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem",
+        "PrefetchSize": "7290"
+       },
+       {
+        "Id": "467894095",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
+       },
+       {
+        "Id": "475265180",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
+       },
+       {
+        "Id": "492318781",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
+       },
+       {
+        "Id": "500589853",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
+       },
+       {
+        "Id": "500983585",
+        "Language": "SFX",
+        "ShortName": "Music\\Outro\\Segments_Fight_OutroLaunch.wav",
+        "Path": "SFX\\Music\\Outro\\Segments_Fight_OutroLaunch_073B4D0C.wem"
+       },
+       {
+        "Id": "519564728",
+        "Language": "SFX",
+        "ShortName": "Music\\CombatMusic_Test1_Launch.wav",
+        "Path": "SFX\\Music\\CombatMusic_Test1_Launch_073B4D0C.wem"
+       },
+       {
+        "Id": "530982020",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P4.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P4_073B4D0C.wem"
+       },
+       {
+        "Id": "545547126",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_001_073B4D0C.wem"
+       },
+       {
+        "Id": "624186810",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Bass_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Bass_001_073B4D0C.wem"
+       },
+       {
+        "Id": "635846287",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem",
+        "PrefetchSize": "7653"
+       },
+       {
+        "Id": "640019073",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
+       },
+       {
+        "Id": "648061523",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_002_073B4D0C.wem"
+       },
+       {
+        "Id": "668521458",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P1.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P1_073B4D0C.wem"
+       },
+       {
+        "Id": "698480867",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
+       },
+       {
+        "Id": "714366655",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_002_073B4D0C.wem"
+       },
+       {
+        "Id": "738237128",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem",
+        "PrefetchSize": "7298"
+       },
+       {
+        "Id": "778420763",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
+       },
+       {
+        "Id": "794660303",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
+       },
+       {
+        "Id": "841242472",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
+       },
+       {
+        "Id": "852245913",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_000_073B4D0C.wem"
+       },
+       {
+        "Id": "856576358",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
+       },
+       {
+        "Id": "867488535",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
+       },
+       {
+        "Id": "877440624",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_003.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_003_073B4D0C.wem"
+       },
+       {
+        "Id": "892660261",
+        "Language": "SFX",
+        "ShortName": "Music\\CombatMusic_Test1_Loop.wav",
+        "Path": "SFX\\Music\\CombatMusic_Test1_Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "903170528",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_000_073B4D0C.wem"
+       },
+       {
+        "Id": "932992452",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Bass_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Bass_000_073B4D0C.wem"
+       },
+       {
+        "Id": "1032434855",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{C37450F9-9FDB-4FFB-979C-58CF3228EED2}",
+        "Media": [
+         {
+          "Id": "519564728"
+         },
+         {
+          "Id": "892660261"
+         },
+         {
+          "Id": "323243085"
+         },
+         {
+          "Id": "285054235"
+         },
+         {
+          "Id": "877440624"
+         },
+         {
+          "Id": "648061523"
+         },
+         {
+          "Id": "852245913"
+         },
+         {
+          "Id": "171571049"
+         },
+         {
+          "Id": "903170528"
+         },
+         {
+          "Id": "714366655"
+         },
+         {
+          "Id": "545547126"
+         },
+         {
+          "Id": "738237128"
+         },
+         {
+          "Id": "425417005"
+         },
+         {
+          "Id": "635846287"
+         },
+         {
+          "Id": "932992452"
+         },
+         {
+          "Id": "624186810"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{21293A09-F303-48B7-9A70-7559B9CCDD88}",
+        "Media": [
+         {
+          "Id": "500983585"
+         },
+         {
+          "Id": "17309962"
+         }
+        ]
+       }
+      ]
+     },
+     {
       "Id": "1290491939",
       "Name": "STINGERS_DS_Don_L",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Don_L",
-      "GUID": "{A24FCC13-CC80-4D7E-92EE-2767C08D9941}",
+      "GUID": "{E95C7C95-DA51-47CD-8140-CFC62160125D}",
       "DurationType": "OneShot",
-      "DurationMin": "12.537313",
-      "DurationMax": "12.537313",
+      "DurationMin": "7.000000",
+      "DurationMax": "7.000000",
       "IncludedMemoryFiles": [
        {
-        "Id": "123246559",
+        "Id": "492318781",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
        },
        {
-        "Id": "186120177",
+        "Id": "500589853",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
        },
        {
-        "Id": "350732487",
+        "Id": "841242472",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
        },
        {
-        "Id": "371187270",
+        "Id": "867488535",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_004_073B4D0C.wem"
-       },
-       {
-        "Id": "372446375",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_001_073B4D0C.wem"
-       },
-       {
-        "Id": "616109991",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_006_073B4D0C.wem"
-       },
-       {
-        "Id": "718592240",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
        }
       ]
      },
@@ -3020,52 +4890,34 @@
       "Id": "1290491965",
       "Name": "STINGERS_DS_Don_R",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Don_R",
-      "GUID": "{489BDAD2-C7D7-43C3-A81B-7BDA3E292AF1}",
+      "GUID": "{E7DBC1F4-0276-4C33-8CAD-34805782E3EB}",
       "DurationType": "OneShot",
-      "DurationMin": "12.537313",
-      "DurationMax": "12.537313",
+      "DurationMin": "7.000000",
+      "DurationMax": "7.000000",
       "IncludedMemoryFiles": [
        {
-        "Id": "123246559",
+        "Id": "492318781",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
        },
        {
-        "Id": "186120177",
+        "Id": "500589853",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
        },
        {
-        "Id": "350732487",
+        "Id": "841242472",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
        },
        {
-        "Id": "371187270",
+        "Id": "867488535",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_004_073B4D0C.wem"
-       },
-       {
-        "Id": "372446375",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_001_073B4D0C.wem"
-       },
-       {
-        "Id": "616109991",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_006_073B4D0C.wem"
-       },
-       {
-        "Id": "718592240",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Don_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
        }
       ]
      },
@@ -3073,46 +4925,34 @@
       "Id": "459653097",
       "Name": "STINGERS_DS_Marta_L",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Marta_L",
-      "GUID": "{68303AC6-7305-4FA4-920D-7156C03C6182}",
+      "GUID": "{F3619DC8-9796-45DB-B46E-F3DE5CFC0163}",
       "DurationType": "OneShot",
-      "DurationMin": "7.164187",
-      "DurationMax": "7.164187",
+      "DurationMin": "6.500000",
+      "DurationMax": "6.500000",
       "IncludedMemoryFiles": [
        {
-        "Id": "507203963",
+        "Id": "327829395",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
        },
        {
-        "Id": "515118085",
+        "Id": "329916654",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
        },
        {
-        "Id": "552167880",
+        "Id": "794660303",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
        },
        {
-        "Id": "610886810",
+        "Id": "856576358",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_001_073B4D0C.wem"
-       },
-       {
-        "Id": "841085410",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_004_073B4D0C.wem"
-       },
-       {
-        "Id": "880087353",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
        }
       ]
      },
@@ -3120,46 +4960,34 @@
       "Id": "459653111",
       "Name": "STINGERS_DS_Marta_R",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Marta_R",
-      "GUID": "{A81D6D39-5FA4-4B3C-BFFC-A15A97CDC025}",
+      "GUID": "{5BE7DC98-AA8E-4595-B4F0-884C1EC4D3AE}",
       "DurationType": "OneShot",
-      "DurationMin": "7.164187",
-      "DurationMax": "7.164187",
+      "DurationMin": "6.500000",
+      "DurationMax": "6.500000",
       "IncludedMemoryFiles": [
        {
-        "Id": "507203963",
+        "Id": "327829395",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
        },
        {
-        "Id": "515118085",
+        "Id": "329916654",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
        },
        {
-        "Id": "552167880",
+        "Id": "794660303",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
        },
        {
-        "Id": "610886810",
+        "Id": "856576358",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_001_073B4D0C.wem"
-       },
-       {
-        "Id": "841085410",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_004_073B4D0C.wem"
-       },
-       {
-        "Id": "880087353",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Marta_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
        }
       ]
      },
@@ -3167,58 +4995,34 @@
       "Id": "554142265",
       "Name": "STINGERS_DS_Medusa_L",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Medusa_L",
-      "GUID": "{197E560B-35B7-4E05-A2F1-906509A26725}",
+      "GUID": "{4B0866D2-5733-40B1-B0A2-E61849BFEFB9}",
       "DurationType": "OneShot",
       "DurationMin": "7.164187",
       "DurationMax": "7.164187",
       "IncludedMemoryFiles": [
        {
-        "Id": "202254220",
+        "Id": "300778837",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_007.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_007_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
        },
        {
-        "Id": "242819915",
+        "Id": "475265180",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
        },
        {
-        "Id": "266327702",
+        "Id": "778420763",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
        },
        {
-        "Id": "556592728",
+        "Id": "1032434855",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_001_073B4D0C.wem"
-       },
-       {
-        "Id": "590380662",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_006_073B4D0C.wem"
-       },
-       {
-        "Id": "912087750",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_004_073B4D0C.wem"
-       },
-       {
-        "Id": "942806768",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_002_073B4D0C.wem"
-       },
-       {
-        "Id": "954973998",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
        }
       ]
      },
@@ -3226,58 +5030,34 @@
       "Id": "554142247",
       "Name": "STINGERS_DS_Medusa_R",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Medusa_R",
-      "GUID": "{E4438202-6517-4ED3-BC5B-781C39B8A321}",
+      "GUID": "{77FECA11-24E9-44F4-8F70-A99483C73683}",
       "DurationType": "OneShot",
       "DurationMin": "7.164187",
       "DurationMax": "7.164187",
       "IncludedMemoryFiles": [
        {
-        "Id": "202254220",
+        "Id": "300778837",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_007.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_007_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
        },
        {
-        "Id": "242819915",
+        "Id": "475265180",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
        },
        {
-        "Id": "266327702",
+        "Id": "778420763",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
        },
        {
-        "Id": "556592728",
+        "Id": "1032434855",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_001_073B4D0C.wem"
-       },
-       {
-        "Id": "590380662",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_006_073B4D0C.wem"
-       },
-       {
-        "Id": "912087750",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_004_073B4D0C.wem"
-       },
-       {
-        "Id": "942806768",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_002_073B4D0C.wem"
-       },
-       {
-        "Id": "954973998",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Medusa_003_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
        }
       ]
      },
@@ -3285,52 +5065,40 @@
       "Id": "2011547318",
       "Name": "STINGERS_DS_Stan_L",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Stan_L",
-      "GUID": "{F6E323C3-4B03-43AB-B335-F257601BCD88}",
+      "GUID": "{EE516F08-9D20-4F12-9FAC-EA993089A3F3}",
       "DurationType": "OneShot",
       "DurationMin": "7.164187",
       "DurationMax": "7.164187",
       "IncludedMemoryFiles": [
        {
-        "Id": "182886624",
+        "Id": "136646774",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
        },
        {
-        "Id": "261850193",
+        "Id": "371607636",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
        },
        {
-        "Id": "545061261",
+        "Id": "467894095",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
        },
        {
-        "Id": "701999234",
+        "Id": "640019073",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_004_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
        },
        {
-        "Id": "992862984",
+        "Id": "698480867",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_003_073B4D0C.wem"
-       },
-       {
-        "Id": "1041136182",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_006_073B4D0C.wem"
-       },
-       {
-        "Id": "1064606260",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_001_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
        }
       ]
      },
@@ -3338,154 +5106,40 @@
       "Id": "2011547304",
       "Name": "STINGERS_DS_Stan_R",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Stan_R",
-      "GUID": "{1D989448-08A8-4F21-A30F-6EA6FEDB2689}",
+      "GUID": "{23F5C05A-0495-4FB8-84B9-5C156E99050E}",
       "DurationType": "OneShot",
       "DurationMin": "7.164187",
       "DurationMax": "7.164187",
       "IncludedMemoryFiles": [
        {
-        "Id": "182886624",
+        "Id": "136646774",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_005.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_005_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
        },
        {
-        "Id": "261850193",
+        "Id": "371607636",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_000.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_000_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
        },
        {
-        "Id": "545061261",
+        "Id": "467894095",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_002.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_002_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
        },
        {
-        "Id": "701999234",
+        "Id": "640019073",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_004.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_004_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
        },
        {
-        "Id": "992862984",
+        "Id": "698480867",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_003.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_003_073B4D0C.wem"
-       },
-       {
-        "Id": "1041136182",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_006.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_006_073B4D0C.wem"
-       },
-       {
-        "Id": "1064606260",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_001.wav",
-        "Path": "SFX\\Music\\Stingers\\DeathStare\\Stingers_DeathStare_Stanislas_001_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "365611220",
-      "Name": "STINGERS_Kill_Don_L",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Don_L",
-      "GUID": "{A3884006-09B8-4199-8ECA-EC8D16312478}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "488594087",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Don.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Don_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "365611210",
-      "Name": "STINGERS_Kill_Don_R",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Don_R",
-      "GUID": "{17C3B30B-2BBB-437B-9B16-15CACC78BD05}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "488594087",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Don.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Don_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "2968734026",
-      "Name": "STINGERS_Kill_Marta_L",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Marta_L",
-      "GUID": "{AEB4EC94-B591-4A5C-A655-CE07F87B4CE1}",
-      "DurationType": "OneShot",
-      "DurationMin": "10.208333",
-      "DurationMax": "10.208333",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "976832013",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Marta.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Marta_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "2968734036",
-      "Name": "STINGERS_Kill_Marta_R",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Marta_R",
-      "GUID": "{D7374F6B-E08B-41A8-B0A1-F8639CFF1E09}",
-      "DurationType": "OneShot",
-      "DurationMin": "10.208333",
-      "DurationMax": "10.208333",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "976832013",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Marta.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Marta_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "1724805132",
-      "Name": "STINGERS_Kill_Medusa_L",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Medusa_L",
-      "GUID": "{BF1A2322-2E28-49F5-8E83-6CACC6AE64BA}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "742550713",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Medusa.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Medusa_073B4D0C.wem"
-       }
-      ]
-     },
-     {
-      "Id": "1724805138",
-      "Name": "STINGERS_Kill_Medusa_R",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Medusa_R",
-      "GUID": "{B822169F-4781-4E39-BB0C-2D832475EF13}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "742550713",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Medusa.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Medusa_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
        }
       ]
      },
@@ -3493,16 +5147,16 @@
       "Id": "2299281131",
       "Name": "STINGERS_Kill_P1",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P1",
-      "GUID": "{E736F939-F557-4D18-86AC-E619FED2218A}",
+      "GUID": "{82B5C639-E188-4792-8FE7-5166901D2BF0}",
       "DurationType": "OneShot",
-      "DurationMin": "10.208333",
-      "DurationMax": "10.208333",
+      "DurationMin": "9.988702",
+      "DurationMax": "9.988702",
       "IncludedMemoryFiles": [
        {
-        "Id": "976832013",
+        "Id": "530982020",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Marta.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Marta_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P4.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P4_073B4D0C.wem"
        }
       ]
      },
@@ -3510,16 +5164,16 @@
       "Id": "2299281128",
       "Name": "STINGERS_Kill_P2",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P2",
-      "GUID": "{07C4C68C-4266-47D6-8DA3-24C42DBA8E2A}",
+      "GUID": "{33FD3ECB-1C63-4C39-AE89-5C955725F254}",
       "DurationType": "OneShot",
       "DurationMin": "9.375000",
       "DurationMax": "9.375000",
       "IncludedMemoryFiles": [
        {
-        "Id": "488594087",
+        "Id": "11282118",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Don.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Don_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P3.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P3_073B4D0C.wem"
        }
       ]
      },
@@ -3527,16 +5181,16 @@
       "Id": "2299281129",
       "Name": "STINGERS_Kill_P3",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P3",
-      "GUID": "{40101D43-5AE3-4CD7-8D91-3CC497E94F6F}",
+      "GUID": "{E6304B48-78D0-4678-B686-2D1100E4E3FE}",
       "DurationType": "OneShot",
       "DurationMin": "9.375000",
       "DurationMax": "9.375000",
       "IncludedMemoryFiles": [
        {
-        "Id": "626168802",
+        "Id": "363596962",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Stan.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Stan_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P2.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P2_073B4D0C.wem"
        }
       ]
      },
@@ -3544,52 +5198,156 @@
       "Id": "2299281134",
       "Name": "STINGERS_Kill_P4",
       "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P4",
-      "GUID": "{1CF2E66B-832A-4ACD-B198-DF44E802CBF8}",
+      "GUID": "{94A2079E-0221-447D-A89F-CECC23C786C1}",
       "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
+      "DurationMin": "10.208333",
+      "DurationMax": "10.208333",
       "IncludedMemoryFiles": [
        {
-        "Id": "742550713",
+        "Id": "668521458",
         "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Medusa.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Medusa_073B4D0C.wem"
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P1.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P1_073B4D0C.wem"
        }
       ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1498827748",
+      "Name": "STATE_Music_Main",
+      "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main",
+      "GUID": "{25798F06-71D7-4FE6-A083-1C82A4060CC6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\None",
+        "GUID": "{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"
+       },
+       {
+        "Id": "3604647259",
+        "Name": "MainMenu",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\MainMenu",
+        "GUID": "{270F57B3-C631-4860-AC4E-C2852FF48010}"
+       },
+       {
+        "Id": "1585161430",
+        "Name": "Fight_Intro",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_Intro",
+        "GUID": "{A99B4BF6-EF52-4D35-82F6-B7142CD4CC07}"
+       },
+       {
+        "Id": "4258958663",
+        "Name": "Fight_End",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_End",
+        "GUID": "{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"
+       },
+       {
+        "Id": "4201650965",
+        "Name": "Outro_Stan",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Stan",
+        "GUID": "{21293A09-F303-48B7-9A70-7559B9CCDD88}"
+       },
+       {
+        "Id": "3762960553",
+        "Name": "Fight_Silence",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_Silence",
+        "GUID": "{C90A8475-12D9-499E-8BC4-CE7027D7CFFE}"
+       },
+       {
+        "Id": "1714471738",
+        "Name": "Outro_Marta",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Marta",
+        "GUID": "{C2E2F4E5-BFF6-4327-AC7A-FDB021BA41B5}"
+       },
+       {
+        "Id": "3204829974",
+        "Name": "Outro_Medusa",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Medusa",
+        "GUID": "{8315AB55-62F8-49E0-8AAA-1943D47B9B38}"
+       },
+       {
+        "Id": "2851607052",
+        "Name": "Outro_Don",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Don",
+        "GUID": "{0F4C10BE-1997-4536-A981-C7D962CBBC82}"
+       }
+      ]
+     }
+    ],
+    "Triggers": [
+     {
+      "Id": "529325935",
+      "Name": "TRIGGER_DS_Stan_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Stan_R",
+      "GUID": "{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}"
      },
      {
-      "Id": "854864811",
-      "Name": "STINGERS_Kill_Stan_L",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Stan_L",
-      "GUID": "{DA3042C8-9B7C-4E37-A31D-368BEF110989}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "626168802",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Stan.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Stan_073B4D0C.wem"
-       }
-      ]
+      "Id": "529325937",
+      "Name": "TRIGGER_DS_Stan_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Stan_L",
+      "GUID": "{7AEB2E13-8238-4097-9912-7BEC99845B8B}"
      },
      {
-      "Id": "854864821",
-      "Name": "STINGERS_Kill_Stan_R",
-      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_Stan_R",
-      "GUID": "{6FB4A5BD-5EC5-4D55-9350-4D5CA5F9193B}",
-      "DurationType": "OneShot",
-      "DurationMin": "9.375000",
-      "DurationMax": "9.375000",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "626168802",
-        "Language": "SFX",
-        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_Stan.wav",
-        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_Stan_073B4D0C.wem"
-       }
-      ]
+      "Id": "2046853094",
+      "Name": "TRIGGER_DS_Don_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Don_L",
+      "GUID": "{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}"
+     },
+     {
+      "Id": "2046853112",
+      "Name": "TRIGGER_DS_Don_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Don_R",
+      "GUID": "{966E938A-496B-40B5-A721-DCBA921AD2C9}"
+     },
+     {
+      "Id": "2839118456",
+      "Name": "TRIGGER_Kill_P1",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P1",
+      "GUID": "{4834D336-30A0-4382-BC73-2CC9D6F41DFC}"
+     },
+     {
+      "Id": "2839118458",
+      "Name": "TRIGGER_Kill_P3",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P3",
+      "GUID": "{66953C16-BB83-43C9-8451-1AF0998ACA9F}"
+     },
+     {
+      "Id": "2839118459",
+      "Name": "TRIGGER_Kill_P2",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P2",
+      "GUID": "{2D2CFE97-97EA-4B96-B036-06CFE79FF94E}"
+     },
+     {
+      "Id": "2839118461",
+      "Name": "TRIGGER_Kill_P4",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P4",
+      "GUID": "{3E38FA31-CADD-4194-AFEA-11D44062B526}"
+     },
+     {
+      "Id": "2960638048",
+      "Name": "TRIGGER_DS_Marta_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Marta_L",
+      "GUID": "{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}"
+     },
+     {
+      "Id": "2960638078",
+      "Name": "TRIGGER_DS_Marta_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Marta_R",
+      "GUID": "{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}"
+     },
+     {
+      "Id": "4277786702",
+      "Name": "TRIGGER_DS_Medusa_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Medusa_L",
+      "GUID": "{1405F734-019A-4D46-90C7-880C257C12F0}"
+     },
+     {
+      "Id": "4277786704",
+      "Name": "TRIGGER_DS_Medusa_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Medusa_R",
+      "GUID": "{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}"
      }
     ]
    },
@@ -3599,26 +5357,7 @@
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\TEST\\TEST",
     "ShortName": "TEST",
-    "Path": "TEST.bnk",
-    "IncludedEvents": [
-     {
-      "Id": "3187507146",
-      "Name": "Play_Test",
-      "ObjectPath": "\\Events\\TEST\\Play_Test",
-      "GUID": "{F2A1F844-346D-4757-9DE9-5AE11908D644}",
-      "DurationType": "OneShot",
-      "DurationMin": "135.877411",
-      "DurationMax": "135.877411",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "1064006755",
-        "Language": "SFX",
-        "ShortName": "Main Title.wav",
-        "Path": "SFX\\Main Title_755F56E2.wem"
-       }
-      ]
-     }
-    ]
+    "Path": "TEST.bnk"
    },
    {
     "Id": "3967014322",

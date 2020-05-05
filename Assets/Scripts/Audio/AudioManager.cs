@@ -7,6 +7,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public GameObject[] Listeners;
     public string[] Soundbanks;
+    public bool combatMusicOnStart;
 
     private void Awake()
     {
@@ -36,7 +37,15 @@ public class AudioManager : MonoBehaviour
         AkSoundEngine.SetState("STATE_Music_DuelState_Marta", "False");
         AkSoundEngine.SetState("STATE_Music_DuelState_Medusa", "False");
         AkSoundEngine.SetState("STATE_Music_DuelState_Don", "False");
+        if (combatMusicOnStart)
+            AkSoundEngine.SetState("STATE_Music_Main", "Fight_End");
+        else
+            AkSoundEngine.SetState("STATE_Music_Main", "Fight_Silence");
         AkSoundEngine.PostEvent("SEGMENTS_DuelMusic", gameObject);
+        AkSoundEngine.PostEvent("SEGMENTS_MainMusic", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Sea", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Waves", gameObject);
+        AkSoundEngine.PostEvent("AMB_Bed_Wind", gameObject);
     }
 
     public void AddListeners(GameObject in_emitter, int listener1)
