@@ -352,8 +352,8 @@
       "ObjectPath": "\\Events\\DS EVENTS\\VOICE EVENTS\\Characters\\VO_Char_Punchline_Kill",
       "GUID": "{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}",
       "DurationType": "OneShot",
-      "DurationMin": "1.887875",
-      "DurationMax": "3.849771",
+      "DurationMin": "1.987875",
+      "DurationMax": "3.949771",
       "IncludedMemoryFiles": [
        {
         "Id": "13666830",

@@ -123,6 +123,10 @@ public class TestMode : GameMode
 
     private void EndOfTheMatch()
     {
+        //Sound
+        AkSoundEngine.SetState("STATE_Music_Main", "Outro_Stan");
+        //Sound
+
         List<FinalScoreHandler> playerScores = new List<FinalScoreHandler>(4);
 
         foreach (PlayerInput player in players)

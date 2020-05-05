@@ -15,7 +15,7 @@
 						<Action Name="" ID="{A81AC8C3-5E6F-4598-92EE-5AB7223BA54C}" ShortID="372542218">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MainMusic" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
+									<ObjectRef Name="SEGMENTS_MainMusic" ID="{BFA14F3A-27CE-434C-BBD9-8C593D03AD32}" WorkUnitID="{606B2E20-8537-4E89-BF40-A4B18949339F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
