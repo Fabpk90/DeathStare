@@ -18,26 +18,7 @@
     "Language": "SFX",
     "ObjectPath": "\\SoundBanks\\TEST\\TEST",
     "ShortName": "TEST",
-    "Path": "TEST.bnk",
-    "IncludedEvents": [
-     {
-      "Id": "3187507146",
-      "Name": "Play_Test",
-      "ObjectPath": "\\Events\\TEST\\Play_Test",
-      "GUID": "{F2A1F844-346D-4757-9DE9-5AE11908D644}",
-      "DurationType": "OneShot",
-      "DurationMin": "135.877411",
-      "DurationMax": "135.877411",
-      "IncludedMemoryFiles": [
-       {
-        "Id": "1064006755",
-        "Language": "SFX",
-        "ShortName": "Main Title.wav",
-        "Path": "SFX\\Main Title_10C4C929.wem"
-       }
-      ]
-     }
-    ]
+    "Path": "TEST.bnk"
    }
   ]
  }

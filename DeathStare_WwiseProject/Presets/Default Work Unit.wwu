@@ -146,9 +146,6 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="SFX_Ambiances" ID="{D958B12B-EE22-4FC6-994E-D7A1CB5502C1}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
 						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="RVB_Zone1" ID="{243DC9D4-5A3B-4645-9F3B-C72E661CAB01}" WorkUnitID="{A9FA4D6A-13D7-412E-BA19-63C22C553C3B}"/>
-						</Reference>
 					</ReferenceList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="RndContainer_BasicWithRandomPitch" ID="{C96C5C9B-671F-46AE-B1D8-DE253472DAA0}">
