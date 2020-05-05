@@ -59,8 +59,9 @@ public class StareHandler : MonoBehaviour
    /// Check if the actor is staring at something
    /// </summary>
    /// <returns> true if he/she is, false otherwise</returns>
-   public bool CheckForThingsInSight()
+   private bool CheckForThingsInSight()
    {
+      print("Checking things");
       _hitDuringThisFrame.Clear();
       playersHitDuringThisFrame.Clear();
 
@@ -106,10 +107,7 @@ public class StareHandler : MonoBehaviour
                      if (p)
                      {
                         //we hit a player !
-                        if (p != _controller)
-                        {
-                           playersHitDuringThisFrame.Add(p);
-                        }
+                        playersHitDuringThisFrame.Add(p);
                      }
                      else
                      {
@@ -129,12 +127,6 @@ public class StareHandler : MonoBehaviour
       if (!isStaring) return;
       
       CheckForThingsInSight();
-   }
-
-   private void LateUpdate()
-   {
-      if(!isStaring) return;
-      
       _cooldownDamageStare.Update(Time.deltaTime);
    }
 

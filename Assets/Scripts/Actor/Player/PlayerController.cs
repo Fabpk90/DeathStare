@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
     public void Respawn()
     {
         OnRespawn?.Invoke(this, null);
+        controller.ResetStates();
     }
 
     private void OnCrouch(InputAction.CallbackContext obj)

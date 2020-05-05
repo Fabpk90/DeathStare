@@ -67,10 +67,20 @@ public class FirstPersonController : MonoBehaviour
 
         m_StepCycle = 0f;
         m_NextStep = m_StepCycle / 2f;
+
+        ResetStates();
+    }
+
+    public void ResetStates()
+    {
         m_Jumping = false;
         isCrouching = false;
         isRunning = false;
         isStaring = false;
+        
+        animator.SetBool(Crouching, false);
+        animator.SetBool(Running, false);
+        animator.SetBool(Staring, false);
     }
 
     /// <summary>

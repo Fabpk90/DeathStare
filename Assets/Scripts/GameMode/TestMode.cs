@@ -179,7 +179,6 @@ public class TestMode : GameMode
     //Creating this because the unity's system doesn't work
     private void InitPlayersCamera()
     {
-        
         players[0].GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
         players[1].GetComponentInChildren<Camera>().rect = new Rect(0, 0.5f, 0.5f, 0.5f);
         players[2].GetComponentInChildren<Camera>().rect = new Rect(0f, 0f, 0.5f, 0.5f);
