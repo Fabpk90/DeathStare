@@ -13,65 +13,330 @@
 			<ShortName>SFX_SNB</ShortName>
 			<Path>SFX_SNB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="793348717" Name="AMB_Common_Bed_Sea" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Common_Bed_Sea" GUID="{5D596AA7-2684-4854-8BBF-021DEAA1BA42}" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="246007687" Name="AMB_Bed_Sea" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Bed_Sea" GUID="{42CAA89A-975D-4BFC-A470-BF117C9EB76B}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="227734491" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_004.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_004_755F56E2.wem</Path>
+						</File>
+						<File Id="351894709" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_002.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_002_755F56E2.wem</Path>
+						</File>
+						<File Id="503679517" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_000.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_000_755F56E2.wem</Path>
+						</File>
+						<File Id="784360378" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_001.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_001_755F56E2.wem</Path>
+						</File>
+						<File Id="952945187" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_003.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_003_755F56E2.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
 					<IncludedMemoryFiles>
-						<File Id="61378412" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002_10C4C929.wem</Path>
+						<File Id="227734491" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_004.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_004_755F56E2.wem</Path>
+							<PrefetchSize>6918</PrefetchSize>
 						</File>
-						<File Id="110326517" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003_10C4C929.wem</Path>
+						<File Id="351894709" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_002.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_002_755F56E2.wem</Path>
+							<PrefetchSize>6359</PrefetchSize>
 						</File>
-						<File Id="918892782" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001_10C4C929.wem</Path>
+						<File Id="503679517" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_000.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_000_755F56E2.wem</Path>
+							<PrefetchSize>6546</PrefetchSize>
+						</File>
+						<File Id="784360378" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_001.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_001_755F56E2.wem</Path>
+							<PrefetchSize>6403</PrefetchSize>
+						</File>
+						<File Id="952945187" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Sea_003.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Sea_003_755F56E2.wem</Path>
+							<PrefetchSize>6419</PrefetchSize>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2231626466" Name="AMB_Common_Bed_Wind" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Common_Bed_Wind" GUID="{1B07D997-772B-430C-B7C9-A3D3B0B0A65C}" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="2193181892" Name="AMB_Bed_Waves" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Bed_Waves" GUID="{B32E55E4-BF26-47B6-BF75-606F97F6145C}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="269173258" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Waves_002.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Waves_002_755F56E2.wem</Path>
+						</File>
+						<File Id="431916476" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Waves_000.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Waves_000_755F56E2.wem</Path>
+						</File>
+						<File Id="883806390" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Waves_001.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Waves_001_755F56E2.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="151163884" Name="AMB_Bed_Wind" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Beds\AMB_Bed_Wind" GUID="{3D21AB75-8410-4A17-89DA-1A64785A3682}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<ReferencedStreamedFiles>
+						<File Id="122735323" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Wind_003.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Wind_003_755F56E2.wem</Path>
+						</File>
+						<File Id="186014700" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Wind_000.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Wind_000_755F56E2.wem</Path>
+						</File>
+						<File Id="420964168" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Wind_001.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Wind_001_755F56E2.wem</Path>
+						</File>
+						<File Id="828533347" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Wind_002.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Wind_002_755F56E2.wem</Path>
+						</File>
+						<File Id="1007305584" Language="SFX">
+							<ShortName>Ambiances\Beds\AMB_Bed_Wind_004.wav</ShortName>
+							<Path>SFX\Ambiances\Beds\AMB_Bed_Wind_004_755F56E2.wem</Path>
+						</File>
+					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="3964420051" Name="AMB_SP_Foliage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Foliage" GUID="{844F472A-FF3C-4315-8432-2B1349C53ADC}" MaxAttenuation="80.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="61378412" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_002_10C4C929.wem</Path>
+						<File Id="402938465" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Foliage_000.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Foliage_000_E53F03F3.wem</Path>
 						</File>
-						<File Id="110326517" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_003_10C4C929.wem</Path>
+						<File Id="665254925" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Foliage_002.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Foliage_002_92237196.wem</Path>
 						</File>
-						<File Id="918892782" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Bed\Zone_Zone3_Bed_001_10C4C929.wem</Path>
+						<File Id="802983561" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Foliage_001.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Foliage_001_06567DA7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2233841146" Name="AMB_Common_Sshots" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Common_Sshots" GUID="{54A47712-9839-49CF-A445-5AC63A478820}" MaxAttenuation="100.000000" DurationType="Infinite">
+				<Event Id="2816467889" Name="AMB_SP_Stone" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Stone" GUID="{BE76A177-8837-4C99-A628-A4D6FB5F78C1}" MaxAttenuation="80.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="24565442" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_003.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_003_10C4C929.wem</Path>
+						<File Id="31622159" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_003.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_003_755F56E2.wem</Path>
 						</File>
-						<File Id="172672242" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_002.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_002_10C4C929.wem</Path>
+						<File Id="99966953" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_010.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_010_755F56E2.wem</Path>
 						</File>
-						<File Id="578382007" Language="SFX">
-							<ShortName>Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_001.wav</ShortName>
-							<Path>SFX\Ambiances\Zone 3\Sshots\Zone_Zone3_Sshots_001_10C4C929.wem</Path>
+						<File Id="159802458" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_008.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_008_755F56E2.wem</Path>
+						</File>
+						<File Id="413774303" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_007.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_007_755F56E2.wem</Path>
+						</File>
+						<File Id="487880339" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_000.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_000_755F56E2.wem</Path>
+						</File>
+						<File Id="709508514" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_005.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_005_755F56E2.wem</Path>
+						</File>
+						<File Id="716737378" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_012.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_012_755F56E2.wem</Path>
+						</File>
+						<File Id="747713200" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_002.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_002_755F56E2.wem</Path>
+						</File>
+						<File Id="794499018" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_001.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_001_755F56E2.wem</Path>
+						</File>
+						<File Id="855133521" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_011.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_011_755F56E2.wem</Path>
+						</File>
+						<File Id="922109525" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_013.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_013_755F56E2.wem</Path>
+						</File>
+						<File Id="931237603" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_006.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_006_755F56E2.wem</Path>
+						</File>
+						<File Id="1012669128" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Stone_004.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Stone_004_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="226148825" Name="AMB_SP_Cave" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Cave" GUID="{D2F339A5-866F-46A2-AD18-3C3066EB61B7}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3319622597" Name="AMB_SP_Cave_01" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Cave_01" GUID="{4D59B9EA-78D4-4C89-8F6B-40532471B243}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3964420051" Name="AMB_SP_Foliage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Foliage" GUID="{3B599F7F-2FDA-496C-942E-C9EC3DFDD4B1}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2816467889" Name="AMB_SP_Stone" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Stone" GUID="{22D0C852-53FA-4FEC-8A03-FA6E4BDEA426}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3897627331" Name="AMB_SP_Water" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Water" GUID="{8B7307DA-8847-46BB-A769-B01A6BC7A505}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1104827821" Name="AMB_SP_Wood" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Wood" GUID="{380FEC08-17C8-49BE-B602-C7F0EAA20847}" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1492342808" Name="AMB_SP_Torch" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Torch" GUID="{48C61389-C38A-4687-A821-445B63A16420}" MaxAttenuation="80.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="506760846" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Torch_003.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Torch_003_755F56E2.wem</Path>
+						</File>
+						<File Id="674086172" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Torch_002.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Torch_002_755F56E2.wem</Path>
+						</File>
+						<File Id="874570841" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Torch_001.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Torch_001_755F56E2.wem</Path>
+						</File>
+						<File Id="886689005" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Torch_000.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Torch_000_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1104827821" Name="AMB_SP_Wood" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\SoundPoints\AMB_SP_Wood" GUID="{3255B103-8739-42DC-9678-3CE6E7D554EB}" MaxAttenuation="80.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="17226168" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_008.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_008_755F56E2.wem</Path>
+						</File>
+						<File Id="56216148" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_007.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_007_755F56E2.wem</Path>
+						</File>
+						<File Id="144017181" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_010.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_010_755F56E2.wem</Path>
+						</File>
+						<File Id="190785563" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_011.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_011_755F56E2.wem</Path>
+						</File>
+						<File Id="323315820" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_004.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_004_755F56E2.wem</Path>
+						</File>
+						<File Id="442969432" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_015.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_015_755F56E2.wem</Path>
+						</File>
+						<File Id="517211540" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_013.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_013_755F56E2.wem</Path>
+						</File>
+						<File Id="517575681" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_014.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_014_755F56E2.wem</Path>
+						</File>
+						<File Id="624338881" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_006.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_006_755F56E2.wem</Path>
+						</File>
+						<File Id="638099460" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_002.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="647175153" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_017.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_017_755F56E2.wem</Path>
+						</File>
+						<File Id="658678771" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_000.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_000_755F56E2.wem</Path>
+						</File>
+						<File Id="675557955" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_003.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="861689829" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_012.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_012_755F56E2.wem</Path>
+						</File>
+						<File Id="902492493" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_016.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_016_755F56E2.wem</Path>
+						</File>
+						<File Id="986202924" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_001.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="1028314853" Language="SFX">
+							<ShortName>Ambiances\SoundPoints\AMB_SP_Wood_005.wav</ShortName>
+							<Path>SFX\Ambiances\SoundPoints\AMB_SP_Wood_005_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="416895869" Name="AMB_Sshots_Long" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Sshots_Long" GUID="{01928392-A514-4453-977D-215FFD9DBE10}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="41740410" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Long_001.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Long_001_755F56E2.wem</Path>
+						</File>
+						<File Id="249370520" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Long_004.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Long_004_755F56E2.wem</Path>
+						</File>
+						<File Id="402303279" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Long_003.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Long_003_755F56E2.wem</Path>
+						</File>
+						<File Id="823267283" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Long_002.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Long_002_755F56E2.wem</Path>
+						</File>
+						<File Id="944553583" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Long_000.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Long_000_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1929281362" Name="AMB_Sshots_Shorts" ObjectPath="\Events\DS EVENTS\SFX EVENTS\AMBIANCES EVENTS\Sshots\AMB_Sshots_Shorts" GUID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="42055961" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_002.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_002_755F56E2.wem</Path>
+						</File>
+						<File Id="135630706" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_008.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_008_755F56E2.wem</Path>
+						</File>
+						<File Id="187413255" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_006.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_006_755F56E2.wem</Path>
+						</File>
+						<File Id="318461229" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_007.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_007_755F56E2.wem</Path>
+						</File>
+						<File Id="411309560" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_003.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_003_755F56E2.wem</Path>
+						</File>
+						<File Id="456005314" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_001.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_001_755F56E2.wem</Path>
+						</File>
+						<File Id="637549687" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_004.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_004_755F56E2.wem</Path>
+						</File>
+						<File Id="701774055" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_000.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_000_755F56E2.wem</Path>
+						</File>
+						<File Id="867998728" Language="SFX">
+							<ShortName>Ambiances\Sshots\AMB_SShots_Shorts_005.wav</ShortName>
+							<Path>SFX\Ambiances\Sshots\AMB_SShots_Shorts_005_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="2897623584" Name="EFFECTS_Char_Damage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\EFFECTS_Char_Damage" GUID="{39AF3851-8A48-48B4-A481-7F4083946766}" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="805367614" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\Damage\Character_Damage_Tick.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\Damage\Character_Damage_Tick_DAA66043.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\Damage\Character_Damage_Tick_963DA2B4.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -79,7 +344,7 @@
 					<IncludedMemoryFiles>
 						<File Id="576184738" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\Duel\Character_DeathStare_Duel.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\Duel\Character_DeathStare_Duel_41F5DB27.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\Duel\Character_DeathStare_Duel_708A5178.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -87,15 +352,15 @@
 					<IncludedMemoryFiles>
 						<File Id="13107196" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_002.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_002_10C4C929.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_002_755F56E2.wem</Path>
 						</File>
 						<File Id="603687993" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_003.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_003_10C4C929.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_003_755F56E2.wem</Path>
 						</File>
 						<File Id="875258876" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_001.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_001_10C4C929.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\ExitStaring\Character_DeathStare_ExitStaring_001_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -103,43 +368,123 @@
 					<IncludedMemoryFiles>
 						<File Id="424395784" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_001.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_001_0E7FFA0C.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_001_7C6FF753.wem</Path>
 						</File>
 						<File Id="918843551" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_002.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_002_E71EFCD1.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_002_EFD3513E.wem</Path>
 						</File>
 						<File Id="963218955" Language="SFX">
 							<ShortName>Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_003.wav</ShortName>
-							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_003_A70E46DB.wem</Path>
+							<Path>SFX\Effects\Characters\Character 1\DeathStare\Staring\Character_DeathStare_Staring_003_A6668C9C.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Death" GUID="{3AD6246B-F042-47B4-A29E-9E3066309A59}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.659434" DurationMax="1.466029">
+				<Event Id="2031942103" Name="FOLEYS_Char_Death" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Death" GUID="{3AD6246B-F042-47B4-A29E-9E3066309A59}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="1.641063">
 					<IncludedMemoryFiles>
 						<File Id="68783575" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Wood.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Wood_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Wood_755F56E2.wem</Path>
+						</File>
+						<File Id="99171799" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_003_755F56E2.wem</Path>
+						</File>
+						<File Id="126077809" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_001_755F56E2.wem</Path>
 						</File>
 						<File Id="193868444" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Cobble.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Cobble_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Cobble_755F56E2.wem</Path>
+						</File>
+						<File Id="279559393" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_003_755F56E2.wem</Path>
+						</File>
+						<File Id="319254176" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="344324013" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_000_755F56E2.wem</Path>
 						</File>
 						<File Id="375827832" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Grass.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Grass_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Grass_755F56E2.wem</Path>
+						</File>
+						<File Id="462708231" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="463997083" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_003_755F56E2.wem</Path>
 						</File>
 						<File Id="511623743" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Sand.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Sand_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Sand_755F56E2.wem</Path>
 						</File>
 						<File Id="522901430" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Dirt.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Dirt_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Dirt_755F56E2.wem</Path>
+						</File>
+						<File Id="586413115" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="593125295" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="615723314" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_005_755F56E2.wem</Path>
+						</File>
+						<File Id="639047717" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_000_755F56E2.wem</Path>
 						</File>
 						<File Id="691358117" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Death\Character_Death_Fall_Concrete.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Concrete_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Death\Character_Death_Fall_Concrete_755F56E2.wem</Path>
+						</File>
+						<File Id="747937662" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_004_755F56E2.wem</Path>
+						</File>
+						<File Id="777798517" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="791304353" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_000_755F56E2.wem</Path>
+						</File>
+						<File Id="843437770" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_004_755F56E2.wem</Path>
+						</File>
+						<File Id="878390117" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="898216102" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_004_755F56E2.wem</Path>
+						</File>
+						<File Id="962402633" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Cobble_002_755F56E2.wem</Path>
+						</File>
+						<File Id="982367589" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="984362373" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Death\Char_Stan_Death_Grass_000_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -147,32 +492,38 @@
 							<Children>
 								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
 									<Media>
-										<File Id="193868444"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
-									<Media>
-										<File Id="691358117"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
-									<Media>
-										<File Id="522901430"/>
+										<File Id="791304353"/>
+										<File Id="586413115"/>
+										<File Id="962402633"/>
+										<File Id="463997083"/>
+										<File Id="898216102"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
 									<Media>
-										<File Id="375827832"/>
+										<File Id="984362373"/>
+										<File Id="126077809"/>
+										<File Id="593125295"/>
+										<File Id="279559393"/>
+										<File Id="747937662"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
 									<Media>
-										<File Id="511623743"/>
+										<File Id="639047717"/>
+										<File Id="777798517"/>
+										<File Id="878390117"/>
+										<File Id="99171799"/>
 									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
 									<Media>
-										<File Id="68783575"/>
+										<File Id="344324013"/>
+										<File Id="982367589"/>
+										<File Id="462708231"/>
+										<File Id="319254176"/>
+										<File Id="843437770"/>
+										<File Id="615723314"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -281,98 +632,150 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.265012" DurationMax="0.871966">
+				<Event Id="1903503235" Name="FOLEYS_Char_Jump_Landing" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_Landing" GUID="{D100B9B6-46EB-4C9E-B75A-053764083313}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.264708" DurationMax="1.026585">
 					<IncludedMemoryFiles>
+						<File Id="28538691" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004_755F56E2.wem</Path>
+						</File>
 						<File Id="31245357" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="41819788" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_000_755F56E2.wem</Path>
+						</File>
+						<File Id="57707508" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="103673871" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003_755F56E2.wem</Path>
+						</File>
+						<File Id="167196666" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_000_755F56E2.wem</Path>
 						</File>
 						<File Id="226748808" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_002_755F56E2.wem</Path>
+						</File>
+						<File Id="230846623" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_002_755F56E2.wem</Path>
 						</File>
 						<File Id="255959665" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Dirt_001_755F56E2.wem</Path>
+						</File>
+						<File Id="288659368" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_002_755F56E2.wem</Path>
 						</File>
 						<File Id="305406559" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_001_755F56E2.wem</Path>
+						</File>
+						<File Id="334061952" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="381012372" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002_755F56E2.wem</Path>
 						</File>
 						<File Id="406860864" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="411990412" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_001_755F56E2.wem</Path>
 						</File>
 						<File Id="459899386" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_001_C4EBBE69.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Grass_001_D80904F6.wem</Path>
+						</File>
+						<File Id="475118708" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000_755F56E2.wem</Path>
+						</File>
+						<File Id="486664208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001_755F56E2.wem</Path>
 						</File>
 						<File Id="505658381" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="522579204" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="552730287" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_000_755F56E2.wem</Path>
+						</File>
+						<File Id="599665536" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005_755F56E2.wem</Path>
+						</File>
+						<File Id="649927608" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_000_755F56E2.wem</Path>
+						</File>
+						<File Id="655283744" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_004_755F56E2.wem</Path>
 						</File>
 						<File Id="698345088" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Wood_002_755F56E2.wem</Path>
 						</File>
 						<File Id="700285031" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="709339750" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Sand\Char_Stan_Jump_Landing_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="722951102" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="749798089" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_001_755F56E2.wem</Path>
 						</File>
 						<File Id="781274263" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="836408049" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Grass\Char_Stan_Jump_Landing_Grass_003_755F56E2.wem</Path>
+						</File>
+						<File Id="862229070" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Wood\Char_Stan_Jump_Landing_Wood_003_755F56E2.wem</Path>
 						</File>
 						<File Id="893162646" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Concrete_002_755F56E2.wem</Path>
 						</File>
 						<File Id="993431990" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_Landing_Cobble_002_755F56E2.wem</Path>
+						</File>
+						<File Id="1032091314" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Landing\Cobble\Char_Stan_Jump_Landing_Cobble_004_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
-							<Children>
-								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
-									<Media>
-										<File Id="781274263"/>
-										<File Id="993431990"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
-									<Media>
-										<File Id="31245357"/>
-										<File Id="700285031"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
-									<Media>
-										<File Id="226748808"/>
-										<File Id="255959665"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
-									<Media>
-										<File Id="505658381"/>
-										<File Id="698345088"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
-									<Media>
-										<File Id="893162646"/>
-										<File Id="305406559"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
-									<Media>
-										<File Id="406860864"/>
-										<File Id="459899386"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
 							<Children>
 								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
@@ -453,7 +856,7 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
 							<Children>
 								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
 									<Media>
@@ -489,114 +892,205 @@
 									<Media>
 										<File Id="406860864"/>
 										<File Id="459899386"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="475118708"/>
+								<File Id="486664208"/>
+								<File Id="381012372"/>
+								<File Id="103673871"/>
+								<File Id="28538691"/>
+								<File Id="599665536"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="649927608"/>
+										<File Id="57707508"/>
+										<File Id="288659368"/>
+										<File Id="522579204"/>
+										<File Id="1032091314"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="41819788"/>
+										<File Id="709339750"/>
+										<File Id="334061952"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="552730287"/>
+										<File Id="411990412"/>
+										<File Id="722951102"/>
+										<File Id="862229070"/>
+										<File Id="655283744"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="167196666"/>
+										<File Id="749798089"/>
+										<File Id="230846623"/>
+										<File Id="836408049"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="567349118" Name="FOLEYS_Char_Jump_TakeOff" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_TakeOff" GUID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.188677" DurationMax="0.444565">
+				<Event Id="567349118" Name="FOLEYS_Char_Jump_TakeOff" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Jump_TakeOff" GUID="{56C0CA43-E074-48E8-8F12-CC15134580EE}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.188677" DurationMax="0.524961">
 					<IncludedMemoryFiles>
 						<File Id="5715417" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_001_755F56E2.wem</Path>
+						</File>
+						<File Id="12549718" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="19313193" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_000_755F56E2.wem</Path>
+						</File>
+						<File Id="28538691" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004_755F56E2.wem</Path>
+						</File>
+						<File Id="57708345" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_003_755F56E2.wem</Path>
 						</File>
 						<File Id="88503777" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="103673871" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003_755F56E2.wem</Path>
+						</File>
+						<File Id="162016036" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_001_755F56E2.wem</Path>
 						</File>
 						<File Id="251852521" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="288647545" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_002_755F56E2.wem</Path>
 						</File>
 						<File Id="371042949" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_001_755F56E2.wem</Path>
+						</File>
+						<File Id="376209100" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="381012372" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002_755F56E2.wem</Path>
+						</File>
+						<File Id="419360385" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="438940279" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="475118708" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000_755F56E2.wem</Path>
+						</File>
+						<File Id="486664208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001_755F56E2.wem</Path>
+						</File>
+						<File Id="491521284" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_000_755F56E2.wem</Path>
+						</File>
+						<File Id="599665536" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005_755F56E2.wem</Path>
 						</File>
 						<File Id="606579897" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Sand_001_755F56E2.wem</Path>
 						</File>
 						<File Id="625683214" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_002_755F56E2.wem</Path>
 						</File>
 						<File Id="643940714" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="661270864" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_002_755F56E2.wem</Path>
 						</File>
 						<File Id="725719132" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_001_755F56E2.wem</Path>
 						</File>
 						<File Id="760396261" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Concrete_003_755F56E2.wem</Path>
 						</File>
 						<File Id="767399380" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Dirt_002_755F56E2.wem</Path>
+						</File>
+						<File Id="799035293" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Grass\Char_Stan_Jump_TakeOff_Grass_001_755F56E2.wem</Path>
+						</File>
+						<File Id="810614141" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_004_755F56E2.wem</Path>
 						</File>
 						<File Id="858051333" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="866316533" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="897196917" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_000_755F56E2.wem</Path>
 						</File>
 						<File Id="988968491" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="992424639" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Wood_000_755F56E2.wem</Path>
 						</File>
 						<File Id="995244962" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="1022610164" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\TakeOff\Char_Stan_Jump_TakeOff_Sand_002_755F56E2.wem</Path>
 						</File>
 						<File Id="1064913877" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Jump\Character_MoveSet_Jump_TakeOff_Cobble_002_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
-							<Children>
-								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
-									<Media>
-										<File Id="371042949"/>
-										<File Id="760396261"/>
-										<File Id="625683214"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
-									<Media>
-										<File Id="251852521"/>
-										<File Id="1064913877"/>
-										<File Id="643940714"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
-									<Media>
-										<File Id="88503777"/>
-										<File Id="606579897"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
-									<Media>
-										<File Id="858051333"/>
-										<File Id="5715417"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
-									<Media>
-										<File Id="725719132"/>
-										<File Id="767399380"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
-									<Media>
-										<File Id="995244962"/>
-										<File Id="988968491"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
 							<Children>
 								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
@@ -719,6 +1213,50 @@
 									<Media>
 										<File Id="995244962"/>
 										<File Id="988968491"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="475118708"/>
+								<File Id="486664208"/>
+								<File Id="381012372"/>
+								<File Id="103673871"/>
+								<File Id="28538691"/>
+								<File Id="599665536"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="19313193"/>
+										<File Id="866316533"/>
+										<File Id="288647545"/>
+										<File Id="438940279"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="897196917"/>
+										<File Id="12549718"/>
+										<File Id="1022610164"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="491521284"/>
+										<File Id="799035293"/>
+										<File Id="419360385"/>
+										<File Id="57708345"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="992424639"/>
+										<File Id="162016036"/>
+										<File Id="661270864"/>
+										<File Id="376209100"/>
+										<File Id="810614141"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -727,126 +1265,228 @@
 				</Event>
 				<Event Id="1039646526" Name="FOLEYS_Char_Run_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Footsteps" GUID="{0ACEB580-EB5D-44D7-9896-F9ABAFEA2909}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
 					<IncludedMemoryFiles>
+						<File Id="9744123" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_006_755F56E2.wem</Path>
+						</File>
+						<File Id="28538691" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004_755F56E2.wem</Path>
+						</File>
+						<File Id="50684555" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_008.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_008_755F56E2.wem</Path>
+						</File>
 						<File Id="63644349" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="65703772" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="75623241" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_007.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_007_755F56E2.wem</Path>
 						</File>
 						<File Id="99105961" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="103673871" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003_755F56E2.wem</Path>
 						</File>
 						<File Id="121194433" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="126093791" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_004_755F56E2.wem</Path>
+						</File>
+						<File Id="132570721" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="153028597" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_007.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_007_755F56E2.wem</Path>
 						</File>
 						<File Id="165071834" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_755F56E2.wem</Path>
 						</File>
 						<File Id="192931564" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_755F56E2.wem</Path>
 						</File>
 						<File Id="213875360" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_755F56E2.wem</Path>
+						</File>
+						<File Id="265850193" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="267332757" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="276001832" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_005_755F56E2.wem</Path>
+						</File>
+						<File Id="276067157" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_000_755F56E2.wem</Path>
 						</File>
 						<File Id="294584460" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="305271914" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_006_755F56E2.wem</Path>
+						</File>
+						<File Id="350568519" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_001_755F56E2.wem</Path>
+						</File>
+						<File Id="371579208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_000_755F56E2.wem</Path>
+						</File>
+						<File Id="376140568" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_000_755F56E2.wem</Path>
+						</File>
+						<File Id="381012372" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002_755F56E2.wem</Path>
+						</File>
+						<File Id="413391876" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_005_755F56E2.wem</Path>
 						</File>
 						<File Id="418583048" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_755F56E2.wem</Path>
 						</File>
 						<File Id="436094280" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_755F56E2.wem</Path>
+						</File>
+						<File Id="475118708" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000_755F56E2.wem</Path>
+						</File>
+						<File Id="486664208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001_755F56E2.wem</Path>
+						</File>
+						<File Id="486689094" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_004_755F56E2.wem</Path>
+						</File>
+						<File Id="489719064" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="584810205" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_010.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_010_755F56E2.wem</Path>
 						</File>
 						<File Id="594014003" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="599665536" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005_755F56E2.wem</Path>
+						</File>
+						<File Id="640653547" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Grass_003_755F56E2.wem</Path>
+						</File>
+						<File Id="645357951" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_002_755F56E2.wem</Path>
+						</File>
+						<File Id="654293886" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_000_755F56E2.wem</Path>
 						</File>
 						<File Id="665670132" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="689268125" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="697450412" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_002_755F56E2.wem</Path>
 						</File>
 						<File Id="698470715" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_755F56E2.wem</Path>
+						</File>
+						<File Id="727241920" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_003_755F56E2.wem</Path>
 						</File>
 						<File Id="745945899" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="831457490" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_006_755F56E2.wem</Path>
+						</File>
+						<File Id="852390387" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_002_755F56E2.wem</Path>
 						</File>
 						<File Id="854541873" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_755F56E2.wem</Path>
 						</File>
 						<File Id="895352448" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_755F56E2.wem</Path>
 						</File>
 						<File Id="907411644" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_755F56E2.wem</Path>
 						</File>
 						<File Id="910093027" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_755F56E2.wem</Path>
 						</File>
 						<File Id="965590172" Language="SFX">
 							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem</Path>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_755F56E2.wem</Path>
+						</File>
+						<File Id="970585301" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_008.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Cobble_008_755F56E2.wem</Path>
+						</File>
+						<File Id="1039215921" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_004_755F56E2.wem</Path>
+						</File>
+						<File Id="1057413679" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Char_Stan_Run_Footsteps_Wood_005_755F56E2.wem</Path>
+						</File>
+						<File Id="1071934540" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_004_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
-							<Children>
-								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
-									<Media>
-										<File Id="436094280"/>
-										<File Id="895352448"/>
-										<File Id="418583048"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
-									<Media>
-										<File Id="910093027"/>
-										<File Id="294584460"/>
-										<File Id="99105961"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
-									<Media>
-										<File Id="745945899"/>
-										<File Id="594014003"/>
-										<File Id="698470715"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
-									<Media>
-										<File Id="121194433"/>
-										<File Id="907411644"/>
-										<File Id="165071834"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
-									<Media>
-										<File Id="854541873"/>
-										<File Id="965590172"/>
-										<File Id="213875360"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
-									<Media>
-										<File Id="665670132"/>
-										<File Id="192931564"/>
-										<File Id="63644349"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
-						</SwitchContainer>
 						<SwitchContainer SwitchValue="{32631DF3-1804-4308-8ADB-CBAD960F3706}">
 							<Children>
 								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
@@ -985,133 +1625,324 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="475118708"/>
+								<File Id="486664208"/>
+								<File Id="381012372"/>
+								<File Id="103673871"/>
+								<File Id="28538691"/>
+								<File Id="599665536"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="654293886"/>
+										<File Id="265850193"/>
+										<File Id="645357951"/>
+										<File Id="132570721"/>
+										<File Id="126093791"/>
+										<File Id="413391876"/>
+										<File Id="305271914"/>
+										<File Id="75623241"/>
+										<File Id="970585301"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="371579208"/>
+										<File Id="489719064"/>
+										<File Id="697450412"/>
+										<File Id="727241920"/>
+										<File Id="1071934540"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="376140568"/>
+										<File Id="350568519"/>
+										<File Id="267332757"/>
+										<File Id="640653547"/>
+										<File Id="486689094"/>
+										<File Id="276001832"/>
+										<File Id="9744123"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="276067157"/>
+										<File Id="65703772"/>
+										<File Id="852390387"/>
+										<File Id="689268125"/>
+										<File Id="1039215921"/>
+										<File Id="1057413679"/>
+										<File Id="831457490"/>
+										<File Id="153028597"/>
+										<File Id="50684555"/>
+										<File Id="584810205"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2315528594" Name="FOLEYS_Char_Run_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Presence" GUID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<SwitchContainers/>
-				</Event>
-				<Event Id="2350611728" Name="FOLEYS_Char_Walk_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps" GUID="{333C3510-38C1-4331-8807-A15F5B07E949}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.558261">
+				<Event Id="2315528594" Name="FOLEYS_Char_Run_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Run_Presence" GUID="{36E2DD0C-2D6F-4798-AD14-554FE8A4EB5D}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.498301">
 					<IncludedMemoryFiles>
-						<File Id="63644349" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_10C4C929.wem</Path>
+						<File Id="138657710" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_004_755F56E2.wem</Path>
 						</File>
-						<File Id="99105961" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_10C4C929.wem</Path>
+						<File Id="358133404" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_001_755F56E2.wem</Path>
 						</File>
-						<File Id="121194433" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_10C4C929.wem</Path>
+						<File Id="453311358" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_002_755F56E2.wem</Path>
 						</File>
-						<File Id="165071834" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_10C4C929.wem</Path>
+						<File Id="528151459" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_000_755F56E2.wem</Path>
 						</File>
-						<File Id="192931564" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_10C4C929.wem</Path>
+						<File Id="585295958" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_003_755F56E2.wem</Path>
 						</File>
-						<File Id="213875360" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_10C4C929.wem</Path>
+						<File Id="631449260" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_005_755F56E2.wem</Path>
 						</File>
-						<File Id="294584460" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_10C4C929.wem</Path>
-						</File>
-						<File Id="418583048" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_10C4C929.wem</Path>
-						</File>
-						<File Id="436094280" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_10C4C929.wem</Path>
-						</File>
-						<File Id="594014003" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_10C4C929.wem</Path>
-						</File>
-						<File Id="665670132" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_10C4C929.wem</Path>
-						</File>
-						<File Id="698470715" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_10C4C929.wem</Path>
-						</File>
-						<File Id="745945899" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_10C4C929.wem</Path>
-						</File>
-						<File Id="854541873" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_10C4C929.wem</Path>
-						</File>
-						<File Id="895352448" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_10C4C929.wem</Path>
-						</File>
-						<File Id="907411644" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_10C4C929.wem</Path>
-						</File>
-						<File Id="910093027" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_10C4C929.wem</Path>
-						</File>
-						<File Id="965590172" Language="SFX">
-							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
-							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_10C4C929.wem</Path>
+						<File Id="719096504" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Run\Presence\Char_Stan_Run_Presence_006_755F56E2.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
 						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
-							<Children>
-								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
-									<Media>
-										<File Id="436094280"/>
-										<File Id="895352448"/>
-										<File Id="418583048"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
-									<Media>
-										<File Id="910093027"/>
-										<File Id="294584460"/>
-										<File Id="99105961"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
-									<Media>
-										<File Id="745945899"/>
-										<File Id="594014003"/>
-										<File Id="698470715"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
-									<Media>
-										<File Id="121194433"/>
-										<File Id="907411644"/>
-										<File Id="165071834"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{525E8ED3-8C23-40F6-963C-89CAD9BB2D04}">
-									<Media>
-										<File Id="854541873"/>
-										<File Id="965590172"/>
-										<File Id="213875360"/>
-									</Media>
-								</SwitchContainer>
-								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
-									<Media>
-										<File Id="665670132"/>
-										<File Id="192931564"/>
-										<File Id="63644349"/>
-									</Media>
-								</SwitchContainer>
-							</Children>
+							<Media>
+								<File Id="528151459"/>
+								<File Id="358133404"/>
+								<File Id="453311358"/>
+								<File Id="585295958"/>
+								<File Id="138657710"/>
+								<File Id="631449260"/>
+								<File Id="719096504"/>
+							</Media>
 						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2350611728" Name="FOLEYS_Char_Walk_Footsteps" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Footsteps" GUID="{333C3510-38C1-4331-8807-A15F5B07E949}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.167911" DurationMax="0.819608">
+					<IncludedMemoryFiles>
+						<File Id="28538691" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_004_755F56E2.wem</Path>
+						</File>
+						<File Id="41181713" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_005_755F56E2.wem</Path>
+						</File>
+						<File Id="47867243" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_004_755F56E2.wem</Path>
+						</File>
+						<File Id="63644349" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="65262427" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_002_755F56E2.wem</Path>
+						</File>
+						<File Id="77168374" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_003_755F56E2.wem</Path>
+						</File>
+						<File Id="99105961" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="103673871" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_003_755F56E2.wem</Path>
+						</File>
+						<File Id="121194433" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="126219324" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_002_755F56E2.wem</Path>
+						</File>
+						<File Id="127063260" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_002_755F56E2.wem</Path>
+						</File>
+						<File Id="165071834" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_001_755F56E2.wem</Path>
+						</File>
+						<File Id="167441393" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_004_755F56E2.wem</Path>
+						</File>
+						<File Id="192931564" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="213875360" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_001_755F56E2.wem</Path>
+						</File>
+						<File Id="226138216" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_008.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_008_755F56E2.wem</Path>
+						</File>
+						<File Id="278179663" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_006_755F56E2.wem</Path>
+						</File>
+						<File Id="294584460" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="321374297" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_005_755F56E2.wem</Path>
+						</File>
+						<File Id="334091533" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="371579208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_000_755F56E2.wem</Path>
+						</File>
+						<File Id="381012372" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_002_755F56E2.wem</Path>
+						</File>
+						<File Id="418583048" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_002_755F56E2.wem</Path>
+						</File>
+						<File Id="424769042" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_006.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_006_755F56E2.wem</Path>
+						</File>
+						<File Id="436094280" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_003_755F56E2.wem</Path>
+						</File>
+						<File Id="475118708" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_000_755F56E2.wem</Path>
+						</File>
+						<File Id="486664208" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_001_755F56E2.wem</Path>
+						</File>
+						<File Id="489719064" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="511065006" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_007.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_007_755F56E2.wem</Path>
+						</File>
+						<File Id="538685563" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_000_755F56E2.wem</Path>
+						</File>
+						<File Id="594014003" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_001_755F56E2.wem</Path>
+						</File>
+						<File Id="599665536" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Top\Char_Stan_Footsteps_Top_005_755F56E2.wem</Path>
+						</File>
+						<File Id="628853560" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_000_755F56E2.wem</Path>
+						</File>
+						<File Id="665670132" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Wood_003_755F56E2.wem</Path>
+						</File>
+						<File Id="697450412" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="698470715" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_003_755F56E2.wem</Path>
+						</File>
+						<File Id="698713552" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_000_755F56E2.wem</Path>
+						</File>
+						<File Id="718446573" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_001_755F56E2.wem</Path>
+						</File>
+						<File Id="727241920" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_003_755F56E2.wem</Path>
+						</File>
+						<File Id="745945899" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Sand_002_755F56E2.wem</Path>
+						</File>
+						<File Id="774346380" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_004_755F56E2.wem</Path>
+						</File>
+						<File Id="854541873" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_003_755F56E2.wem</Path>
+						</File>
+						<File Id="868153352" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_003_755F56E2.wem</Path>
+						</File>
+						<File Id="895352448" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Concrete_001_755F56E2.wem</Path>
+						</File>
+						<File Id="907411644" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Grass_003_755F56E2.wem</Path>
+						</File>
+						<File Id="910093027" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Cobble_002_755F56E2.wem</Path>
+						</File>
+						<File Id="911841038" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_007.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_007_755F56E2.wem</Path>
+						</File>
+						<File Id="945841414" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Wood\Char_Stan_Walk_Footsteps_Wood_001_755F56E2.wem</Path>
+						</File>
+						<File Id="965590172" Language="SFX">
+							<ShortName>Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Character 1\Run\Character_MoveSet_Run_Footsteps_Dirt_002_755F56E2.wem</Path>
+						</File>
+						<File Id="1004821526" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Grass\Char_Stan_Walk_Footsteps_Grass_001_755F56E2.wem</Path>
+						</File>
+						<File Id="1013874599" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Cobble\Char_Stan_Walk_Footsteps_Cobble_005_755F56E2.wem</Path>
+						</File>
+						<File Id="1071934540" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Sand\Char_Stan_Footsteps_Sand_004_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
 						<SwitchContainer SwitchValue="{7D4746AA-C04B-4E16-83FD-C95E7EF7E539}">
 							<Children>
 								<SwitchContainer SwitchValue="{1DF6EDE2-51B1-49E2-BEED-A28B20848C2F}">
@@ -1250,9 +2081,104 @@
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="475118708"/>
+								<File Id="486664208"/>
+								<File Id="381012372"/>
+								<File Id="103673871"/>
+								<File Id="28538691"/>
+								<File Id="599665536"/>
+							</Media>
+							<Children>
+								<SwitchContainer SwitchValue="{23908CC5-373B-4844-841B-05045E5E4F14}">
+									<Media>
+										<File Id="628853560"/>
+										<File Id="718446573"/>
+										<File Id="65262427"/>
+										<File Id="868153352"/>
+										<File Id="167441393"/>
+										<File Id="1013874599"/>
+										<File Id="424769042"/>
+										<File Id="911841038"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C342220B-1EF3-461A-871B-EF5A4F624DBC}">
+									<Media>
+										<File Id="371579208"/>
+										<File Id="489719064"/>
+										<File Id="697450412"/>
+										<File Id="727241920"/>
+										<File Id="1071934540"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{9EE155A1-795F-4A62-8F3A-73ABB5C626C3}">
+									<Media>
+										<File Id="698713552"/>
+										<File Id="1004821526"/>
+										<File Id="126219324"/>
+										<File Id="77168374"/>
+										<File Id="47867243"/>
+										<File Id="321374297"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{F6BB5D10-8331-4080-9B43-B8B4F93B17E5}">
+									<Media>
+										<File Id="538685563"/>
+										<File Id="945841414"/>
+										<File Id="127063260"/>
+										<File Id="334091533"/>
+										<File Id="774346380"/>
+										<File Id="41181713"/>
+										<File Id="278179663"/>
+										<File Id="511065006"/>
+										<File Id="226138216"/>
+									</Media>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="401042956" Name="FOLEYS_Char_Walk_Presence" ObjectPath="\Events\DS EVENTS\SFX EVENTS\FOLEYS EVENTS\Characters\FOLEYS_Char_Walk_Presence" GUID="{51055477-9ACA-4121-9B67-5D9E95058BF9}" MaxAttenuation="80.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.778639">
+					<IncludedMemoryFiles>
+						<File Id="402665367" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_002.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_002_755F56E2.wem</Path>
+						</File>
+						<File Id="507824767" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_005.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_005_755F56E2.wem</Path>
+						</File>
+						<File Id="664945250" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_000.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_000_755F56E2.wem</Path>
+						</File>
+						<File Id="676225416" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_004.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_004_755F56E2.wem</Path>
+						</File>
+						<File Id="849991760" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_003.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_003_755F56E2.wem</Path>
+						</File>
+						<File Id="1037982069" Language="SFX">
+							<ShortName>Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_001.wav</ShortName>
+							<Path>SFX\Foleys\Characters\Stanislas\Walk\Presence\Char_Stan_Walk_Presence_001_755F56E2.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{4C382281-7FAC-4DD1-B692-B02E92399DA5}">
+							<Media>
+								<File Id="664945250"/>
+								<File Id="1037982069"/>
+								<File Id="402665367"/>
+								<File Id="849991760"/>
+								<File Id="676225416"/>
+								<File Id="507824767"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="3978900703" Name="Stop_EFFECTS_Char_Damage" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\Stop_EFFECTS_Char_Damage" GUID="{98275331-A3A2-4086-98FE-B46C3878E9BF}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1985231276" Name="Stop_EFFECTS_Char_Staring" ObjectPath="\Events\DS EVENTS\SFX EVENTS\EFFECTS EVENTS\Characters\Stop_EFFECTS_Char_Staring" GUID="{83885303-55BD-43DF-A8C6-E066539DB22F}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>

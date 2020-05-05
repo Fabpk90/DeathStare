@@ -50,7 +50,11 @@
 							</ConversionPlugin>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{978F1F6D-C675-4A4B-85D4-45B079BC29A5}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{AE334908-E24A-4BB1-BA6D-4E2CA0C22ECE}" PluginName="Vorbis" CompanyID="0" PluginID="4">
+								<PropertyList>
+									<Property Name="QualityFactor" Type="Real32" Value="10"/>
+								</PropertyList>
+							</ConversionPlugin>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Linux">
 							<ConversionPlugin Name="" ID="{6DAB827C-E049-47CB-A888-8C60BC1796A2}" PluginName="Vorbis" CompanyID="0" PluginID="4">

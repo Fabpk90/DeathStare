@@ -23,38 +23,46 @@
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Stingers_1stTest" ID="{13E5C6DA-01E8-4182-896D-9A491AB3B500}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Character_Health" ID="{C0DBEC9B-8DA5-474F-BB0B-C06A1DDFCB32}"/>
+							<Value>89.0701468189233</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="False" ID="{D1EEC0E4-8154-42A3-AB7C-36161B38D050}"/>
+						<CurrentStateRef Name="False" ID="{2BDC6330-8AF5-4985-B55B-182370D705D7}"/>
+						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
+						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
+						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
+						<CurrentStateRef Name="Fight_End" ID="{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>
+						<CurrentSwitchRef Name="Don" ID="{32631DF3-1804-4308-8ADB-CBAD960F3706}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Ambiance" ID="{37C44C95-7519-4A28-9804-99CFD73E6E32}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="STINGERS_DS_Stan_L" ID="{F6E323C3-4B03-43AB-B335-F257601BCD88}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<ObjectRef Name="AMB_Bed_Waves" ID="{B32E55E4-BF26-47B6-BF75-606F97F6145C}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="STINGERS_Kill_Stan_L" ID="{DA3042C8-9B7C-4E37-A31D-368BEF110989}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="STINGERS_DS_Marta_R" ID="{A81D6D39-5FA4-4B3C-BFFC-A15A97CDC025}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<ObjectRef Name="AMB_Bed_Sea" ID="{42CAA89A-975D-4BFC-A470-BF117C9EB76B}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="STINGERS_Kill_Marta_R" ID="{D7374F6B-E08B-41A8-B0A1-F8639CFF1E09}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="STINGERS_DS_Medusa_L" ID="{197E560B-35B7-4E05-A2F1-906509A26725}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<ObjectRef Name="AMB_Bed_Wind" ID="{3D21AB75-8410-4A17-89DA-1A64785A3682}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="STINGERS_Kill_Medusa_L" ID="{BF1A2322-2E28-49F5-8E83-6CACC6AE64BA}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
-							<Position X="2" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="STINGERS_DS_Don_R" ID="{489BDAD2-C7D7-43C3-A81B-7BDA3E292AF1}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
+							<ObjectRef Name="AMB_Sshots_Long" ID="{01928392-A514-4453-977D-215FFD9DBE10}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="STINGERS_Kill_Don_R" ID="{17C3B30B-2BBB-437B-9B16-15CACC78BD05}" WorkUnitID="{3F549426-8D43-4D50-A1E2-B33D682C511B}"/>
-							<Position X="3" Y="1"/>
+							<ObjectRef Name="AMB_Sshots_Shorts" ID="{7141F2C5-3D53-4F04-9F65-289AB6A67DE8}" WorkUnitID="{FF8BF3B0-1702-44C3-B75A-436B1B512770}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -64,12 +72,12 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="True" ID="{47BF6F5E-7D8D-4DFD-A55E-1296D86FE838}"/>
+						<CurrentStateRef Name="False" ID="{D1EEC0E4-8154-42A3-AB7C-36161B38D050}"/>
 						<CurrentStateRef Name="False" ID="{2BDC6330-8AF5-4985-B55B-182370D705D7}"/>
 						<CurrentStateRef Name="None" ID="{EFAD8A19-695C-4ABB-B1DC-F08D25CDB212}"/>
 						<CurrentStateRef Name="False" ID="{39376DD6-3859-40DA-86D8-4B6BBCA4F322}"/>
 						<CurrentStateRef Name="False" ID="{CCD0F89B-CC69-4645-A99A-6BF0D1615C6B}"/>
-						<CurrentStateRef Name="Fight_End" ID="{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"/>
+						<CurrentStateRef Name="Outro_Stan" ID="{21293A09-F303-48B7-9A70-7559B9CCDD88}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cobble" ID="{23908CC5-373B-4844-841B-05045E5E4F14}"/>

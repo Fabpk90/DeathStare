@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{B37571C9-8CA0-46AC-BBB9-8F8F5E33C26D}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="TEST" ID="{B37571C9-8CA0-46AC-BBB9-8F8F5E33C26D}" PersistMode="Standalone">
-			<ChildrenList>
-				<Sound Name="Test" ID="{74FC38F6-1FBF-4E80-B819-2E95C0691F53}" ShortID="29772152">
-					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
-						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-9</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D4F0641F-C8A9-448F-88F9-8A24363E63F4}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{CFF8CA8F-7A94-4BDF-B880-45B1A399CC8F}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Main Title" ID="{95373AE6-E19A-494A-B200-AD963B692558}">
-							<Language>SFX</Language>
-							<AudioFile>Main Title.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1064006755"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Main Title" ID="{95373AE6-E19A-494A-B200-AD963B692558}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="TEST" ID="{B37571C9-8CA0-46AC-BBB9-8F8F5E33C26D}" PersistMode="Standalone"/>
 	</AudioObjects>
 </WwiseDocument>

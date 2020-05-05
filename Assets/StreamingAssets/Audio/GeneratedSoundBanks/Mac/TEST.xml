@@ -12,16 +12,6 @@
 			<ObjectPath>\SoundBanks\TEST\TEST</ObjectPath>
 			<ShortName>TEST</ShortName>
 			<Path>TEST.bnk</Path>
-			<IncludedEvents>
-				<Event Id="3187507146" Name="Play_Test" ObjectPath="\Events\TEST\Play_Test" GUID="{F2A1F844-346D-4757-9DE9-5AE11908D644}" DurationType="OneShot" DurationMin="135.877411" DurationMax="135.877411">
-					<IncludedMemoryFiles>
-						<File Id="1064006755" Language="SFX">
-							<ShortName>Main Title.wav</ShortName>
-							<Path>SFX\Main Title_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

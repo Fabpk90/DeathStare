@@ -186,7 +186,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="4274014911" Name="VO_Char_Punchline_Kill" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Punchline_Kill" GUID="{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}" DurationType="OneShot" DurationMin="1.887875" DurationMax="3.849771">
+				<Event Id="4274014911" Name="VO_Char_Punchline_Kill" ObjectPath="\Events\DS EVENTS\VOICE EVENTS\Characters\VO_Char_Punchline_Kill" GUID="{27B396F6-ED2C-42F4-B4C2-FF14F4776B20}" DurationType="OneShot" DurationMin="1.987875" DurationMax="3.949771">
 					<IncludedMemoryFiles>
 						<File Id="13666830" Language="English(US)">
 							<ShortName>Characters\Don\Punchline\VO_HumanLaugh_02.wav</ShortName>

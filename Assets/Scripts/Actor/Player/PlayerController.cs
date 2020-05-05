@@ -124,16 +124,20 @@ public class PlayerController : MonoBehaviour
             switch (playerIndex)
             {
                 case (0):
-                    AudioManager.instance.PostEvent("STINGERS_DS_Stan_L");
+                    //AudioManager.instance.PostEvent("STINGERS_DS_Stan_L");
+                    AkSoundEngine.PostTrigger("TRIGGER_DS_Stan_L", AudioManager.instance.gameObject);
                     break;
                 case (1):
-                    AudioManager.instance.PostEvent("STINGERS_DS_Marta_R");
+                    //AudioManager.instance.PostEvent("STINGERS_DS_Marta_R");
+                    AkSoundEngine.PostTrigger("TRIGGER_DS_Marta_R", AudioManager.instance.gameObject);
                     break;
                 case (2):
-                    AudioManager.instance.PostEvent("STINGERS_DS_Medusa_L");
+                    //AudioManager.instance.PostEvent("STINGERS_DS_Medusa_L");
+                    AkSoundEngine.PostTrigger("TRIGGER_DS_Medusa_L", AudioManager.instance.gameObject);
                     break;
                 case (3):
-                    AudioManager.instance.PostEvent("STINGERS_DS_Don_R");
+                    //AudioManager.instance.PostEvent("STINGERS_DS_Don_R");
+                    AkSoundEngine.PostTrigger("TRIGGER_DS_Don_R", AudioManager.instance.gameObject);
                     break;
             }
             //SOUND
