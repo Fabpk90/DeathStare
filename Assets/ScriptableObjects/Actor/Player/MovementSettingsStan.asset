@@ -13,23 +13,23 @@ MonoBehaviour:
   m_Name: MovementSettingsStan
   m_EditorClassIdentifier: 
   parameters:
-    gravityMultiplier: 2
+    gravityMultiplier: 3
     runSpeedForward: 10
     runSpeedBackwards: 5
     walkSpeedForward: 4
     walkSpeedBackwards: 2
     runstepLenghten: 0.725
-    jumpSpeed: 9
+    jumpSpeed: 11
     crouchingSpeedForward: 1
     crouchingSpeedBackwards: 2
     crouchingHeightCollider: 1
-    aerialSpeedForward: 10
-    aerialSpeedBackwards: 0
+    aerialSpeedForward: 7
+    aerialSpeedBackwards: 3
     stareAerialSpeedForward: 1
     stareAerialSpeedBackwards: 1
-    stareWalkingSpeedForward: 1
-    stareWalkingSpeedBackwards: 0.5
+    stareWalkingSpeedForward: 2
+    stareWalkingSpeedBackwards: 2
     stepInterval: 2
     stickToGroundForce: 5
-    jumpCooldown: 1
+    jumpCooldown: 0
     stareCooldown: 1

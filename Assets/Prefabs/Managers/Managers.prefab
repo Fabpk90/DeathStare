@@ -94,7 +94,7 @@ MonoBehaviour:
   - {r: 0.17978883, g: 1, b: 0, a: 0}
   - {r: 0, g: 0.9999995, b: 1, a: 0}
   - {r: 1, g: 0, b: 0.9423084, a: 0}
-  debugPlayers: 1
+  debugPlayers: 0
   spawnPoints:
   - {fileID: 0}
   - {fileID: 0}

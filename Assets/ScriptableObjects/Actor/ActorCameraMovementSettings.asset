@@ -16,5 +16,5 @@ MonoBehaviour:
     sensitivityWalkRun: {x: 3, y: 3}
     sensitivityAerial: {x: 1.5, y: 1.5}
     sensitivityStare: {x: 1, y: 1}
-    angleYClamp: {x: -90, y: 90}
+    angleYClamp: {x: -80, y: 85}
     angleXClamp: {x: 0, y: 0}
