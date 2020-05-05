@@ -16,16 +16,19 @@ public class AudioManager : MonoBehaviour
         if (instance != null)
             Destroy(gameObject);
         else
+        {
             instance = this;
         
-        //SoundBanks Loading
-        for (int i=0; i<Soundbanks.Length; i++)
-        {
-            AkSoundEngine.LoadBank(Soundbanks[i], out uint bankID);
-        }
+            //SoundBanks Loading
+            for (int i=0; i<Soundbanks.Length; i++)
+            {
+                AkSoundEngine.LoadBank(Soundbanks[i], out uint bankID);
+            }
 
-        //Listener setting
-        AddListeners(gameObject, 4);
+            //Listener setting
+            AddListeners(gameObject, 4);
+        }
+            
     }
 
     private void Start()

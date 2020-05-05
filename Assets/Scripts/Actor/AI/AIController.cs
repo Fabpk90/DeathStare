@@ -182,7 +182,6 @@ namespace Actor.AI
 		{
 			_controller.SetInputMovement(move);
 			cameraMovement.MoveCamera(rot);
-			_controller.SetRunning(run);
 		}
 
 		private void UpdateDestination(Vector3 v)

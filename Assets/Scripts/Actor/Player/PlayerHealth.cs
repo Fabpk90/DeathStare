@@ -59,8 +59,6 @@ namespace Actor.Player
         {
             if (!canTakeDamage) return false;
 
-            print("I'm " + _controller.GetPlayerIndex() + " and " + playerIndex);
-            
             OnTakingDamage?.Invoke(this, amount);
             
             if (!base.TakeDamage(playerIndex, amount)) return false;
@@ -68,6 +66,12 @@ namespace Actor.Player
             GameMode.instance.PlayerKilled(playerIndex, _controller.GetPlayerIndex());
             return true;
 
+        }
+
+        public void Suicide()
+        {
+            Die();
+            GameMode.instance.PlayerKilled(-1, _controller.GetPlayerIndex());
         }
     }
 }

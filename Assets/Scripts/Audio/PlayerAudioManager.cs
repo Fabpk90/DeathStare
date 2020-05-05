@@ -16,13 +16,16 @@ public class PlayerAudioManager : MonoBehaviour
         AudioManager.instance.AddListeners(leftFoot, 0, 1, 2, 3);
         AudioManager.instance.AddListeners(rightFoot, 0, 1, 2, 3);
         AudioManager.instance.AddListeners(gameObject, player.GetPlayerIndex());
+
+        var wwiseSwitch = GetComponent<SetWwiseSwitch>();
+        
         switch (player.GetPlayerIndex())
         {
             case (0):
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", leftFoot);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", rightFoot);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", chest);
-                GetComponent<SetWwiseSwitch>().SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
+                wwiseSwitch.SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", leftFoot);
+                wwiseSwitch.SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", rightFoot);
+                wwiseSwitch.SetSwitch("SWITCHES_Foleys_Surfaces", "Cobble", chest);
+                wwiseSwitch.SetSwitch("SWITCHES_General_Character", "Stanislas", gameObject);
                 wwiseListener.VolumesOffset[0] = 0;
                 wwiseListener.VolumesOffset[1] = -14;
                 Debug.Log("Cobble set to p1");
