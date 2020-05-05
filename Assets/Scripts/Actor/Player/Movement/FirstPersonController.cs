@@ -127,7 +127,7 @@ public class FirstPersonController : MonoBehaviour
         m_MoveDir.z = desiredMove.z * speed;
 
 
-        if (m_CharacterController.isGrounded)
+		if (m_CharacterController.isGrounded)
         {
             m_MoveDir.y = -_settingsData.stickToGroundForce;
 
@@ -144,7 +144,7 @@ public class FirstPersonController : MonoBehaviour
             m_MoveDir += Physics.gravity * (_settingsData.gravityMultiplier * Time.fixedDeltaTime);
         }
 
-        m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
+		m_CollisionFlags = m_CharacterController.Move(m_MoveDir * Time.fixedDeltaTime);
 
         ProgressStepCycle(speed);
     }
