@@ -17,16 +17,16 @@ public class CameraSplitScreen : MonoBehaviour
 		switch (playerIndex)
 		{
 			case 0:
-				mainCam.rect = new Rect(0.5f, 0, 0.5f, 0.5f);
-				break;
-			case 1:
-				mainCam.rect = new Rect(0, 0, 0.5f, 0.5f);
-				break;
-			case 2:
 				mainCam.rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
 				break;
-			case 3:
+			case 1:
 				mainCam.rect = new Rect(0, 0.5f, 0.5f, 0.5f);
+				break;
+			case 2:
+				mainCam.rect = new Rect(0f, 0f, 0.5f, 0.5f);
+				break;
+			case 3:
+				mainCam.rect = new Rect(0.5f, 0f, 0.5f, 0.5f);
 				break;
 		}
 	}
