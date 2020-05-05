@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraSettings:
     sensitivityWalkRun: {x: 3, y: 3}
-    sensitivityAerial: {x: 1.8, y: 1.8}
-    sensitivityStare: {x: 0.5, y: 0.5}
+    sensitivityAerial: {x: 1.5, y: 1.5}
+    sensitivityStare: {x: 1, y: 1}
     angleYClamp: {x: -90, y: 90}
     angleXClamp: {x: 0, y: 0}

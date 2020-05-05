@@ -5,6 +5,7 @@ using Actor.Player;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityStandardAssets.Characters.FirstPerson;
 
 public class FinalScoreHandler : IComparable<FinalScoreHandler>
@@ -154,8 +155,8 @@ public class TestMode : GameMode
         var ct = obj.GetComponent<CharacterController>();
         
         ct.enabled = false;
-        obj.transform.position = spawnPoints[obj.playerIndex].position;
-        obj.transform.rotation = spawnPoints[obj.playerIndex].rotation;
+        obj.transform.root.position = spawnPoints[obj.playerIndex].position;
+        obj.transform.root.localRotation = spawnPoints[obj.playerIndex].localRotation;
         ct.enabled = true;
         
         //Sound
@@ -166,7 +167,6 @@ public class TestMode : GameMode
         {
             OnStartMatch();
         }
-            
     }
 
     public override void OnStartMatch()
@@ -174,38 +174,20 @@ public class TestMode : GameMode
         base.OnStartMatch();
         
         InitPlayersCamera();
-        
-        
     }
 
     //Creating this because the unity's system doesn't work
     private void InitPlayersCamera()
-    {/*
-        var playerCam = players[0].GetComponentInChildren<Camera>();
-
-        Rect camRect = playerCam.rect;
-        camRect.y = .5f;
-        camRect.width = 0.5f;
-        camRect.height = 0.5f;
-
-        playerCam.rect = camRect;
-
-        camRect.x = 0.5f;
-
-        players[1].GetComponentInChildren<Camera>().rect = camRect;
-
-        camRect.y = 0.0f;
+    {
         
-        players[3].GetComponentInChildren<Camera>().rect = camRect;
+        players[0].GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0.5f, 0.5f, 0.5f);
+        players[1].GetComponentInChildren<Camera>().rect = new Rect(0, 0.5f, 0.5f, 0.5f);
+        players[2].GetComponentInChildren<Camera>().rect = new Rect(0f, 0f, 0.5f, 0.5f);
+        players[3].GetComponentInChildren<Camera>().rect = new Rect(0.5f, 0f, 0.5f, 0.5f);
 
-        camRect.x = camRect.y = 0.0f;
-        
-        players[2].GetComponentInChildren<Camera>().rect = camRect;
-
-        for (int i = 0; i < players.Count; i++)
+        /*for (int i = 0; i < players.Count; i++)
         {
-            //players[i].GetComponentInChildren<MeshRenderer>().material.color = playersColor[i];
-        }
-        */
+            players[i].GetComponentInChildren<MeshRenderer>().material.color = playersColor[i];
+        }*/
     }
 }
