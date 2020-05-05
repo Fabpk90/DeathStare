@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using Sweet.UI;
 
 namespace Actor.Player.UI
 {
     public class HealthBarManager : MonoBehaviour
     {
-        public Slider slider;
+		public UISlider uiSlider;
         
         public PlayerHealth health;
         public PlayerController controller;
@@ -25,17 +26,17 @@ namespace Actor.Player.UI
 
         private void Start()
         {
-            slider.value = health.health / health.maxHealth;
+			uiSlider.value = health.health / health.maxHealth;
         }
 
         private void OnRespawn(object sender, EventArgs e)
         {
-            slider.value = 1;
+			uiSlider.value = 1;
         }
 
         private void OnTakingDamage(object sender, float e)
         {
-            slider.value = health.health / health.maxHealth;
+			uiSlider.value = health.health / health.maxHealth;
         }
     }
 }

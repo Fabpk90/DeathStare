@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour
     {
         _controller = GetComponentInParent<PlayerController>();
         
-        scoreText.text = "Kills: " + _score;
+        scoreText.text = ""+ _score;
 
         //Sound
         AudioManager.instance.AddListeners(gameObject, 4);
@@ -41,7 +41,7 @@ public class ScoreManager : MonoBehaviour
         {
             _score++;
 
-            scoreText.text = "Kills: " + _score;
+            scoreText.text = "" + _score;
 
             //Sound
             switch (e.Item1){

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Actor.Player;
+[RequireComponent(typeof(BoxCollider))]
 public class DeathTrigger : MonoBehaviour
 {
 	private void OnTriggerStay(Collider other)
@@ -9,6 +10,6 @@ public class DeathTrigger : MonoBehaviour
 		PlayerHealth hp = other.transform.root.GetComponent<PlayerHealth>();
 		if (!hp) return;
 		Debug.Log(hp.name + " Falls");
-		hp.TakeDamage(-1, 99999);
+		hp.Suicide();
 	}
 }

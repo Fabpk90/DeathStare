@@ -11,17 +11,18 @@ public class FirstPersonController : MonoBehaviour
     private static readonly int Running = Animator.StringToHash("Running");
     private static readonly int Walking = Animator.StringToHash("Walking");
     private static readonly int Staring = Animator.StringToHash("Staring");
+    
+    public bool isCrouching;
 
-    private bool _isCrouching;
+    public bool isRunning;
 
-    private bool _isRunning;
+    public bool isStaring;
 
-    private bool _isStaring;
-    private float _mYRotation;
+    public bool isGrounded;
 
     private float _startingHeightCollider;
 
-    private CharacterController m_CharacterController;
+    public CharacterController m_CharacterController;
     private CollisionFlags m_CollisionFlags;
 
     [SerializeField] private FOVKick m_FovKick = new FOVKick();
@@ -49,6 +50,11 @@ public class FirstPersonController : MonoBehaviour
     private static readonly int Velocity = Animator.StringToHash("Velocity");
 
     public GameObject feet;
+    private static readonly int Backwards = Animator.StringToHash("Backwards");
+
+    private Ray[] _rays = new Ray[5];
+    public int minRayToGround = 3;
+    public float maxDistanceToCheck = 0.5f;
 
     // Use this for initialization
     private void Start()
@@ -61,10 +67,20 @@ public class FirstPersonController : MonoBehaviour
 
         m_StepCycle = 0f;
         m_NextStep = m_StepCycle / 2f;
+
+        ResetStates();
+    }
+
+    public void ResetStates()
+    {
         m_Jumping = false;
-        _isCrouching = false;
-        _isRunning = false;
-        _isStaring = false;
+        isCrouching = false;
+        isRunning = false;
+        isStaring = false;
+        
+        animator.SetBool(Crouching, false);
+        animator.SetBool(Running, false);
+        animator.SetBool(Staring, false);
     }
 
     /// <summary>
@@ -85,6 +101,7 @@ public class FirstPersonController : MonoBehaviour
 
     private void Update()
     {
+        CheckForGround();
         if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
         {
             StartCoroutine(m_JumpBob.DoBobCycle());
@@ -104,6 +121,24 @@ public class FirstPersonController : MonoBehaviour
         stareCooldown.Update(Time.deltaTime);
     }
 
+    private void CheckForGround()
+    {
+        Vector3 downPosition = transform.position;
+        downPosition.y -= m_CharacterController.height / 2;
+
+        _rays[0].origin = downPosition;
+        _rays[0].direction = Vector3.down;
+
+        if (Physics.Raycast(_rays[0], maxDistanceToCheck))
+        {
+            isGrounded = true;
+        }
+        else
+        {
+            isGrounded = false;
+        }
+    }
+
 
     private void PlayLandingSound()
     {
@@ -113,14 +148,17 @@ public class FirstPersonController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        UpdateMovementState();
+        UpdateAnimationSpeed();
         float speed = GetSpeedFromState() * m_Input.magnitude;
+        
 
         Vector3 desiredMove = transform.forward * m_Input.y + transform.right * m_Input.x;
         
         // get a normal for the surface that is being touched to move along it
         RaycastHit hitInfo;
         Physics.SphereCast(transform.position, m_CharacterController.radius, Vector3.down, out hitInfo,
-            m_CharacterController.height / 2f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
+            m_CharacterController.height / 4f, Physics.AllLayers, QueryTriggerInteraction.Ignore);
         desiredMove = Vector3.ProjectOnPlane(desiredMove, hitInfo.normal).normalized;
 
         m_MoveDir.x = desiredMove.x * speed;
@@ -149,6 +187,37 @@ public class FirstPersonController : MonoBehaviour
         ProgressStepCycle(speed);
     }
 
+    private void UpdateAnimationSpeed()
+    {
+        float magnitude = m_Input.magnitude;
+
+        if (!isStaring && m_CharacterController.isGrounded && magnitude > 0)
+        {
+            animator.SetFloat(Backwards, m_Input.y > 0 ? 1 : -1);
+            animator.speed = Mathf.Clamp01(magnitude + 0.2f);
+        }
+        else
+            animator.speed = 1.0f;
+    }
+
+    private void UpdateMovementState()
+    {
+        if (isStaring)
+        {
+            isRunning = false;
+            animator.SetBool(Running, false);
+        }
+        else if(m_Input.magnitude > 0.4f)
+        {
+            isRunning = true;
+            animator.SetBool(Running, true);
+        }
+        else
+        {
+            isRunning = false;
+        }
+    }
+
     public void SetInputMovement(Vector2 input)
     {
         m_Input = input;
@@ -160,20 +229,19 @@ public class FirstPersonController : MonoBehaviour
 
     private float GetSpeedFromState()
     {
-        if (_isCrouching)
-            return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
-        if (_isRunning)
-            return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
-        if (_isStaring)
+        if (isStaring)
         {
             if (m_CharacterController.isGrounded)
                 return m_Input.y > 0 ?_settingsData.stareWalkingSpeedForward : _settingsData.stareWalkingSpeedBackwards;
 
             return m_Input.y > 0 ? _settingsData.stareAerialSpeedForward : _settingsData.stareAerialSpeedBackwards;
         }
-
         if (!m_CharacterController.isGrounded)
             return m_Input.y > 0 ? _settingsData.aerialSpeedForward : _settingsData.aerialSpeedBackwards;
+        if (isCrouching)
+            return m_Input.y > 0 ? _settingsData.crouchingSpeedForward : _settingsData.crouchingSpeedBackwards;
+        if (isRunning)
+            return m_Input.y > 0 ? _settingsData.runSpeedForward : _settingsData.runSpeedBackwards;
 
         return m_Input.y > 0 ? _settingsData.walkSpeedForward : _settingsData.walkSpeedBackwards;
     }
@@ -218,7 +286,7 @@ public class FirstPersonController : MonoBehaviour
     {
         if (m_CharacterController.isGrounded)
         {
-            if(_isCrouching)
+            if(isCrouching)
                 SetCrouch(false);
             
             m_Jump = true;
@@ -229,7 +297,7 @@ public class FirstPersonController : MonoBehaviour
 
     public bool canStare()
     {
-        if (stareCooldown.IsCompleted && !_isRunning)
+        if (stareCooldown.IsCompleted)
         {
             stareCooldown.Start();
             return true;
@@ -251,11 +319,12 @@ public class FirstPersonController : MonoBehaviour
 
     public void ToggleCrouch()
     {
-        _isCrouching = !_isCrouching;
+        if(!m_CharacterController.isGrounded) return;
+        isCrouching = !isCrouching;
 
-        animator.SetBool(Crouching, _isCrouching);
+        animator.SetBool(Crouching, isCrouching);
 
-        if (_isCrouching)
+        if (isCrouching)
         {
             m_CharacterController.height = _settingsData.crouchingHeightCollider;
             var transform1 = animator.transform;
@@ -277,11 +346,11 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetCrouch(bool isCrouching)
     {
-        _isCrouching = isCrouching;
+        this.isCrouching = isCrouching;
 
         animator.SetBool(Crouching, isCrouching);
 
-        if (_isCrouching)
+        if (this.isCrouching)
         {
             m_CharacterController.height = _settingsData.crouchingHeightCollider;
             var transform1 = animator.transform;
@@ -298,23 +367,6 @@ public class FirstPersonController : MonoBehaviour
             var v = transform1.localPosition;
             v.y *= 2;
             transform1.localPosition = v;
-        }
-    }
-
-    public void SetRunning(bool isRunning)
-    {
-        if (isRunning && m_CharacterController.isGrounded)
-        {
-            if(_isCrouching)
-                SetCrouch(false);
-            
-            animator.SetBool(Running, true);
-            _isRunning = true;
-        }
-        else
-        {
-            _isRunning = false;
-            animator.SetBool(Running, false);
         }
     }
 
@@ -337,7 +389,7 @@ public class FirstPersonController : MonoBehaviour
 
     public void SetStare(bool isStaring)
     {
-        _isStaring = isStaring;
+        this.isStaring = isStaring;
         animator.SetBool(Staring, isStaring);
     }
 }
