@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 namespace Sweet.UI
 {
+	[ExecuteInEditMode]
 	public class UISlider : UITransition
 	{
 		//inspector
@@ -73,6 +74,12 @@ namespace Sweet.UI
 					UpdatePosition();
 				}
 			}
+		}
+	
+		private void OnEnable()
+		{
+			if(!Application.isPlaying)
+				UpdatePosition();
 		}
 
 		#endregion

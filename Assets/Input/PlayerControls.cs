@@ -57,14 +57,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
-                },
-                {
-                    ""name"": ""Run"",
-                    ""type"": ""Button"",
-                    ""id"": ""781930be-caa7-46a3-8a28-b846c96af124"",
-                    ""expectedControlType"": """",
-                    ""processors"": """",
-                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -122,17 +114,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Crouch"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""031fc4f0-8fa0-4903-baab-d2bfbfa401ea"",
-                    ""path"": ""<Gamepad>/leftShoulder"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Run"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -163,7 +144,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Arena_Jump = m_Arena.FindAction("Jump", throwIfNotFound: true);
         m_Arena_Look = m_Arena.FindAction("Look", throwIfNotFound: true);
         m_Arena_Crouch = m_Arena.FindAction("Crouch", throwIfNotFound: true);
-        m_Arena_Run = m_Arena.FindAction("Run", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -218,7 +198,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Arena_Jump;
     private readonly InputAction m_Arena_Look;
     private readonly InputAction m_Arena_Crouch;
-    private readonly InputAction m_Arena_Run;
     public struct ArenaActions
     {
         private @PlayerControls m_Wrapper;
@@ -228,7 +207,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Arena_Jump;
         public InputAction @Look => m_Wrapper.m_Arena_Look;
         public InputAction @Crouch => m_Wrapper.m_Arena_Crouch;
-        public InputAction @Run => m_Wrapper.m_Arena_Run;
         public InputActionMap Get() { return m_Wrapper.m_Arena; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -253,9 +231,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Crouch.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
                 @Crouch.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
                 @Crouch.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnCrouch;
-                @Run.started -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
-                @Run.performed -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
-                @Run.canceled -= m_Wrapper.m_ArenaActionsCallbackInterface.OnRun;
             }
             m_Wrapper.m_ArenaActionsCallbackInterface = instance;
             if (instance != null)
@@ -275,9 +250,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Crouch.started += instance.OnCrouch;
                 @Crouch.performed += instance.OnCrouch;
                 @Crouch.canceled += instance.OnCrouch;
-                @Run.started += instance.OnRun;
-                @Run.performed += instance.OnRun;
-                @Run.canceled += instance.OnRun;
             }
         }
     }
@@ -298,6 +270,5 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
         void OnCrouch(InputAction.CallbackContext context);
-        void OnRun(InputAction.CallbackContext context);
     }
 }
