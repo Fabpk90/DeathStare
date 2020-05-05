@@ -13,15 +13,15 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMB_COMMON_BED_SEA = 793348717U;
-        static const AkUniqueID AMB_COMMON_BED_WIND = 2231626466U;
-        static const AkUniqueID AMB_COMMON_SSHOTS = 2233841146U;
-        static const AkUniqueID AMB_SP_CAVE = 226148825U;
-        static const AkUniqueID AMB_SP_CAVE_01 = 3319622597U;
+        static const AkUniqueID AMB_BED_SEA = 246007687U;
+        static const AkUniqueID AMB_BED_WAVES = 2193181892U;
+        static const AkUniqueID AMB_BED_WIND = 151163884U;
         static const AkUniqueID AMB_SP_FOLIAGE = 3964420051U;
         static const AkUniqueID AMB_SP_STONE = 2816467889U;
-        static const AkUniqueID AMB_SP_WATER = 3897627331U;
+        static const AkUniqueID AMB_SP_TORCH = 1492342808U;
         static const AkUniqueID AMB_SP_WOOD = 1104827821U;
+        static const AkUniqueID AMB_SSHOTS_LONG = 416895869U;
+        static const AkUniqueID AMB_SSHOTS_SHORTS = 1929281362U;
         static const AkUniqueID EFFECTS_CHAR_DAMAGE = 2897623584U;
         static const AkUniqueID EFFECTS_CHAR_DUEL = 1940990649U;
         static const AkUniqueID EFFECTS_CHAR_EXITSTARING = 3646545493U;
@@ -33,8 +33,8 @@ namespace AK
         static const AkUniqueID FOLEYS_CHAR_RUN_PRESENCE = 2315528594U;
         static const AkUniqueID FOLEYS_CHAR_WALK_FOOTSTEPS = 2350611728U;
         static const AkUniqueID FOLEYS_CHAR_WALK_PRESENCE = 401042956U;
-        static const AkUniqueID PLAY_TEST = 3187507146U;
         static const AkUniqueID SEGMENTS_DUELMUSIC = 1926112901U;
+        static const AkUniqueID SEGMENTS_MAINMUSIC = 1704734930U;
         static const AkUniqueID STINGERS_DS_DON_L = 1290491939U;
         static const AkUniqueID STINGERS_DS_DON_R = 1290491965U;
         static const AkUniqueID STINGERS_DS_MARTA_L = 459653097U;
@@ -43,18 +43,10 @@ namespace AK
         static const AkUniqueID STINGERS_DS_MEDUSA_R = 554142247U;
         static const AkUniqueID STINGERS_DS_STAN_L = 2011547318U;
         static const AkUniqueID STINGERS_DS_STAN_R = 2011547304U;
-        static const AkUniqueID STINGERS_KILL_DON_L = 365611220U;
-        static const AkUniqueID STINGERS_KILL_DON_R = 365611210U;
-        static const AkUniqueID STINGERS_KILL_MARTA_L = 2968734026U;
-        static const AkUniqueID STINGERS_KILL_MARTA_R = 2968734036U;
-        static const AkUniqueID STINGERS_KILL_MEDUSA_L = 1724805132U;
-        static const AkUniqueID STINGERS_KILL_MEDUSA_R = 1724805138U;
         static const AkUniqueID STINGERS_KILL_P1 = 2299281131U;
         static const AkUniqueID STINGERS_KILL_P2 = 2299281128U;
         static const AkUniqueID STINGERS_KILL_P3 = 2299281129U;
         static const AkUniqueID STINGERS_KILL_P4 = 2299281134U;
-        static const AkUniqueID STINGERS_KILL_STAN_L = 854864811U;
-        static const AkUniqueID STINGERS_KILL_STAN_R = 854864821U;
         static const AkUniqueID STOP_EFFECTS_CHAR_DAMAGE = 3978900703U;
         static const AkUniqueID STOP_EFFECTS_CHAR_STARING = 1985231276U;
         static const AkUniqueID STOP_VO_CHAR_BREATH_DAMAGE = 107050159U;
@@ -192,21 +184,13 @@ namespace AK
         static const AkUniqueID TRIGGER_DS_MARTA_R = 2960638078U;
         static const AkUniqueID TRIGGER_DS_MEDUSA_L = 4277786702U;
         static const AkUniqueID TRIGGER_DS_MEDUSA_R = 4277786704U;
-        static const AkUniqueID TRIGGER_DS_STANISLAS_L = 43587861U;
-        static const AkUniqueID TRIGGER_DS_STANISLAS_R = 43587851U;
+        static const AkUniqueID TRIGGER_DS_STAN_L = 529325937U;
+        static const AkUniqueID TRIGGER_DS_STAN_R = 529325935U;
         static const AkUniqueID TRIGGER_DUELMUSIC = 3444518989U;
-        static const AkUniqueID TRIGGER_KILL_DON_L = 3533683345U;
-        static const AkUniqueID TRIGGER_KILL_DON_R = 3533683343U;
-        static const AkUniqueID TRIGGER_KILL_MARTA_L = 3648566731U;
-        static const AkUniqueID TRIGGER_KILL_MARTA_R = 3648566741U;
-        static const AkUniqueID TRIGGER_KILL_MEDUSA_L = 1594170703U;
-        static const AkUniqueID TRIGGER_KILL_MEDUSA_R = 1594170705U;
         static const AkUniqueID TRIGGER_KILL_P1 = 2839118456U;
         static const AkUniqueID TRIGGER_KILL_P2 = 2839118459U;
         static const AkUniqueID TRIGGER_KILL_P3 = 2839118458U;
         static const AkUniqueID TRIGGER_KILL_P4 = 2839118461U;
-        static const AkUniqueID TRIGGER_KILL_STANISLAS_L = 1140603814U;
-        static const AkUniqueID TRIGGER_KILL_STANISLAS_R = 1140603832U;
     } // namespace TRIGGERS
 
     namespace BANKS
@@ -233,16 +217,10 @@ namespace AK
         static const AkUniqueID SFX_EFFECTS = 2324388809U;
         static const AkUniqueID SFX_FOLEYS = 3183352817U;
         static const AkUniqueID SFX_UI = 3862737079U;
+        static const AkUniqueID STINGERSL = 2737366168U;
+        static const AkUniqueID STINGERSR = 2737366150U;
         static const AkUniqueID VOICES = 3313685232U;
     } // namespace BUSSES
-
-    namespace AUX_BUSSES
-    {
-        static const AkUniqueID RVB_ZONE1 = 376471427U;
-        static const AkUniqueID RVB_ZONE2 = 376471424U;
-        static const AkUniqueID RVB_ZONE3 = 376471425U;
-        static const AkUniqueID RVB_ZONE4 = 376471430U;
-    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {
