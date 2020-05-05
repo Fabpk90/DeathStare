@@ -1,0 +1,890 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "2767260180",
+    "GUID": "{157C3D6A-86AC-4F8C-85A9-0C02730F1925}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\DS SNB\\MUSIC SNB\\MUSIC_SNB",
+    "ShortName": "MUSIC_SNB",
+    "Path": "MUSIC_SNB.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1926112901",
+      "Name": "SEGMENTS_DuelMusic",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\SEGMENTS_DuelMusic",
+      "GUID": "{FC6502CC-1B7E-4EDB-AEDD-DBB4157B8DBC}",
+      "DurationType": "Infinite",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "19652934",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_Violin1Loop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_Violin1Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "46506750",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_Violin2Loop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_Violin2Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "353834140",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_CelliLoop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_CelliLoop_073B4D0C.wem"
+       },
+       {
+        "Id": "1040627007",
+        "Language": "SFX",
+        "ShortName": "Music\\Duel\\Segments_Duel_ViolasLoop.wav",
+        "Path": "SFX\\Music\\Duel\\Segments_Duel_ViolasLoop_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1704734930",
+      "Name": "SEGMENTS_MainMusic",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\SEGMENTS_MainMusic",
+      "GUID": "{14E7144B-2A19-4894-9F21-E2FECF76BD1A}",
+      "DurationType": "Infinite",
+      "ReferencedStreamedFiles": [
+       {
+        "Id": "425417005",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem"
+       },
+       {
+        "Id": "635846287",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem"
+       },
+       {
+        "Id": "738237128",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem"
+       }
+      ],
+      "IncludedMemoryFiles": [
+       {
+        "Id": "11282118",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P3.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P3_073B4D0C.wem"
+       },
+       {
+        "Id": "17309962",
+        "Language": "SFX",
+        "ShortName": "Music\\Outro\\Segments_Fight_OutroLoop_Stan.wav",
+        "Path": "SFX\\Music\\Outro\\Segments_Fight_OutroLoop_Stan_073B4D0C.wem"
+       },
+       {
+        "Id": "136646774",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
+       },
+       {
+        "Id": "171571049",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_001_073B4D0C.wem"
+       },
+       {
+        "Id": "285054235",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Banjo_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Banjo_000_073B4D0C.wem"
+       },
+       {
+        "Id": "300778837",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
+       },
+       {
+        "Id": "323243085",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Accordeon_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Accordeon_000_073B4D0C.wem"
+       },
+       {
+        "Id": "327829395",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
+       },
+       {
+        "Id": "329916654",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
+       },
+       {
+        "Id": "363596962",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P2.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P2_073B4D0C.wem"
+       },
+       {
+        "Id": "371607636",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
+       },
+       {
+        "Id": "425417005",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_002_073B4D0C.wem",
+        "PrefetchSize": "7290"
+       },
+       {
+        "Id": "467894095",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
+       },
+       {
+        "Id": "475265180",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
+       },
+       {
+        "Id": "492318781",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
+       },
+       {
+        "Id": "500589853",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
+       },
+       {
+        "Id": "500983585",
+        "Language": "SFX",
+        "ShortName": "Music\\Outro\\Segments_Fight_OutroLaunch.wav",
+        "Path": "SFX\\Music\\Outro\\Segments_Fight_OutroLaunch_073B4D0C.wem"
+       },
+       {
+        "Id": "519564728",
+        "Language": "SFX",
+        "ShortName": "Music\\CombatMusic_Test1_Launch.wav",
+        "Path": "SFX\\Music\\CombatMusic_Test1_Launch_073B4D0C.wem"
+       },
+       {
+        "Id": "530982020",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P4.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P4_073B4D0C.wem"
+       },
+       {
+        "Id": "545547126",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_001_073B4D0C.wem"
+       },
+       {
+        "Id": "624186810",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Bass_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Bass_001_073B4D0C.wem"
+       },
+       {
+        "Id": "635846287",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_000_073B4D0C.wem",
+        "PrefetchSize": "7653"
+       },
+       {
+        "Id": "640019073",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
+       },
+       {
+        "Id": "648061523",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_002_073B4D0C.wem"
+       },
+       {
+        "Id": "668521458",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P1.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P1_073B4D0C.wem"
+       },
+       {
+        "Id": "698480867",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
+       },
+       {
+        "Id": "714366655",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_002.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_002_073B4D0C.wem"
+       },
+       {
+        "Id": "738237128",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_AccGtr_001_073B4D0C.wem",
+        "PrefetchSize": "7298"
+       },
+       {
+        "Id": "778420763",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
+       },
+       {
+        "Id": "794660303",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
+       },
+       {
+        "Id": "841242472",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
+       },
+       {
+        "Id": "852245913",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_000_073B4D0C.wem"
+       },
+       {
+        "Id": "856576358",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
+       },
+       {
+        "Id": "867488535",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
+       },
+       {
+        "Id": "877440624",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_003.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Drumkit_003_073B4D0C.wem"
+       },
+       {
+        "Id": "892660261",
+        "Language": "SFX",
+        "ShortName": "Music\\CombatMusic_Test1_Loop.wav",
+        "Path": "SFX\\Music\\CombatMusic_Test1_Loop_073B4D0C.wem"
+       },
+       {
+        "Id": "903170528",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_ElecGtr_000_073B4D0C.wem"
+       },
+       {
+        "Id": "932992452",
+        "Language": "SFX",
+        "ShortName": "Music\\Fight\\Segments_Fight_EndLoop_001_Bass_000.wav",
+        "Path": "SFX\\Music\\Fight\\Segments_Fight_EndLoop_001_Bass_000_073B4D0C.wem"
+       },
+       {
+        "Id": "1032434855",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
+       }
+      ],
+      "SwitchContainers": [
+       {
+        "SwitchValue": "{C37450F9-9FDB-4FFB-979C-58CF3228EED2}",
+        "Media": [
+         {
+          "Id": "519564728"
+         },
+         {
+          "Id": "892660261"
+         },
+         {
+          "Id": "323243085"
+         },
+         {
+          "Id": "285054235"
+         },
+         {
+          "Id": "877440624"
+         },
+         {
+          "Id": "648061523"
+         },
+         {
+          "Id": "852245913"
+         },
+         {
+          "Id": "171571049"
+         },
+         {
+          "Id": "903170528"
+         },
+         {
+          "Id": "714366655"
+         },
+         {
+          "Id": "545547126"
+         },
+         {
+          "Id": "738237128"
+         },
+         {
+          "Id": "425417005"
+         },
+         {
+          "Id": "635846287"
+         },
+         {
+          "Id": "932992452"
+         },
+         {
+          "Id": "624186810"
+         }
+        ]
+       },
+       {
+        "SwitchValue": "{21293A09-F303-48B7-9A70-7559B9CCDD88}",
+        "Media": [
+         {
+          "Id": "500983585"
+         },
+         {
+          "Id": "17309962"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "1290491939",
+      "Name": "STINGERS_DS_Don_L",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Don_L",
+      "GUID": "{E95C7C95-DA51-47CD-8140-CFC62160125D}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.000000",
+      "DurationMax": "7.000000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "492318781",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
+       },
+       {
+        "Id": "500589853",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
+       },
+       {
+        "Id": "841242472",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
+       },
+       {
+        "Id": "867488535",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "1290491965",
+      "Name": "STINGERS_DS_Don_R",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Don_R",
+      "GUID": "{E7DBC1F4-0276-4C33-8CAD-34805782E3EB}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.000000",
+      "DurationMax": "7.000000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "492318781",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_001_073B4D0C.wem"
+       },
+       {
+        "Id": "500589853",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_002_073B4D0C.wem"
+       },
+       {
+        "Id": "841242472",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_000_073B4D0C.wem"
+       },
+       {
+        "Id": "867488535",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Don_003_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "459653097",
+      "Name": "STINGERS_DS_Marta_L",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Marta_L",
+      "GUID": "{F3619DC8-9796-45DB-B46E-F3DE5CFC0163}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.500000",
+      "DurationMax": "6.500000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "327829395",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
+       },
+       {
+        "Id": "329916654",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
+       },
+       {
+        "Id": "794660303",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
+       },
+       {
+        "Id": "856576358",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "459653111",
+      "Name": "STINGERS_DS_Marta_R",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Marta_R",
+      "GUID": "{5BE7DC98-AA8E-4595-B4F0-884C1EC4D3AE}",
+      "DurationType": "OneShot",
+      "DurationMin": "6.500000",
+      "DurationMax": "6.500000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "327829395",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_002_073B4D0C.wem"
+       },
+       {
+        "Id": "329916654",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_003_073B4D0C.wem"
+       },
+       {
+        "Id": "794660303",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_001_073B4D0C.wem"
+       },
+       {
+        "Id": "856576358",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Marta_000_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "554142265",
+      "Name": "STINGERS_DS_Medusa_L",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Medusa_L",
+      "GUID": "{4B0866D2-5733-40B1-B0A2-E61849BFEFB9}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.164187",
+      "DurationMax": "7.164187",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "300778837",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
+       },
+       {
+        "Id": "475265180",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
+       },
+       {
+        "Id": "778420763",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
+       },
+       {
+        "Id": "1032434855",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "554142247",
+      "Name": "STINGERS_DS_Medusa_R",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Medusa_R",
+      "GUID": "{77FECA11-24E9-44F4-8F70-A99483C73683}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.164187",
+      "DurationMax": "7.164187",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "300778837",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_002_073B4D0C.wem"
+       },
+       {
+        "Id": "475265180",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_001_073B4D0C.wem"
+       },
+       {
+        "Id": "778420763",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_003_073B4D0C.wem"
+       },
+       {
+        "Id": "1032434855",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Medusa_000_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2011547318",
+      "Name": "STINGERS_DS_Stan_L",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Stan_L",
+      "GUID": "{EE516F08-9D20-4F12-9FAC-EA993089A3F3}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.164187",
+      "DurationMax": "7.164187",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "136646774",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
+       },
+       {
+        "Id": "371607636",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
+       },
+       {
+        "Id": "467894095",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
+       },
+       {
+        "Id": "640019073",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
+       },
+       {
+        "Id": "698480867",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2011547304",
+      "Name": "STINGERS_DS_Stan_R",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_DS_Stan_R",
+      "GUID": "{23F5C05A-0495-4FB8-84B9-5C156E99050E}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.164187",
+      "DurationMax": "7.164187",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "136646774",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_003_073B4D0C.wem"
+       },
+       {
+        "Id": "371607636",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_002_073B4D0C.wem"
+       },
+       {
+        "Id": "467894095",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_001_073B4D0C.wem"
+       },
+       {
+        "Id": "640019073",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_000_073B4D0C.wem"
+       },
+       {
+        "Id": "698480867",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004.wav",
+        "Path": "SFX\\Music\\Stingers\\DeathStare\\STINGERS_DS_Stan_004_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2299281131",
+      "Name": "STINGERS_Kill_P1",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P1",
+      "GUID": "{82B5C639-E188-4792-8FE7-5166901D2BF0}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.988702",
+      "DurationMax": "9.988702",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "530982020",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P4.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P4_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2299281128",
+      "Name": "STINGERS_Kill_P2",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P2",
+      "GUID": "{33FD3ECB-1C63-4C39-AE89-5C955725F254}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.375000",
+      "DurationMax": "9.375000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "11282118",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P3.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P3_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2299281129",
+      "Name": "STINGERS_Kill_P3",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P3",
+      "GUID": "{E6304B48-78D0-4678-B686-2D1100E4E3FE}",
+      "DurationType": "OneShot",
+      "DurationMin": "9.375000",
+      "DurationMax": "9.375000",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "363596962",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P2.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P2_073B4D0C.wem"
+       }
+      ]
+     },
+     {
+      "Id": "2299281134",
+      "Name": "STINGERS_Kill_P4",
+      "ObjectPath": "\\Events\\DS EVENTS\\MUSIC EVENTS\\STINGERS_Kill_P4",
+      "GUID": "{94A2079E-0221-447D-A89F-CECC23C786C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "10.208333",
+      "DurationMax": "10.208333",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "668521458",
+        "Language": "SFX",
+        "ShortName": "Music\\Stingers\\Kills\\STINGERS_Kill_P1.wav",
+        "Path": "SFX\\Music\\Stingers\\Kills\\STINGERS_Kill_P1_073B4D0C.wem"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1498827748",
+      "Name": "STATE_Music_Main",
+      "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main",
+      "GUID": "{25798F06-71D7-4FE6-A083-1C82A4060CC6}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\None",
+        "GUID": "{4E49F9E7-F386-4A7A-8B8A-A9E937324048}"
+       },
+       {
+        "Id": "3604647259",
+        "Name": "MainMenu",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\MainMenu",
+        "GUID": "{270F57B3-C631-4860-AC4E-C2852FF48010}"
+       },
+       {
+        "Id": "1585161430",
+        "Name": "Fight_Intro",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_Intro",
+        "GUID": "{A99B4BF6-EF52-4D35-82F6-B7142CD4CC07}"
+       },
+       {
+        "Id": "4258958663",
+        "Name": "Fight_End",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_End",
+        "GUID": "{C37450F9-9FDB-4FFB-979C-58CF3228EED2}"
+       },
+       {
+        "Id": "4201650965",
+        "Name": "Outro_Stan",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Stan",
+        "GUID": "{21293A09-F303-48B7-9A70-7559B9CCDD88}"
+       },
+       {
+        "Id": "3762960553",
+        "Name": "Fight_Silence",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Fight_Silence",
+        "GUID": "{C90A8475-12D9-499E-8BC4-CE7027D7CFFE}"
+       },
+       {
+        "Id": "1714471738",
+        "Name": "Outro_Marta",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Marta",
+        "GUID": "{C2E2F4E5-BFF6-4327-AC7A-FDB021BA41B5}"
+       },
+       {
+        "Id": "3204829974",
+        "Name": "Outro_Medusa",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Medusa",
+        "GUID": "{8315AB55-62F8-49E0-8AAA-1943D47B9B38}"
+       },
+       {
+        "Id": "2851607052",
+        "Name": "Outro_Don",
+        "ObjectPath": "\\States\\DS STATES\\MUSIC STATES\\STATE_Music_Main\\Outro_Don",
+        "GUID": "{0F4C10BE-1997-4536-A981-C7D962CBBC82}"
+       }
+      ]
+     }
+    ],
+    "Triggers": [
+     {
+      "Id": "529325935",
+      "Name": "TRIGGER_DS_Stan_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Stan_R",
+      "GUID": "{E1B1EB49-8F0A-4381-970B-91BB6BBF0ABC}"
+     },
+     {
+      "Id": "529325937",
+      "Name": "TRIGGER_DS_Stan_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Stan_L",
+      "GUID": "{7AEB2E13-8238-4097-9912-7BEC99845B8B}"
+     },
+     {
+      "Id": "2046853094",
+      "Name": "TRIGGER_DS_Don_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Don_L",
+      "GUID": "{EA611C97-CBE0-47D2-BEBA-396AF69FF44C}"
+     },
+     {
+      "Id": "2046853112",
+      "Name": "TRIGGER_DS_Don_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Don_R",
+      "GUID": "{966E938A-496B-40B5-A721-DCBA921AD2C9}"
+     },
+     {
+      "Id": "2839118456",
+      "Name": "TRIGGER_Kill_P1",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P1",
+      "GUID": "{4834D336-30A0-4382-BC73-2CC9D6F41DFC}"
+     },
+     {
+      "Id": "2839118458",
+      "Name": "TRIGGER_Kill_P3",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P3",
+      "GUID": "{66953C16-BB83-43C9-8451-1AF0998ACA9F}"
+     },
+     {
+      "Id": "2839118459",
+      "Name": "TRIGGER_Kill_P2",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P2",
+      "GUID": "{2D2CFE97-97EA-4B96-B036-06CFE79FF94E}"
+     },
+     {
+      "Id": "2839118461",
+      "Name": "TRIGGER_Kill_P4",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\Kill\\TRIGGER_Kill_P4",
+      "GUID": "{3E38FA31-CADD-4194-AFEA-11D44062B526}"
+     },
+     {
+      "Id": "2960638048",
+      "Name": "TRIGGER_DS_Marta_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Marta_L",
+      "GUID": "{A47A1F04-86BA-4A42-8C89-D629B3F6D2B1}"
+     },
+     {
+      "Id": "2960638078",
+      "Name": "TRIGGER_DS_Marta_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Marta_R",
+      "GUID": "{E6B31EB1-9A35-49A2-BBC5-61F176A005C1}"
+     },
+     {
+      "Id": "4277786702",
+      "Name": "TRIGGER_DS_Medusa_L",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Medusa_L",
+      "GUID": "{1405F734-019A-4D46-90C7-880C257C12F0}"
+     },
+     {
+      "Id": "4277786704",
+      "Name": "TRIGGER_DS_Medusa_R",
+      "ObjectPath": "\\Triggers\\DS TRIGGERS\\MUSIC TRIGGERS\\Stingers\\DeathStare\\TRIGGER_DS_Medusa_R",
+      "GUID": "{1A85B730-EB96-4FCF-9D7B-EE0F8BA18085}"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -61,7 +61,6 @@ public class StareHandler : MonoBehaviour
    /// <returns> true if he/she is, false otherwise</returns>
    private bool CheckForThingsInSight()
    {
-      print("Checking things");
       _hitDuringThisFrame.Clear();
       playersHitDuringThisFrame.Clear();
 

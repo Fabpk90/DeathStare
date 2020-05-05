@@ -1,0 +1,24 @@
+{
+ "PluginInfo": {
+  "Project": "DeathStare_WwiseProject",
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "Plugins": [
+   {
+    "Name": "Wwise Recorder",
+    "ID": "8650755",
+    "DLL": "AkRecorder"
+   },
+   {
+    "Name": "System",
+    "ID": "11403271",
+    "DLL": "DefaultSink"
+   },
+   {
+    "Name": "No Output",
+    "ID": "11862023",
+    "DLL": "DefaultSink"
+   }
+  ]
+ }
+}

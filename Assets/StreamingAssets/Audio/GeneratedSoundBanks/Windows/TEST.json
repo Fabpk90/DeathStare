@@ -1,0 +1,25 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "135",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Documents\\- ENJMIN\\- PROJETS\\H - Mini Projet\\Repo\\DeathStare\\DeathStare_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3157003241",
+    "GUID": "{B4514A9E-8824-468B-9499-9464CEF1F5BC}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\TEST\\TEST",
+    "ShortName": "TEST",
+    "Path": "TEST.bnk"
+   }
+  ]
+ }
+}
