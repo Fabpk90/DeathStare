@@ -19,7 +19,7 @@ MonoBehaviour:
     walkSpeedForward: 4
     walkSpeedBackwards: 2
     runstepLenghten: 0.725
-    jumpSpeed: 11
+    jumpSpeed: 12
     crouchingSpeedForward: 1
     crouchingSpeedBackwards: 2
     crouchingHeightCollider: 1

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: ActorCameraMovementSettings
   m_EditorClassIdentifier: 
   cameraSettings:
-    sensitivityWalkRun: {x: 3, y: 3}
-    sensitivityAerial: {x: 1.5, y: 1.5}
+    sensitivityWalkRun: {x: 5, y: 5}
+    sensitivityAerial: {x: 2, y: 2}
     sensitivityStare: {x: 1, y: 1}
     angleYClamp: {x: -80, y: 85}
     angleXClamp: {x: 0, y: 0}
